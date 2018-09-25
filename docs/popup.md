@@ -21,11 +21,11 @@
 ### 示例
 
 ```html
-<wux-popup closable visible="{{ visible1 }}" title="Delete" content="Are you sure???" bind:change="onChange1" bind:close="onClose1" bind:closed="onClosed1">
+<wux-popup closable visible="{{ visible1 }}" title="Delete" content="Are you sure???" bind:close="onClose1" bind:closed="onClosed1">
     <view slot="footer" class="popup__button" bindtap="close1">OK</view>
 </wux-popup>
 
-<wux-popup position="bottom" class-names="slideInUp" visible="{{ visible2 }}" bind:close="onClose2">
+<wux-popup position="bottom" visible="{{ visible2 }}" bind:close="onClose2">
     <wux-cell-group title="Your fathers">
         <wux-cell hover-class="none" title="Jack Ma"></wux-cell>
         <wux-cell hover-class="none" title="Pony"></wux-cell>
@@ -88,9 +88,6 @@ Page({
     onClosed1() {
         console.log('onClosed')
     },
-    onChange1(e) {
-        console.log('onChange', e.detail.visible)
-    },
 })
 ```
 
@@ -111,7 +108,5 @@ Page({
 | mask | <code>boolean</code> | 是否显示蒙层 | true |
 | maskClosable | <code>boolean</code> | 点击蒙层是否允许关闭 | true |
 | visible | <code>boolean</code> | 是否可见 | false |
-| classNames | <code>string</code> | 过渡的类名 | fadeIn |
-| bind:change | <code>function</code> | 显示隐藏的回调函数 | - |
 | bind:close | <code>function</code> | 点击关闭按钮或蒙层的回调函数 | - |
 | bind:closed | <code>function</code> | 关闭后的回调函数 | - |
