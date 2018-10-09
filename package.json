@@ -1,0 +1,26 @@
+{
+  "name": "wux-weapp-docs",
+  "version": "1.0.0",
+  "description": "Wux Weapp Docs.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "docsify-cli": "^4.2.1"
+  },
+  "scripts": {
+    "start": "./node_modules/.bin/docsify serve docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wux-weapp/wux-weapp-docs.git"
+  },
+  "author": "skyvow",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wux-weapp/wux-weapp-docs/issues"
+  },
+  "homepage": "https://github.com/wux-weapp/wux-weapp-docs#readme"
+}
