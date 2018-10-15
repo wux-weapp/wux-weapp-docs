@@ -25,6 +25,7 @@
   * [Rater 评分](rater.md)
   * [SearchBar 搜索栏](search-bar.md)
   * [Select 下拉框](select.md)
+  * [Slider 滑动选择器](slider.md)
   * [Switch 滑动开关](switch.md)
   * [Upload 上传](upload.md)
 
