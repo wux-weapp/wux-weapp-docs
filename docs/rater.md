@@ -81,19 +81,19 @@
         <wux-cell-group title="Custom text">
             <wux-cell title="Star" hover-class="none">
                 <view slot="footer">
-                    <wux-rater auto="{{ false }}" value="{{ value }}" bind:change="onChange" />
+                    <wux-rater controlled value="{{ value }}" bind:change="onChange" />
                     <text class="wux-rater__text">{{ value }} stars</text>
                 </view>
             </wux-cell>
         </wux-cell-group>
         <wux-cell-group title="Set callback">
             <wux-cell title="How embarrass" hover-class="none">
-                <wux-rater slot="footer" auto="{{ false }}" value="{{ 3.6 }}" star="囧" bind:change="onChange" />
+                <wux-rater slot="footer" controlled value="{{ value }}" star="囧" bind:change="onChange" />
             </wux-cell>
         </wux-cell-group>
-        <wux-cell-group title="Auto = false">
+        <wux-cell-group title="Controlled">
             <wux-cell title="Very good" hover-class="none">
-                <wux-rater slot="footer" auto="{{ false }}" value="{{ slider }}" star="屌" bind:change="sliderChange" />
+                <wux-rater slot="footer" controlled value="{{ slider }}" star="屌" bind:change="sliderChange" />
             </wux-cell>
             <wux-cell hover-class="none">
                 <slider value="{{ slider }}" show-value min="0" max="5" bindchange="sliderChange" />
@@ -150,8 +150,8 @@ Page({
 | max | <code>number</code> | 最大值 | 5 |
 | icon | <code>string</code> | 图标名称，优先级高于 star | - |
 | star | <code>string</code> | 图标 | ★ |
-| defaultValue | <code>number</code> | 默认值，当 auto 为 true 时才生效 | 0 |
-| value | <code>number</code> | 当前数，当 auto 为 false 时才生效 | 0 |
+| defaultValue | <code>number</code> | 默认值，当 controlled 为 false 时才生效 | 0 |
+| value | <code>number</code> | 当前数，当 controlled 为 true 时才生效 | 0 |
 | activeColor | <code>string</code> | 图标激活的颜色 | #ffc900 |
 | margin | <code>number</code> | 图标外边距 | 2 |
 | fontSize | <code>number</code> | 图标大小 | 25 |
@@ -159,5 +159,5 @@ Page({
 | allowHalf | <code>boolean</code> | 是否允许半选 | false |
 | allowClear | <code>boolean</code> | 是否允许再次点击后清除 | false |
 | allowTouchMove | <code>boolean</code> | 是否允许触摸移动选中 | false |
-| auto | <code>boolean</code> | 是否组件内部控制当前数 | true |
+| controlled | <code>boolean</code> | 是否受控 | false |
 | bind:change | <code>function</code> | 点击事件的回调函数 | - |
