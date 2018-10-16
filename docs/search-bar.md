@@ -29,7 +29,7 @@
         <view class="sub-title">Focus</view>
         <wux-search-bar focus />
         <view class="sub-title">Show cancel button</view>
-        <wux-search-bar show-cancel value="{{ value }}" auto="{{ false }}" placeholder="Search" bind:change="onChange" bind:focus="onFocus" bind:blur="onBlur" bind:confirm="onConfirm" bind:clear="onClear" bind:cancel="onCancel" />
+        <wux-search-bar show-cancel value="{{ value }}" controlled placeholder="Search" bind:change="onChange" bind:focus="onFocus" bind:blur="onBlur" bind:confirm="onConfirm" bind:clear="onClear" bind:cancel="onCancel" />
     </view>
 </view>
 ```
@@ -76,9 +76,9 @@ Page({
 
 | 参数 | 类型 | 描述 | 默认值 |
 | --- | --- | --- | --- |
-| defaultValue | <code>string</code> | 输入框的默认值，当 auto 为 true 时才生效 | - |
-| value | <code>string</code> | 输入框的当前值，当 auto 为 false 时才生效 | - |
-| auto | <code>boolean</code> | 是否组件内部控制当前值 | true |
+| defaultValue | <code>string</code> | 输入框的默认值，当 controlled 为 false 时才生效 | - |
+| value | <code>string</code> | 输入框的当前值，当 controlled 为 true 时才生效 | - |
+| controlled | <code>boolean</code> | 是否受控 | false |
 | placeholder | <code>string</code> | 输入框为空时占位符 | 搜索 |
 | maxlength | <code>number</code> | 最大输入长度，设置为 -1 的时候不限制最大长度 | 140 |
 | focus | <code>boolean</code> | 获取焦点 | false |
