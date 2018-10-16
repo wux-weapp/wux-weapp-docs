@@ -21,7 +21,7 @@
 
 ```html
 <wux-cascader visible="{{ visible1 }}" default-value="{{ value1 }}" title="所在地区" options="{{ options1 }}" bind:close="onClose1" bind:change="onChange1" />
-<wux-cascader visible="{{ visible2 }}" auto="{{ false }}" value="{{ value2 }}" title="所在地区" options="{{ options2 }}" bind:close="onClose2" bind:change="onChange2" bind:load="onLoadOptions" />
+<wux-cascader visible="{{ visible2 }}" controlled value="{{ value2 }}" title="所在地区" options="{{ options2 }}" bind:close="onClose2" bind:change="onChange2" bind:load="onLoadOptions" />
 
 <view class="page">
     <view class="page__hd">
@@ -47,9 +47,9 @@
 
 | 参数 | 类型 | 描述 | 默认值 |
 | --- | --- | --- | --- |
-| defaultValue | <code>array</code> | 默认值，当 auto 为 true 时才生效 | [] |
-| value | <code>array</code> | 当前值，当 auto 为 false 时才生效 | [] |
-| auto | <code>boolean</code> | 是否组件内部控制当前值 | true |
+| defaultValue | <code>array</code> | 默认值，当 controlled 为 false 时才生效 | [] |
+| value | <code>array</code> | 当前值，当 controlled 为 true 时才生效 | [] |
+| controlled | <code>boolean</code> | 是否受控 | false |
 | title | <code>string</code> | 标题的文字 | - |
 | options | <code>array</code> | 可选项数据源 | [] |
 | options[].value | <code>string</code> | 属性值 | - |
