@@ -50,7 +50,7 @@
             <wux-accordion title="Accordion 2">微信小程序自定义组件 https://github.com/wux-weapp/wux-weapp</wux-accordion>
             <wux-accordion title="Accordion 3">微信小程序自定义组件 https://github.com/wux-weapp/wux-weapp</wux-accordion>
         </wux-accordion-group>
-        <wux-accordion-group title="Auto = false" auto="{{ false }}" current="{{ current }}" bind:change="onChange">
+        <wux-accordion-group title="Controlled" controlled current="{{ current }}" bind:change="onChange">
             <wux-accordion title="Accordion 1" content="微信小程序自定义组件 https://github.com/wux-weapp/wux-weapp"></wux-accordion>
             <wux-accordion title="Accordion 2" content="微信小程序自定义组件 https://github.com/wux-weapp/wux-weapp"></wux-accordion>
             <wux-accordion title="Accordion 3" content="微信小程序自定义组件 https://github.com/wux-weapp/wux-weapp"></wux-accordion>
@@ -94,9 +94,9 @@ Page({
 
 | 参数 | 类型 | 描述 | 默认值 |
 | --- | --- | --- | --- |
-| defaultCurrent | <code>array</code> | 默认激活 tab 面板的 key，当 auto 为 true 时才生效 | - |
-| current | <code>array</code> | 用于手动激活 tab 面板的 key，当 auto 为 false 时才生效 | - |
-| auto | <code>boolean</code> | 是否自动控制激活 tab 面板 | true |
+| defaultCurrent | <code>array</code> | 默认激活 tab 面板的 key，当 controlled 为 false 时才生效 | - |
+| current | <code>array</code> | 用于手动激活 tab 面板的 key，当 controlled 为 true 时才生效 | - |
+| controlled | <code>boolean</code> | 是否受控 | false |
 | accordion | <code>boolean</code> | 是否手风琴模式 | false |
 | title | <code>string</code> | 标题 | - |
 | label | <code>string</code> | 描述 | - |
