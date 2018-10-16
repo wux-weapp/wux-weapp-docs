@@ -111,9 +111,9 @@
                 <view slot="content">Content</view>
             </wux-popover>
         </view>
-        <view class="sub-title">Auto = false</view>
+        <view class="sub-title">Controlled</view>
         <view class="button-sp-area">
-            <wux-popover visible="{{ visible }}" auto="{{ false }}" placement="top" title="Title" bind:change="onChange">
+            <wux-popover visible="{{ visible }}" controlled placement="top" title="Title" bind:change="onChange">
                 <view slot="content" bindtap="hide">Close</view>
                 <button size="mini">top</button>
             </wux-popover>
@@ -155,11 +155,11 @@ Page({
 | title | <code>string</code> | 提示标题 | - |
 | content | <code>string</code> | 提示内容 | - |
 | bodyStyle | <code>string</code> | 自定义样式 | - |
-| defaultVisible | <code>boolean</code> | 默认是否显隐，当 auto 为 true 时才生效 | false |
+| defaultVisible | <code>boolean</code> | 默认是否显隐，当 controlled 为 false 时才生效 | false |
 | placement | <code>string</code> | 气泡框位置，可选值为 top、left、right、bottom、topLeft、topRight、bottomLeft、bottomRight、leftTop、leftBottom、rightTop、rightBottom | top |
 | trigger | <code>string</code> | 触发行为，可选值为 click | click |
-| visible | <code>boolean</code> | 用于手动控制浮层显隐，当 auto 为 false 时才生效 | false |
-| auto | <code>boolean</code> | 是否自动控制浮层显隐 | true |
+| visible | <code>boolean</code> | 用于手动控制浮层显隐，当 controlled 为 true 时才生效 | false |
+| controlled | <code>boolean</code> | 是否自动控制浮层显隐 | false |
 | bind:change | <code>function</code> | 显示隐藏的回调函数 | - |
 
 ### Popover slot
