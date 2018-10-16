@@ -40,8 +40,8 @@
         <wux-segmented-control disabled values="{{ ['Segment1', 'Segment2'] }}" />
         <view class="sub-title">DefaultCurrent</view>
         <wux-segmented-control default-current="2" values="{{ ['Segment1', 'Segment2', 'Segment3'] }}" />
-        <view class="sub-title">Auto = false</view>
-        <wux-segmented-control current="{{ current }}" auto="{{ false }}" values="{{ ['Segment1', 'Segment2', 'Segment3'] }}" bind:change="onChange" />
+        <view class="sub-title">Controlled</view>
+        <wux-segmented-control current="{{ current }}" controlled values="{{ ['Segment1', 'Segment2', 'Segment3'] }}" bind:change="onChange" />
     </view>
 </view>
 ```
@@ -82,9 +82,9 @@ Page({
 | 参数 | 类型 | 描述 | 默认值 |
 | --- | --- | --- | --- |
 | theme | <code>string</code> | 主题色，可选值为 light、stable、positive、calm、assertive、balanced、energized、royal、dark | balanced |
-| defaultCurrent | <code>number</code> | 默认激活 tab 面板的 key，当 auto 为 true 时才生效 | 0 |
-| current | <code>number</code> | 用于手动激活 tab 面板的 key，当 auto 为 false 时才生效 | 0 |
-| auto | <code>boolean</code> | 是否自动控制激活 tab 面板 | true |
+| defaultCurrent | <code>number</code> | 默认激活 tab 面板的 key，当 controlled 为 false 时才生效 | 0 |
+| current | <code>number</code> | 用于手动激活 tab 面板的 key，当 controlled 为 true 时才生效 | 0 |
+| controlled | <code>boolean</code> | 是否受控 | false |
 | disabled | <code>boolean</code> | 是否禁用 | false |
 | values | <code>array</code> | 选项数组 | [] |
 | bind:change | <code>function</code> | 切换面板的回调函数 | - |
