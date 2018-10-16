@@ -26,25 +26,25 @@
         <view class="page__desc">滑动选择器</view>
     </view>
     <view class="page__bd page__bd_spacing">
-    	<view class="sub-title">Default</view>
-    	<wux-slider defaultValue="{{ [10] }}" />
-    	<view class="sub-title">Disabled</view>
-    	<wux-slider defaultValue="{{ [10] }}" disabled />
-    	<view class="sub-title">Show value</view>
-    	<wux-slider defaultValue="{{ [10] }}" showValue />
-    	<view class="sub-title">Step = 10</view>
-    	<wux-slider defaultValue="{{ [10] }}" showValue step="10" />
-    	<view class="sub-title">Show mark</view>
+        <view class="sub-title">Default</view>
+        <wux-slider defaultValue="{{ [10] }}" />
+        <view class="sub-title">Disabled</view>
+        <wux-slider defaultValue="{{ [10] }}" disabled />
+        <view class="sub-title">Show value</view>
+        <wux-slider defaultValue="{{ [10] }}" showValue />
+        <view class="sub-title">Step = 10</view>
+        <wux-slider defaultValue="{{ [10] }}" showValue step="10" />
+        <view class="sub-title">Show mark</view>
         <wux-slider defaultValue="{{ [100] }}" showMark step="25" markStyle="background-color: red" />
         <wux-slider defaultValue="{{ [100] }}" showMark step="25" markStyle="{{ ['background-color: red', 'background-color: yellow', 'background-color: blue'] }}" />
         <view class="sub-title">Min and max</view>
-    	<wux-slider defaultValue="{{ [12] }}" showValue step="11" min="0" max="88" />
-    	<view class="sub-title">Auto = false</view>
-    	<wux-slider value="{{ value }}" auto="{{ false }}" bind:change="onChange" bind:afterChange="afterChange" />
+        <wux-slider defaultValue="{{ [12] }}" showValue step="11" min="0" max="88" />
+        <view class="sub-title">Controlled</view>
+        <wux-slider value="{{ value }}" controlled bind:change="onChange" bind:afterChange="afterChange" />
         <view class="sub-title">Custom style</view>
         <wux-slider defaultValue="{{ [10] }}" railStyle="background-color: blue" trackStyle="background-color: red" handleStyle="background-color: yellow" />
         <wux-slider defaultValue="{{ [10, 30, 50] }}" railStyle="background-color: blue" trackStyle="{{ ['background-color: red', 'background-color: yellow'] }}" handleStyle="{{ ['background-color: yellow', 'background-color: red', 'background-color: blue'] }}" />
-    	<view class="sub-title">Range = 2</view>
+        <view class="sub-title">Range = 2</view>
         <wux-slider defaultValue="{{ [10, 30] }}" />
         <view class="sub-title">Range = 3</view>
         <wux-slider defaultValue="{{ [10, 30, 50] }}" />
@@ -81,9 +81,9 @@ Page({
 | min | <code>number</code> | 最小值 | 0 |
 | max | <code>number</code> | 最大值 | 100 |
 | step | <code>number</code> | 步长，取值必须大于 0，并且可被 (max - min) 整除 | 1 |
-| defaultValue | <code>array</code> | 默认值，当 auto 为 true 时才生效 | [0] |
-| value | <code>array</code> | 当前值，当 auto 为 false 时才生效 | [0] |
-| auto | <code>boolean</code> | 是否组件内部控制当前值 | true |
+| defaultValue | <code>array</code> | 默认值，当 controlled 为 false 时才生效 | [0] |
+| value | <code>array</code> | 当前值，当 controlled 为 true 时才生效 | [0] |
+| controlled | <code>boolean</code> | 是否受控 | false |
 | disabled | <code>boolean</code> | 是否禁用 | false |
 | showMark | <code>boolean</code> | 是否显示间断点，建议在 step 间隔不密集时使用 | false |
 | showValue | <code>boolean,object</code> | 是否显示最小、大值，参数支持对象格式如 `{ min: false, max: true }` | false |
