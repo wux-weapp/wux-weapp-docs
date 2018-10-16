@@ -130,8 +130,8 @@ Page({
 | buttons[].className | <code>string</code> | 按钮的类名 | - |
 | buttons[].label | <code>string</code> | 按钮的文字 | - |
 | buttons[].icon | <code>string</code> | 按钮的图标 | - |
-| defaultVisible | <code>boolean</code> | 默认是否显隐，当 auto 为 true 时才生效 | false |
-| visible | <code>boolean</code> | 用于手动控制浮层显隐，当 auto 为 false 时才生效 | false |
-| auto | <code>boolean</code> | 是否自动控制浮层显隐 | true |
+| defaultVisible | <code>boolean</code> | 默认是否显隐，当 controlled 为 false 时才生效 | false |
+| visible | <code>boolean</code> | 用于手动控制浮层显隐，当 controlled 为 true 时才生效 | false |
+| controlled | <code>boolean</code> | 是否受控 | false |
 | bind:click | <code>function</code> | 按钮点击事件 | - |
 | bind:change | <code>function</code> | 监听状态变化的回调函数 | - |
