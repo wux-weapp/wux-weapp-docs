@@ -91,7 +91,7 @@
         </wux-cell-group>
         <wux-cell-group title="设置 callback 回调函数，在调试窗口中输出">
             <wux-cell title="数量" hover-class="none">
-                <wux-input-number longpress disabled="{{ false }}" value="{{ value }}" auto="{{ false }}" min="{{ -10 }}" max="{{ 10 }}" bind:change="onChange" slot="footer" />
+                <wux-input-number longpress disabled="{{ false }}" value="{{ value }}" controlled min="{{ -10 }}" max="{{ 10 }}" bind:change="onChange" slot="footer" />
             </wux-cell>
         </wux-cell-group>
         <wux-cell-group title="自定义样式">
@@ -168,9 +168,9 @@ Page({
 | min | <code>number</code> | 最小值 | -Infinity |
 | max | <code>number</code> | 最大值 | Infinity |
 | step | <code>number</code> | 计数间隔 | 1 |
-| defaultValue | <code>number</code> | 默认值，当 auto 为 true 时才生效 | 0 |
-| value | <code>number</code> | 当前值，当 auto 为 false 时才生效 | 0 |
-| auto | <code>boolean</code> | 是否组件内部控制当前值 | true |
+| defaultValue | <code>number</code> | 默认值，当 controlled 为 false 时才生效 | 0 |
+| value | <code>number</code> | 当前值，当 controlled 为 true 时才生效 | 0 |
+| controlled | <code>boolean</code> | 是否受控 | false |
 | disabled | <code>boolean</code> | 是否禁用输入 | true |
 | longpress | <code>boolean</code> | 是否支持长按 | false |
 | color | <code>string</code> | 主题色，可选值为 light、stable、positive、calm、assertive、balanced、energized、royal、dark | balanced |
