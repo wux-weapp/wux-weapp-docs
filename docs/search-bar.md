@@ -25,11 +25,11 @@
     </view>
     <view class="page__bd">
         <view class="sub-title">Normal</view>
-        <wux-search-bar maxlength="8" />
+        <wux-search-bar clear maxlength="8" />
         <view class="sub-title">Focus</view>
-        <wux-search-bar focus />
+        <wux-search-bar clear focus />
         <view class="sub-title">Show cancel button</view>
-        <wux-search-bar show-cancel value="{{ value }}" controlled placeholder="Search" bind:change="onChange" bind:focus="onFocus" bind:blur="onBlur" bind:confirm="onConfirm" bind:clear="onClear" bind:cancel="onCancel" />
+        <wux-search-bar clear show-cancel value="{{ value }}" controlled placeholder="Search" bind:change="onChange" bind:focus="onFocus" bind:blur="onBlur" bind:confirm="onConfirm" bind:clear="onClear" bind:cancel="onCancel" />
     </view>
 </view>
 ```
@@ -79,10 +79,20 @@ Page({
 | defaultValue | <code>string</code> | 输入框的默认值，当 controlled 为 false 时才生效 | - |
 | value | <code>string</code> | 输入框的当前值，当 controlled 为 true 时才生效 | - |
 | controlled | <code>boolean</code> | 是否受控 | false |
-| placeholder | <code>string</code> | 输入框为空时占位符 | 搜索 |
-| maxlength | <code>number</code> | 最大输入长度，设置为 -1 的时候不限制最大长度 | 140 |
-| focus | <code>boolean</code> | 获取焦点 | false |
+| placeholder | <code>string</code> | 输入框为空时占位符 | - |
+| placeholder-style | <code>string</code> | 指定 placeholder 的样式 | - |
+| placeholder-class | <code>string</code> | 指定 placeholder 的样式类 | input-placeholder |
 | disabled | <code>boolean</code> | 是否禁用 | false |
+| maxlength | <code>number</code> | 最大输入长度，设置为 -1 的时候不限制最大长度 | 140 |
+| cursor-spacing | <code>number</code> | 指定光标与键盘的距离，单位 px | 11 |
+| focus | <code>boolean</code> | 获取焦点 | false |
+| confirm-type | <code>string</code> | 设置键盘右下角按钮的文字，仅在type='text'时生效 | search |
+| confirm-hold | <code>boolean</code> | 点击键盘右下角按钮时是否保持键盘不收起 | false |
+| cursor | <code>number</code> | 指定focus时的光标位置 | -1 |
+| selection-start | <code>number</code> | 光标起始位置，自动聚集时有效，需与selection-end搭配使用 | -1 |
+| selection-end | <code>number</code> | 光标结束位置，自动聚集时有效，需与selection-start搭配使用 | -1 |
+| adjust-position | <code>boolean</code> | 键盘弹起时，是否自动上推页面 | true |
+| clear | <code>boolean</code> | 是否显示清除图标，当 disabled 为 false 时才生效 | false |
 | cancelText | <code>string</code> | 自定义取消按钮的文字 | 取消 |
 | showCancel | <code>boolean</code> | 是否一直显示取消按钮 | false |
 | bind:change | <code>function</code> | 键盘输入时触发 | - |
