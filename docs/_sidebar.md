@@ -20,6 +20,7 @@
   * [Calendar 日历](calendar.md)
   * [Cascader 级联选择器](cascader.md)
   * [Checkbox 复选框](checkbox.md)
+  * [Input 文本输入框](input.md)
   * [InputNumber 数字输入框](input-number.md)
   * [Radio 单选框](radio.md)
   * [Rater 评分](rater.md)
