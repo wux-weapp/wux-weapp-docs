@@ -65,11 +65,13 @@ Page({
                 '其他',
             ],
             onConfirm: (value, index, options) => {
-                console.log(value, index, options)
-                this.setData({
-                    value1: value,
-                    title1: options[index],
-                })
+                console.log('onConfirm', value, index, options)
+                if (index !== -1) {
+                    this.setData({
+                        value1: value,
+                        title1: options[index],
+                    })
+                }
             },
         })
     },
@@ -114,11 +116,13 @@ Page({
                 },
             ],
             onConfirm: (value, index, options) => {
-                console.log(value, index, options)
-                this.setData({
-                    value2: value,
-                    title2: options[index].title,
-                })
+                console.log('onConfirm', value, index, options)
+                if (index !== -1) {
+                    this.setData({
+                        value2: value,
+                        title2: options[index].title,
+                    })
+                }
             },
         })
     },
@@ -155,8 +159,15 @@ Page({
                     value: '6',
                 },
             ],
+            onChange: (value, index, options) => {
+                console.log('onChange', value, index, options)
+                this.setData({
+                    value3: value,
+                    title3: index.map((n) => options[n].title),
+                })
+            },
             onConfirm: (value, index, options) => {
-                console.log(value, index, options)
+                console.log('onConfirm', value, index, options)
                 this.setData({
                     value3: value,
                     title3: index.map((n) => options[n].title),
@@ -183,6 +194,7 @@ Page({
 | options.toolbar.title | <code>string</code> | 标题的文字 | 请选择 |
 | options.toolbar.cancelText | <code>string</code> | 取消按钮的文字 | 取消 |
 | options.toolbar.confirmText | <code>string</code> | 确定按钮的文字 | 确定 |
+| options.onChange | <code>function</code> | 选择完成后的回调函数 | - |
 | options.onConfirm | <code>function</code> | 点击确定按钮时的回调函数 | - |
 | options.onCancel | <code>function</code> | 点击取消按钮时的回调函数 | - |
 
