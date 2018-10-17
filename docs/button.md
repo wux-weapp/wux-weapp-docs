@@ -128,10 +128,15 @@
 | sendMessagePath | <code>string</code> | 会话内消息卡片点击跳转小程序路径 | 当前分享路径 |
 | sendMessageImg | <code>string</code> | 会话内消息卡片图片 | 截图 |
 | showMessageCard | <code>boolean</code> | 显示会话内消息卡片 | false |
+| appParameter | <code>string</code> | 打开 APP 时，向 APP 传递的参数 | - |
 | bind:click | <code>function</code> | 点击事件 | - |
 | bind:getuserinfo | <code>function</code> | 用户点击该按钮时，会返回获取到的用户信息，回调的detail数据与wx.getUserInfo返回的一致 | - |
 | bind:contact | <code>function</code> | 客服消息回调 | - |
 | bind:getphonenumber | <code>function</code> | 获取用户手机号回调 | - |
+| bind:error | <code>function</code> | 当使用开放能力时，发生错误的回调 | - |
+| bind:opensetting | <code>function</code> | 在打开授权设置页后回调 | - |
+
+> Button 参数请参考微信官方的表单组件 [Button](https://developers.weixin.qq.com/miniprogram/dev/component/button.html)。
 
 ### Button slot
 
