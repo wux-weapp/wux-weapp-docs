@@ -102,7 +102,7 @@ Page({
 | title | <code>string</code> | 标题 | - |
 | content | <code>string</code> | 内容 | - |
 | extra | <code>string</code> | 底部内容 | - |
-| position | <code>string</code> | 弹出层位置信息，可选值为 center、bottom | center |
+| position | <code>string</code> | 弹出层位置信息，可选值为 center、top、right、bottom、left | center |
 | wrapStyle | <code>string</code> | 自定义 wrap 样式 | - |
 | closable | <code>boolean</code> | 是否显示关闭按钮 | false |
 | mask | <code>boolean</code> | 是否显示蒙层 | true |
