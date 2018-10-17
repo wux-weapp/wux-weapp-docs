@@ -80,6 +80,8 @@ Page({
 | bind:getuserinfo | <code>function</code> | 用户点击该按钮时，会返回获取到的用户信息，回调的detail数据与wx.getUserInfo返回的一致 | - |
 | bind:contact | <code>function</code> | 客服消息回调 | - |
 | bind:getphonenumber | <code>function</code> | 获取用户手机号回调 | - |
+| bind:error | <code>function</code> | 当使用开放能力时，发生错误的回调 | - |
+| bind:opensetting | <code>function</code> | 在打开授权设置页后回调 | - |
 
 > 按钮列表：buttons 参数请参考 [Button](button.md)。
 
