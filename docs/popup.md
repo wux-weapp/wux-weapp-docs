@@ -108,5 +108,6 @@ Page({
 | mask | <code>boolean</code> | 是否显示蒙层 | true |
 | maskClosable | <code>boolean</code> | 点击蒙层是否允许关闭 | true |
 | visible | <code>boolean</code> | 是否可见 | false |
+| zIndex | <code>number</code> | 设置蒙层的 z-index | 1000 |
 | bind:close | <code>function</code> | 点击关闭按钮或蒙层的回调函数 | - |
 | bind:closed | <code>function</code> | 关闭后的回调函数 | - |
