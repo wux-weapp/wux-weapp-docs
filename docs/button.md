@@ -136,7 +136,7 @@
 | bind:error | <code>function</code> | 当使用开放能力时，发生错误的回调 | - |
 | bind:opensetting | <code>function</code> | 在打开授权设置页后回调 | - |
 
-> Button 参数请参考微信官方的表单组件 [Button](https://developers.weixin.qq.com/miniprogram/dev/component/button.html)。
+> 更多参数说明请参考微信官方的表单组件 [Button](https://developers.weixin.qq.com/miniprogram/dev/component/button.html)。
 
 ### Button slot
 
