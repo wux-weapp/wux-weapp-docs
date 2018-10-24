@@ -191,6 +191,7 @@ Page({
 | options.closable | <code>boolean</code> | 是否显示关闭按钮 | false |
 | options.mask | <code>boolean</code> | 是否显示蒙层 | true |
 | options.maskClosable | <code>boolean</code> | 点击蒙层是否允许关闭 | true |
+| options.zIndex | <code>number</code> | 设置蒙层的 z-index | 1000 |
 | options.buttons | <code>array</code> | 按钮 | [] |
 | options.buttons[].text | <code>string</code> | 按钮的文本 | - |
 | options.buttons[].type | <code>string</code> | 按钮的类型，可选值为 default、primary | - |
