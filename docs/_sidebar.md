@@ -28,6 +28,7 @@
   * [Select 下拉框](select.md)
   * [Slider 滑动选择器](slider.md)
   * [Switch 滑动开关](switch.md)
+  * [Textarea 多行输入框](textarea.md)
   * [Upload 上传](upload.md)
 
 * 数据展示
