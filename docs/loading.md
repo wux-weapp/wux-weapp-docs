@@ -63,6 +63,7 @@ Page({
 | --- | --- | --- | --- |
 | options | <code>object</code> | 配置项 | - |
 | options.text | <code>string</code> | 提示文本 | 数据加载中 |
+| options.mask | <code>boolean</code> | 是否显示蒙层 | true |
 
 ### Loading.method
 
