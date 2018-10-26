@@ -54,6 +54,13 @@ Page({
             text: '已完成',
             success: () => console.log('已完成')
         })
+
+        // The same as above
+        // $wuxToast().success('已完成', {
+        //     duration: 1500,
+        //     color: '#fff',
+        //     success: () => console.log('已完成')
+        // })
     },
     showToastCancel() {
         $wuxToast().show({
@@ -63,6 +70,13 @@ Page({
             text: '取消操作',
             success: () => console.log('取消操作')
         })
+
+        // The same as above
+        // $wuxToast().error('取消操作', {
+        //     duration: 1500,
+        //     color: '#fff',
+        //     success: () => console.log('取消操作')
+        // })
     },
     showToastErr() {
         $wuxToast().show({
@@ -72,6 +86,13 @@ Page({
             text: '禁止操作',
             success: () => console.log('禁止操作')
         })
+
+        // The same as above
+        // $wuxToast().warning('禁止操作', {
+        //     duration: 1500,
+        //     color: '#fff',
+        //     success: () => console.log('禁止操作')
+        // })
     },
     showToastText() {
         $wuxToast().show({
@@ -81,6 +102,13 @@ Page({
             text: '文本提示',
             success: () => console.log('文本提示')
         })
+
+        // The same as above
+        // $wuxToast().info('文本提示', {
+        //     duration: 1500,
+        //     color: '#fff',
+        //     success: () => console.log('文本提示')
+        // })
     },
     showToastIcon() {
         $wuxToast().show({
@@ -132,14 +160,20 @@ Page({
 | options.color | <code>string</code> | 图标颜色 | #fff |
 | options.text | <code>string</code> | 提示文本 | - |
 | options.icon | <code>string</code> | 图标名称 | - |
+| options.mask | <code>boolean</code> | 是否显示蒙层 | true |
 | options.success | <code>function</code> | 关闭后的回调函数 | - |
 
 ### Toast.method
 
-- Toast.show
-- Toast.hide
+#### 静态方法
 
-> Toast.show 函数调用后，会返回一个引用，可以通过该引用手动关闭组件
+- Toast.show
+- Toast.success
+- Toast.warning
+- Toast.error
+- Toast.info
+
+> 以上函数支持参数 Toast(text: string, options: object) 或 Toast(options: object)，调用后会返回一个引用，可以通过该引用手动关闭组件
 
 ```
 const hide = Toast.show()
@@ -149,3 +183,7 @@ hide()
 hide.then(callback)
 hide.promise.then(callback)
 ```
+
+#### 销毁方法
+
+- Toast.hide
