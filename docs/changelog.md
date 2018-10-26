@@ -1,3 +1,24 @@
+# v 3.2.0 (2018-10-26)
+
+- 增加组件：Cascader - 级联选择器
+- 增加组件：Slider - 滑动选择器
+- 增加组件：Input - 文本输入框
+- 增加组件：Timeline - 时间轴
+- 更新组件：AnimationGroup - 动画组 新增 wrapStyle 属性
+- 更新组件：Backdrop - 背景幕 新增 zIndex 属性
+- 更新组件：Popup - 弹出框 新增更多弹出层位置，新增 zIndex 属性
+- 更新组件：Dialog - 对话框 新增 zIndex 属性
+- 更新组件：List - 列表 基于 button 组件封装，新增支持微信开放能力，具体使用方法请参考对应文档
+- 更新组件：FloatingButton - 浮动按钮 基于 button 组件封装，新增支持微信开放能力，具体使用方法请参考对应文档
+- 更新组件：SearchBar - 搜索栏 优化代码，新增更多属性，具体使用方法请参考对应文档
+- 更新组件：Button - 按钮 新增 appParameter 等属性
+- 更新组件：Result - 结果页 buttons 属性更新
+- 更新组件：Select - 下拉框 基于 Popup 封装，新增按钮的点击状态，新增 onChange 属性
+- 更新组件：Calendar - 日历 基于 Popup 封装，修复已知手势滑动错位的问题
+- 更新组件：Toast - 提示框 新增 mask 属性，暴露更多静态方法，如 success、warning、error、info 等，具体使用方法请参考对应文档
+- 更新组件：Loading - 指示器 新增 mask 属性
+- 更新组件：Accordion、FloatingButton、InputNumber、Popover、Rater、SearchBar、SegmentedControl、Tabbar、Tabs 移除 auto 属性，新增 controlled 属性，升级注意 `<wux-component auto="{{ false }}" />` 需改为 `<wux-component controlled />`
+
 # v 3.1.0 (2018-09-14)
 
 - 增加组件：Alert - 警告框
