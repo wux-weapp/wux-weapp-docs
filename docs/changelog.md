@@ -3,6 +3,7 @@
 - 增加组件：Cascader - 级联选择器
 - 增加组件：Slider - 滑动选择器
 - 增加组件：Input - 文本输入框
+- 增加组件：Textarea - 多行输入框
 - 增加组件：Timeline - 时间轴
 - 更新组件：AnimationGroup - 动画组 新增 wrapStyle 属性
 - 更新组件：Backdrop - 背景幕 新增 zIndex 属性
