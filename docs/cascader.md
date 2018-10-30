@@ -37,6 +37,123 @@
 </view>
 ```
 
+```js
+import data from './data'
+
+Page({
+    data: {
+        options1: data,
+        value1: [],
+        options2: [
+            {
+                value: 'beijing',
+                label: '北京',
+                isLeaf: false,
+            },
+            {
+                value: 'hangzhou',
+                label: '杭州',
+                isLeaf: false,
+            },
+        ],
+        value2: [],
+    },
+    onOpen1() {
+        this.setData({ visible1: true })
+    },
+    onClose1() {
+        this.setData({ visible1: false })
+    },
+    onChange1(e) {
+        this.setData({ title1: e.detail.options.map((n) => n.label).join('/') })
+        console.log('onChange1', e.detail)
+    },
+    onOpen2() {
+        this.setData({ visible2: true })
+    },
+    onClose2() {
+        this.setData({ visible2: false })
+    },
+    onChange2(e) {
+        console.log('onChange2', e.detail)
+        this.setData({ value2: e.detail.value, title2: e.detail.done && e.detail.options.map((n) => n.label).join('/') })
+    },
+    onLoadOptions(e) {
+        console.log('onLoadOptions', e.detail)
+        const { value } = e.detail
+        const options2 = [...this.data.options2]
+
+        wx.showLoading({ mask: true })
+
+        setTimeout(() => {
+            if (value[value.length - 1] === 'beijing') {
+                options2.forEach((n) => {
+                    if (n.value === 'beijing') {
+                        n.children = [
+                            {
+                                value: 'baidu',
+                                label: '百度'
+                            },
+                            {
+                                value: 'sina',
+                                label: '新浪'
+                            },
+                        ]
+                    }
+                })
+            } else if (value[value.length - 1] === 'hangzhou') {
+                options2.forEach((n) => {
+                    if (n.value === 'hangzhou') {
+                        n.children = [
+                            {
+                                value: 'ali',
+                                label: '阿里巴巴'
+                            },
+                            {
+                                value: '163',
+                                label: '网易'
+                            },
+                        ]
+                    }
+                })
+            }
+
+            wx.hideLoading()
+
+            this.setData({ value2: value, options2 })
+        }, 1000)
+    },
+})
+```
+
+```js
+// 简单的数据格式如下
+
+[{
+    'label': '北京',
+    'value': '110000',
+    'children': [{
+        'label': '北京市',
+        'value': '110000',
+        'children': [{
+            'label': '东城区',
+            'value': '110101',
+        }],
+    }],
+}, {
+    'label': '上海',
+    'value': '310000',
+    'children': [{
+        'label': '上海市',
+        'value': '310000',
+        'children': [{
+            'label': '黄浦区',
+            'value': '310101',
+        }]
+    }],
+}]
+```
+
 ## 视频演示
 
 [Cascader](./_media/cascader.mp4 ':include :type=iframe width=375px height=667px')
@@ -54,9 +171,11 @@
 | options | <code>array</code> | 可选项数据源 | [] |
 | options[].value | <code>string</code> | 属性值 | - |
 | options[].label | <code>string</code> | 描述 | - |
-| options[].isLeaf | <code>boolean</code> | 是否支持异步加载 | false |
+| options[].children | <code>array</code> | 子选项 | [] |
+| options[].disabled | <code>boolean</code> | 是否禁用 | false |
+| options[].isLeaf | <code>boolean</code> | 是否叶子节点，用于动态加载选项 | false |
 | chooseTitle | <code>string</code> | 选择的标题文字 | 请选择 |
 | visible | <code>boolean</code> | 是否显示组件 | false |
 | bind:change | <code>function</code> | 选择完成后的回调函数 | - |
 | bind:close | <code>function</code> | 隐藏浮层的回调函数 | - |
-| bind:load | <code>function</code> | 异步加载选项的回调函数 | - |
+| bind:load | <code>function</code> | 动态加载选项的回调函数 | - |
