@@ -121,6 +121,7 @@ Page({
             inputText: '输入数字密码',
             showCancel: true,
             disorder: false,
+            maxlength: 4,
             callback(value) {
                 console.log(`输入的密码是：${value}`)
 
@@ -135,14 +136,20 @@ Page({
         })
     },
     openTimed() {
+        clearTimeout(this.timeout)
+
         const hide = $wuxKeyBoard().show({
-            callback(value) {
+            password: false,
+            maxlength: -1,
+            onChange(value) {
                 console.log(`输入的密码是：${value}`)
-                return true
+            },
+            onClose(value) {
+                return false
             },
         })
 
-        setTimeout(hide, 3000)
+        this.timeout = setTimeout(hide, 3000)
     },
 })
 ```
@@ -162,4 +169,8 @@ Page({
 | options.inputText | <code>string</code> | 提示文本 | 输入数字密码 |
 | options.showCancel | <code>boolean</code> | 是否显示取消按钮 | true |
 | options.disorder | <code>boolean</code> | 是否打乱键盘 | false |
+| options.password | <code>boolean</code> | 是否密码类型 | true |
+| options.maxlength | <code>number,string</code> | 最大输入长度，设置为 -1 的时候不限制最大长度 | 6 |
+| options.onChange | <code>function</code> | change 事件触发的回调函数 | - |
 | options.callback | <code>function</code> | 输入完成后的回调函数 | - |
+| options.onClose | <code>function</code> | 输入完成后的回调函数，优先级高于 callback | - |
