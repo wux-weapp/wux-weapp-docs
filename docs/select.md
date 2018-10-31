@@ -190,6 +190,7 @@ Page({
 | options.value | <code>any</code> | 指定当前选中的条目 | - |
 | options.options | <code>array</code> | 下拉列表 | [] |
 | options.multiple | <code>boolean</code> | 是否支持多选 | false |
+| options.max | <code>number,stirng</code> | 最多选择几项，设置为 -1 的时候不限制选择 | -1 |
 | options.toolbar | <code>any</code> | 工具栏配置项 | {} |
 | options.toolbar.title | <code>string</code> | 标题的文字 | 请选择 |
 | options.toolbar.cancelText | <code>string</code> | 取消按钮的文字 | 取消 |
