@@ -176,6 +176,7 @@ Page({
 | options[].isLeaf | <code>boolean</code> | 是否叶子节点，用于动态加载选项 | false |
 | chooseTitle | <code>string</code> | 选择的标题文字 | 请选择 |
 | visible | <code>boolean</code> | 是否显示组件 | false |
+| defaultFieldNames | <code>object</code> | 自定义 options 中的 value、label、children 字段 | { label: 'label', value: 'value', children: 'children' } |
 | bind:change | <code>function</code> | 选择完成后的回调函数 | - |
 | bind:close | <code>function</code> | 隐藏浮层的回调函数 | - |
 | bind:load | <code>function</code> | 动态加载选项的回调函数 | - |
