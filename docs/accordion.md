@@ -110,7 +110,8 @@ Page({
 | thumb | <code>string</code> | 左侧缩略图 | - |
 | title | <code>string</code> | 左侧标题 | - |
 | content | <code>string</code> | 面板内容 | - |
-| disabled | <code>boolean</code> | 是否禁用 | - |
+| disabled | <code>boolean</code> | 是否禁用 | false |
+| showArrow | <code>boolean</code> | 是否显示箭头图标 | true |
 
 ### Accordion slot
 
