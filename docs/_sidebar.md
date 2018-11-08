@@ -4,6 +4,8 @@
 
 * [内置样式](utility.md)
 
+* [受控组件](controlled.md)
+
 * 核心组件
 
   * [AnimationGroup 动画组](animation-group.md)
