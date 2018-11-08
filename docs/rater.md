@@ -159,5 +159,5 @@ Page({
 | allowHalf | <code>boolean</code> | 是否允许半选 | false |
 | allowClear | <code>boolean</code> | 是否允许再次点击后清除 | false |
 | allowTouchMove | <code>boolean</code> | 是否允许触摸移动选中 | false |
-| controlled | <code>boolean</code> | 是否受控 | false |
+| controlled | <code>boolean</code> | 是否受控 [说明文档](controlled.md) | false |
 | bind:change | <code>function</code> | 点击事件的回调函数 | - |

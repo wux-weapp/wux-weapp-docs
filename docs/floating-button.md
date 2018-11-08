@@ -141,7 +141,7 @@ Page({
 | backdrop | <code>boolean</code> | 是否显示透明蒙层 | false |
 | defaultVisible | <code>boolean</code> | 默认是否显隐，当 controlled 为 false 时才生效 | false |
 | visible | <code>boolean</code> | 用于手动控制浮层显隐，当 controlled 为 true 时才生效 | false |
-| controlled | <code>boolean</code> | 是否受控 | false |
+| controlled | <code>boolean</code> | 是否受控 [说明文档](controlled.md) | false |
 | buttons | <code>array</code> | 按钮 | [] |
 | buttons[].className | <code>string</code> | 按钮的类名 | - |
 | buttons[].label | <code>string</code> | 按钮的文字 | - |

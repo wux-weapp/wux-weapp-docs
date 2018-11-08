@@ -96,7 +96,7 @@ Page({
 | --- | --- | --- | --- |
 | defaultCurrent | <code>array</code> | 默认激活 tab 面板的 key，当 controlled 为 false 时才生效 | - |
 | current | <code>array</code> | 用于手动激活 tab 面板的 key，当 controlled 为 true 时才生效 | - |
-| controlled | <code>boolean</code> | 是否受控 | false |
+| controlled | <code>boolean</code> | 是否受控 [说明文档](controlled.md) | false |
 | accordion | <code>boolean</code> | 是否手风琴模式 | false |
 | title | <code>string</code> | 标题 | - |
 | label | <code>string</code> | 描述 | - |

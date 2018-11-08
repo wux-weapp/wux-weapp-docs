@@ -166,7 +166,7 @@ Page({
 | --- | --- | --- | --- |
 | defaultValue | <code>array</code> | 默认值，当 controlled 为 false 时才生效 | [] |
 | value | <code>array</code> | 当前值，当 controlled 为 true 时才生效 | [] |
-| controlled | <code>boolean</code> | 是否受控 | false |
+| controlled | <code>boolean</code> | 是否受控 [说明文档](controlled.md) | false |
 | title | <code>string</code> | 标题的文字 | - |
 | options | <code>array</code> | 可选项数据源 | [] |
 | options[].value | <code>string</code> | 属性值 | - |

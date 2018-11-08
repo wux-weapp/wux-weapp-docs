@@ -159,7 +159,7 @@ Page({
 | placement | <code>string</code> | 气泡框位置，可选值为 top、left、right、bottom、topLeft、topRight、bottomLeft、bottomRight、leftTop、leftBottom、rightTop、rightBottom | top |
 | trigger | <code>string</code> | 触发行为，可选值为 click | click |
 | visible | <code>boolean</code> | 用于手动控制浮层显隐，当 controlled 为 true 时才生效 | false |
-| controlled | <code>boolean</code> | 是否受控 | false |
+| controlled | <code>boolean</code> | 是否受控 [说明文档](controlled.md) | false |
 | bind:change | <code>function</code> | 显示隐藏的回调函数 | - |
 
 ### Popover slot

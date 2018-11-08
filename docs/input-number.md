@@ -170,7 +170,7 @@ Page({
 | step | <code>number</code> | 计数间隔 | 1 |
 | defaultValue | <code>number</code> | 默认值，当 controlled 为 false 时才生效 | 0 |
 | value | <code>number</code> | 当前值，当 controlled 为 true 时才生效 | 0 |
-| controlled | <code>boolean</code> | 是否受控 | false |
+| controlled | <code>boolean</code> | 是否受控 [说明文档](controlled.md) | false |
 | disabled | <code>boolean</code> | 是否禁用输入 | true |
 | longpress | <code>boolean</code> | 是否支持长按 | false |
 | color | <code>string</code> | 主题色，可选值为 light、stable、positive、calm、assertive、balanced、energized、royal、dark | balanced |

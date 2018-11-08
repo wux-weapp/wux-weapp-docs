@@ -161,7 +161,7 @@ Page({
 | extra | <code>string</code> | 右侧内容 | - |
 | defaultValue | <code>string</code> | 默认值，当 controlled 为 false 时才生效 | - |
 | value | <code>string</code> | 当前值，当 controlled 为 true 时才生效 | - |
-| controlled | <code>boolean</code> | 是否受控 | false |
+| controlled | <code>boolean</code> | 是否受控 [说明文档](controlled.md) | false |
 | placeholder | <code>string</code> | 输入框为空时占位符 | - |
 | placeholder-style | <code>string</code> | 指定 placeholder 的样式 | - |
 | placeholder-class | <code>string</code> | 指定 placeholder 的样式类 | input-placeholder |

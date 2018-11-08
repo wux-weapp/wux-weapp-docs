@@ -83,7 +83,7 @@ Page({
 | step | <code>number</code> | 步长，取值必须大于 0，并且可被 (max - min) 整除 | 1 |
 | defaultValue | <code>array</code> | 默认值，当 controlled 为 false 时才生效 | [0] |
 | value | <code>array</code> | 当前值，当 controlled 为 true 时才生效 | [0] |
-| controlled | <code>boolean</code> | 是否受控 | false |
+| controlled | <code>boolean</code> | 是否受控 [说明文档](controlled.md) | false |
 | disabled | <code>boolean</code> | 是否禁用 | false |
 | showMark | <code>boolean</code> | 是否显示间断点，建议在 step 间隔不密集时使用 | false |
 | showValue | <code>boolean,object</code> | 是否显示最小、大值，参数支持对象格式如 `{ min: false, max: true }` | false |

@@ -116,7 +116,7 @@ Page({
 | value | <code>string</code> | 字段值 | - |
 | defaultChecked | <code>boolean</code> | 默认是否选中，当 controlled 为 false 时才生效 | false |
 | checked | <code>boolean</code> | 当前是否选中，当 controlled 为 true 时才生效 | false |
-| controlled | <code>boolean</code> | 是否受控 | false |
+| controlled | <code>boolean</code> | 是否受控 [说明文档](controlled.md) | false |
 | disabled | <code>boolean</code> | 是否禁用 | false |
 | color | <code>string</code> | 主题色，可选值为 light、stable、positive、calm、assertive、balanced、energized、royal、dark  | balanced |
 | wrapStyle | <code>string</code> | 自定义样式 | - |

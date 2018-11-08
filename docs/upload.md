@@ -153,7 +153,7 @@ Page({
 | listType | <code>string</code> | 上传列表的内建样式，可选值为 text、picture-card | text |
 | defaultFileList | <code>array</code> | 默认已经上传的文件列表，当 controlled 为 false 时才生效 | [] |
 | fileList | <code>array</code> | 已经上传的文件列表，当 controlled 为 true 时才生效 | [] |
-| controlled | <code>boolean</code> | 是否受控 | false |
+| controlled | <code>boolean</code> | 是否受控 [说明文档](controlled.md) | false |
 | showUploadList | <code>boolean</code> | 是否展示上传文件列表 | true |
 | showRemoveIcon | <code>boolean</code> | 是否展示删除图标 | true |
 | bind:before | <code>function</code> | 上传文件之前的回调函数 | - |
