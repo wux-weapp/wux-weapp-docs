@@ -32,23 +32,23 @@
         <wux-upload disabled url="https://www.skyvow.cn/api/common/file" bind:change="onChange" bind:success="onSuccess" bind:fail="onFail" bind:complete="onComplete">
             <button disabled type="default">Click to Upload</button>
         </wux-upload>
-        <view class="sub-title">Picture card</view>
-        <wux-upload list-type="picture-card" file-list="{{ fileList }}" url="https://www.skyvow.cn/api/common/file" bind:change="onChange" bind:success="onSuccess" bind:fail="onFail" bind:complete="onComplete" bind:preview="onPreview">
+        <view class="sub-title">Picture card & max = 4</view>
+        <wux-upload listType="picture-card" defaultFileList="{{ fileList }}" max="4" url="https://www.skyvow.cn/api/common/file" bind:change="onChange" bind:success="onSuccess" bind:fail="onFail" bind:complete="onComplete" bind:preview="onPreview">
             <text>Upload</text>
         </wux-upload>
         <view class="sub-title">ShowUploadList = false</view>
-        <wux-upload list-type="picture-card" show-upload-list="{{ false }}" url="https://www.skyvow.cn/api/common/file" bind:change="onChange" bind:success="onSuccess" bind:fail="onFail" bind:complete="onComplete" bind:preview="onPreview">
+        <wux-upload listType="picture-card" showUploadList="{{ false }}" url="https://www.skyvow.cn/api/common/file" bind:change="onChange" bind:success="onSuccess" bind:fail="onFail" bind:complete="onComplete" bind:preview="onPreview">
             <image src="{{ imageUrl }}" wx:if="{{ imageUrl }}" />
             <text wx:else>Upload</text>
         </wux-upload>
         <view class="sub-title">Progress = true</view>
         <progress percent="{{ progress }}" show-info />
-        <wux-upload progress list-type="picture-card" show-upload-list="{{ false }}" url="https://www.skyvow.cn/api/common/file" bind:change="onChange" bind:success="onSuccess" bind:fail="onFail" bind:complete="onComplete" bind:progress="onProgress" bind:preview="onPreview">
+        <wux-upload progress listType="picture-card" showUploadList="{{ false }}" url="https://www.skyvow.cn/api/common/file" bind:change="onChange" bind:success="onSuccess" bind:fail="onFail" bind:complete="onComplete" bind:progress="onProgress" bind:preview="onPreview">
             <image src="{{ imageUrl }}" wx:if="{{ imageUrl }}" />
             <text wx:else>Upload</text>
         </wux-upload>
         <view class="sub-title">Remove</view>
-        <wux-upload list-type="picture-card" file-list="{{ fileList }}" url="https://www.skyvow.cn/api/common/file" bind:change="onChange" bind:success="onSuccess" bind:fail="onFail" bind:complete="onComplete" bind:preview="onRemove">
+        <wux-upload listType="picture-card" fileList="{{ fileList }}" controlled url="https://www.skyvow.cn/api/common/file" bind:change="onChange" bind:success="onSuccess" bind:fail="onFail" bind:complete="onComplete" bind:preview="onPreview" bind:remove="onRemove">
             <text>Upload</text>
         </wux-upload>
     </view>
@@ -139,7 +139,8 @@ Page({
 
 | 参数 | 类型 | 描述 | 默认值 |
 | --- | --- | --- | --- |
-| count | <code>number</code> | 最多可以选择的图片张数 | 9 |
+| max | <code>number</code> | 最大图片张数，设置为 -1 的时候不限制张数 | -1 |
+| count | <code>number</code> | 从相册选图时，最多可以选择的图片张数 | 9 |
 | sizeType | <code>array</code> | original 原图，compressed 压缩图 | ['original', 'compressed'] |
 | sourceType | <code>array</code> | album 从相册选图，camera 使用相机 | ['album', 'camera'] |
 | url | <code>string</code> | 上传地址 | - |
@@ -150,7 +151,9 @@ Page({
 | disabled | <code>boolean</code> | 是否禁用 | false |
 | progress | <code>boolean</code> | 是否监听上传进度变化 | false |
 | listType | <code>string</code> | 上传列表的内建样式，可选值为 text、picture-card | text |
-| fileList | <code>array</code> | 已经上传的文件列表 | [] |
+| defaultFileList | <code>array</code> | 默认已经上传的文件列表，当 controlled 为 false 时才生效 | [] |
+| fileList | <code>array</code> | 已经上传的文件列表，当 controlled 为 true 时才生效 | [] |
+| controlled | <code>boolean</code> | 是否受控 | false |
 | showUploadList | <code>boolean</code> | 是否展示上传文件列表 | true |
 | showRemoveIcon | <code>boolean</code> | 是否展示删除图标 | true |
 | bind:before | <code>function</code> | 上传文件之前的回调函数 | - |
