@@ -26,6 +26,7 @@
   * [Rater 评分](rater.md)
   * [SearchBar 搜索栏](search-bar.md)
   * [Select 下拉框](select.md)
+  * [Selectable 选框组](selectable.md)
   * [Slider 滑动选择器](slider.md)
   * [Switch 滑动开关](switch.md)
   * [Textarea 多行输入框](textarea.md)
