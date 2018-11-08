@@ -1,3 +1,15 @@
+# v 3.3.0 (2018-11-08)
+
+- 增加组件：Utility - 工具类 [内置样式](utility.md)
+- 增加组件：Selectable - 选框组
+- 更新组件：Accordion - 手风琴 新增 showArrow 属性，fix accordion bindtap [#129](https://github.com/wux-weapp/wux-weapp/pull/129)
+- 更新组件：Radio - 单选框 基于 Selectable 封装，change 事件返回 name 属性
+- 更新组件：Checkbox - 复选框 基于 Selectable 封装，change 事件返回 name 属性
+- 更新组件：Cascader - 级联选择器 新增 defaultFieldNames 属性
+- 更新组件：Select - 下拉框 新增 max 属性
+- 更新组件：KeyBoard - 数字键盘 基于 Popup 封装，新增 password、maxlength 属性
+- 更新组件：Upload - 上传 新增 max、defaultFileList、controlled 属性，before 事件返回 fileList 属性，升级注意语法有变动具体使用方法请参考对应文档
+
 # v 3.2.0 (2018-10-26)
 
 - 增加组件：Cascader - 级联选择器
