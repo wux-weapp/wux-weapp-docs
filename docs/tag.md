@@ -23,7 +23,9 @@
         <view class="page__title">Tag</view>
         <view class="page__desc">标签</view>
     </view>
-    <view class="page__bd">
+    <view class="page__bd page__bd_spacing">
+        <view class="sub-title">Default</view>
+        <wux-tag>magenta</wux-tag>
         <wux-tag color="magenta">magenta</wux-tag>
         <wux-tag color="red">red</wux-tag>
         <wux-tag color="volcano">volcano</wux-tag>
@@ -35,12 +37,48 @@
         <wux-tag color="blue">blue</wux-tag>
         <wux-tag color="geekblue">geekblue</wux-tag>
         <wux-tag color="purple">purple</wux-tag>
+        <view class="sub-title">Custom color</view>
         <wux-tag color="#f50">#f50</wux-tag>
         <wux-tag color="#2db7f5">#2db7f5</wux-tag>
         <wux-tag color="#87d068">#87d068</wux-tag>
         <wux-tag color="#108ee9">#108ee9</wux-tag>
+        <view class="sub-title">Closable</view>
+        <wux-tag closable bind:close="onClose">Tag 1</wux-tag>
+        <wux-tag closable visible="{{ visible }}" controlled bind:close="onClose" bind:change="onChange">Tag 3</wux-tag>
+        <wux-tag bind:click="onToggle">Toggle</wux-tag>
     </view>
 </view>
+```
+
+```js
+Page({
+    data: {
+        visible: true,
+    },
+    onClose(e) {
+        console.log('onClose', e)
+    },
+    onChange(e) {
+        console.log('onChange', e)
+        if (!e.detail.value) {
+            wx.showModal({
+                title: 'Sure to delete?',
+                success: (res) => {
+                    if (res.confirm) {
+                        this.setData({
+                            visible: e.detail.value,
+                        })
+                    }
+                },
+            })
+        }
+    },
+    onToggle() {
+        this.setData({
+            visible: !this.data.visible,
+        })
+    },
+})
 ```
 
 ## 视频演示
@@ -54,6 +92,12 @@
 | 参数 | 类型 | 描述 | 默认值 |
 | --- | --- | --- | --- |
 | color | <code>string</code> | 标签色 | - |
+| closable | <code>boolean</code> | 标签是否可以关闭 | false |
+| defaultVisible | <code>boolean</code> | 默认是否显隐，当 controlled 为 false 时才生效 | true |
+| visible | <code>boolean</code> | 用于手动控制浮层显隐，当 controlled 为 true 时才生效 | true |
+| controlled | <code>boolean</code> | 是否受控 [说明文档](controlled.md) | false |
+| bind:change | <code>function</code> | 监听状态变化的回调函数 | - |
+| bind:close | <code>function</code> | 关闭时的回调 | - |
 | bind:click | <code>function</code> | 点击事件 | - |
 
 ### Tag slot
