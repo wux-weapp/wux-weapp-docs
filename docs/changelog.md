@@ -1,3 +1,21 @@
+# v 3.3.1 (2018-12-19)
+
+- 更新组件：Icon - 图标 新增 hidden 属性
+- 更新组件：Prompt - 提示消息 新增支持微信开放能力
+- 更新组件：Input - 文本输入框 修复 focus 回弹问题
+- 更新组件：Textarea - 多行输入框 修复 focus 回弹问题
+- 更新组件：Cascader - 级联选择器 修复 options 动态加载数据的问题
+- 更新组件：Qrcode - 二维码 修复触发多次点击事件的问题
+- 更新组件：Image - 图片 修复 mode="widthFix" 不能实现的问题
+- 更新组件：FabButton - 浮动按钮 FloatingButton 更名为 FabButton，新增 direction 等属性，具体使用方法请参考对应文档
+- 更新组件：Toast - 提示框 修复连续弹出问题
+- 更新组件：Toptips - 顶部提示 修复连续弹出问题
+- 更新组件：Card - 卡片 优化组件 thumb & title & extra 为空时不显示头部
+- 更新组件：FilterBar - 筛选栏 下拉选择菜单支持滚动功能
+- 更新组件：Tag - 标签 新增 closable 等属性，具体使用方法请参考对应文档
+- 更新组件：Tabs - 标签页 新增 direction 属性，支持竖排
+- 更新组件：ActionSheet - 上拉菜单 新增支持图标及微信开放功能
+
 # v 3.3.0 (2018-11-08)
 
 - 增加组件：Utility - 工具类 [内置样式](utility.md)

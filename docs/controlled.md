@@ -15,7 +15,7 @@ Wux Weapp 一些组件中存在 `defaultParam`、`param`、`controlled` 其中�
 <wux-input label="name" defaultValue="">
 ```
 
-### 什么时间使用受控组件
+### 什么时候使用受控组件
 
 一般用在需要动态设置其初始值的情况；例如某些 `form` 表单信息编辑时，`input` 表单元素需要初始显示服务器返回的某个值然后进行编辑的情况。
 
