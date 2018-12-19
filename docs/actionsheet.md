@@ -111,11 +111,32 @@ Page({
 | options.titleText | <code>string</code> | 标题 | - |
 | options.buttons | <code>array</code> | 按钮 | [] |
 | options.buttons[].text | <code>string</code> | 按钮的文本 | - |
+| options.buttons[].icon | <code>string</code> | 按钮的图标 | - |
+| options.buttons[].disabled | <code>boolean</code> | 是否禁用 | false |
+| options.buttons[].openType | <code>string</code> | 微信开放能力，可选值为 contact、share、getUserInfo、getPhoneNumber、launchApp、openSetting、feedback | - |
+| options.buttons[].hoverClass | <code>string</code> | 指定按下去的样式类。当 hover-class="none" 时，没有点击态效果 | wux-actionsheet__button--hover |
+| options.buttons[].hoverStopPropagation | <code>boolean</code> | 指定是否阻止本节点的祖先节点出现点击态 | false |
+| options.buttons[].hoverStartTime | <code>number</code> | 按住后多久出现点击态，单位毫秒 | 20 |
+| options.buttons[].hoverStayTime | <code>number</code> | 手指松开后点击态保留时间，单位毫秒 | 70 |
+| options.buttons[].lang | <code>string</code> | 指定返回用户信息的语言，zh_CN 简体中文，zh_TW 繁体中文，en 英文。 | en |
+| options.buttons[].sessionFrom | <code>string</code> | 会话来源 | - |
+| options.buttons[].sendMessageTitle | <code>string</code> | 会话内消息卡片标题 | 当前标题 |
+| options.buttons[].sendMessagePath | <code>string</code> | 会话内消息卡片点击跳转小程序路径 | 当前分享路径 |
+| options.buttons[].sendMessageImg | <code>string</code> | 会话内消息卡片图片 | 截图 |
+| options.buttons[].showMessageCard | <code>boolean</code> | 显示会话内消息卡片 | false |
+| options.buttons[].appParameter | <code>string</code> | 打开 APP 时，向 APP 传递的参数 | - |
+| bind:getuserinfo | <code>function</code> | 用户点击该按钮时，会返回获取到的用户信息，回调的detail数据与wx.getUserInfo返回的一致 | - 
+| bind:contact | <code>function</code> | 客服消息回调 | - |
+| bind:getphonenumber | <code>function</code> | 获取用户手机号回调 | - |
+| bind:error | <code>function</code> | 当使用开放能力时，发生错误的回调 | - |
+| bind:opensetting | <code>function</code> | 在打开授权设置页后回调 | - |
 | options.buttonClicked | <code>function</code> | 按钮点击事件，返回值为 true 时将会关闭组件 | - |
 | options.cancelText | <code>string</code> | 取消按钮的文本 | 取消 |
 | options.cancel | <code>function</code> | 取消按钮或蒙层点击事件 | - |
 | options.destructiveText | <code>string</code> | 删除按钮的文本 | - |
 | options.destructiveButtonClicked | <code>function</code> | 删除按钮点击事件 | - |
+
+> 更多参数说明请参考微信官方的表单组件 [Button](https://developers.weixin.qq.com/miniprogram/dev/component/button.html)。
 
 ### ActionSheet.method
 
