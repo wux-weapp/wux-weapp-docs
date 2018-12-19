@@ -47,3 +47,4 @@ Wux Weapp 的图标使用开源项目 [ionicons](https://ionicons.com/) 4.3.0 �
 | type | <code>string</code> | 图标名称，可选值参考 [ionicons](https://ionicons.com/) 4.3.0 版本 | - |
 | size | <code>number</code> | 图标大小 | 32 |
 | color | <code>string</code> | 图标颜色 | - |
+| hidden | <code>boolean</code> | 是否隐藏组件 | false |
