@@ -48,7 +48,7 @@
   * [CountDown 倒计时](countdown.md)
   * [CountUp 计数器](countup.md)
   * [Divider 分割线](divider.md)
-  * [FloatingButton 浮动按钮](floating-button.md)
+  * [FabButton 浮动按钮](fab-button.md)
   * [Image 图片](image.md)
   * [List 列表](list.md)
   * [Media 媒体对象](media.md)
