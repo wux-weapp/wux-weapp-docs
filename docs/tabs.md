@@ -27,19 +27,25 @@
     </view>
     <view class="page__bd">
         <view class="sub-title">Default</view>
-        <wux-tabs default-current="tab1">
+        <wux-tabs defaultCurrent="tab1">
             <wux-tab key="tab1" title="Tab 1"></wux-tab>
             <wux-tab key="tab2" title="Tab 2"></wux-tab>
             <wux-tab key="tab3" title="Tab 3"></wux-tab>
         </wux-tabs>
         <view class="sub-title">Theme = positive</view>
-        <wux-tabs default-current="tab1" theme="positive">
+        <wux-tabs defaultCurrent="tab1" theme="positive">
+            <wux-tab key="tab1" title="Tab 1"></wux-tab>
+            <wux-tab key="tab2" title="Tab 2"></wux-tab>
+            <wux-tab key="tab3" title="Tab 3"></wux-tab>
+        </wux-tabs>
+        <view class="sub-title">Direction = vertical</view>
+        <wux-tabs defaultCurrent="tab1" direction="vertical">
             <wux-tab key="tab1" title="Tab 1"></wux-tab>
             <wux-tab key="tab2" title="Tab 2"></wux-tab>
             <wux-tab key="tab3" title="Tab 3"></wux-tab>
         </wux-tabs>
         <view class="sub-title">Disabled</view>
-        <wux-tabs default-current="tab1">
+        <wux-tabs defaultCurrent="tab1">
             <wux-tab key="tab1" title="Tab 1"></wux-tab>
             <wux-tab disabled key="tab2" title="Tab 2"></wux-tab>
             <wux-tab key="tab3" title="Tab 3"></wux-tab>
@@ -53,15 +59,15 @@
         <view class="sub-title">Slot</view>
         <wux-tabs controlled current="{{ current }}" bindchange="onChange">
             <wux-tab disabled key="tab1">
-                <image src="http://pbqg2m54r.bkt.clouddn.com/logo.png" style="width: 20px; height: 20px; margin-right: 5px;" />
+                <image src="https://wux.cdn.cloverstd.com/logo.png" style="width: 20px; height: 20px; margin-right: 5px;" />
                 <text>Tab 1</text>
             </wux-tab>
             <wux-tab key="tab2">
-                <image src="http://pbqg2m54r.bkt.clouddn.com/logo.png" style="width: 20px; height: 20px; margin-right: 5px;" />
+                <image src="https://wux.cdn.cloverstd.com/logo.png" style="width: 20px; height: 20px; margin-right: 5px;" />
                 <text>Tab 2</text>
             </wux-tab>
             <wux-tab key="tab3">
-                <image src="http://pbqg2m54r.bkt.clouddn.com/logo.png" style="width: 20px; height: 20px; margin-right: 5px;" />
+                <image src="https://wux.cdn.cloverstd.com/logo.png" style="width: 20px; height: 20px; margin-right: 5px;" />
                 <text>Tab 3</text>
             </wux-tab>
         </wux-tabs>
@@ -174,6 +180,7 @@ Page({
 | scroll | <code>boolean</code> | 是否开启横向滚动 | false |
 | controlled | <code>boolean</code> | 是否受控 [说明文档](controlled.md) | false |
 | theme | <code>string</code> | 主题色，可选值为 light、stable、positive、calm、assertive、balanced、energized、royal、dark | balanced |
+| direction | <code>string</code> | tab 面板的排列方向，可选值为 horizontal、vertical | horizontal |
 | bind:change | <code>function</code> | 切换面板的回调函数 | - |
 
 ### Tab props
