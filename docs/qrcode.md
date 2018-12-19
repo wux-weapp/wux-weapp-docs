@@ -34,7 +34,7 @@
             </view>
         </view>
         <view class="weui-cells__tips">提示：Canvas 在微信中无法长按识别, 点击图片进入保存页面长按图片可以保存</view>
-        <wux-qrcode wux-class="qrcode" data="{{ value }}" fg-color="{{ fgColor }}" width="200" height="200" bind:tap="previewImage" />
+        <wux-qrcode id="qrcode" wux-class="qrcode" data="{{ value }}" fg-color="{{ fgColor }}" width="200" height="200" bind:click="previewImage" />
     </view>
 </view>
 ```
@@ -56,14 +56,17 @@ Page({
         })
     },
     previewImage() {
+        // 在自定义组件下，当前组件实例的 this，以操作组件内 <canvas> 组件
+        const that = this.selectComponent('#qrcode')
+        
         wx.canvasToTempFilePath({
             canvasId: 'wux-qrcode',
-            success: res => {
+            success: (res) => {
                 wx.previewImage({
                     urls: [res.tempFilePath]
                 })
             }
-        })
+        }, that)
     },
     randomColor() {
         const colorStr = Math.floor(Math.random() * 0xFFFFFF).toString(16).toUpperCase()
@@ -91,3 +94,4 @@ Page({
 | height | <code>number</code> | canvas 组件的高度 | 200 |
 | fgColor | <code>string</code> | 前景色 | black |
 | bgColor | <code>string</code> | 背景色 | white |
+| bind:click | <code>function</code> | 点击事件 | - |
