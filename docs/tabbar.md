@@ -28,7 +28,7 @@
     </view>
     <view class="page__bd">
         <view class="sub-title">Default</view>
-        <wux-tabbar default-current="tab2">
+        <wux-tabbar defaultCurrent="tab2">
             <wux-tabbar-item key="tab1" title="Tab 1">
                 <wux-icon wux-class="icon" type="ios-home" size="22" slot="icon-on" />
                 <wux-icon wux-class="icon" type="ios-home" size="22" slot="icon-off" />
@@ -43,7 +43,7 @@
             </wux-tabbar-item>
         </wux-tabbar>
         <view class="sub-title">Theme = positive</view>
-        <wux-tabbar default-current="1" theme="positive">
+        <wux-tabbar defaultCurrent="1" theme="positive">
             <wux-tabbar-item title="Tab 1">
                 <wux-icon wux-class="icon" type="ios-home" size="22" slot="icon-on" />
                 <wux-icon wux-class="icon" type="ios-home" size="22" slot="icon-off" />
@@ -58,7 +58,7 @@
             </wux-tabbar-item>
         </wux-tabbar>
         <view class="sub-title">Disabled</view>
-        <wux-tabbar default-current="1">
+        <wux-tabbar defaultCurrent="1">
             <wux-tabbar-item title="Tab 1">
                 <wux-icon wux-class="icon" type="ios-home" size="22" slot="icon-on" />
                 <wux-icon wux-class="icon" type="ios-home" size="22" slot="icon-off" />
@@ -88,7 +88,7 @@
             </wux-tabbar-item>
         </wux-tabbar>
         <view class="sub-title">With Badge</view>
-        <wux-tabbar default-current="1" position="bottom">
+        <wux-tabbar defaultCurrent="1" position="bottom" safeArea>
             <wux-tabbar-item title="Tab 1">
                 <wux-badge count="1" slot="icon-on">
                     <wux-icon wux-class="icon" type="ios-home" size="22" />
@@ -143,6 +143,7 @@ Page({
 | controlled | <code>boolean</code> | 是否受控 [说明文档](controlled.md) | false |
 | theme | <code>string</code> | 主题色，可选值为 light、stable、positive、calm、assertive、balanced、energized、royal、dark | balanced |
 | position | <code>string</code> | 标签栏位置，可选值为 bottom、top | - |
+| safeArea | <code>boolean</code> | 是否适配 iPhoneX，当 position 为 bottom/top 时才生效 | false |
 | bind:change | <code>function</code> | 切换面板的回调函数 | - |
 
 ### TabBarItem props
