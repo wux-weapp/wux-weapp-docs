@@ -1,3 +1,8 @@
+# v 3.3.2 (2019-01-04)
+- 更新组件：TabBar - 标签栏 修复 tabbar iPhoneX 适配 [#179](https://github.com/wux-weapp/wux-weapp/issues/179)
+- 更新组件：Accordion - 手风琴 修复缺少 multipleSlots 参数的问题 [#173](https://github.com/wux-weapp/wux-weapp/issues/173)
+- 更新组件：AnimationGroup - 动画组 修复 slideInRight 动画状态下页面溢出的问题 [#170](https://github.com/wux-weapp/wux-weapp/issues/170)
+
 # v 3.3.1 (2018-12-19)
 
 - 更新组件：Icon - 图标 新增 hidden 属性
