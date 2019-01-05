@@ -187,6 +187,7 @@ Page({
 | 参数 | 类型 | 描述 | 默认值 |
 | --- | --- | --- | --- |
 | options | <code>object</code> | 配置项 | - |
+| options.prefixCls | <code>string</code> | 自定义类名前缀 | wux-select |
 | options.value | <code>any</code> | 指定当前选中的条目 | - |
 | options.options | <code>array</code> | 下拉列表 | [] |
 | options.multiple | <code>boolean</code> | 是否支持多选 | false |
