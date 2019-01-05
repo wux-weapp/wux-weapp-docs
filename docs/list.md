@@ -73,6 +73,7 @@ Page({
 
 | 参数 | 类型 | 描述 | 默认值 |
 | --- | --- | --- | --- |
+| prefixCls | <code>string</code> | 自定义类名前缀 | wux-cell-group |
 | title | <code>string</code> | 标题 | - |
 | label | <code>string</code> | 描述 | - |
 
@@ -80,9 +81,10 @@ Page({
 
 | 参数 | 类型 | 描述 | 默认值 |
 | --- | --- | --- | --- |
+| prefixCls | <code>string</code> | 自定义类名前缀 | wux-cell |
 | disabled | <code>boolean</code> | 是否禁用 | false |
 | openType | <code>string</code> | 跳转方式，可选值为 navigateTo、redirectTo、switchTab、navigateBack、reLaunch；微信开放能力，可选值为 contact、share、getUserInfo、getPhoneNumber、launchApp、openSetting、feedback | navigateTo |
-| hoverClass | <code>string</code> | 指定按下去的样式类。当 hover-class="none" 时，没有点击态效果 | wux-cell--hover |
+| hoverClass | <code>string</code> | 指定按下去的样式类。当 hover-class="none" 时，没有点击态效果 | default |
 | hoverStopPropagation | <code>boolean</code> | 指定是否阻止本节点的祖先节点出现点击态 | false |
 | hoverStartTime | <code>number</code> | 按住后多久出现点击态，单位毫秒 | 20 |
 | hoverStayTime | <code>number</code> | 手指松开后点击态保留时间，单位毫秒 | 70 |
