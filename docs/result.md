@@ -67,6 +67,7 @@ Page({
 
 | 参数 | 类型 | 描述 | 默认值 |
 | --- | --- | --- | --- |
+| prefixCls | <code>string</code> | 自定义类名前缀 | wux-result |
 | icon | <code>any</code> | 图标的配置项 | - |
 | icon.type | <code>string</code> | 图标的类型，可选值为 success、success_no_circle、info、warn、waiting、cancel、download、search、clear | success |
 | icon.size | <code>number</code> | 图标的大小 | 93 |
