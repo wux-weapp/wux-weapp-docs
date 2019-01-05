@@ -175,6 +175,7 @@ Page({
 
 | 参数 | 类型 | 描述 | 默认值 |
 | --- | --- | --- | --- |
+| prefixCls | <code>string</code> | 自定义类名前缀 | wux-tabs |
 | defaultCurrent | <code>string</code> | 默认激活 tab 面板的 key，当 controlled 为 false 时才生效 | - |
 | current | <code>string</code> | 用于手动激活 tab 面板的 key，当 controlled 为 true 时才生效 | - |
 | scroll | <code>boolean</code> | 是否开启横向滚动 | false |
@@ -187,6 +188,7 @@ Page({
 
 | 参数 | 类型 | 描述 | 默认值 |
 | --- | --- | --- | --- |
+| prefixCls | <code>string</code> | 自定义类名前缀 | wux-tabs__tab |
 | key | <code>string</code> | 对应 key | - |
 | title | <code>string</code> | 选项卡标题 | - |
 | disabled | <code>boolean</code> | 是否禁用 | false |
