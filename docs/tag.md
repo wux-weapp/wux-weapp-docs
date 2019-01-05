@@ -91,6 +91,8 @@ Page({
 
 | 参数 | 类型 | 描述 | 默认值 |
 | --- | --- | --- | --- |
+| prefixCls | <code>string</code> | 自定义类名前缀 | wux-tag |
+| hoverClass | <code>string</code> | 指定按钮按下去的样式类。当 hover-class="none" 时，没有点击态效果 | default |
 | color | <code>string</code> | 标签色 | - |
 | closable | <code>boolean</code> | 标签是否可以关闭 | false |
 | defaultVisible | <code>boolean</code> | 默认是否显隐，当 controlled 为 false 时才生效 | true |
