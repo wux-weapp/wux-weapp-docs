@@ -61,6 +61,7 @@
   * [TabBar 标签栏](tabbar.md)
   * [Tabs 标签页](tabs.md)
   * [Tag 标签](tag.md)
+  * [Timeago 多久之前](timeago.md)
   * [Timeline 时间轴](timeline.md)
   * [Vcode 验证码](vcode.md)
 
