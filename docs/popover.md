@@ -151,6 +151,8 @@ Page({
 
 | 参数 | 类型 | 描述 | 默认值 |
 | --- | --- | --- | --- |
+| prefixCls | <code>string</code> | 自定义类名前缀 | wux-popover |
+| classNames | <code>any</code> | 过渡的类名，更多内置过渡效果请参考 [AnimationGroup](animation-group.md) | wux-animate--fadeIn |
 | theme | <code>string</code> | 气泡框主题，可选值为 light、dark | light |
 | title | <code>string</code> | 提示标题 | - |
 | content | <code>string</code> | 提示内容 | - |
