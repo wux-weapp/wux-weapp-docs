@@ -93,12 +93,14 @@
 
 | 参数 | 类型 | 描述 | 默认值 |
 | --- | --- | --- | --- |
+| prefixCls | <code>string</code> | 自定义类名前缀 | wux-row |
 | gutter | <code>number</code> | 栅格间隔 | 0 |
 
 ### Col props
 
 | 参数 | 类型 | 描述 | 默认值 |
 | --- | --- | --- | --- |
+| prefixCls | <code>string</code> | 自定义类名前缀 | wux-col |
 | span | <code>number</code> | 栅格占位格数 | 0 |
 | pull | <code>number</code> | 栅格向左移动格数 | 0 |
 | push | <code>number</code> | 栅格向右移动格数 | 0 |
