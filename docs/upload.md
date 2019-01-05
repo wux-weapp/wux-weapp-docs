@@ -139,6 +139,7 @@ Page({
 
 | 参数 | 类型 | 描述 | 默认值 |
 | --- | --- | --- | --- |
+| prefixCls | <code>string</code> | 自定义类名前缀 | wux-upload |
 | max | <code>number</code> | 最大图片张数，设置为 -1 的时候不限制张数 | -1 |
 | count | <code>number</code> | 从相册选图时，最多可以选择的图片张数 | 9 |
 | sizeType | <code>array</code> | original 原图，compressed 压缩图 | ['original', 'compressed'] |
