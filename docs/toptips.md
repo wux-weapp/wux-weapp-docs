@@ -120,6 +120,8 @@ Page({
 | 参数 | 类型 | 描述 | 默认值 |
 | --- | --- | --- | --- |
 | options | <code>object</code> | 配置项 | - |
+| options.prefixCls | <code>string</code> | 自定义类名前缀 | wux-toptips |
+| options.classNames | <code>any</code> | 过渡的类名，更多内置过渡效果请参考 [AnimationGroup](animation-group.md) | wux-animate--slideInDown |
 | options.icon | <code>string</code> | 图标类型 | cancel |
 | options.hidden | <code>boolean</code> | 是否隐藏图标 | false |
 | options.text | <code>string</code> | 报错文本 | - |
