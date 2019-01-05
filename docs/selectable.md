@@ -112,6 +112,7 @@ Page({
 
 | 参数 | 类型 | 描述 | 默认值 |
 | --- | --- | --- | --- |
+| prefixCls | <code>string</code> | 自定义类名前缀 | wux-selectable |
 | type | <code>string</code> | 类型，可选值为 checkbox、radio | checkbox |
 | value | <code>string</code> | 字段值 | - |
 | defaultChecked | <code>boolean</code> | 默认是否选中，当 controlled 为 false 时才生效 | false |
