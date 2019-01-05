@@ -1,8 +1,9 @@
 # v 3.4.0 (2019-01-05)
 
-- 更新组件新增 prefixCls 属性，支持自定义类名前缀
-- 更新组件支持 [全局样式](https://developers.weixin.qq.com/miniprogram/dev/framework/custom-component/wxml-wxss.html)
-- 此次更新内容需要依赖小程序基础库 2.2.3 以上版本
+- 增加组件：Timeago - 多久之前
+- 更新组件：新增 prefixCls 属性，支持自定义类名前缀
+- 更新组件：支持 [全局样式](https://developers.weixin.qq.com/miniprogram/dev/framework/custom-component/wxml-wxss.html)
+- 升级注意：此次更新内容需要依赖小程序基础库 2.2.3 以上版本
 
 # v 3.3.2 (2019-01-04)
 
