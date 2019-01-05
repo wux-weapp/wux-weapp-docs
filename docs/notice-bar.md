@@ -71,6 +71,7 @@ Page({
 
 | 参数 | 类型 | 描述 | 默认值 |
 | --- | --- | --- | --- |
+| prefixCls | <code>string</code> | 自定义类名前缀 | wux-notice-bar |
 | mode | <code>string</code> | 提示类型，可选值为 closable、link | - |
 | content | <code>string</code> | 滚动的文字 | - |
 | icon | <code>string</code> | 左侧提示图标 | - |
