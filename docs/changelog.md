@@ -1,4 +1,11 @@
+# v 3.4.0 (2019-01-05)
+
+- 更新组件新增 prefixCls 属性，支持自定义类名前缀
+- 更新组件支持 [全局样式](https://developers.weixin.qq.com/miniprogram/dev/framework/custom-component/wxml-wxss.html)
+- 此次更新内容需要依赖小程序基础库 2.2.3 以上版本
+
 # v 3.3.2 (2019-01-04)
+
 - 更新组件：TabBar - 标签栏 修复 tabbar iPhoneX 适配 [#179](https://github.com/wux-weapp/wux-weapp/issues/179)
 - 更新组件：Accordion - 手风琴 修复缺少 multipleSlots 参数的问题 [#173](https://github.com/wux-weapp/wux-weapp/issues/173)
 - 更新组件：AnimationGroup - 动画组 修复 slideInRight 动画状态下页面溢出的问题 [#170](https://github.com/wux-weapp/wux-weapp/issues/170)
