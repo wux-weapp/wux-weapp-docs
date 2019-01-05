@@ -48,6 +48,7 @@
 
 | 参数 | 类型 | 描述 | 默认值 |
 | --- | --- | --- | --- |
+| prefixCls | <code>string</code> | 自定义类名前缀 | wux-media |
 | title | <code>string</code> | 标题 | - |
 | thumb | <code>string</code> | 标题图片 | - |
 | thumbStyle | <code>string</code> | 标题图片样式 | - |
