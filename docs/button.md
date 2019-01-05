@@ -109,16 +109,19 @@
 
 | 参数 | 类型 | 描述 | 默认值 |
 | --- | --- | --- | --- |
+| prefixCls | <code>string</code> | 自定义类名前缀 | wux-button |
 | type | <code>string</code> | 按钮类型，可选值为 light、stable、positive、calm、assertive、balanced、energized、royal、dark | stable |
 | clear | <code>boolean</code> | 是否清除样式 | false |
 | block | <code>boolean</code> | 是否块级元素 | false |
 | full | <code>boolean</code> | 是否通栏 | false |
 | outline | <code>boolean</code> | 是否镂空 | false |
+| bordered | <code>boolean</code> | 是否带边框 | true |
 | size | <code>string</code> | 按钮的大小，可选值为 small、default、large | default |
 | disabled | <code>boolean</code> | 是否禁用 | false |
 | loading | <code>boolean</code> | 名称前是否带 loading 图标 | false |
 | formType | <code>string</code> | 用于 `<form/>` 组件，点击分别会触发 `<form/>` 组件的 submit/reset 事件 | - |
 | openType | <code>string</code> | 微信开放能力，可选值为 contact、share、getUserInfo、getPhoneNumber | - |
+| hoverClass | <code>string</code> | 指定按钮按下去的样式类。当 hover-class="none" 时，没有点击态效果 | default |
 | hoverStopPropagation | <code>boolean</code> | 指定是否阻止本节点的祖先节点出现点击态 | false |
 | hoverStartTime | <code>number</code> | 按住后多久出现点击态，单位毫秒 | 20 |
 | hoverStayTime | <code>number</code> | 手指松开后点击态保留时间，单位毫秒 | 70 |
