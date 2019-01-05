@@ -114,6 +114,7 @@ Page({
 | 参数 | 类型 | 描述 | 默认值 |
 | --- | --- | --- | --- |
 | options | <code>object</code> | 配置项 | - |
+| options.prefixCls | <code>string</code> | 自定义类名前缀 | wux-calendar |
 | options.monthNames | <code>array</code> | 月名称 | ['一月', '二月', '三月', '四月', '五月', '六月', '七月', '八月', '九月', '十月', '十一月', '十二月'] |
 | options.monthNamesShort | <code>array</code> | 月名称缩写 | ['一月', '二月', '三月', '四月', '五月', '六月', '七月', '八月', '九月', '十月', '十一月', '十二月'] |
 | options.dayNames | <code>array</code> | 周名称 | ['周日', '周一', '周二', '周三', '周四', '周五', '周六'] |
