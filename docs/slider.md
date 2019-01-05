@@ -78,6 +78,7 @@ Page({
 
 | 参数 | 类型 | 描述 | 默认值 |
 | --- | --- | --- | --- |
+| prefixCls | <code>string</code> | 自定义类名前缀 | wux-slider |
 | min | <code>number</code> | 最小值 | 0 |
 | max | <code>number</code> | 最大值 | 100 |
 | step | <code>number</code> | 步长，取值必须大于 0，并且可被 (max - min) 整除 | 1 |
