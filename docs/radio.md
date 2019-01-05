@@ -104,6 +104,8 @@ Page({
 
 | 参数 | 类型 | 描述 | 默认值 |
 | --- | --- | --- | --- |
+| prefixCls | <code>string</code> | 自定义类名前缀 | wux-radio-group |
+| cellGroupPrefixCls | <code>string</code> | 自定义 cellGroup 类名前缀 | wux-cell-group |
 | name | <code>string</code> | 在表单中的字段名 | - |
 | value | <code>string</code> | 在表单中的字段值（当前选中项的值） | - |
 | title | <code>string</code> | 标题 | - |
@@ -114,6 +116,9 @@ Page({
 
 | 参数 | 类型 | 描述 | 默认值 |
 | --- | --- | --- | --- |
+| prefixCls | <code>string</code> | 自定义类名前缀 | wux-radio |
+| cellPrefixCls | <code>string</code> | 自定义 cell 类名前缀 | wux-cell |
+| selectablePrefixCls | <code>string</code> | 自定义 selectable 类名前缀 | wux-selectable |
 | thumb | <code>string</code> | 左侧缩略图 | - |
 | title | <code>string</code> | 左侧标题 | - |
 | label | <code>string</code> | 标题下方的描述信息 | - |
