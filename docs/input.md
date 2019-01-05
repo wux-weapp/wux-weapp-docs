@@ -147,6 +147,7 @@ Page({
 
 | 参数 | 类型 | 描述 | 默认值 |
 | --- | --- | --- | --- |
+| prefixCls | <code>string</code> | 自定义类名前缀 | wux-input |
 | label | <code>string</code> | 左侧内容 | - |
 | extra | <code>string</code> | 右侧内容 | - |
 | defaultValue | <code>string</code> | 默认值，当 controlled 为 false 时才生效 | - |
