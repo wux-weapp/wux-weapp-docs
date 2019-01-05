@@ -106,6 +106,8 @@ Page({
 | 参数 | 类型 | 描述 | 默认值 |
 | --- | --- | --- | --- |
 | options | <code>object</code> | 配置项 | - |
+| options.prefixCls | <code>string</code> | 自定义类名前缀 | wux-actionsheet |
+| options.classNames | <code>any</code> | 过渡的类名，更多内置过渡效果请参考 [AnimationGroup](animation-group.md) | wux-animate--slideInUp |
 | options.theme | <code>string</code> | 菜单皮肤，可选值为 ios、wx | ios |
 | options.className | <code>string</code> | 自定义类名 | - |
 | options.titleText | <code>string</code> | 标题 | - |
