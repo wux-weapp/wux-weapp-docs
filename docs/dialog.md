@@ -184,6 +184,7 @@ Page({
 | 参数 | 类型 | 描述 | 默认值 |
 | --- | --- | --- | --- |
 | options | <code>object</code> | 配置项 | - |
+| options.prefixCls | <code>string</code> | 自定义类名前缀 | wux-dialog |
 | options.title | <code>string</code> | 提示标题 | - |
 | options.content | <code>string</code> | 提示文本 | - |
 | options.verticalButtons | <code>boolean</code> | 是否显示垂直按钮布局 | false |
@@ -203,6 +204,7 @@ Page({
 | 参数 | 类型 | 描述 | 默认值 |
 | --- | --- | --- | --- |
 | options | <code>object</code> | 配置项 | - |
+| options.prefixCls | <code>string</code> | 自定义类名前缀 | wux-dialog |
 | options.title | <code>string</code> | 提示标题 | - |
 | options.content | <code>string</code> | 提示文本 | - |
 | options.confirmText | <code>string</code> | 确定按钮的文字 | 确定 |
@@ -214,6 +216,7 @@ Page({
 | 参数 | 类型 | 描述 | 默认值 |
 | --- | --- | --- | --- |
 | options | <code>object</code> | 配置项 | - |
+| options.prefixCls | <code>string</code> | 自定义类名前缀 | wux-dialog |
 | options.title | <code>string</code> | 提示标题 | - |
 | options.content | <code>string</code> | 提示文本 | - |
 | options.confirmText | <code>string</code> | 确定按钮的文字 | 确定 |
@@ -228,6 +231,7 @@ Page({
 | 参数 | 类型 | 描述 | 默认值 |
 | --- | --- | --- | --- |
 | options | <code>object</code> | 配置项 | - |
+| options.prefixCls | <code>string</code> | 自定义类名前缀 | wux-dialog |
 | options.title | <code>string</code> | 提示标题 | - |
 | options.content | <code>string</code> | 提示文本 | - |
 | options.fieldtype | <code>string</code> | input 的类型，可选值为 text、number、idcard、digit | text |
