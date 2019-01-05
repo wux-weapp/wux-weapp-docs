@@ -163,6 +163,7 @@ Page({
 | 参数 | 类型 | 描述 | 默认值 |
 | --- | --- | --- | --- |
 | options | <code>object</code> | 配置项 | - |
+| options.prefixCls | <code>string</code> | 自定义类名前缀 | wux-keyboard |
 | options.className | <code>string</code> | 自定义类名 | - |
 | options.titleText | <code>string</code> | 标题 | 安全键盘 |
 | options.cancelText | <code>string</code> | 取消按钮的文字 | 取消 |
