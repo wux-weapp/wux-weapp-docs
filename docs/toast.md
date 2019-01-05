@@ -155,6 +155,8 @@ Page({
 | 参数 | 类型 | 描述 | 默认值 |
 | --- | --- | --- | --- |
 | options | <code>object</code> | 配置项 | - |
+| options.prefixCls | <code>string</code> | 自定义类名前缀 | wux-toast |
+| options.classNames | <code>any</code> | 过渡的类名，更多内置过渡效果请参考 [AnimationGroup](animation-group.md) | wux-animate--fadeIn |
 | options.type | <code>string</code> | 提示类型，可选值为 default、success、cancel、forbidden、text | default |
 | options.duration | <code>number</code> | 提示延迟时间 | 1500 |
 | options.color | <code>string</code> | 图标颜色 | #fff |
