@@ -65,6 +65,7 @@ Page({
 
 | 参数 | 类型 | 描述 | 默认值 |
 | --- | --- | --- | --- |
+| prefixCls | <code>string</code> | 自定义类名前缀 | wux-circle |
 | percent | <code>number</code> | 百分比 0~100 | 0 |
 | size | <code>number</code> | 进度环的尺寸，单位 px | 120 |
 | strokeWidth | <code>number</code> | 进度环的宽度，单位 px | 10 |
