@@ -84,6 +84,7 @@
 
 | 参数 | 类型 | 描述 | 默认值 |
 | --- | --- | --- | --- |
+| prefixCls | <code>string</code> | 自定义类名前缀 | wux-badge |
 | count | <code>number</code> | 展示的数字，大于 overflowCount 时显示为 ${overflowCount}+，为 0 时隐藏 | 0 |
 | overflowCount | <code>number</code> | 展示封顶的数字值 | 99 |
 | dot | <code>boolean</code> | 不展示数字，只有一个小红点 | false |
