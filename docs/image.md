@@ -96,6 +96,7 @@
 
 | 参数 | 类型 | 描述 | 默认值 |
 | --- | --- | --- | --- |
+| prefixCls | <code>string</code> | 自定义类名前缀 | wux-image |
 | src | <code>string</code> | 图片资源地址 | - |
 | mode | <code>string</code> | 图片裁剪、缩放的模式，可参考 [image](https://mp.weixin.qq.com/debug/wxadoc/dev/component/image.html) | scaleToFill |
 | lazyLoad | <code>boolean</code> | 图片懒加载。只针对 page 与 scroll-view 下的 image 有效 | false |
