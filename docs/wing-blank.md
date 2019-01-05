@@ -54,8 +54,9 @@
 
 | 参数 | 类型 | 描述 | 默认值 |
 | --- | --- | --- | --- |
+| prefixCls | <code>string</code> | 自定义类名前缀 | wux-wingblank |
 | size | <code>string</code> | 两翼留白的间距，可选值为 small、default、large | default |
-| body-style | <code>string</code> | 自定义样式 | - |
+| bodyStyle | <code>string</code> | 自定义样式 | - |
 
 ### WingBlank slot
 
