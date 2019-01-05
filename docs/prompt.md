@@ -109,6 +109,8 @@ Page({
 
 | 参数 | 类型 | 描述 | 默认值 |
 | --- | --- | --- | --- |
+| prefixCls | <code>string</code> | 自定义类名前缀 | wux-prompt |
+| classNames | <code>any</code> | 过渡的类名，更多内置过渡效果请参考 [AnimationGroup](animation-group.md) | wux-animate--fadeIn |
 | icon | <code>string</code> | 图标 | - |
 | title | <code>string</code> | 标题 | - |
 | text | <code>string</code> | 文本 | - |
