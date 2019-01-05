@@ -81,6 +81,7 @@ Page({
 
 | 参数 | 类型 | 描述 | 默认值 |
 | --- | --- | --- | --- |
+| prefixCls | <code>string</code> | 自定义类名前缀 | wux-segment |
 | theme | <code>string</code> | 主题色，可选值为 light、stable、positive、calm、assertive、balanced、energized、royal、dark | balanced |
 | defaultCurrent | <code>number</code> | 默认激活 tab 面板的 key，当 controlled 为 false 时才生效 | 0 |
 | current | <code>number</code> | 用于手动激活 tab 面板的 key，当 controlled 为 true 时才生效 | 0 |
