@@ -84,6 +84,7 @@
 
 | 参数 | 类型 | 描述 | 默认值 |
 | --- | --- | --- | --- |
+| prefixCls | <code>string</code> | 自定义类名前缀 | wux-timeline |
 | pending | <code>boolean</code> | 最后一个节点是否为幽灵节点 | false |
 | position | <code>string</code> | 时间轴和内容的相对位置，可选值为 left、alternate、right | left |
 
@@ -91,6 +92,7 @@
 
 | 参数 | 类型 | 描述 | 默认值 |
 | --- | --- | --- | --- |
+| prefixCls | <code>string</code> | 自定义类名前缀 | wux-timeline-item |
 | content | <code>string</code> | 内容 | - |
 | dotStyle | <code>string</code> | 时间轴点样式 | - |
 | custom | <code>boolean</code> | 是否自定义时间轴点 | false |
