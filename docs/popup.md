@@ -99,6 +99,8 @@ Page({
 
 | 参数 | 类型 | 描述 | 默认值 |
 | --- | --- | --- | --- |
+| prefixCls | <code>string</code> | 自定义类名前缀 | wux-popup |
+| animationPrefixCls | <code>string</code> | 自定义 animation 类名前缀 | wux-animate |
 | title | <code>string</code> | 标题 | - |
 | content | <code>string</code> | 内容 | - |
 | extra | <code>string</code> | 底部内容 | - |
