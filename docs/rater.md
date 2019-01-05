@@ -147,6 +147,7 @@ Page({
 
 | 参数 | 类型 | 描述 | 默认值 |
 | --- | --- | --- | --- |
+| prefixCls | <code>string</code> | 自定义类名前缀 | wux-rater |
 | max | <code>number</code> | 最大值 | 5 |
 | icon | <code>string</code> | 图标名称，优先级高于 star | - |
 | star | <code>string</code> | 图标 | ★ |
