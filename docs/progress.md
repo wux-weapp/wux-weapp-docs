@@ -102,6 +102,7 @@ Page({
 
 | 参数 | 类型 | 描述 | 默认值 |
 | --- | --- | --- | --- |
+| prefixCls | <code>string</code> | 自定义类名前缀 | wux-progress |
 | percent | <code>number</code> | 百分比 0~100 | 0 |
 | strokeWidth | <code>string</code> | 进度条线的宽度，单位 px | 10 |
 | activeColor | <code>string</code> | 已选择的进度条的颜色，优先级高于 status 的默认颜色 | - |
