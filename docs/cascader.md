@@ -164,6 +164,7 @@ Page({
 
 | 参数 | 类型 | 描述 | 默认值 |
 | --- | --- | --- | --- |
+| prefixCls | <code>string</code> | 自定义类名前缀 | wux-cascader |
 | defaultValue | <code>array</code> | 默认值，当 controlled 为 false 时才生效 | [] |
 | value | <code>array</code> | 当前值，当 controlled 为 true 时才生效 | [] |
 | controlled | <code>boolean</code> | 是否受控 [说明文档](controlled.md) | false |
