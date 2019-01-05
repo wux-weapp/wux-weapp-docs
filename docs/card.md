@@ -72,6 +72,7 @@
 
 | 参数 | 类型 | 描述 | 默认值 |
 | --- | --- | --- | --- |
+| prefixCls | <code>string</code> | 自定义类名前缀 | wux-card |
 | bordered | <code>boolean</code> | 是否有边框 | false |
 | full | <code>boolean</code> | 是否通栏 | false |
 | title | <code>string</code> | 卡片标题 | - |
