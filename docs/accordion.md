@@ -94,6 +94,8 @@ Page({
 
 | 参数 | 类型 | 描述 | 默认值 |
 | --- | --- | --- | --- |
+| prefixCls | <code>string</code> | 自定义类名前缀 | wux-accordion-group |
+| cellGroupPrefixCls | <code>string</code> | 自定义 cellGroup 类名前缀 | wux-cell-group |
 | defaultCurrent | <code>array</code> | 默认激活 tab 面板的 key，当 controlled 为 false 时才生效 | - |
 | current | <code>array</code> | 用于手动激活 tab 面板的 key，当 controlled 为 true 时才生效 | - |
 | controlled | <code>boolean</code> | 是否受控 [说明文档](controlled.md) | false |
@@ -106,6 +108,7 @@ Page({
 
 | 参数 | 类型 | 描述 | 默认值 |
 | --- | --- | --- | --- |
+| prefixCls | <code>string</code> | 自定义类名前缀 | wux-accordion |
 | key | <code>string</code> | 当前激活 tab 索引 | - |
 | thumb | <code>string</code> | 左侧缩略图 | - |
 | title | <code>string</code> | 左侧标题 | - |
