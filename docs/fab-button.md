@@ -168,6 +168,8 @@ Page({
 
 | 参数 | 类型 | 描述 | 默认值 |
 | --- | --- | --- | --- |
+| prefixCls | <code>string</code> | 自定义类名前缀 | wux-fab-button |
+| hoverClass | <code>string</code> | 指定按钮按下去的样式类。当 hover-class="none" 时，没有点击态效果 | default |
 | theme | <code>string</code> | 主题色，可选值为 light、stable、positive、calm、assertive、balanced、energized、royal、dark | balanced |
 | position | <code>string</code> | 按钮的位置，可选值为 topLeft、topRight、bottomLeft、bottomRight | bottomRight |
 | action | <code>string</code> | 操作按钮的图标 | - |
@@ -191,7 +193,7 @@ Page({
 | buttons[].hideShadow | <code>boolean</code> | 是否隐藏阴影 | false |
 | buttons[].disabled | <code>boolean</code> | 是否禁用 | false |
 | buttons[].openType | <code>string</code> | 微信开放能力，可选值为 contact、share、getUserInfo、getPhoneNumber、launchApp、openSetting、feedback | - |
-| buttons[].hoverClass | <code>string</code> | 指定按下去的样式类。当 hover-class="none" 时，没有点击态效果 | wux-speed-dial__button--hover |
+| buttons[].hoverClass | <code>string</code> | 指定按下去的样式类。当 hover-class="none" 时，没有点击态效果 | default |
 | buttons[].hoverStopPropagation | <code>boolean</code> | 指定是否阻止本节点的祖先节点出现点击态 | false |
 | buttons[].hoverStartTime | <code>number</code> | 按住后多久出现点击态，单位毫秒 | 20 |
 | buttons[].hoverStayTime | <code>number</code> | 手指松开后点击态保留时间，单位毫秒 | 70 |
