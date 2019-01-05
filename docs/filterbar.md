@@ -352,6 +352,7 @@ Page({
 
 | 参数 | 类型 | 描述 | 默认值 |
 | --- | --- | --- | --- |
+| prefixCls | <code>string</code> | 自定义类名前缀 | wux-filterbar |
 | items | <code>array</code> | 组件子元素 | [] |
 | items[].type | <code>string</code> | 子元素类型，可选值为：radio、text、checkbox、sort、filter | - |
 | items[].label | <code>string</code> | 描述 | - |
