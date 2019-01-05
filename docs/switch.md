@@ -129,6 +129,7 @@ Page({
 
 | 参数 | 类型 | 描述 | 默认值 |
 | --- | --- | --- | --- |
+| prefixCls | <code>string</code> | 自定义类名前缀 | wux-switch |
 | name | <code>string</code> | 在表单中的字段名 | - |
 | value | <code>boolean</code> | 在表单中的字段值（当前选中项的值） | - |
 | disabled | <code>boolean</code> | 是否不可修改 | false |
