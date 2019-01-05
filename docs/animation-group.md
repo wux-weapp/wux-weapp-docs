@@ -179,6 +179,7 @@ Page({
 | exit | <code>boolean</code> | 是否启用离开过渡 | true |
 | mountOnEnter | <code>boolean</code> | 首次进入过渡时是否懒挂载组件 | true |
 | unmountOnExit | <code>boolean</code> | 离开过渡完成时是否卸载组件 | true |
+| wrapCls | <code>string</code> | 自定义类名 | - |
 | wrapStyle | <code>string</code> | 自定义样式 | - |
 | bind:click | <code>function</code> | 点击组件时触发的回调函数 | - |
 | bind:enter | <code>function</code> | 进入过渡的开始状态时触发的回调函数 | - |
