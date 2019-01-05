@@ -109,6 +109,8 @@ Page({
 
 | 参数 | 类型 | 描述 | 默认值 |
 | --- | --- | --- | --- |
+| prefixCls | <code>string</code> | 自定义类名前缀 | wux-checkbox-group |
+| cellGroupPrefixCls | <code>string</code> | 自定义 cellGroup 类名前缀 | wux-cell-group |
 | name | <code>string</code> | 在表单中的字段名 | - |
 | value | <code>array</code> | 在表单中的字段值（当前选中项的值） | [] |
 | title | <code>string</code> | 标题 | - |
@@ -119,6 +121,9 @@ Page({
 
 | 参数 | 类型 | 描述 | 默认值 |
 | --- | --- | --- | --- |
+| prefixCls | <code>string</code> | 自定义类名前缀 | wux-checkbox |
+| cellPrefixCls | <code>string</code> | 自定义 cell 类名前缀 | wux-cell |
+| selectablePrefixCls | <code>string</code> | 自定义 selectable 类名前缀 | wux-selectable |
 | title | <code>string</code> | 左侧标题 | - |
 | label | <code>string</code> | 标题下方的描述信息 | - |
 | extra | <code>string</code> | 右侧内容 | - |
