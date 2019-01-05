@@ -165,6 +165,7 @@ Page({
 
 | 参数 | 类型 | 描述 | 默认值 |
 | --- | --- | --- | --- |
+| prefixCls | <code>string</code> | 自定义类名前缀 | wux-input-number |
 | min | <code>number</code> | 最小值 | -Infinity |
 | max | <code>number</code> | 最大值 | Infinity |
 | step | <code>number</code> | 计数间隔 | 1 |
