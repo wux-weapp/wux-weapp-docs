@@ -50,6 +50,7 @@
   * [Divider 分割线](divider.md)
   * [FabButton 浮动按钮](fab-button.md)
   * [Image 图片](image.md)
+  * [Index 索引选择器](index.md)
   * [List 列表](list.md)
   * [Media 媒体对象](media.md)
   * [NoticeBar 通告栏](notice-bar.md)

@@ -1,0 +1,82 @@
+# Index 索引选择器
+
+用于通讯录、城市选择的索引选择器。
+
+## 使用指南
+
+### 在 page.json 中引入组件
+
+```json
+{
+    "navigationBarTitleText": "Index",
+    "usingComponents": {
+        "wux-index": "../../dist/index/index",
+        "wux-index-item": "../../dist/index-item/index"
+    }
+}
+```
+
+### 示例
+
+```html
+<wux-index height="100%" bind:change="onChange">
+    <wux-index-item wx:for="{{ alphabet }}" wx:key="" name="{{ item.initial }}">
+        <view class="demo-item" wx:for="{{ item.cells }}" wx:for-item="cell" wx:key="">{{ cell }}</view>
+    </wux-index-item>
+</wux-index>
+```
+
+```js
+const NAMES = ['Aaron', 'Alden', 'Austin', 'Baldwin', 'Braden', 'Carl', 'Chandler', 'Clyde', 'David', 'Edgar', 'Elton', 'Floyd', 'Freeman', 'Gavin', 'Hector', 'Henry', 'Ian', 'Jason', 'Joshua', 'Kane', 'Lambert', 'Matthew', 'Morgan', 'Neville', 'Oliver', 'Oscar', 'Perry', 'Quinn', 'Ramsey', 'Scott', 'Seth', 'Spencer', 'Timothy', 'Todd', 'Trevor', 'Udolf', 'Victor', 'Vincent', 'Walton', 'Willis', 'Xavier', 'Yvonne', 'Zack', 'Zane']
+
+Page({
+    data: {
+        alphabet: [],
+    },
+    onLoad() {
+        const alphabet = []
+
+        'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('').forEach((initial) => {
+            const cells = NAMES.filter((name) => name.charAt(0) === initial)
+            alphabet.push({
+                initial,
+                cells
+            })
+        })
+
+        this.setData({
+            alphabet,
+        })
+    },
+    onChange(e) {
+        console.log('onChange', e.detail)
+    },
+})
+```
+
+## 视频演示
+
+[Index](./_media/index.mp4 ':include :type=iframe width=375px height=667px')
+
+## API
+
+### Index props
+
+| 参数 | 类型 | 描述 | 默认值 |
+| --- | --- | --- | --- |
+| prefixCls | <code>string</code> | 自定义类名前缀 | wux-index |
+| height | <code>string,number</code> | 设置容器的高度 | 300 |
+| showIndicator | <code>boolean</code> | 是否显示提示框 | true |
+
+### indexItem props
+
+| 参数 | 类型 | 描述 | 默认值 |
+| --- | --- | --- | --- |
+| prefixCls | <code>string</code> | 自定义类名前缀 | wux-index-item |
+| name | <code>string</code> | 名称 | - |
+
+### IndexItem slot
+
+| 名称 | 描述 |
+| --- | --- |
+| - | 自定义内容 |
