@@ -142,6 +142,10 @@ Page({
 | prefixCls | <code>string</code> | 自定义类名前缀 | wux-upload |
 | max | <code>number</code> | 最大图片张数，设置为 -1 的时候不限制张数 | -1 |
 | count | <code>number</code> | 从相册选图时，最多可以选择的图片张数 | 9 |
+| defaultFileType | <code>string</code> | 上传文件类型，可选值为 image、video | image |
+| compressed | <code>boolean</code> | 是否压缩所选择的视频文件，当 defaultFileType 为 video 时才生效 | true |
+| maxDuration | <code>number</code> | 拍摄视频最长拍摄时间，单位秒。当 defaultFileType 为 video 时才生效 | 60 |
+| camera | <code>string</code> | 默认拉起的是前置或者后置摄像头。部分 Android 手机下由于系统 ROM 不支持无法生效。当 defaultFileType 为 video 时才生效 | back |
 | sizeType | <code>array</code> | original 原图，compressed 压缩图 | ['original', 'compressed'] |
 | sourceType | <code>array</code> | album 从相册选图，camera 使用相机 | ['album', 'camera'] |
 | url | <code>string</code> | 上传地址 | - |
