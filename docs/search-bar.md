@@ -81,7 +81,7 @@ Page({
 | value | <code>string</code> | 输入框的当前值，当 controlled 为 true 时才生效 | - |
 | controlled | <code>boolean</code> | 是否受控 [说明文档](controlled.md) | false |
 | placeholder | <code>string</code> | 输入框为空时占位符 | - |
-| placeholder-style | <code>string</code> | 指定 placeholder 的样式 | - |
+| placeholder-style | <code>string,object</code> | 指定 placeholder 的样式 | - |
 | placeholder-class | <code>string</code> | 指定 placeholder 的样式类 | input-placeholder |
 | disabled | <code>boolean</code> | 是否禁用 | false |
 | maxlength | <code>number</code> | 最大输入长度，设置为 -1 的时候不限制最大长度 | 140 |

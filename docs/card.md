@@ -77,7 +77,7 @@
 | full | <code>boolean</code> | 是否通栏 | false |
 | title | <code>string</code> | 卡片标题 | - |
 | thumb | <code>string</code> | 卡片标题图片 | - |
-| thumbStyle | <code>string</code> | 标题图片样式 | - |
+| thumbStyle | <code>string,object</code> | 标题图片样式 | - |
 | extra | <code>string</code> | 卡片标题辅助内容 | - |
 
 ### Card slot

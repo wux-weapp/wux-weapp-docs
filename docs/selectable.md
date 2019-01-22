@@ -120,7 +120,7 @@ Page({
 | controlled | <code>boolean</code> | 是否受控 [说明文档](controlled.md) | false |
 | disabled | <code>boolean</code> | 是否禁用 | false |
 | color | <code>string</code> | 主题色，可选值为 light、stable、positive、calm、assertive、balanced、energized、royal、dark  | balanced |
-| wrapStyle | <code>string</code> | 自定义样式 | - |
+| wrapStyle | <code>string,object</code> | 自定义样式 | - |
 | bind:change | <code>function</code> | change 事件触发的回调函数 | - |
 
 ### Selectable slot

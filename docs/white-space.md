@@ -48,7 +48,7 @@
 | --- | --- | --- | --- |
 | prefixCls | <code>string</code> | 自定义类名前缀 | wux-whitespace |
 | size | <code>string</code> | 上下留白的间距，可选值为 small、default、large | default |
-| bodyStyle | <code>string</code> | 自定义样式 | - |
+| bodyStyle | <code>string,object</code> | 自定义样式 | - |
 
 ### WhiteSpace slot
 

@@ -156,7 +156,7 @@ Page({
 | type | <code>string</code> | 类型，可选值为 text、number、idcard、digit | text |
 | password | <code>boolean</code> | 是否是密码类型 | false |
 | placeholder | <code>string</code> | 输入框为空时占位符 | - |
-| placeholder-style | <code>string</code> | 指定 placeholder 的样式 | - |
+| placeholder-style | <code>string,object</code> | 指定 placeholder 的样式 | - |
 | placeholder-class | <code>string</code> | 指定 placeholder 的样式类 | input-placeholder |
 | disabled | <code>boolean</code> | 是否禁用 | false |
 | maxlength | <code>number</code> | 最大输入长度，设置为 -1 的时候不限制最大长度 | 140 |

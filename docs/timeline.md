@@ -94,7 +94,7 @@
 | --- | --- | --- | --- |
 | prefixCls | <code>string</code> | 自定义类名前缀 | wux-timeline-item |
 | content | <code>string</code> | 内容 | - |
-| dotStyle | <code>string</code> | 时间轴点样式 | - |
+| dotStyle | <code>string,object</code> | 时间轴点样式 | - |
 | custom | <code>boolean</code> | 是否自定义时间轴点 | false |
 
 ### TimelineItem slot

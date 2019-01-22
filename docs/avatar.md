@@ -72,7 +72,7 @@
 | shape | <code>string</code> | 指定头像的形状，可选值为 circle、square | circle |
 | size | <code>string</code> | 设置头像的大小，可选值为 small、default、large | default |
 | src | <code>string</code> | 图片类头像的资源地址 | - |
-| bodyStyle | <code>string</code> | 自定义样式 | - |
+| bodyStyle | <code>string,object</code> | 自定义样式 | - |
 | scale | <code>boolean</code> | 是否自动调整大小 | false |
 
 ### Avatar slot

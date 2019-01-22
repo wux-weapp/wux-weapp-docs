@@ -88,10 +88,10 @@ Page({
 | disabled | <code>boolean</code> | 是否禁用 | false |
 | showMark | <code>boolean</code> | 是否显示间断点，建议在 step 间隔不密集时使用 | false |
 | showValue | <code>boolean,object</code> | 是否显示最小、大值，参数支持对象格式如 `{ min: false, max: true }` | false |
-| markStyle | <code>string,array</code> | 间断点的样式，参数支持数组格式如 `[ 'background-color: red' ]` | - |
-| handleStyle | <code>string,array</code> | 滑块的样式，参数支持数组格式如 `[ 'background-color: red' ]` | - |
-| trackStyle | <code>string,array</code> | 选中部分滑动条的样式，参数支持数组格式如 `[ 'background-color: red' ]` | - |
-| railStyle | <code>string</code> | 未选中部分的样式 | - |
-| wrapStyle | <code>string</code> | 自定义 wrap 样式 | - |
+| markStyle | <code>string,object,array</code> | 间断点的样式，参数支持数组格式如 `[ 'background-color: red' ]` | - |
+| handleStyle | <code>string,object,array</code> | 滑块的样式，参数支持数组格式如 `[ 'background-color: red' ]` | - |
+| trackStyle | <code>string,object,array</code> | 选中部分滑动条的样式，参数支持数组格式如 `[ 'background-color: red' ]` | - |
+| railStyle | <code>string,object</code> | 未选中部分的样式 | - |
+| wrapStyle | <code>string,object</code> | 自定义 wrap 样式 | - |
 | bind:change | <code>function</code> | 拖动过程中触发的回调函数 `event.detail = { value: value, offsets: offsets }` | - |
 | bind:afterChange | <code>function</code> | 完成一次拖动后触发的回调函数 `event.detail = { value: value, offsets: offsets }` | - |

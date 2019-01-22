@@ -156,7 +156,7 @@ Page({
 | theme | <code>string</code> | 气泡框主题，可选值为 light、dark | light |
 | title | <code>string</code> | 提示标题 | - |
 | content | <code>string</code> | 提示内容 | - |
-| bodyStyle | <code>string</code> | 自定义样式 | - |
+| bodyStyle | <code>string,object</code> | 自定义样式 | - |
 | defaultVisible | <code>boolean</code> | 默认是否显隐，当 controlled 为 false 时才生效 | false |
 | placement | <code>string</code> | 气泡框位置，可选值为 top、left、right、bottom、topLeft、topRight、bottomLeft、bottomRight、leftTop、leftBottom、rightTop、rightBottom | top |
 | trigger | <code>string</code> | 触发行为，可选值为 click | click |
