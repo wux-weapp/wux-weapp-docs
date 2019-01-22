@@ -58,6 +58,7 @@
   * [Qrcode 二维码](qrcode.md)
   * [SegmentedControl 分段器](segmented-control.md)
   * [Steps 步骤条](steps.md)
+  * [Sticky 吸顶容器](sticky.md)
   * [TabBar 标签栏](tabbar.md)
   * [Tabs 标签页](tabs.md)
   * [Tag 标签](tag.md)
