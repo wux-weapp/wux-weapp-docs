@@ -82,7 +82,7 @@
 ### Margin 边距类
 
 ```html
-<!-- top、right、bottom、left (0 - 20) -->
+<!-- top、right、bottom、left (0 - 30) -->
 <view class="wux-m--0">No margin</view>
 <view class="wux-margin--0">No margin</view>
 <view class="wux-mt--0">No margin top</view>
@@ -92,6 +92,18 @@
 <view class="wux-pt--0">No padding top</view>
 <view class="wux-padding-top--0">No padding top</view>
 ...
+```
+
+### Hairline 1 像素边框
+
+```html
+<view class="wux-hairline--top">Border-top</view>
+<view class="wux-hairline--right">Border-right</view>
+<view class="wux-hairline--bottom">Border-bottom</view>
+<view class="wux-hairline--left">Border-left</view>
+<view class="wux-hairline--horizontal">Horizontal border</view>
+<view class="wux-hairline--vertical">Vertical border</view>
+<view class="wux-hairline--surrounded">Surrounded border</view>
 ```
 
 ## 视频演示
