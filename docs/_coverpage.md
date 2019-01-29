@@ -24,9 +24,9 @@
 	</a>
 </p>
 
-> 微信小程序自定义 UI 组件
+> 微信小程序 UI 组件库
 
 * 组件化、可复用、易扩展
 
 [GitHub](https://github.com/wux-weapp/wux-weapp/)
-[Get Started](quickstart)
+[Get Started](introduce)
