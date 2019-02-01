@@ -25,6 +25,7 @@
 * 导航组件
 
   * [NavBar 导航栏](navbar.md)
+  * [Pagination 分页器](pagination.md)
   * [Popover 气泡框](popover.md)
   * [SegmentedControl 分段器](segmented-control.md)
   * [TabBar 标签栏](tabbar.md)
