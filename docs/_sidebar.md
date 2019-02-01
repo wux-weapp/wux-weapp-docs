@@ -8,7 +8,7 @@
 
 * [受控组件](controlled.md)
 
-* 核心组件
+* 基础组件
 
   * [AnimationGroup 动画组](animation-group.md)
   * [Button 按钮](button.md)
@@ -21,6 +21,14 @@
   * [Layout 栅格布局](layout.md)
   * [WhiteSpace 上下留白](white-space.md)
   * [WingBlank 两翼留白](wing-blank.md)
+
+* 导航组件
+
+  * [NavBar 导航栏](navbar.md)
+  * [Popover 气泡框](popover.md)
+  * [SegmentedControl 分段器](segmented-control.md)
+  * [TabBar 标签栏](tabbar.md)
+  * [Tabs 标签页](tabs.md)
 
 * 数据录入
 
@@ -56,14 +64,10 @@
   * [List 列表](list.md)
   * [Media 媒体对象](media.md)
   * [NoticeBar 通告栏](notice-bar.md)
-  * [Popover 气泡框](popover.md)
   * [Prompt 提示消息](prompt.md)
   * [Qrcode 二维码](qrcode.md)
-  * [SegmentedControl 分段器](segmented-control.md)
   * [Steps 步骤条](steps.md)
   * [Sticky 吸顶容器](sticky.md)
-  * [TabBar 标签栏](tabbar.md)
-  * [Tabs 标签页](tabs.md)
   * [Tag 标签](tag.md)
   * [Timeago 多久之前](timeago.md)
   * [Timeline 时间轴](timeline.md)
