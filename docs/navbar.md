@@ -68,7 +68,7 @@ Page({
 | rightText | <code>string</code> | 导航右边内容 | - |
 | bind:click | <code>function</code> | 点击事件 | - |
 
-### Tag slot
+### NavBar slot
 
 | 名称 | 描述 |
 | --- | --- |
