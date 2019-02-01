@@ -1,3 +1,12 @@
+# v 3.5.0 (2019-02-01)
+
+- 增加组件：SwipeAction - 滑动操作
+- 增加组件：Skeleton - 骨架屏
+- 增加组件：NavBar - 导航栏
+- 增加组件：Pagination - 分页器
+- 更新组件：Select - 下拉框 新增自动定位的功能 [#203](https://github.com/wux-weapp/wux-weapp/issues/203)
+- 更新组件：List - 列表 修复点击效果不显示的问题
+
 # v 3.4.2 (2019-01-23)
 
 - 修复 v3.4.1 遗留 BUG，优化关联组件的性能
