@@ -89,3 +89,9 @@ Page({
 | - | 自定义内容 |
 | header | 自定义左侧内容 |
 | footer | 自定义右侧内容 |
+
+### NoticeBar externalClasses
+
+| 名称 | 描述 |
+| --- | --- |
+| wux-class | 根节点样式类 |
