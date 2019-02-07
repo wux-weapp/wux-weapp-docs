@@ -193,3 +193,9 @@ Page({
 | 名称 | 描述 |
 | --- | --- |
 | - | 自定义左侧内容 |
+
+### Textarea externalClasses
+
+| 名称 | 描述 |
+| --- | --- |
+| wux-class | 根节点样式类 |
