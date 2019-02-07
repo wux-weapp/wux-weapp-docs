@@ -79,6 +79,12 @@ Page({
 | current | <code>number</code> | 指定当前步骤，从 0 开始记数。在子 `Step` 元素中，可以通过 status 属性覆盖状态 | 0 |
 | direction | <code>string</code> | step 样式，可选值为 vertical、horizontal | horizontal |
 
+### Steps externalClasses
+
+| 名称 | 描述 |
+| --- | --- |
+| wux-class | 根节点样式类 |
+
 ### Step props
 
 | 参数 | 类型 | 描述 | 默认值 |
@@ -95,3 +101,9 @@ Page({
 | --- | --- |
 | title | 自定义标题 |
 | content | 自定义描述 |
+
+### Step externalClasses
+
+| 名称 | 描述 |
+| --- | --- |
+| wux-class | 根节点样式类 |
