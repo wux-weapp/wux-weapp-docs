@@ -102,3 +102,9 @@
 | - | 自定义标题或描述 |
 | header | 自定义缩略图 |
 | footer | 自定义右侧内容 |
+
+### Alert externalClasses
+
+| 名称 | 描述 |
+| --- | --- |
+| wux-class | 根节点样式类 |
