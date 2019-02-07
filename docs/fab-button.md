@@ -219,3 +219,9 @@ Page({
 | 名称 | 描述 |
 | --- | --- |
 | action | 自定义操作按钮，当 action 为空时才生效 |
+
+### FabButton externalClasses
+
+| 名称 | 描述 |
+| --- | --- |
+| wux-class | 根节点样式类 |
