@@ -246,6 +246,12 @@ Page({
 | prefixCls | <code>string</code> | 自定义类名前缀 | wux-sticky |
 | scrollTop | <code>number</code> | 设置竖向滚动条位置 | 0 |
 
+### Sticky externalClasses
+
+| 名称 | 描述 |
+| --- | --- |
+| wux-class | 根节点样式类 |
+
 ### StickyItem props
 
 | 参数 | 类型 | 描述 | 默认值 |
@@ -260,3 +266,9 @@ Page({
 | --- | --- |
 | title | 自定义标题 |
 | content | 自定义内容 |
+
+### StickyItem externalClasses
+
+| 名称 | 描述 |
+| --- | --- |
+| wux-class | 根节点样式类 |
