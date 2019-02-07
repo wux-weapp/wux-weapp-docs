@@ -179,3 +179,12 @@ Page({
 | bind:change | <code>function</code> | 监听值变化的回调函数 | - |
 | bind:focus | <code>function</code> | 输入框聚焦时触发的回调函数 | - |
 | bind:blur | <code>function</code> | 输入框失去焦点时触发的回调函数 | - |
+
+### InputNumber externalClasses
+
+| 名称 | 描述 |
+| --- | --- |
+| wux-class | 根节点样式类 |
+| wux-sub-class | 左侧按钮样式类 |
+| wux-input-class | 输入框样式类 |
+| wux-add-class | 右侧按钮样式类 |
