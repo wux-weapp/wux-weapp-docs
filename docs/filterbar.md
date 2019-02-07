@@ -350,6 +350,8 @@ Page({
 
 ## API
 
+### FilterBar props
+
 | 参数 | 类型 | 描述 | 默认值 |
 | --- | --- | --- | --- |
 | prefixCls | <code>string</code> | 自定义类名前缀 | wux-filterbar |
@@ -363,3 +365,9 @@ Page({
 | bind:scroll | <code>function</code> | scroll 事件触发的回调函数 | - |
 | bind:open | <code>function</code> | 打开 select 或 filter 时触发的回调函数 | - |
 | bind:close | <code>function</code> | 关闭 select 或 filter 时触发的回调函数 | - |
+
+### FilterBar externalClasses
+
+| 名称 | 描述 |
+| --- | --- |
+| wux-class | 根节点样式类 |
