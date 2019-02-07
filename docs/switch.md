@@ -135,3 +135,9 @@ Page({
 | disabled | <code>boolean</code> | 是否不可修改 | false |
 | color | <code>string</code> | 主题色，可选值为 light、stable、positive、calm、assertive、balanced、energized、royal、dark | balanced |
 | bind:change | <code>function</code> | change 事件触发的回调函数 | - |
+
+### Switch externalClasses
+
+| 名称 | 描述 |
+| --- | --- |
+| wux-class | 根节点样式类 |
