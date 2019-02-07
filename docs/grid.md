@@ -131,6 +131,12 @@
 | bordered | <code>boolean</code> | 是否有边框 | true |
 | square | <code>boolean</code> | 每个格子是否固定为正方形 | false |
 
+### Grids externalClasses
+
+| 名称 | 描述 |
+| --- | --- |
+| wux-class | 根节点样式类 |
+
 ### Grid props
 
 | 参数 | 类型 | 描述 | 默认值 |
@@ -148,3 +154,9 @@
 | --- | --- |
 | - | 自定义内容 |
 | header | 自定义缩略图 |
+
+### Grid externalClasses
+
+| 名称 | 描述 |
+| --- | --- |
+| wux-class | 根节点样式类 |
