@@ -121,3 +121,9 @@
 | empty | 自定义资源不存在的提示内容 |
 | loading | 自定义资源加载中的提示内容 |
 | error | 自定义资源加载失败的提示内容 |
+
+### Image externalClasses
+
+| 名称 | 描述 |
+| --- | --- |
+| wux-class | 根节点样式类 |
