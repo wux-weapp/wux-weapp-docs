@@ -109,26 +109,26 @@ Page({
 
 | 参数 | 类型 | 描述 | 默认值 |
 | --- | --- | --- | --- |
-| prefixCls | <code>string</code> | 自定义类名前缀 | wux-checkbox-group |
-| cellGroupPrefixCls | <code>string</code> | 自定义 cellGroup 类名前缀 | wux-cell-group |
-| name | <code>string</code> | 在表单中的字段名 | - |
-| value | <code>array</code> | 在表单中的字段值（当前选中项的值） | [] |
-| title | <code>string</code> | 标题 | - |
-| label | <code>string</code> | 描述 | - |
-| bind:change | <code>function</code> | change 事件触发的回调函数 | - |
+| prefixCls | `string` | 自定义类名前缀 | wux-checkbox-group |
+| cellGroupPrefixCls | `string` | 自定义 cellGroup 类名前缀 | wux-cell-group |
+| name | `string` | 在表单中的字段名 | - |
+| value | `array` | 在表单中的字段值（当前选中项的值） | [] |
+| title | `string` | 标题 | - |
+| label | `string` | 描述 | - |
+| bind:change | `function` | change 事件触发的回调函数 | - |
 
 ### Checkbox props
 
 | 参数 | 类型 | 描述 | 默认值 |
 | --- | --- | --- | --- |
-| prefixCls | <code>string</code> | 自定义类名前缀 | wux-checkbox |
-| cellPrefixCls | <code>string</code> | 自定义 cell 类名前缀 | wux-cell |
-| selectablePrefixCls | <code>string</code> | 自定义 selectable 类名前缀 | wux-selectable |
-| title | <code>string</code> | 左侧标题 | - |
-| label | <code>string</code> | 标题下方的描述信息 | - |
-| extra | <code>string</code> | 右侧内容 | - |
-| value | <code>string</code> | 当前项的值 | - |
-| checked | <code>boolean</code> | 是否默认选中 | false |
-| disabled | <code>boolean</code> | 是否不可修改 | false |
-| color | <code>string</code> | 主题色，可选值为 light、stable、positive、calm、assertive、balanced、energized、royal、dark | balanced |
-| bind:change | <code>function</code> | change 事件触发的回调函数，优先级低于父级 change 事件 | - |
+| prefixCls | `string` | 自定义类名前缀 | wux-checkbox |
+| cellPrefixCls | `string` | 自定义 cell 类名前缀 | wux-cell |
+| selectablePrefixCls | `string` | 自定义 selectable 类名前缀 | wux-selectable |
+| title | `string` | 左侧标题 | - |
+| label | `string` | 标题下方的描述信息 | - |
+| extra | `string` | 右侧内容 | - |
+| value | `string` | 当前项的值 | - |
+| checked | `boolean` | 是否默认选中 | false |
+| disabled | `boolean` | 是否不可修改 | false |
+| color | `string` | 主题色，可选值为 light、stable、positive、calm、assertive、balanced、energized、royal、dark | balanced |
+| bind:change | `function` | change 事件触发的回调函数，优先级低于父级 change 事件 | - |

@@ -165,20 +165,20 @@ Page({
 
 | 参数 | 类型 | 描述 | 默认值 |
 | --- | --- | --- | --- |
-| prefixCls | <code>string</code> | 自定义类名前缀 | wux-input-number |
-| min | <code>number</code> | 最小值 | -Infinity |
-| max | <code>number</code> | 最大值 | Infinity |
-| step | <code>number</code> | 计数间隔 | 1 |
-| defaultValue | <code>number</code> | 默认值，当 controlled 为 false 时才生效 | 0 |
-| value | <code>number</code> | 当前值，当 controlled 为 true 时才生效 | 0 |
-| controlled | <code>boolean</code> | 是否受控 [说明文档](controlled.md) | false |
-| disabled | <code>boolean</code> | 是否禁用输入 | true |
-| longpress | <code>boolean</code> | 是否支持长按 | false |
-| color | <code>string</code> | 主题色，可选值为 light、stable、positive、calm、assertive、balanced、energized、royal、dark | balanced |
-| shape | <code>string</code> | 形状，可选值为 circle、square | square |
-| bind:change | <code>function</code> | 监听值变化的回调函数 | - |
-| bind:focus | <code>function</code> | 输入框聚焦时触发的回调函数 | - |
-| bind:blur | <code>function</code> | 输入框失去焦点时触发的回调函数 | - |
+| prefixCls | `string` | 自定义类名前缀 | wux-input-number |
+| min | `number` | 最小值 | -Infinity |
+| max | `number` | 最大值 | Infinity |
+| step | `number` | 计数间隔 | 1 |
+| defaultValue | `number` | 默认值，当 `controlled` 为 `false` 时才生效 | 0 |
+| value | `number` | 当前值，当 `controlled` 为 `true` 时才生效 | 0 |
+| controlled | `boolean` | 是否受控 [说明文档](controlled.md) | false |
+| disabled | `boolean` | 是否禁用输入 | true |
+| longpress | `boolean` | 是否支持长按 | false |
+| color | `string` | 主题色，可选值为 light、stable、positive、calm、assertive、balanced、energized、royal、dark | balanced |
+| shape | `string` | 形状，可选值为 circle、square | square |
+| bind:change | `function` | 监听值变化的回调函数 | - |
+| bind:focus | `function` | 输入框聚焦时触发的回调函数 | - |
+| bind:blur | `function` | 输入框失去焦点时触发的回调函数 | - |
 
 ### InputNumber externalClasses
 

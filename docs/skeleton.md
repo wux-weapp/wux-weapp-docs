@@ -65,8 +65,8 @@
 
 | 参数 | 类型 | 描述 | 默认值 |
 | --- | --- | --- | --- |
-| prefixCls | <code>string</code> | 自定义类名前缀 | wux-skeleton |
-| active | <code>boolean</code> | 是否展示动画效果 | false |
+| prefixCls | `string` | 自定义类名前缀 | wux-skeleton |
+| active | `boolean` | 是否展示动画效果 | false |
 
 ### Skeleton externalClasses
 
@@ -78,9 +78,9 @@
 
 | 参数 | 类型 | 描述 | 默认值 |
 | --- | --- | --- | --- |
-| prefixCls | <code>string</code> | 自定义类名前缀 | wux-skeleton-avatar |
-| shape | <code>string</code> | 指定头像的形状，可选值为 circle、rounded、square | circle |
-| size | <code>string</code> | 设置头像的大小，可选值为 small、default、large | default |
+| prefixCls | `string` | 自定义类名前缀 | wux-skeleton-avatar |
+| shape | `string` | 指定头像的形状，可选值为 circle、rounded、square | circle |
+| size | `string` | 设置头像的大小，可选值为 small、default、large | default |
 
 ### SkeletonAvatar externalClasses
 
@@ -92,9 +92,9 @@
 
 | 参数 | 类型 | 描述 | 默认值 |
 | --- | --- | --- | --- |
-| prefixCls | <code>string</code> | 自定义类名前缀 | wux-skeleton-paragraph |
-| rows | <code>number</code> | 设置段落占位图的行数 | 3 |
-| rounded | <code>boolean</code> | 是否圆角 | false |
+| prefixCls | `string` | 自定义类名前缀 | wux-skeleton-paragraph |
+| rows | `number` | 设置段落占位图的行数 | 3 |
+| rounded | `boolean` | 是否圆角 | false |
 
 ### SkeletonParagraph externalClasses
 

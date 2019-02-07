@@ -61,11 +61,11 @@ Page({
 
 | 参数 | 类型 | 描述 | 默认值 |
 | --- | --- | --- | --- |
-| options | <code>object</code> | 配置项 | - |
-| options.prefixCls | <code>string</code> | 自定义类名前缀 | wux-loading |
-| options.classNames | <code>any</code> | 过渡的类名，更多内置过渡效果请参考 [AnimationGroup](animation-group.md) | wux-animate--fadeIn |
-| options.text | <code>string</code> | 提示文本 | 数据加载中 |
-| options.mask | <code>boolean</code> | 是否显示蒙层 | true |
+| options | `object` | 配置项 | - |
+| options.prefixCls | `string` | 自定义类名前缀 | wux-loading |
+| options.classNames | `any` | 过渡的类名，更多内置过渡效果请参考 [AnimationGroup](animation-group.md) | wux-animate--fadeIn |
+| options.text | `string` | 提示文本 | 数据加载中 |
+| options.mask | `boolean` | 是否显示蒙层 | true |
 
 ### Loading.method
 

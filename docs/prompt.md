@@ -109,12 +109,12 @@ Page({
 
 | 参数 | 类型 | 描述 | 默认值 |
 | --- | --- | --- | --- |
-| prefixCls | <code>string</code> | 自定义类名前缀 | wux-prompt |
-| classNames | <code>any</code> | 过渡的类名，更多内置过渡效果请参考 [AnimationGroup](animation-group.md) | wux-animate--fadeIn |
-| icon | <code>string</code> | 图标 | - |
-| title | <code>string</code> | 标题 | - |
-| text | <code>string</code> | 文本 | - |
-| buttons | <code>array</code> | 按钮 | [] |
-| buttons[].text | <code>string</code> | 按钮的文本 | - |
-| visible | <code>boolean</code> | 是否显示组件 | false |
-| bind:click | <code>function</code> | 按钮点击事件 | - |
+| prefixCls | `string` | 自定义类名前缀 | wux-prompt |
+| classNames | `any` | 过渡的类名，更多内置过渡效果请参考 [AnimationGroup](animation-group.md) | wux-animate--fadeIn |
+| icon | `string` | 图标 | - |
+| title | `string` | 标题 | - |
+| text | `string` | 文本 | - |
+| buttons | `array` | 按钮 | [] |
+| buttons[].text | `string` | 按钮的文本 | - |
+| visible | `boolean` | 是否显示组件 | false |
+| bind:click | `function` | 按钮点击事件 | - |

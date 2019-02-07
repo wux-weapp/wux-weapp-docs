@@ -91,16 +91,16 @@ Page({
 
 | 参数 | 类型 | 描述 | 默认值 |
 | --- | --- | --- | --- |
-| prefixCls | <code>string</code> | 自定义类名前缀 | wux-tag |
-| hoverClass | <code>string</code> | 指定按钮按下去的样式类。当 hover-class="none" 时，没有点击态效果 | default |
-| color | <code>string</code> | 标签色 | - |
-| closable | <code>boolean</code> | 标签是否可以关闭 | false |
-| defaultVisible | <code>boolean</code> | 默认是否显隐，当 controlled 为 false 时才生效 | true |
-| visible | <code>boolean</code> | 用于手动控制浮层显隐，当 controlled 为 true 时才生效 | true |
-| controlled | <code>boolean</code> | 是否受控 [说明文档](controlled.md) | false |
-| bind:change | <code>function</code> | 监听状态变化的回调函数 | - |
-| bind:close | <code>function</code> | 关闭时的回调 | - |
-| bind:click | <code>function</code> | 点击事件 | - |
+| prefixCls | `string` | 自定义类名前缀 | wux-tag |
+| hoverClass | `string` | 指定按钮按下去的样式类。当 hover-class="none" 时，没有点击态效果 | default |
+| color | `string` | 标签色 | - |
+| closable | `boolean` | 标签是否可以关闭 | false |
+| defaultVisible | `boolean` | 默认是否显隐，当 `controlled` 为 `false` 时才生效 | true |
+| visible | `boolean` | 用于手动控制浮层显隐，当 `controlled` 为 `true` 时才生效 | true |
+| controlled | `boolean` | 是否受控 [说明文档](controlled.md) | false |
+| bind:change | `function` | 监听状态变化的回调函数 | - |
+| bind:close | `function` | 关闭时的回调 | - |
+| bind:click | `function` | 点击事件 | - |
 
 ### Tag slot
 

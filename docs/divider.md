@@ -52,11 +52,11 @@
 
 | 参数 | 类型 | 描述 | 默认值 |
 | --- | --- | --- | --- |
-| prefixCls | <code>string</code> | 自定义类名前缀 | wux-divider |
-| position | <code>string</code> | 分割线文字的位置，可选值为 left、center、right | center |
-| dashed | <code>boolean</code> | 是否显示虚线 | false |
-| text | <code>string</code> | 文字 | - |
-| showText | <code>boolean</code> | 是否显示文字 | true |
+| prefixCls | `string` | 自定义类名前缀 | wux-divider |
+| position | `string` | 分割线文字的位置，可选值为 left、center、right | center |
+| dashed | `boolean` | 是否显示虚线 | false |
+| text | `string` | 文字 | - |
+| showText | `boolean` | 是否显示文字 | true |
 
 ### Divider slot
 

@@ -151,18 +151,18 @@ Page({
 
 | 参数 | 类型 | 描述 | 默认值 |
 | --- | --- | --- | --- |
-| prefixCls | <code>string</code> | 自定义类名前缀 | wux-popover |
-| classNames | <code>any</code> | 过渡的类名，更多内置过渡效果请参考 [AnimationGroup](animation-group.md) | wux-animate--fadeIn |
-| theme | <code>string</code> | 气泡框主题，可选值为 light、dark | light |
-| title | <code>string</code> | 提示标题 | - |
-| content | <code>string</code> | 提示内容 | - |
-| bodyStyle | <code>string,object</code> | 自定义样式 | - |
-| defaultVisible | <code>boolean</code> | 默认是否显隐，当 controlled 为 false 时才生效 | false |
-| placement | <code>string</code> | 气泡框位置，可选值为 top、left、right、bottom、topLeft、topRight、bottomLeft、bottomRight、leftTop、leftBottom、rightTop、rightBottom | top |
-| trigger | <code>string</code> | 触发行为，可选值为 click | click |
-| visible | <code>boolean</code> | 用于手动控制浮层显隐，当 controlled 为 true 时才生效 | false |
-| controlled | <code>boolean</code> | 是否受控 [说明文档](controlled.md) | false |
-| bind:change | <code>function</code> | 显示隐藏的回调函数 | - |
+| prefixCls | `string` | 自定义类名前缀 | wux-popover |
+| classNames | `any` | 过渡的类名，更多内置过渡效果请参考 [AnimationGroup](animation-group.md) | wux-animate--fadeIn |
+| theme | `string` | 气泡框主题，可选值为 light、dark | light |
+| title | `string` | 提示标题 | - |
+| content | `string` | 提示内容 | - |
+| bodyStyle | `string,object` | 自定义样式 | - |
+| defaultVisible | `boolean` | 默认是否显隐，当 `controlled` 为 `false` 时才生效 | false |
+| placement | `string` | 气泡框位置，可选值为 top、left、right、bottom、topLeft、topRight、bottomLeft、bottomRight、leftTop、leftBottom、rightTop、rightBottom | top |
+| trigger | `string` | 触发行为，可选值为 click | click |
+| visible | `boolean` | 用于手动控制浮层显隐，当 `controlled` 为 `true` 时才生效 | false |
+| controlled | `boolean` | 是否受控 [说明文档](controlled.md) | false |
+| bind:change | `function` | 显示隐藏的回调函数 | - |
 
 ### Popover slot
 

@@ -96,22 +96,22 @@
 
 | 参数 | 类型 | 描述 | 默认值 |
 | --- | --- | --- | --- |
-| prefixCls | <code>string</code> | 自定义类名前缀 | wux-image |
-| src | <code>string</code> | 图片资源地址 | - |
-| mode | <code>string</code> | 图片裁剪、缩放的模式，可参考 [image](https://mp.weixin.qq.com/debug/wxadoc/dev/component/image.html) | scaleToFill |
-| lazyLoad | <code>boolean</code> | 图片懒加载。只针对 page 与 scroll-view 下的 image 有效 | false |
-| shape | <code>string</code> | 形状，可选值为 normal、rounded、circle、thumbnail | normal |
-| width | <code>any</code> | 默认宽度，单位 px | 300 |
-| height | <code>any</code> | 默认高度，单位 px | 225 |
-| unmountOnEmpty | <code>boolean</code> | 资源不存在时是否卸载组件 | false |
-| unmountOnError | <code>boolean</code> | 资源加载失败时是否卸载组件 | false |
-| empty | <code>string</code> | 资源不存在的提示内容 | - |
-| loading | <code>string</code> | 资源加载中的提示内容 | - |
-| error | <code>string</code> | 资源加载失败的提示内容 | - |
-| bind:change | <code>function</code> | 监听状态变化的回调函数 | - |
-| bind:load | <code>function</code> | 资源加载完成时的回调函数 | - |
-| bind:error | <code>function</code> | 资源加载失败时的回调函数 | - |
-| bind:click | <code>function</code> | 点击事件 | - |
+| prefixCls | `string` | 自定义类名前缀 | wux-image |
+| src | `string` | 图片资源地址 | - |
+| mode | `string` | 图片裁剪、缩放的模式，可参考 [image](https://mp.weixin.qq.com/debug/wxadoc/dev/component/image.html) | scaleToFill |
+| lazyLoad | `boolean` | 图片懒加载。只针对 page 与 scroll-view 下的 image 有效 | false |
+| shape | `string` | 形状，可选值为 normal、rounded、circle、thumbnail | normal |
+| width | `any` | 默认宽度，单位 px | 300 |
+| height | `any` | 默认高度，单位 px | 225 |
+| unmountOnEmpty | `boolean` | 资源不存在时是否卸载组件 | false |
+| unmountOnError | `boolean` | 资源加载失败时是否卸载组件 | false |
+| empty | `string` | 资源不存在的提示内容 | - |
+| loading | `string` | 资源加载中的提示内容 | - |
+| error | `string` | 资源加载失败的提示内容 | - |
+| bind:change | `function` | 监听状态变化的回调函数 | - |
+| bind:load | `function` | 资源加载完成时的回调函数 | - |
+| bind:error | `function` | 资源加载失败时的回调函数 | - |
+| bind:click | `function` | 点击事件 | - |
 
 ### Image slot
 

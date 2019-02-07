@@ -164,23 +164,23 @@ Page({
 
 | 参数 | 类型 | 描述 | 默认值 |
 | --- | --- | --- | --- |
-| prefixCls | <code>string</code> | 自定义类名前缀 | wux-cascader |
-| defaultValue | <code>array</code> | 默认值，当 controlled 为 false 时才生效 | [] |
-| value | <code>array</code> | 当前值，当 controlled 为 true 时才生效 | [] |
-| controlled | <code>boolean</code> | 是否受控 [说明文档](controlled.md) | false |
-| title | <code>string</code> | 标题的文字 | - |
-| options | <code>array</code> | 可选项数据源 | [] |
-| options[].value | <code>string</code> | 属性值 | - |
-| options[].label | <code>string</code> | 描述 | - |
-| options[].children | <code>array</code> | 子选项 | [] |
-| options[].disabled | <code>boolean</code> | 是否禁用 | false |
-| options[].isLeaf | <code>boolean</code> | 是否叶子节点，用于动态加载选项 | false |
-| chooseTitle | <code>string</code> | 选择的标题文字 | 请选择 |
-| visible | <code>boolean</code> | 是否显示组件 | false |
-| defaultFieldNames | <code>object</code> | 自定义 options 中的 value、label、children 字段 | { label: 'label', value: 'value', children: 'children' } |
-| bind:change | <code>function</code> | 选择完成后的回调函数 | - |
-| bind:close | <code>function</code> | 隐藏浮层的回调函数 | - |
-| bind:load | <code>function</code> | 动态加载选项的回调函数 | - |
+| prefixCls | `string` | 自定义类名前缀 | wux-cascader |
+| defaultValue | `array` | 默认值，当 `controlled` 为 `false` 时才生效 | [] |
+| value | `array` | 当前值，当 `controlled` 为 `true` 时才生效 | [] |
+| controlled | `boolean` | 是否受控 [说明文档](controlled.md) | false |
+| title | `string` | 标题的文字 | - |
+| options | `array` | 可选项数据源 | [] |
+| options[].value | `string` | 属性值 | - |
+| options[].label | `string` | 描述 | - |
+| options[].children | `array` | 子选项 | [] |
+| options[].disabled | `boolean` | 是否禁用 | false |
+| options[].isLeaf | `boolean` | 是否叶子节点，用于动态加载选项 | false |
+| chooseTitle | `string` | 选择的标题文字 | 请选择 |
+| visible | `boolean` | 是否显示组件 | false |
+| defaultFieldNames | `object` | 自定义 options 中的 value、label、children 字段 | { label: 'label', value: 'value', children: 'children' } |
+| bind:change | `function` | 选择完成后的回调函数 | - |
+| bind:close | `function` | 隐藏浮层的回调函数 | - |
+| bind:load | `function` | 动态加载选项的回调函数 | - |
 
 ### Cascader externalClasses
 

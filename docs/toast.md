@@ -154,16 +154,16 @@ Page({
 
 | 参数 | 类型 | 描述 | 默认值 |
 | --- | --- | --- | --- |
-| options | <code>object</code> | 配置项 | - |
-| options.prefixCls | <code>string</code> | 自定义类名前缀 | wux-toast |
-| options.classNames | <code>any</code> | 过渡的类名，更多内置过渡效果请参考 [AnimationGroup](animation-group.md) | wux-animate--fadeIn |
-| options.type | <code>string</code> | 提示类型，可选值为 default、success、cancel、forbidden、text | default |
-| options.duration | <code>number</code> | 提示延迟时间 | 1500 |
-| options.color | <code>string</code> | 图标颜色 | #fff |
-| options.text | <code>string</code> | 提示文本 | - |
-| options.icon | <code>string</code> | 图标名称 | - |
-| options.mask | <code>boolean</code> | 是否显示蒙层 | true |
-| options.success | <code>function</code> | 关闭后的回调函数 | - |
+| options | `object` | 配置项 | - |
+| options.prefixCls | `string` | 自定义类名前缀 | wux-toast |
+| options.classNames | `any` | 过渡的类名，更多内置过渡效果请参考 [AnimationGroup](animation-group.md) | wux-animate--fadeIn |
+| options.type | `string` | 提示类型，可选值为 default、success、cancel、forbidden、text | default |
+| options.duration | `number` | 提示延迟时间 | 1500 |
+| options.color | `string` | 图标颜色 | #fff |
+| options.text | `string` | 提示文本 | - |
+| options.icon | `string` | 图标名称 | - |
+| options.mask | `boolean` | 是否显示蒙层 | true |
+| options.success | `function` | 关闭后的回调函数 | - |
 
 ### Toast.method
 

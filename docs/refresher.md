@@ -76,15 +76,15 @@ Page({
 
 | 参数 | 类型 | 描述 | 默认值 |
 | --- | --- | --- | --- |
-| prefixCls | <code>string</code> | 自定义类名前缀 | wux-refresher |
-| pullingIcon | <code>string</code> | 下拉时图标 | - |
-| pullingText | <code>string</code> | 下拉时文字描述 | 下拉刷新 |
-| refreshingIcon | <code>string</code> | 刷新时图标 | - |
-| refreshingText | <code>string</code> | 刷新时文字描述 | 正在刷新 |
-| disablePullingRotation | <code>boolean</code> | 是否禁用图标旋转效果 | false |
-| distance | <code>number</code> | 下拉的距离 | 30 |
-| bind:pulling | <code>function</code> | 下拉开始的回调函数 | - |
-| bind:refresh | <code>function</code> | 下拉完成的回调函数 | - |
+| prefixCls | `string` | 自定义类名前缀 | wux-refresher |
+| pullingIcon | `string` | 下拉时图标 | - |
+| pullingText | `string` | 下拉时文字描述 | 下拉刷新 |
+| refreshingIcon | `string` | 刷新时图标 | - |
+| refreshingText | `string` | 刷新时文字描述 | 正在刷新 |
+| disablePullingRotation | `boolean` | 是否禁用图标旋转效果 | false |
+| distance | `number` | 下拉的距离 | 30 |
+| bind:pulling | `function` | 下拉开始的回调函数 | - |
+| bind:refresh | `function` | 下拉完成的回调函数 | - |
 
 ### Refresher slot
 

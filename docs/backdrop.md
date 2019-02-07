@@ -71,10 +71,10 @@ Page({
 
 | 参数 | 类型 | 描述 | 默认值 |
 | --- | --- | --- | --- |
-| prefixCls | <code>string</code> | 自定义类名前缀 | wux-backdrop |
-| classNames | <code>any</code> | 过渡的类名，更多内置过渡效果请参考 [AnimationGroup](animation-group.md) | wux-animate--fadeIn |
-| transparent | <code>boolean</code> | 是否显示透明蒙层 | false |
-| zIndex | <code>number</code> | 设置蒙层的 z-index | 1000 |
+| prefixCls | `string` | 自定义类名前缀 | wux-backdrop |
+| classNames | `any` | 过渡的类名，更多内置过渡效果请参考 [AnimationGroup](animation-group.md) | wux-animate--fadeIn |
+| transparent | `boolean` | 是否显示透明蒙层 | false |
+| zIndex | `number` | 设置蒙层的 z-index | 1000 |
 
 ### Backdrop.method
 

@@ -162,16 +162,16 @@ Page({
 
 | 参数 | 类型 | 描述 | 默认值 |
 | --- | --- | --- | --- |
-| options | <code>object</code> | 配置项 | - |
-| options.prefixCls | <code>string</code> | 自定义类名前缀 | wux-keyboard |
-| options.className | <code>string</code> | 自定义类名 | - |
-| options.titleText | <code>string</code> | 标题 | 安全键盘 |
-| options.cancelText | <code>string</code> | 取消按钮的文字 | 取消 |
-| options.inputText | <code>string</code> | 提示文本 | 输入数字密码 |
-| options.showCancel | <code>boolean</code> | 是否显示取消按钮 | true |
-| options.disorder | <code>boolean</code> | 是否打乱键盘 | false |
-| options.password | <code>boolean</code> | 是否密码类型 | true |
+| options | `object` | 配置项 | - |
+| options.prefixCls | `string` | 自定义类名前缀 | wux-keyboard |
+| options.className | `string` | 自定义类名 | - |
+| options.titleText | `string` | 标题 | 安全键盘 |
+| options.cancelText | `string` | 取消按钮的文字 | 取消 |
+| options.inputText | `string` | 提示文本 | 输入数字密码 |
+| options.showCancel | `boolean` | 是否显示取消按钮 | true |
+| options.disorder | `boolean` | 是否打乱键盘 | false |
+| options.password | `boolean` | 是否密码类型 | true |
 | options.maxlength | <code>number,string</code> | 最大输入长度，设置为 -1 的时候不限制最大长度 | 6 |
-| options.onChange | <code>function</code> | change 事件触发的回调函数 | - |
-| options.callback | <code>function</code> | 输入完成后的回调函数 | - |
-| options.onClose | <code>function</code> | 输入完成后的回调函数，优先级高于 callback | - |
+| options.onChange | `function` | change 事件触发的回调函数 | - |
+| options.callback | `function` | 输入完成后的回调函数 | - |
+| options.onClose | `function` | 输入完成后的回调函数，优先级高于 callback | - |

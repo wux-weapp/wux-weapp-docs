@@ -73,9 +73,9 @@ Page({
 
 | 参数 | 类型 | 描述 | 默认值 |
 | --- | --- | --- | --- |
-| prefixCls | <code>string</code> | 自定义类名前缀 | wux-cell-group |
-| title | <code>string</code> | 标题 | - |
-| label | <code>string</code> | 描述 | - |
+| prefixCls | `string` | 自定义类名前缀 | wux-cell-group |
+| title | `string` | 标题 | - |
+| label | `string` | 描述 | - |
 
 ### CellGroup externalClasses
 
@@ -87,33 +87,33 @@ Page({
 
 | 参数 | 类型 | 描述 | 默认值 |
 | --- | --- | --- | --- |
-| prefixCls | <code>string</code> | 自定义类名前缀 | wux-cell |
-| disabled | <code>boolean</code> | 是否禁用 | false |
-| openType | <code>string</code> | 跳转方式，可选值为 navigateTo、redirectTo、switchTab、navigateBack、reLaunch；微信开放能力，可选值为 contact、share、getUserInfo、getPhoneNumber、launchApp、openSetting、feedback | navigateTo |
-| hoverClass | <code>string</code> | 指定按下去的样式类。当 hover-class="none" 时，没有点击态效果 | default |
-| hoverStopPropagation | <code>boolean</code> | 指定是否阻止本节点的祖先节点出现点击态 | false |
-| hoverStartTime | <code>number</code> | 按住后多久出现点击态，单位毫秒 | 20 |
-| hoverStayTime | <code>number</code> | 手指松开后点击态保留时间，单位毫秒 | 70 |
-| lang | <code>string</code> | 指定返回用户信息的语言，zh_CN 简体中文，zh_TW 繁体中文，en 英文。 | en |
-| sessionFrom | <code>string</code> | 会话来源 | - |
-| sendMessageTitle | <code>string</code> | 会话内消息卡片标题 | 当前标题 |
-| sendMessagePath | <code>string</code> | 会话内消息卡片点击跳转小程序路径 | 当前分享路径 |
-| sendMessageImg | <code>string</code> | 会话内消息卡片图片 | 截图 |
-| showMessageCard | <code>boolean</code> | 显示会话内消息卡片 | false |
-| appParameter | <code>string</code> | 打开 APP 时，向 APP 传递的参数 | - |
-| thumb | <code>string</code> | 左侧缩略图 | - |
-| title | <code>string</code> | 左侧标题 | - |
-| label | <code>string</code> | 标题下方的描述信息 | - |
-| extra | <code>string</code> | 右侧内容 | - |
-| isLink | <code>boolean</code> | 是否展示右侧箭头并开启尝试以 url 跳转 | - |
-| url | <code>string</code> | 跳转链接 | - |
-| delta | <code>number</code> | 当 open-type 为 'navigateBack' 时有效，表示回退的层数 | 1 |
-| bind:click | <code>function</code> | 点击事件 | - |
-| bind:getuserinfo | <code>function</code> | 用户点击该按钮时，会返回获取到的用户信息，回调的detail数据与wx.getUserInfo返回的一致 | - 
-| bind:contact | <code>function</code> | 客服消息回调 | - |
-| bind:getphonenumber | <code>function</code> | 获取用户手机号回调 | - |
-| bind:error | <code>function</code> | 当使用开放能力时，发生错误的回调 | - |
-| bind:opensetting | <code>function</code> | 在打开授权设置页后回调 | - |
+| prefixCls | `string` | 自定义类名前缀 | wux-cell |
+| disabled | `boolean` | 是否禁用 | false |
+| openType | `string` | 跳转方式，可选值为 navigateTo、redirectTo、switchTab、navigateBack、reLaunch；微信开放能力，可选值为 contact、share、getUserInfo、getPhoneNumber、launchApp、openSetting、feedback | navigateTo |
+| hoverClass | `string` | 指定按下去的样式类。当 hover-class="none" 时，没有点击态效果 | default |
+| hoverStopPropagation | `boolean` | 指定是否阻止本节点的祖先节点出现点击态 | false |
+| hoverStartTime | `number` | 按住后多久出现点击态，单位毫秒 | 20 |
+| hoverStayTime | `number` | 手指松开后点击态保留时间，单位毫秒 | 70 |
+| lang | `string` | 指定返回用户信息的语言，zh_CN 简体中文，zh_TW 繁体中文，en 英文。 | en |
+| sessionFrom | `string` | 会话来源 | - |
+| sendMessageTitle | `string` | 会话内消息卡片标题 | 当前标题 |
+| sendMessagePath | `string` | 会话内消息卡片点击跳转小程序路径 | 当前分享路径 |
+| sendMessageImg | `string` | 会话内消息卡片图片 | 截图 |
+| showMessageCard | `boolean` | 显示会话内消息卡片 | false |
+| appParameter | `string` | 打开 APP 时，向 APP 传递的参数 | - |
+| thumb | `string` | 左侧缩略图 | - |
+| title | `string` | 左侧标题 | - |
+| label | `string` | 标题下方的描述信息 | - |
+| extra | `string` | 右侧内容 | - |
+| isLink | `boolean` | 是否展示右侧箭头并开启尝试以 url 跳转 | - |
+| url | `string` | 跳转链接 | - |
+| delta | `number` | 当 open-type 为 'navigateBack' 时有效，表示回退的层数 | 1 |
+| bind:click | `function` | 点击事件 | - |
+| bind:getuserinfo | `function` | 用户点击该按钮时，会返回获取到的用户信息，回调的detail数据与wx.getUserInfo返回的一致 | - 
+| bind:contact | `function` | 客服消息回调 | - |
+| bind:getphonenumber | `function` | 获取用户手机号回调 | - |
+| bind:error | `function` | 当使用开放能力时，发生错误的回调 | - |
+| bind:opensetting | `function` | 在打开授权设置页后回调 | - |
 
 > 更多参数说明请参考微信官方的表单组件 [Button](https://developers.weixin.qq.com/miniprogram/dev/component/button.html)。
 

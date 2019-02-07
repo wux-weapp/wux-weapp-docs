@@ -129,12 +129,12 @@ Page({
 
 | 参数 | 类型 | 描述 | 默认值 |
 | --- | --- | --- | --- |
-| prefixCls | <code>string</code> | 自定义类名前缀 | wux-switch |
-| name | <code>string</code> | 在表单中的字段名 | - |
-| value | <code>boolean</code> | 在表单中的字段值（当前选中项的值） | - |
-| disabled | <code>boolean</code> | 是否不可修改 | false |
-| color | <code>string</code> | 主题色，可选值为 light、stable、positive、calm、assertive、balanced、energized、royal、dark | balanced |
-| bind:change | <code>function</code> | change 事件触发的回调函数 | - |
+| prefixCls | `string` | 自定义类名前缀 | wux-switch |
+| name | `string` | 在表单中的字段名 | - |
+| value | `boolean` | 在表单中的字段值（当前选中项的值） | - |
+| disabled | `boolean` | 是否不可修改 | false |
+| color | `string` | 主题色，可选值为 light、stable、positive、calm、assertive、balanced、energized、royal、dark | balanced |
+| bind:change | `function` | change 事件触发的回调函数 | - |
 
 ### Switch externalClasses
 

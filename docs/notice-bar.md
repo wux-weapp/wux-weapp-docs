@@ -71,16 +71,16 @@ Page({
 
 | 参数 | 类型 | 描述 | 默认值 |
 | --- | --- | --- | --- |
-| prefixCls | <code>string</code> | 自定义类名前缀 | wux-notice-bar |
-| mode | <code>string</code> | 提示类型，可选值为 closable、link | - |
-| content | <code>string</code> | 滚动的文字 | - |
-| icon | <code>string</code> | 左侧提示图标 | - |
-| action | <code>string</code> | 右侧关闭图标，当 mode 为 closable、link 时才生效 | - |
-| loop | <code>boolean</code> | 文字是否滚动显示 | false |
-| leading | <code>number</code> | 进入第一次滚动所需等待的时间 | 500 |
-| trailing | <code>number</code> | 进入下一次滚动所需等待的时间 | 800 |
-| speed | <code>number</code> | 滚动显示的速度 | 25 |
-| bind:click | <code>function</code> | 点击关闭或者操作区域的回调函数 | - |
+| prefixCls | `string` | 自定义类名前缀 | wux-notice-bar |
+| mode | `string` | 提示类型，可选值为 closable、link | - |
+| content | `string` | 滚动的文字 | - |
+| icon | `string` | 左侧提示图标 | - |
+| action | `string` | 右侧关闭图标，当 `mode` 为 `closable、link` 时才生效 | - |
+| loop | `boolean` | 文字是否滚动显示 | false |
+| leading | `number` | 进入第一次滚动所需等待的时间 | 500 |
+| trailing | `number` | 进入下一次滚动所需等待的时间 | 800 |
+| speed | `number` | 滚动显示的速度 | 25 |
+| bind:click | `function` | 点击关闭或者操作区域的回调函数 | - |
 
 ### NoticeBar slot
 

@@ -44,10 +44,10 @@ Wux Weapp 的图标使用开源项目 [ionicons](https://ionicons.com/) 4.3.0 �
 
 | 参数 | 类型 | 描述 | 默认值 |
 | --- | --- | --- | --- |
-| type | <code>string</code> | 图标名称，可选值参考 [ionicons](https://ionicons.com/) 4.3.0 版本 | - |
-| size | <code>number</code> | 图标大小 | 32 |
-| color | <code>string</code> | 图标颜色 | - |
-| hidden | <code>boolean</code> | 是否隐藏组件 | false |
+| type | `string` | 图标名称，可选值参考 [ionicons](https://ionicons.com/) 4.3.0 版本 | - |
+| size | `number` | 图标大小 | 32 |
+| color | `string` | 图标颜色 | - |
+| hidden | `boolean` | 是否隐藏组件 | false |
 
 ### Icon externalClasses
 

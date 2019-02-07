@@ -77,14 +77,14 @@ Page({
 
 | 参数 | 类型 | 描述 | 默认值 |
 | --- | --- | --- | --- |
-| prefixCls | <code>string</code> | 自定义类名前缀 | wux-pagination |
-| mode | <code>string</code> | 形态，可选值为 button、number、pointer | button |
-| defaultCurrent | <code>number</code> | 默认页号，当 controlled 为 false 时才生效 | 1 |
-| current | <code>number</code> | 当前页号，当 controlled 为 true 时才生效 | 1 |
-| controlled | <code>boolean</code> | 是否受控 [说明文档](controlled.md) | false |
-| total | <code>number</code> | 总页数 | 0 |
-| simple | <code>boolean</code> | 是否隐藏数值 | false |
-| bind:change | <code>function</code> | change 事件触发的回调函数 | - |
+| prefixCls | `string` | 自定义类名前缀 | wux-pagination |
+| mode | `string` | 形态，可选值为 button、number、pointer | button |
+| defaultCurrent | `number` | 默认页号，当 `controlled` 为 `false` 时才生效 | 1 |
+| current | `number` | 当前页号，当 `controlled` 为 `true` 时才生效 | 1 |
+| controlled | `boolean` | 是否受控 [说明文档](controlled.md) | false |
+| total | `number` | 总页数 | 0 |
+| simple | `boolean` | 是否隐藏数值 | false |
+| bind:change | `function` | change 事件触发的回调函数 | - |
 
 ### Pagination slot
 

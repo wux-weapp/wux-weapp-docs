@@ -61,12 +61,12 @@ Page({
 
 | 参数 | 类型 | 描述 | 默认值 |
 | --- | --- | --- | --- |
-| prefixCls | <code>string</code> | 自定义类名前缀 | wux-navbar |
-| theme | <code>string</code> | 主题色，可选值为 light、stable、positive、calm、assertive、balanced、energized、royal、dark | light |
-| title | <code>string</code> | 标题 | - |
-| leftText | <code>string</code> | 导航左边内容 | - |
-| rightText | <code>string</code> | 导航右边内容 | - |
-| bind:click | <code>function</code> | 点击事件 | - |
+| prefixCls | `string` | 自定义类名前缀 | wux-navbar |
+| theme | `string` | 主题色，可选值为 light、stable、positive、calm、assertive、balanced、energized、royal、dark | light |
+| title | `string` | 标题 | - |
+| leftText | `string` | 导航左边内容 | - |
+| rightText | `string` | 导航右边内容 | - |
+| bind:click | `function` | 点击事件 | - |
 
 ### NavBar slot
 

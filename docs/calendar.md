@@ -113,29 +113,29 @@ Page({
 
 | 参数 | 类型 | 描述 | 默认值 |
 | --- | --- | --- | --- |
-| options | <code>object</code> | 配置项 | - |
-| options.prefixCls | <code>string</code> | 自定义类名前缀 | wux-calendar |
-| options.monthNames | <code>array</code> | 月名称 | ['一月', '二月', '三月', '四月', '五月', '六月', '七月', '八月', '九月', '十月', '十一月', '十二月'] |
-| options.monthNamesShort | <code>array</code> | 月名称缩写 | ['一月', '二月', '三月', '四月', '五月', '六月', '七月', '八月', '九月', '十月', '十一月', '十二月'] |
-| options.dayNames | <code>array</code> | 周名称 | ['周日', '周一', '周二', '周三', '周四', '周五', '周六'] |
-| options.dayNamesShort | <code>array</code> | 周名称缩写 | ['周日', '周一', '周二', '周三', '周四', '周五', '周六'] |
-| options.firstDay | <code>number</code> | 一周的第一日 | 1 |
-| options.weekendDays | <code>array</code> | 一周的起始日 | [0, 6] |
-| options.multiple | <code>boolean</code> | 是否支持多选 | false |
-| options.dateFormat | <code>string</code> | 日期格式 | yyyy-mm-dd |
-| options.direction | <code>string</code> | 方向，可选择为 horizontal、vertical | horizontal |
-| options.minDate | <code>any</code> | 最小可选日期 | - |
-| options.maxDate | <code>any</code> | 最大可选日期 | - |
-| options.touchMove | <code>boolean</code> | 是否支持触摸滑动 | true |
-| options.animate | <code>boolean</code> | 是否支持切换月份的动画 | true |
-| options.closeOnSelect | <code>boolean</code> | 用户选择一个时间后就自动关闭，当 multiple 为 false 时才生效 | true |
-| options.weekHeader | <code>boolean</code> | 是否显示周名称 | true |
-| options.toolbar | <code>boolean</code> | 是否显示工具栏 | true |
-| options.value | <code>array</code> | 默认时间选择值 | [] |
-| options.onMonthAdd | <code>function</code> | 添加月份时的回调函数 | - |
-| options.onChange | <code>function</code> | 选择日期时的回调函数 | - |
-| options.onOpen | <code>function</code> | 打开日历时的回调函数 | - |
-| options.onClose | <code>function</code> | 关闭日历时的回调函数 | - |
-| options.onDayClick | <code>function</code> | 点击选择日期时的回调函数 | - |
-| options.onMonthYearChangeStart | <code>function</code> | 月份变化开始的回调函数 | - |
-| options.onMonthYearChangeEnd | <code>function</code> | 月份变化完成的回调函数 | - |
+| options | `object` | 配置项 | - |
+| options.prefixCls | `string` | 自定义类名前缀 | wux-calendar |
+| options.monthNames | `array` | 月名称 | ['一月', '二月', '三月', '四月', '五月', '六月', '七月', '八月', '九月', '十月', '十一月', '十二月'] |
+| options.monthNamesShort | `array` | 月名称缩写 | ['一月', '二月', '三月', '四月', '五月', '六月', '七月', '八月', '九月', '十月', '十一月', '十二月'] |
+| options.dayNames | `array` | 周名称 | ['周日', '周一', '周二', '周三', '周四', '周五', '周六'] |
+| options.dayNamesShort | `array` | 周名称缩写 | ['周日', '周一', '周二', '周三', '周四', '周五', '周六'] |
+| options.firstDay | `number` | 一周的第一日 | 1 |
+| options.weekendDays | `array` | 一周的起始日 | [0, 6] |
+| options.multiple | `boolean` | 是否支持多选 | false |
+| options.dateFormat | `string` | 日期格式 | yyyy-mm-dd |
+| options.direction | `string` | 方向，可选择为 horizontal、vertical | horizontal |
+| options.minDate | `any` | 最小可选日期 | - |
+| options.maxDate | `any` | 最大可选日期 | - |
+| options.touchMove | `boolean` | 是否支持触摸滑动 | true |
+| options.animate | `boolean` | 是否支持切换月份的动画 | true |
+| options.closeOnSelect | `boolean` | 用户选择一个时间后就自动关闭，当 `multiple` 为 `false` 时才生效 | true |
+| options.weekHeader | `boolean` | 是否显示周名称 | true |
+| options.toolbar | `boolean` | 是否显示工具栏 | true |
+| options.value | `array` | 默认时间选择值 | [] |
+| options.onMonthAdd | `function` | 添加月份时的回调函数 | - |
+| options.onChange | `function` | 选择日期时的回调函数 | - |
+| options.onOpen | `function` | 打开日历时的回调函数 | - |
+| options.onClose | `function` | 关闭日历时的回调函数 | - |
+| options.onDayClick | `function` | 点击选择日期时的回调函数 | - |
+| options.onMonthYearChangeStart | `function` | 月份变化开始的回调函数 | - |
+| options.onMonthYearChangeEnd | `function` | 月份变化完成的回调函数 | - |

@@ -186,18 +186,18 @@ Page({
 
 | 参数 | 类型 | 描述 | 默认值 |
 | --- | --- | --- | --- |
-| options | <code>object</code> | 配置项 | - |
-| options.prefixCls | <code>string</code> | 自定义类名前缀 | wux-select |
-| options.value | <code>any</code> | 指定当前选中的条目 | - |
-| options.options | <code>array</code> | 下拉列表 | [] |
-| options.multiple | <code>boolean</code> | 是否支持多选 | false |
+| options | `object` | 配置项 | - |
+| options.prefixCls | `string` | 自定义类名前缀 | wux-select |
+| options.value | `any` | 指定当前选中的条目 | - |
+| options.options | `array` | 下拉列表 | [] |
+| options.multiple | `boolean` | 是否支持多选 | false |
 | options.max | <code>number,stirng</code> | 最多选择几项，设置为 -1 的时候不限制选择 | -1 |
-| options.toolbar | <code>any</code> | 工具栏配置项 | {} |
-| options.toolbar.title | <code>string</code> | 标题的文字 | 请选择 |
-| options.toolbar.cancelText | <code>string</code> | 取消按钮的文字 | 取消 |
-| options.toolbar.confirmText | <code>string</code> | 确定按钮的文字 | 确定 |
-| options.onChange | <code>function</code> | 选择完成后的回调函数 | - |
-| options.onConfirm | <code>function</code> | 点击确定按钮时的回调函数 | - |
-| options.onCancel | <code>function</code> | 点击取消按钮时的回调函数 | - |
+| options.toolbar | `any` | 工具栏配置项 | {} |
+| options.toolbar.title | `string` | 标题的文字 | 请选择 |
+| options.toolbar.cancelText | `string` | 取消按钮的文字 | 取消 |
+| options.toolbar.confirmText | `string` | 确定按钮的文字 | 确定 |
+| options.onChange | `function` | 选择完成后的回调函数 | - |
+| options.onConfirm | `function` | 点击确定按钮时的回调函数 | - |
+| options.onCancel | `function` | 点击取消按钮时的回调函数 | - |
 
 > 下拉列表：options 参数请参考 [Radio](radio.md) 或 [Checkbox](checkbox.md)。

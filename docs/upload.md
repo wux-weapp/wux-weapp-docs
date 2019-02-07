@@ -139,36 +139,36 @@ Page({
 
 | 参数 | 类型 | 描述 | 默认值 |
 | --- | --- | --- | --- |
-| prefixCls | <code>string</code> | 自定义类名前缀 | wux-upload |
-| max | <code>number</code> | 最大图片张数，设置为 -1 的时候不限制张数 | -1 |
-| count | <code>number</code> | 从相册选图时，最多可以选择的图片张数 | 9 |
-| defaultFileType | <code>string</code> | 上传文件类型，可选值为 image、video | image |
-| compressed | <code>boolean</code> | 是否压缩所选择的视频文件，当 defaultFileType 为 video 时才生效 | true |
-| maxDuration | <code>number</code> | 拍摄视频最长拍摄时间，单位秒。当 defaultFileType 为 video 时才生效 | 60 |
-| camera | <code>string</code> | 默认拉起的是前置或者后置摄像头。部分 Android 手机下由于系统 ROM 不支持无法生效。当 defaultFileType 为 video 时才生效 | back |
-| sizeType | <code>array</code> | original 原图，compressed 压缩图 | ['original', 'compressed'] |
-| sourceType | <code>array</code> | album 从相册选图，camera 使用相机 | ['album', 'camera'] |
-| url | <code>string</code> | 上传地址 | - |
-| name | <code>string</code> | 文件对应的 key | file |
-| header | <code>object</code> | HTTP 请求 Header, header 中不能设置 Referer | {} |
-| formData | <code>object</code> | HTTP 请求中其他额外的 form data | {} |
-| uploaded | <code>boolean</code> | 默认的上传行为 | true |
-| disabled | <code>boolean</code> | 是否禁用 | false |
-| progress | <code>boolean</code> | 是否监听上传进度变化 | false |
-| listType | <code>string</code> | 上传列表的内建样式，可选值为 text、picture-card | text |
-| defaultFileList | <code>array</code> | 默认已经上传的文件列表，当 controlled 为 false 时才生效 | [] |
-| fileList | <code>array</code> | 已经上传的文件列表，当 controlled 为 true 时才生效 | [] |
-| controlled | <code>boolean</code> | 是否受控 [说明文档](controlled.md) | false |
-| showUploadList | <code>boolean</code> | 是否展示上传文件列表 | true |
-| showRemoveIcon | <code>boolean</code> | 是否展示删除图标 | true |
-| bind:before | <code>function</code> | 上传文件之前的回调函数 | - |
-| bind:change | <code>function</code> | 上传文件改变时的回调函数 | - |
-| bind:success | <code>function</code> | 上传文件成功时的回调函数 | - |
-| bind:fail | <code>function</code> | 上传文件失败时的回调函数 | - |
-| bind:complete | <code>function</code> | 上传文件完成时的回调函数 | - |
-| bind:progress | <code>function</code> | 监听上传进度变化的回调函数 | - |
-| bind:preview | <code>function</code> | 点击文件时的回调函数 | - |
-| bind:remove | <code>function</code> | 点击删除图标时的回调函数 | - |
+| prefixCls | `string` | 自定义类名前缀 | wux-upload |
+| max | `number` | 最大图片张数，设置为 -1 的时候不限制张数 | -1 |
+| count | `number` | 从相册选图时，最多可以选择的图片张数 | 9 |
+| defaultFileType | `string` | 上传文件类型，可选值为 image、video | image |
+| compressed | `boolean` | 是否压缩所选择的视频文件，当 `defaultFileType` 为 `video` 时才生效 | true |
+| maxDuration | `number` | 拍摄视频最长拍摄时间，单位秒。当 `defaultFileType` 为 `video` 时才生效 | 60 |
+| camera | `string` | 默认拉起的是前置或者后置摄像头。部分 Android 手机下由于系统 ROM 不支持无法生效。当 `defaultFileType` 为 `video` 时才生效 | back |
+| sizeType | `array` | original 原图，compressed 压缩图 | ['original', 'compressed'] |
+| sourceType | `array` | album 从相册选图，camera 使用相机 | ['album', 'camera'] |
+| url | `string` | 上传地址 | - |
+| name | `string` | 文件对应的 key | file |
+| header | `object` | HTTP 请求 Header, header 中不能设置 Referer | {} |
+| formData | `object` | HTTP 请求中其他额外的 form data | {} |
+| uploaded | `boolean` | 默认的上传行为 | true |
+| disabled | `boolean` | 是否禁用 | false |
+| progress | `boolean` | 是否监听上传进度变化 | false |
+| listType | `string` | 上传列表的内建样式，可选值为 text、picture-card | text |
+| defaultFileList | `array` | 默认已经上传的文件列表，当 `controlled` 为 `false` 时才生效 | [] |
+| fileList | `array` | 已经上传的文件列表，当 `controlled` 为 `true` 时才生效 | [] |
+| controlled | `boolean` | 是否受控 [说明文档](controlled.md) | false |
+| showUploadList | `boolean` | 是否展示上传文件列表 | true |
+| showRemoveIcon | `boolean` | 是否展示删除图标 | true |
+| bind:before | `function` | 上传文件之前的回调函数 | - |
+| bind:change | `function` | 上传文件改变时的回调函数 | - |
+| bind:success | `function` | 上传文件成功时的回调函数 | - |
+| bind:fail | `function` | 上传文件失败时的回调函数 | - |
+| bind:complete | `function` | 上传文件完成时的回调函数 | - |
+| bind:progress | `function` | 监听上传进度变化的回调函数 | - |
+| bind:preview | `function` | 点击文件时的回调函数 | - |
+| bind:remove | `function` | 点击删除图标时的回调函数 | - |
 
 ### Upload slot
 

@@ -168,49 +168,49 @@ Page({
 
 | 参数 | 类型 | 描述 | 默认值 |
 | --- | --- | --- | --- |
-| prefixCls | <code>string</code> | 自定义类名前缀 | wux-fab-button |
-| hoverClass | <code>string</code> | 指定按钮按下去的样式类。当 hover-class="none" 时，没有点击态效果 | default |
-| theme | <code>string</code> | 主题色，可选值为 light、stable、positive、calm、assertive、balanced、energized、royal、dark | balanced |
-| position | <code>string</code> | 按钮的位置，可选值为 topLeft、topRight、bottomLeft、bottomRight | bottomRight |
-| action | <code>string</code> | 操作按钮的图标 | - |
-| actionRotate | <code>boolean</code> | 操作按钮是否旋转动画 | true |
-| hideShadow | <code>boolean</code> | 是否隐藏阴影 | false |
-| backdrop | <code>boolean</code> | 是否显示透明蒙层 | false |
-| defaultVisible | <code>boolean</code> | 默认是否显隐，当 controlled 为 false 时才生效 | false |
-| visible | <code>boolean</code> | 用于手动控制浮层显隐，当 controlled 为 true 时才生效 | false |
-| controlled | <code>boolean</code> | 是否受控 [说明文档](controlled.md) | false |
-| direction | <code>string</code> | 按钮组排列方向，可选值为 horizontal、vertical、circle | horizontal |
-| spaceBetween | <code>number</code> | 按钮组间距 | 10 |
-| duration | <code>number</code> | 按钮组动画过渡时间，单位 ms | 300 |
-| scale | <code>number</code> | 按钮组缩放比例 | .9 |
-| reverse | <code>boolean</code> | 是否反转方向，当 direction 为 horizontal/vertical 时才生效 | false |
-| sAngle | <code>number</code> | 起始角度，当 direction 为 circle 时才生效 | 0 |
-| eAngle | <code>number</code> | 终止角度，当 direction 为 circle 时才生效 | 360 |
-| buttons | <code>array</code> | 按钮 | [] |
-| buttons[].className | <code>string</code> | 按钮的类名 | - |
-| buttons[].label | <code>string</code> | 按钮的文字 | - |
-| buttons[].icon | <code>string</code> | 按钮的图标 | - |
-| buttons[].hideShadow | <code>boolean</code> | 是否隐藏阴影 | false |
-| buttons[].disabled | <code>boolean</code> | 是否禁用 | false |
-| buttons[].openType | <code>string</code> | 微信开放能力，可选值为 contact、share、getUserInfo、getPhoneNumber、launchApp、openSetting、feedback | - |
-| buttons[].hoverClass | <code>string</code> | 指定按下去的样式类。当 hover-class="none" 时，没有点击态效果 | default |
-| buttons[].hoverStopPropagation | <code>boolean</code> | 指定是否阻止本节点的祖先节点出现点击态 | false |
-| buttons[].hoverStartTime | <code>number</code> | 按住后多久出现点击态，单位毫秒 | 20 |
-| buttons[].hoverStayTime | <code>number</code> | 手指松开后点击态保留时间，单位毫秒 | 70 |
-| buttons[].lang | <code>string</code> | 指定返回用户信息的语言，zh_CN 简体中文，zh_TW 繁体中文，en 英文。 | en |
-| buttons[].sessionFrom | <code>string</code> | 会话来源 | - |
-| buttons[].sendMessageTitle | <code>string</code> | 会话内消息卡片标题 | 当前标题 |
-| buttons[].sendMessagePath | <code>string</code> | 会话内消息卡片点击跳转小程序路径 | 当前分享路径 |
-| buttons[].sendMessageImg | <code>string</code> | 会话内消息卡片图片 | 截图 |
-| buttons[].showMessageCard | <code>boolean</code> | 显示会话内消息卡片 | false |
-| buttons[].appParameter | <code>string</code> | 打开 APP 时，向 APP 传递的参数 | - |
-| bind:click | <code>function</code> | 点击事件 | - |
-| bind:getuserinfo | <code>function</code> | 用户点击该按钮时，会返回获取到的用户信息，回调的detail数据与wx.getUserInfo返回的一致 | - 
-| bind:contact | <code>function</code> | 客服消息回调 | - |
-| bind:getphonenumber | <code>function</code> | 获取用户手机号回调 | - |
-| bind:error | <code>function</code> | 当使用开放能力时，发生错误的回调 | - |
-| bind:opensetting | <code>function</code> | 在打开授权设置页后回调 | - |
-| bind:change | <code>function</code> | 监听状态变化的回调函数 | - |
+| prefixCls | `string` | 自定义类名前缀 | wux-fab-button |
+| hoverClass | `string` | 指定按钮按下去的样式类。当 hover-class="none" 时，没有点击态效果 | default |
+| theme | `string` | 主题色，可选值为 light、stable、positive、calm、assertive、balanced、energized、royal、dark | balanced |
+| position | `string` | 按钮的位置，可选值为 topLeft、topRight、bottomLeft、bottomRight | bottomRight |
+| action | `string` | 操作按钮的图标 | - |
+| actionRotate | `boolean` | 操作按钮是否旋转动画 | true |
+| hideShadow | `boolean` | 是否隐藏阴影 | false |
+| backdrop | `boolean` | 是否显示透明蒙层 | false |
+| defaultVisible | `boolean` | 默认是否显隐，当 `controlled` 为 `false` 时才生效 | false |
+| visible | `boolean` | 用于手动控制浮层显隐，当 `controlled` 为 `true` 时才生效 | false |
+| controlled | `boolean` | 是否受控 [说明文档](controlled.md) | false |
+| direction | `string` | 按钮组排列方向，可选值为 horizontal、vertical、circle | horizontal |
+| spaceBetween | `number` | 按钮组间距 | 10 |
+| duration | `number` | 按钮组动画过渡时间，单位 ms | 300 |
+| scale | `number` | 按钮组缩放比例 | .9 |
+| reverse | `boolean` | 是否反转方向，当 `direction` 为 `horizontal/vertical` 时才生效 | false |
+| sAngle | `number` | 起始角度，当 `direction` 为 `circle` 时才生效 | 0 |
+| eAngle | `number` | 终止角度，当 `direction` 为 `circle` 时才生效 | 360 |
+| buttons | `array` | 按钮 | [] |
+| buttons[].className | `string` | 按钮的类名 | - |
+| buttons[].label | `string` | 按钮的文字 | - |
+| buttons[].icon | `string` | 按钮的图标 | - |
+| buttons[].hideShadow | `boolean` | 是否隐藏阴影 | false |
+| buttons[].disabled | `boolean` | 是否禁用 | false |
+| buttons[].openType | `string` | 微信开放能力，可选值为 contact、share、getUserInfo、getPhoneNumber、launchApp、openSetting、feedback | - |
+| buttons[].hoverClass | `string` | 指定按下去的样式类。当 hover-class="none" 时，没有点击态效果 | default |
+| buttons[].hoverStopPropagation | `boolean` | 指定是否阻止本节点的祖先节点出现点击态 | false |
+| buttons[].hoverStartTime | `number` | 按住后多久出现点击态，单位毫秒 | 20 |
+| buttons[].hoverStayTime | `number` | 手指松开后点击态保留时间，单位毫秒 | 70 |
+| buttons[].lang | `string` | 指定返回用户信息的语言，zh_CN 简体中文，zh_TW 繁体中文，en 英文。 | en |
+| buttons[].sessionFrom | `string` | 会话来源 | - |
+| buttons[].sendMessageTitle | `string` | 会话内消息卡片标题 | 当前标题 |
+| buttons[].sendMessagePath | `string` | 会话内消息卡片点击跳转小程序路径 | 当前分享路径 |
+| buttons[].sendMessageImg | `string` | 会话内消息卡片图片 | 截图 |
+| buttons[].showMessageCard | `boolean` | 显示会话内消息卡片 | false |
+| buttons[].appParameter | `string` | 打开 APP 时，向 APP 传递的参数 | - |
+| bind:click | `function` | 点击事件 | - |
+| bind:getuserinfo | `function` | 用户点击该按钮时，会返回获取到的用户信息，回调的detail数据与wx.getUserInfo返回的一致 | - 
+| bind:contact | `function` | 客服消息回调 | - |
+| bind:getphonenumber | `function` | 获取用户手机号回调 | - |
+| bind:error | `function` | 当使用开放能力时，发生错误的回调 | - |
+| bind:opensetting | `function` | 在打开授权设置页后回调 | - |
+| bind:change | `function` | 监听状态变化的回调函数 | - |
 
 > 更多参数说明请参考微信官方的表单组件 [Button](https://developers.weixin.qq.com/miniprogram/dev/component/button.html)。
 
@@ -218,7 +218,7 @@ Page({
 
 | 名称 | 描述 |
 | --- | --- |
-| action | 自定义操作按钮，当 action 为空时才生效 |
+| action | 自定义操作按钮，当 `action` 为空时才生效 |
 
 ### FabButton externalClasses
 

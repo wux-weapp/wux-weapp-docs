@@ -84,13 +84,13 @@
 
 | 参数 | 类型 | 描述 | 默认值 |
 | --- | --- | --- | --- |
-| prefixCls | <code>string</code> | 自定义类名前缀 | wux-badge |
-| count | <code>number</code> | 展示的数字，大于 overflowCount 时显示为 ${overflowCount}+，为 0 时隐藏 | 0 |
-| overflowCount | <code>number</code> | 展示封顶的数字值 | 99 |
-| dot | <code>boolean</code> | 不展示数字，只有一个小红点 | false |
-| showZero | <code>boolean</code> | 当数值为 0 时，是否展示 Badge | false |
-| status | <code>string</code> | 设置 Badge 为状态点，可选值为 success、processing、default、error、warning | - |
-| text | <code>string</code> | 在设置了 status 的前提下有效，设置状态点的文本 | - |
+| prefixCls | `string` | 自定义类名前缀 | wux-badge |
+| count | `number` | 展示的数字，大于 overflowCount 时显示为 ${overflowCount}+，为 0 时隐藏 | 0 |
+| overflowCount | `number` | 展示封顶的数字值 | 99 |
+| dot | `boolean` | 不展示数字，只有一个小红点 | false |
+| showZero | `boolean` | 当数值为 0 时，是否展示 Badge | false |
+| status | `string` | 设置 Badge 为状态点，可选值为 success、processing、default、error、warning | - |
+| text | `string` | 在设置了 status 的前提下有效，设置状态点的文本 | - |
 
 ### Badge slot
 

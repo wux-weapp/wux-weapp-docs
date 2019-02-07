@@ -175,14 +175,14 @@ Page({
 
 | 参数 | 类型 | 描述 | 默认值 |
 | --- | --- | --- | --- |
-| prefixCls | <code>string</code> | 自定义类名前缀 | wux-tabs |
-| defaultCurrent | <code>string</code> | 默认激活 tab 面板的 key，当 controlled 为 false 时才生效 | - |
-| current | <code>string</code> | 用于手动激活 tab 面板的 key，当 controlled 为 true 时才生效 | - |
-| scroll | <code>boolean</code> | 是否开启横向滚动 | false |
-| controlled | <code>boolean</code> | 是否受控 [说明文档](controlled.md) | false |
-| theme | <code>string</code> | 主题色，可选值为 light、stable、positive、calm、assertive、balanced、energized、royal、dark | balanced |
-| direction | <code>string</code> | tab 面板的排列方向，可选值为 horizontal、vertical | horizontal |
-| bind:change | <code>function</code> | 切换面板的回调函数 | - |
+| prefixCls | `string` | 自定义类名前缀 | wux-tabs |
+| defaultCurrent | `string` | 默认激活 tab 面板的 key，当 `controlled` 为 `false` 时才生效 | - |
+| current | `string` | 用于手动激活 tab 面板的 key，当 `controlled` 为 `true` 时才生效 | - |
+| scroll | `boolean` | 是否开启横向滚动 | false |
+| controlled | `boolean` | 是否受控 [说明文档](controlled.md) | false |
+| theme | `string` | 主题色，可选值为 light、stable、positive、calm、assertive、balanced、energized、royal、dark | balanced |
+| direction | `string` | tab 面板的排列方向，可选值为 horizontal、vertical | horizontal |
+| bind:change | `function` | 切换面板的回调函数 | - |
 
 ### Tabs externalClasses
 
@@ -194,10 +194,10 @@ Page({
 
 | 参数 | 类型 | 描述 | 默认值 |
 | --- | --- | --- | --- |
-| prefixCls | <code>string</code> | 自定义类名前缀 | wux-tabs__tab |
-| key | <code>string</code> | 对应 key | - |
-| title | <code>string</code> | 选项卡标题 | - |
-| disabled | <code>boolean</code> | 是否禁用 | false |
+| prefixCls | `string` | 自定义类名前缀 | wux-tabs__tab |
+| key | `string` | 对应 key | - |
+| title | `string` | 选项卡标题 | - |
+| disabled | `boolean` | 是否禁用 | false |
 
 ### Tab slot
 

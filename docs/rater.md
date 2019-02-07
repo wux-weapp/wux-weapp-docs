@@ -147,21 +147,21 @@ Page({
 
 | 参数 | 类型 | 描述 | 默认值 |
 | --- | --- | --- | --- |
-| prefixCls | <code>string</code> | 自定义类名前缀 | wux-rater |
-| max | <code>number</code> | 最大值 | 5 |
-| icon | <code>string</code> | 图标名称，优先级高于 star | - |
-| star | <code>string</code> | 图标 | ★ |
-| defaultValue | <code>number</code> | 默认值，当 controlled 为 false 时才生效 | 0 |
-| value | <code>number</code> | 当前数，当 controlled 为 true 时才生效 | 0 |
-| activeColor | <code>string</code> | 图标激活的颜色 | #ffc900 |
-| margin | <code>number</code> | 图标外边距 | 2 |
-| fontSize | <code>number</code> | 图标大小 | 25 |
-| disabled | <code>boolean</code> | 禁用点击 | false |
-| allowHalf | <code>boolean</code> | 是否允许半选 | false |
-| allowClear | <code>boolean</code> | 是否允许再次点击后清除 | false |
-| allowTouchMove | <code>boolean</code> | 是否允许触摸移动选中 | false |
-| controlled | <code>boolean</code> | 是否受控 [说明文档](controlled.md) | false |
-| bind:change | <code>function</code> | 点击事件的回调函数 | - |
+| prefixCls | `string` | 自定义类名前缀 | wux-rater |
+| max | `number` | 最大值 | 5 |
+| icon | `string` | 图标名称，优先级高于 star | - |
+| star | `string` | 图标 | ★ |
+| defaultValue | `number` | 默认值，当 `controlled` 为 `false` 时才生效 | 0 |
+| value | `number` | 当前数，当 `controlled` 为 `true` 时才生效 | 0 |
+| activeColor | `string` | 图标激活的颜色 | #ffc900 |
+| margin | `number` | 图标外边距 | 2 |
+| fontSize | `number` | 图标大小 | 25 |
+| disabled | `boolean` | 禁用点击 | false |
+| allowHalf | `boolean` | 是否允许半选 | false |
+| allowClear | `boolean` | 是否允许再次点击后清除 | false |
+| allowTouchMove | `boolean` | 是否允许触摸移动选中 | false |
+| controlled | `boolean` | 是否受控 [说明文档](controlled.md) | false |
+| bind:change | `function` | 点击事件的回调函数 | - |
 
 ### Rater externalClasses
 

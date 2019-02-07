@@ -183,68 +183,68 @@ Page({
 
 | 参数 | 类型 | 描述 | 默认值 |
 | --- | --- | --- | --- |
-| options | <code>object</code> | 配置项 | - |
-| options.prefixCls | <code>string</code> | 自定义类名前缀 | wux-dialog |
-| options.title | <code>string</code> | 提示标题 | - |
-| options.content | <code>string</code> | 提示文本 | - |
-| options.verticalButtons | <code>boolean</code> | 是否显示垂直按钮布局 | false |
-| options.resetOnClose | <code>boolean</code> | 组件关闭时重置其内部数据 | false |
-| options.closable | <code>boolean</code> | 是否显示关闭按钮 | false |
-| options.mask | <code>boolean</code> | 是否显示蒙层 | true |
-| options.maskClosable | <code>boolean</code> | 点击蒙层是否允许关闭 | true |
-| options.zIndex | <code>number</code> | 设置蒙层的 z-index | 1000 |
-| options.buttons | <code>array</code> | 按钮 | [] |
-| options.buttons[].text | <code>string</code> | 按钮的文本 | - |
-| options.buttons[].type | <code>string</code> | 按钮的类型，可选值为 default、primary | - |
-| options.buttons[].bold | <code>boolean</code> | 是否加粗按钮的文字 | - |
-| options.buttons[].onTap | <code>function</code> | 按钮的点击事件 | - |
+| options | `object` | 配置项 | - |
+| options.prefixCls | `string` | 自定义类名前缀 | wux-dialog |
+| options.title | `string` | 提示标题 | - |
+| options.content | `string` | 提示文本 | - |
+| options.verticalButtons | `boolean` | 是否显示垂直按钮布局 | false |
+| options.resetOnClose | `boolean` | 组件关闭时重置其内部数据 | false |
+| options.closable | `boolean` | 是否显示关闭按钮 | false |
+| options.mask | `boolean` | 是否显示蒙层 | true |
+| options.maskClosable | `boolean` | 点击蒙层是否允许关闭 | true |
+| options.zIndex | `number` | 设置蒙层的 z-index | 1000 |
+| options.buttons | `array` | 按钮 | [] |
+| options.buttons[].text | `string` | 按钮的文本 | - |
+| options.buttons[].type | `string` | 按钮的类型，可选值为 default、primary | - |
+| options.buttons[].bold | `boolean` | 是否加粗按钮的文字 | - |
+| options.buttons[].onTap | `function` | 按钮的点击事件 | - |
 
 ### Dialog.alert
 
 | 参数 | 类型 | 描述 | 默认值 |
 | --- | --- | --- | --- |
-| options | <code>object</code> | 配置项 | - |
-| options.prefixCls | <code>string</code> | 自定义类名前缀 | wux-dialog |
-| options.title | <code>string</code> | 提示标题 | - |
-| options.content | <code>string</code> | 提示文本 | - |
-| options.confirmText | <code>string</code> | 确定按钮的文字 | 确定 |
-| options.confirmType | <code>string</code> | 确定按钮的类型 | primary |
-| options.onConfirm | <code>function</code> | 确定按钮的点击事件 | - |
+| options | `object` | 配置项 | - |
+| options.prefixCls | `string` | 自定义类名前缀 | wux-dialog |
+| options.title | `string` | 提示标题 | - |
+| options.content | `string` | 提示文本 | - |
+| options.confirmText | `string` | 确定按钮的文字 | 确定 |
+| options.confirmType | `string` | 确定按钮的类型 | primary |
+| options.onConfirm | `function` | 确定按钮的点击事件 | - |
 
 ### Dialog.confirm
 
 | 参数 | 类型 | 描述 | 默认值 |
 | --- | --- | --- | --- |
-| options | <code>object</code> | 配置项 | - |
-| options.prefixCls | <code>string</code> | 自定义类名前缀 | wux-dialog |
-| options.title | <code>string</code> | 提示标题 | - |
-| options.content | <code>string</code> | 提示文本 | - |
-| options.confirmText | <code>string</code> | 确定按钮的文字 | 确定 |
-| options.confirmType | <code>string</code> | 确定按钮的类型 | primary |
-| options.onConfirm | <code>function</code> | 确定按钮的点击事件 | - |
-| options.cancelText | <code>string</code> | 取消按钮的文字 | 取消 |
-| options.cancelType | <code>string</code> | 取消按钮的类型 | default |
-| options.onCancel | <code>function</code> | 取消按钮的点击事件 | - |
+| options | `object` | 配置项 | - |
+| options.prefixCls | `string` | 自定义类名前缀 | wux-dialog |
+| options.title | `string` | 提示标题 | - |
+| options.content | `string` | 提示文本 | - |
+| options.confirmText | `string` | 确定按钮的文字 | 确定 |
+| options.confirmType | `string` | 确定按钮的类型 | primary |
+| options.onConfirm | `function` | 确定按钮的点击事件 | - |
+| options.cancelText | `string` | 取消按钮的文字 | 取消 |
+| options.cancelType | `string` | 取消按钮的类型 | default |
+| options.onCancel | `function` | 取消按钮的点击事件 | - |
 
 ### Dialog.prompt
 
 | 参数 | 类型 | 描述 | 默认值 |
 | --- | --- | --- | --- |
-| options | <code>object</code> | 配置项 | - |
-| options.prefixCls | <code>string</code> | 自定义类名前缀 | wux-dialog |
-| options.title | <code>string</code> | 提示标题 | - |
-| options.content | <code>string</code> | 提示文本 | - |
-| options.fieldtype | <code>string</code> | input 的类型，可选值为 text、number、idcard、digit | text |
-| options.password | <code>boolean</code> | 是否是密码类型 | false |
-| options.defaultText | <code>string</code> | 默认值 | - |
-| options.placeholder | <code>string</code> | 输入框为空时占位符 | - |
-| options.maxlength | <code>number</code> | 最大输入长度，设置为 -1 的时候不限制最大长度 | -1 |
-| options.confirmText | <code>string</code> | 确定按钮的文字 | 确定 |
-| options.confirmType | <code>string</code> | 确定按钮的类型 | primary |
-| options.onConfirm | <code>function</code> | 确定按钮的点击事件 | - |
-| options.cancelText | <code>string</code> | 取消按钮的文字 | 取消 |
-| options.cancelType | <code>string</code> | 取消按钮的类型 | default |
-| options.onCancel | <code>function</code> | 取消按钮的点击事件 | - |
+| options | `object` | 配置项 | - |
+| options.prefixCls | `string` | 自定义类名前缀 | wux-dialog |
+| options.title | `string` | 提示标题 | - |
+| options.content | `string` | 提示文本 | - |
+| options.fieldtype | `string` | input 的类型，可选值为 text、number、idcard、digit | text |
+| options.password | `boolean` | 是否是密码类型 | false |
+| options.defaultText | `string` | 默认值 | - |
+| options.placeholder | `string` | 输入框为空时占位符 | - |
+| options.maxlength | `number` | 最大输入长度，设置为 -1 的时候不限制最大长度 | -1 |
+| options.confirmText | `string` | 确定按钮的文字 | 确定 |
+| options.confirmType | `string` | 确定按钮的类型 | primary |
+| options.onConfirm | `function` | 确定按钮的点击事件 | - |
+| options.cancelText | `string` | 取消按钮的文字 | 取消 |
+| options.cancelType | `string` | 取消按钮的类型 | default |
+| options.onCancel | `function` | 取消按钮的点击事件 | - |
 
 > 以上函数调用后，会返回一个引用，可以通过该引用手动关闭对话框
 

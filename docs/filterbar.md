@@ -354,17 +354,17 @@ Page({
 
 | 参数 | 类型 | 描述 | 默认值 |
 | --- | --- | --- | --- |
-| prefixCls | <code>string</code> | 自定义类名前缀 | wux-filterbar |
-| items | <code>array</code> | 组件子元素 | [] |
-| items[].type | <code>string</code> | 子元素类型，可选值为：radio、text、checkbox、sort、filter | - |
-| items[].label | <code>string</code> | 描述 | - |
-| items[].value | <code>string</code> | 唯一值 | - |
-| items[].children | <code>array</code> | 子元素 | [] |
-| items[].groups | <code>array</code> | 所属分组 | [] |
-| bind:change | <code>function</code> | change 事件触发的回调函数 | - |
-| bind:scroll | <code>function</code> | scroll 事件触发的回调函数 | - |
-| bind:open | <code>function</code> | 打开 select 或 filter 时触发的回调函数 | - |
-| bind:close | <code>function</code> | 关闭 select 或 filter 时触发的回调函数 | - |
+| prefixCls | `string` | 自定义类名前缀 | wux-filterbar |
+| items | `array` | 组件子元素 | [] |
+| items[].type | `string` | 子元素类型，可选值为：radio、text、checkbox、sort、filter | - |
+| items[].label | `string` | 描述 | - |
+| items[].value | `string` | 唯一值 | - |
+| items[].children | `array` | 子元素 | [] |
+| items[].groups | `array` | 所属分组 | [] |
+| bind:change | `function` | change 事件触发的回调函数 | - |
+| bind:scroll | `function` | scroll 事件触发的回调函数 | - |
+| bind:open | `function` | 打开 select 或 filter 时触发的回调函数 | - |
+| bind:close | `function` | 关闭 select 或 filter 时触发的回调函数 | - |
 
 ### FilterBar externalClasses
 

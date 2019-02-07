@@ -170,25 +170,25 @@ Page({
 
 | 参数 | 类型 | 描述 | 默认值 |
 | --- | --- | --- | --- |
-| in | <code>boolean</code> | 触发组件进入或离开过渡的状态 | false |
-| classNames | <code>any</code> | 过渡的类名 | - |
-| duration | <code>any</code> | 过渡持续时间 | - |
-| type | <code>string</code> | 过渡动效的类型 | transition |
-| appear | <code>boolean</code> | 首次挂载时是否触发进入过渡 | false |
-| enter | <code>boolean</code> | 是否启用进入过渡 | true |
-| exit | <code>boolean</code> | 是否启用离开过渡 | true |
-| mountOnEnter | <code>boolean</code> | 首次进入过渡时是否懒挂载组件 | true |
-| unmountOnExit | <code>boolean</code> | 离开过渡完成时是否卸载组件 | true |
-| wrapCls | <code>string</code> | 自定义类名 | - |
-| wrapStyle | <code>string,object</code> | 自定义样式 | - |
-| bind:click | <code>function</code> | 点击组件时触发的回调函数 | - |
-| bind:enter | <code>function</code> | 进入过渡的开始状态时触发的回调函数 | - |
-| bind:entering | <code>function</code> | 进入过渡的结束状态时触发的回调函数 | - |
-| bind:entered | <code>function</code> | 进入过渡的完成状态时触发的回调函数 | - |
-| bind:exit | <code>function</code> | 离开过渡的开始状态时触发的回调函数 | - |
-| bind:exiting | <code>function</code> | 离开过渡的结束状态时触发的回调函数 | - |
-| bind:exited | <code>function</code> | 离开过渡的完成状态时触发的回调函数 | - |
-| bind:change | <code>function</code> | 监听状态变化的回调函数 | - |
+| in | `boolean` | 触发组件进入或离开过渡的状态 | false |
+| classNames | `any` | 过渡的类名 | - |
+| duration | `any` | 过渡持续时间 | - |
+| type | `string` | 过渡动效的类型 | transition |
+| appear | `boolean` | 首次挂载时是否触发进入过渡 | false |
+| enter | `boolean` | 是否启用进入过渡 | true |
+| exit | `boolean` | 是否启用离开过渡 | true |
+| mountOnEnter | `boolean` | 首次进入过渡时是否懒挂载组件 | true |
+| unmountOnExit | `boolean` | 离开过渡完成时是否卸载组件 | true |
+| wrapCls | `string` | 自定义类名 | - |
+| wrapStyle | `string,object` | 自定义样式 | - |
+| bind:click | `function` | 点击组件时触发的回调函数 | - |
+| bind:enter | `function` | 进入过渡的开始状态时触发的回调函数 | - |
+| bind:entering | `function` | 进入过渡的结束状态时触发的回调函数 | - |
+| bind:entered | `function` | 进入过渡的完成状态时触发的回调函数 | - |
+| bind:exit | `function` | 离开过渡的开始状态时触发的回调函数 | - |
+| bind:exiting | `function` | 离开过渡的结束状态时触发的回调函数 | - |
+| bind:exited | `function` | 离开过渡的完成状态时触发的回调函数 | - |
+| bind:change | `function` | 监听状态变化的回调函数 | - |
 
 ### AnimationGroup slot
 

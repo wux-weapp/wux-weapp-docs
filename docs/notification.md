@@ -100,16 +100,16 @@ Page({
 
 | 参数 | 类型 | 描述 | 默认值 |
 | --- | --- | --- | --- |
-| options | <code>object</code> | 配置项 | - |
-| options.prefixCls | <code>string</code> | 自定义类名前缀 | wux-notification |
-| options.classNames | <code>any</code> | 过渡的类名，更多内置过渡效果请参考 [AnimationGroup](animation-group.md) | wux-animate--slideInDown |
-| options.image | <code>string</code> | 通知的图标 | - |
-| options.title | <code>string</code> | 通知的标题 | - |
-| options.text | <code>string</code> | 通知的文本 | - |
-| options.duration | <code>number</code> | 多少毫秒后消失 | 3000 |
-| options.data | <code>any</code> | 自定义数据传给 onClick、onClose | - |
-| options.onClick | <code>function</code> | 点击后的回调函数 | - |
-| options.onClose | <code>function</code> | 消失后的回调函数 | - |
+| options | `object` | 配置项 | - |
+| options.prefixCls | `string` | 自定义类名前缀 | wux-notification |
+| options.classNames | `any` | 过渡的类名，更多内置过渡效果请参考 [AnimationGroup](animation-group.md) | wux-animate--slideInDown |
+| options.image | `string` | 通知的图标 | - |
+| options.title | `string` | 通知的标题 | - |
+| options.text | `string` | 通知的文本 | - |
+| options.duration | `number` | 多少毫秒后消失 | 3000 |
+| options.data | `any` | 自定义数据传给 onClick、onClose | - |
+| options.onClick | `function` | 点击后的回调函数 | - |
+| options.onClose | `function` | 消失后的回调函数 | - |
 
 ### Notification.method
 

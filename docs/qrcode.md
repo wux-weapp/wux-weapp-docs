@@ -87,11 +87,11 @@ Page({
 
 | 参数 | 类型 | 描述 | 默认值 |
 | --- | --- | --- | --- |
-| data | <code>string</code> | 文本内容 | - |
-| typeNumber | <code>number</code> | 类型 | -1 |
-| errorCorrectLevel | <code>number</code> | 误差校正等级 | 2 |
-| width | <code>number</code> | canvas 组件的宽度 | 200 |
-| height | <code>number</code> | canvas 组件的高度 | 200 |
-| fgColor | <code>string</code> | 前景色 | black |
-| bgColor | <code>string</code> | 背景色 | white |
-| bind:click | <code>function</code> | 点击事件 | - |
+| data | `string` | 文本内容 | - |
+| typeNumber | `number` | 类型 | -1 |
+| errorCorrectLevel | `number` | 误差校正等级 | 2 |
+| width | `number` | canvas 组件的宽度 | 200 |
+| height | `number` | canvas 组件的高度 | 200 |
+| fgColor | `string` | 前景色 | black |
+| bgColor | `string` | 背景色 | white |
+| bind:click | `function` | 点击事件 | - |

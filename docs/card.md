@@ -72,13 +72,13 @@
 
 | 参数 | 类型 | 描述 | 默认值 |
 | --- | --- | --- | --- |
-| prefixCls | <code>string</code> | 自定义类名前缀 | wux-card |
-| bordered | <code>boolean</code> | 是否有边框 | false |
-| full | <code>boolean</code> | 是否通栏 | false |
-| title | <code>string</code> | 卡片标题 | - |
-| thumb | <code>string</code> | 卡片标题图片 | - |
-| thumbStyle | <code>string,object</code> | 标题图片样式 | - |
-| extra | <code>string</code> | 卡片标题辅助内容 | - |
+| prefixCls | `string` | 自定义类名前缀 | wux-card |
+| bordered | `boolean` | 是否有边框 | false |
+| full | `boolean` | 是否通栏 | false |
+| title | `string` | 卡片标题 | - |
+| thumb | `string` | 卡片标题图片 | - |
+| thumbStyle | `string,object` | 标题图片样式 | - |
+| extra | `string` | 卡片标题辅助内容 | - |
 
 ### Card slot
 

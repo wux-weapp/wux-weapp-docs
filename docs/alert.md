@@ -86,14 +86,14 @@
 
 | 参数 | 类型 | 描述 | 默认值 |
 | --- | --- | --- | --- |
-| prefixCls | <code>string</code> | 自定义类名前缀 | wux-alert |
-| classNames | <code>any</code> | 过渡的类名，更多内置过渡效果请参考 [AnimationGroup](animation-group.md) | wux-animate--fadeIn |
-| theme | <code>string</code> | 主题色，可选值为 light、stable、positive、calm、assertive、balanced、energized、royal、dark | balanced |
-| thumb | <code>string</code> | 缩略图 | - |
-| title | <code>string</code> | 标题 | - |
-| label | <code>string</code> | 描述 | - |
-| closable | <code>boolean</code> | 是否显示关闭按钮 | false |
-| bind:click | <code>function</code> | 点击关闭或者操作区域的回调函数 | - |
+| prefixCls | `string` | 自定义类名前缀 | wux-alert |
+| classNames | `any` | 过渡的类名，更多内置过渡效果请参考 [AnimationGroup](animation-group.md) | wux-animate--fadeIn |
+| theme | `string` | 主题色，可选值为 light、stable、positive、calm、assertive、balanced、energized、royal、dark | balanced |
+| thumb | `string` | 缩略图 | - |
+| title | `string` | 标题 | - |
+| label | `string` | 描述 | - |
+| closable | `boolean` | 是否显示关闭按钮 | false |
+| bind:click | `function` | 点击关闭或者操作区域的回调函数 | - |
 
 ### Alert slot
 

@@ -102,15 +102,15 @@ Page({
 
 | 参数 | 类型 | 描述 | 默认值 |
 | --- | --- | --- | --- |
-| prefixCls | <code>string</code> | 自定义类名前缀 | wux-progress |
-| percent | <code>number</code> | 百分比 0~100 | 0 |
-| strokeWidth | <code>string</code> | 进度条线的宽度，单位 px | 10 |
-| activeColor | <code>string</code> | 已选择的进度条的颜色，优先级高于 status 的默认颜色 | - |
-| backgroundColor | <code>string</code> | 未选择的进度条的颜色 | #f3f3f3 |
-| barStyle | <code>string,object</code> | 进度样式 | - |
-| status | <code>string</code> | 状态，可选值为 normal、progress、error、success | normal |
-| shape | <code>string</code> | 形状，可选值为 round、square | round |
-| showInfo | <code>boolean</code> | 在进度条右侧显示百分比 | false |
+| prefixCls | `string` | 自定义类名前缀 | wux-progress |
+| percent | `number` | 百分比 0~100 | 0 |
+| strokeWidth | `string` | 进度条线的宽度，单位 px | 10 |
+| activeColor | `string` | 已选择的进度条的颜色，优先级高于 status 的默认颜色 | - |
+| backgroundColor | `string` | 未选择的进度条的颜色 | #f3f3f3 |
+| barStyle | `string,object` | 进度样式 | - |
+| status | `string` | 状态，可选值为 normal、progress、error、success | normal |
+| shape | `string` | 形状，可选值为 round、square | round |
+| showInfo | `boolean` | 在进度条右侧显示百分比 | false |
 
 ### Progress externalClasses
 

@@ -64,9 +64,9 @@ Page({
 
 | 参数 | 类型 | 描述 | 默认值 |
 | --- | --- | --- | --- |
-| prefixCls | <code>string</code> | 自定义类名前缀 | wux-index |
+| prefixCls | `string` | 自定义类名前缀 | wux-index |
 | height | <code>string,number</code> | 设置容器的高度 | 300 |
-| showIndicator | <code>boolean</code> | 是否显示提示框 | true |
+| showIndicator | `boolean` | 是否显示提示框 | true |
 
 ### Index externalClasses
 
@@ -78,8 +78,8 @@ Page({
 
 | 参数 | 类型 | 描述 | 默认值 |
 | --- | --- | --- | --- |
-| prefixCls | <code>string</code> | 自定义类名前缀 | wux-index-item |
-| name | <code>string</code> | 名称 | - |
+| prefixCls | `string` | 自定义类名前缀 | wux-index-item |
+| name | `string` | 名称 | - |
 
 ### IndexItem slot
 

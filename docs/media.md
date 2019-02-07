@@ -48,12 +48,12 @@
 
 | 参数 | 类型 | 描述 | 默认值 |
 | --- | --- | --- | --- |
-| prefixCls | <code>string</code> | 自定义类名前缀 | wux-media |
-| title | <code>string</code> | 标题 | - |
-| thumb | <code>string</code> | 标题图片 | - |
-| thumbStyle | <code>string,object</code> | 标题图片样式 | - |
-| label | <code>string</code> | 标题辅助内容 | - |
-| align | <code>string</code> | 对齐方式，可选值为 start、center、end、baseline、stretch | center |
+| prefixCls | `string` | 自定义类名前缀 | wux-media |
+| title | `string` | 标题 | - |
+| thumb | `string` | 标题图片 | - |
+| thumbStyle | `string,object` | 标题图片样式 | - |
+| label | `string` | 标题辅助内容 | - |
+| align | `string` | 对齐方式，可选值为 start、center、end、baseline、stretch | center |
 
 ### Media slot
 

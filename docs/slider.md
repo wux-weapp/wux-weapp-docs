@@ -78,23 +78,23 @@ Page({
 
 | 参数 | 类型 | 描述 | 默认值 |
 | --- | --- | --- | --- |
-| prefixCls | <code>string</code> | 自定义类名前缀 | wux-slider |
-| min | <code>number</code> | 最小值 | 0 |
-| max | <code>number</code> | 最大值 | 100 |
-| step | <code>number</code> | 步长，取值必须大于 0，并且可被 (max - min) 整除 | 1 |
-| defaultValue | <code>array</code> | 默认值，当 controlled 为 false 时才生效 | [0] |
-| value | <code>array</code> | 当前值，当 controlled 为 true 时才生效 | [0] |
-| controlled | <code>boolean</code> | 是否受控 [说明文档](controlled.md) | false |
-| disabled | <code>boolean</code> | 是否禁用 | false |
-| showMark | <code>boolean</code> | 是否显示间断点，建议在 step 间隔不密集时使用 | false |
+| prefixCls | `string` | 自定义类名前缀 | wux-slider |
+| min | `number` | 最小值 | 0 |
+| max | `number` | 最大值 | 100 |
+| step | `number` | 步长，取值必须大于 0，并且可被 (max - min) 整除 | 1 |
+| defaultValue | `array` | 默认值，当 `controlled` 为 `false` 时才生效 | [0] |
+| value | `array` | 当前值，当 `controlled` 为 `true` 时才生效 | [0] |
+| controlled | `boolean` | 是否受控 [说明文档](controlled.md) | false |
+| disabled | `boolean` | 是否禁用 | false |
+| showMark | `boolean` | 是否显示间断点，建议在 step 间隔不密集时使用 | false |
 | showValue | <code>boolean,object</code> | 是否显示最小、大值，参数支持对象格式如 `{ min: false, max: true }` | false |
-| markStyle | <code>string,object,array</code> | 间断点的样式，参数支持数组格式如 `[ 'background-color: red' ]` | - |
-| handleStyle | <code>string,object,array</code> | 滑块的样式，参数支持数组格式如 `[ 'background-color: red' ]` | - |
-| trackStyle | <code>string,object,array</code> | 选中部分滑动条的样式，参数支持数组格式如 `[ 'background-color: red' ]` | - |
-| railStyle | <code>string,object</code> | 未选中部分的样式 | - |
-| wrapStyle | <code>string,object</code> | 自定义 wrap 样式 | - |
-| bind:change | <code>function</code> | 拖动过程中触发的回调函数 `event.detail = { value: value, offsets: offsets }` | - |
-| bind:afterChange | <code>function</code> | 完成一次拖动后触发的回调函数 `event.detail = { value: value, offsets: offsets }` | - |
+| markStyle | `string,object,array` | 间断点的样式，参数支持数组格式如 `[ 'background-color: red' ]` | - |
+| handleStyle | `string,object,array` | 滑块的样式，参数支持数组格式如 `[ 'background-color: red' ]` | - |
+| trackStyle | `string,object,array` | 选中部分滑动条的样式，参数支持数组格式如 `[ 'background-color: red' ]` | - |
+| railStyle | `string,object` | 未选中部分的样式 | - |
+| wrapStyle | `string,object` | 自定义 wrap 样式 | - |
+| bind:change | `function` | 拖动过程中触发的回调函数 `event.detail = { value: value, offsets: offsets }` | - |
+| bind:afterChange | `function` | 完成一次拖动后触发的回调函数 `event.detail = { value: value, offsets: offsets }` | - |
 
 ### Slider externalClasses
 

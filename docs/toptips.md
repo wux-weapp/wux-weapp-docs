@@ -119,14 +119,14 @@ Page({
 
 | 参数 | 类型 | 描述 | 默认值 |
 | --- | --- | --- | --- |
-| options | <code>object</code> | 配置项 | - |
-| options.prefixCls | <code>string</code> | 自定义类名前缀 | wux-toptips |
-| options.classNames | <code>any</code> | 过渡的类名，更多内置过渡效果请参考 [AnimationGroup](animation-group.md) | wux-animate--slideInDown |
-| options.icon | <code>string</code> | 图标类型 | cancel |
-| options.hidden | <code>boolean</code> | 是否隐藏图标 | false |
-| options.text | <code>string</code> | 报错文本 | - |
-| options.duration | <code>number</code> | 多少毫秒后消失 | 3000 |
-| options.success | <code>function</code> | 消失后的回调函数 | - |
+| options | `object` | 配置项 | - |
+| options.prefixCls | `string` | 自定义类名前缀 | wux-toptips |
+| options.classNames | `any` | 过渡的类名，更多内置过渡效果请参考 [AnimationGroup](animation-group.md) | wux-animate--slideInDown |
+| options.icon | `string` | 图标类型 | cancel |
+| options.hidden | `boolean` | 是否隐藏图标 | false |
+| options.text | `string` | 报错文本 | - |
+| options.duration | `number` | 多少毫秒后消失 | 3000 |
+| options.success | `function` | 消失后的回调函数 | - |
 
 ### Toptips.method
 

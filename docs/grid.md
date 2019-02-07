@@ -126,10 +126,10 @@
 
 | 参数 | 类型 | 描述 | 默认值 |
 | --- | --- | --- | --- |
-| prefixCls | <code>string</code> | 自定义类名前缀 | wux-grids |
-| col | <code>string</code> | 列数 | 3 |
-| bordered | <code>boolean</code> | 是否有边框 | true |
-| square | <code>boolean</code> | 每个格子是否固定为正方形 | false |
+| prefixCls | `string` | 自定义类名前缀 | wux-grids |
+| col | `string` | 列数 | 3 |
+| bordered | `boolean` | 是否有边框 | true |
+| square | `boolean` | 每个格子是否固定为正方形 | false |
 
 ### Grids externalClasses
 
@@ -141,11 +141,11 @@
 
 | 参数 | 类型 | 描述 | 默认值 |
 | --- | --- | --- | --- |
-| prefixCls | <code>string</code> | 自定义类名前缀 | wux-grid |
-| hoverClass | <code>string</code> | 指定按钮按下去的样式类。当 hover-class="none" 时，没有点击态效果 | default |
-| thumb | <code>string</code> | 缩略图 | - |
-| label | <code>string</code> | 描述信息 | - |
-| bind:click | <code>function</code> | 点击事件 | - |
+| prefixCls | `string` | 自定义类名前缀 | wux-grid |
+| hoverClass | `string` | 指定按钮按下去的样式类。当 hover-class="none" 时，没有点击态效果 | default |
+| thumb | `string` | 缩略图 | - |
+| label | `string` | 描述信息 | - |
+| bind:click | `function` | 点击事件 | - |
 
 
 ### Grid slot

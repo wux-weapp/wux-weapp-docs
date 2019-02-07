@@ -62,12 +62,12 @@ Page({
 
 | 参数 | 类型 | 描述 | 默认值 |
 | --- | --- | --- | --- |
-| prefixCls | <code>string</code> | 自定义类名前缀 | wux-spin |
-| classNames | <code>any</code> | 过渡的类名，更多内置过渡效果请参考 [AnimationGroup](animation-group.md) | wux-animate--fadeIn |
-| tip | <code>string</code> | 自定义描述文案 | - |
-| size | <code>string</code> | 组件大小，可选值为 small、default、large | default |
-| spinning | <code>boolean</code> | 是否为加载中状态，仅当 nested 为 true 时生效 | true |
-| nested | <code>boolean</code> | 是否作为包裹元素 | false |
+| prefixCls | `string` | 自定义类名前缀 | wux-spin |
+| classNames | `any` | 过渡的类名，更多内置过渡效果请参考 [AnimationGroup](animation-group.md) | wux-animate--fadeIn |
+| tip | `string` | 自定义描述文案 | - |
+| size | `string` | 组件大小，可选值为 small、default、large | default |
+| spinning | `boolean` | 是否为加载中状态，仅当 nested 为 true 时生效 | true |
+| nested | `boolean` | 是否作为包裹元素 | false |
 
 ### Spin slot
 

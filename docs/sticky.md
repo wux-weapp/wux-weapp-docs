@@ -243,8 +243,8 @@ Page({
 
 | 参数 | 类型 | 描述 | 默认值 |
 | --- | --- | --- | --- |
-| prefixCls | <code>string</code> | 自定义类名前缀 | wux-sticky |
-| scrollTop | <code>number</code> | 设置竖向滚动条位置 | 0 |
+| prefixCls | `string` | 自定义类名前缀 | wux-sticky |
+| scrollTop | `number` | 设置竖向滚动条位置 | 0 |
 
 ### Sticky externalClasses
 
@@ -256,9 +256,9 @@ Page({
 
 | 参数 | 类型 | 描述 | 默认值 |
 | --- | --- | --- | --- |
-| prefixCls | <code>string</code> | 自定义类名前缀 | wux-sticky-item |
-| title | <code>string</code> | 标题 | - |
-| content | <code>string</code> | 内容 | - |
+| prefixCls | `string` | 自定义类名前缀 | wux-sticky-item |
+| title | `string` | 标题 | - |
+| content | `string` | 内容 | - |
 
 ### StickyItem slot
 

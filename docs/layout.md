@@ -93,8 +93,8 @@
 
 | 参数 | 类型 | 描述 | 默认值 |
 | --- | --- | --- | --- |
-| prefixCls | <code>string</code> | 自定义类名前缀 | wux-row |
-| gutter | <code>number</code> | 栅格间隔 | 0 |
+| prefixCls | `string` | 自定义类名前缀 | wux-row |
+| gutter | `number` | 栅格间隔 | 0 |
 
 ### Row externalClasses
 
@@ -106,11 +106,11 @@
 
 | 参数 | 类型 | 描述 | 默认值 |
 | --- | --- | --- | --- |
-| prefixCls | <code>string</code> | 自定义类名前缀 | wux-col |
-| span | <code>number</code> | 栅格占位格数 | 0 |
-| pull | <code>number</code> | 栅格向左移动格数 | 0 |
-| push | <code>number</code> | 栅格向右移动格数 | 0 |
-| offset | <code>number</code> | 栅格左侧的间隔格数 | 0 |
+| prefixCls | `string` | 自定义类名前缀 | wux-col |
+| span | `number` | 栅格占位格数 | 0 |
+| pull | `number` | 栅格向左移动格数 | 0 |
+| push | `number` | 栅格向右移动格数 | 0 |
+| offset | `number` | 栅格左侧的间隔格数 | 0 |
 
 ### Col slot
 

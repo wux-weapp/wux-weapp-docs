@@ -104,23 +104,27 @@ Page({
 
 | 参数 | 类型 | 描述 | 默认值 |
 | --- | --- | --- | --- |
-| prefixCls | <code>string</code> | 自定义类名前缀 | wux-swipe |
-| autoClose | <code>boolean</code> | 是否自动关闭 | false |
-| disabled | <code>boolean</code> | 是否禁用 | false |
-| left | <code>array</code> | 左侧按钮组，当 useSlots 为 false 时才生效 | [] |
-| right | <code>array</code> | 右侧按钮组，当 useSlots 为 false 时才生效 | [] |
-| useSlots | <code>boolean</code> | 是否使用插槽 | false |
-| bind:click | <code>function</code> | 点击事件 | - |
-| bind:open | <code>function</code> | 打开事件 | - |
-| bind:close | <code>function</code> | 关闭事件 | - |
+| prefixCls | `string` | 自定义类名前缀 | wux-swipe |
+| autoClose | `boolean` | 是否自动关闭 | false |
+| disabled | `boolean` | 是否禁用 | false |
+| left | `array` | 左侧按钮组，当 `useSlots` 为 `false` 时才生效 | [] |
+| left[].text | `string` | 按钮文本 | - |
+| left[].style | `string` | 按钮样式 | - |
+| right | `array` | 右侧按钮组，当 `useSlots` 为 `false` 时才生效 | [] |
+| right[].text | `string` | 按钮文本 | - |
+| right[].style | `string` | 按钮样式 | - |
+| useSlots | `boolean` | 是否使用插槽 | false |
+| bind:click | `function` | 点击事件 | - |
+| bind:open | `function` | 打开事件 | - |
+| bind:close | `function` | 关闭事件 | - |
 
 ### SwipeAction slot
 
 | 名称 | 描述 |
 | --- | --- |
 | - | 自定义内容 |
-| left | 自定义左侧按钮组，当 useSlots 为 true 时才生效 |
-| right | 自定义右侧按钮组，当 useSlots 为 true 时才生效 |
+| left | 自定义左侧按钮组，当 `useSlots` 为 `true` 时才生效 |
+| right | 自定义右侧按钮组，当 `useSlots` 为 `true` 时才生效 |
 
 ### SwipeAction externalClasses
 

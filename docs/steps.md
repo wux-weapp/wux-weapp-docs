@@ -75,9 +75,9 @@ Page({
 
 | 参数 | 类型 | 描述 | 默认值 |
 | --- | --- | --- | --- |
-| prefixCls | <code>string</code> | 自定义类名前缀 | wux-steps |
-| current | <code>number</code> | 指定当前步骤，从 0 开始记数。在子 `Step` 元素中，可以通过 status 属性覆盖状态 | 0 |
-| direction | <code>string</code> | step 样式，可选值为 vertical、horizontal | horizontal |
+| prefixCls | `string` | 自定义类名前缀 | wux-steps |
+| current | `number` | 指定当前步骤，从 0 开始记数。在子 `Step` 元素中，可以通过 status 属性覆盖状态 | 0 |
+| direction | `string` | step 样式，可选值为 vertical、horizontal | horizontal |
 
 ### Steps externalClasses
 
@@ -89,11 +89,11 @@ Page({
 
 | 参数 | 类型 | 描述 | 默认值 |
 | --- | --- | --- | --- |
-| prefixCls | <code>string</code> | 自定义类名前缀 | wux-step |
-| status | <code>string</code> | 指定状态，可选值为 wait、process、finish、error。当不配置该属性时，会使用 `Steps` 的 current 来自动指定状态 | - |
-| title | <code>string</code> | 标题 | - |
-| content | <code>string</code> | 步骤的详情描述 | - |
-| icon | <code>string</code> | 步骤图标 | - |
+| prefixCls | `string` | 自定义类名前缀 | wux-step |
+| status | `string` | 指定状态，可选值为 wait、process、finish、error。当不配置该属性时，会使用 `Steps` 的 current 来自动指定状态 | - |
+| title | `string` | 标题 | - |
+| content | `string` | 步骤的详情描述 | - |
+| icon | `string` | 步骤图标 | - |
 
 ### Step slot
 

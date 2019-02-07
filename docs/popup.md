@@ -101,20 +101,20 @@ Page({
 
 | 参数 | 类型 | 描述 | 默认值 |
 | --- | --- | --- | --- |
-| prefixCls | <code>string</code> | 自定义类名前缀 | wux-popup |
-| animationPrefixCls | <code>string</code> | 自定义 animation 类名前缀 | wux-animate |
-| title | <code>string</code> | 标题 | - |
-| content | <code>string</code> | 内容 | - |
-| extra | <code>string</code> | 底部内容 | - |
-| position | <code>string</code> | 弹出层位置信息，可选值为 center、top、right、bottom、left | center |
-| wrapStyle | <code>string,object</code> | 自定义 wrap 样式 | - |
-| closable | <code>boolean</code> | 是否显示关闭按钮 | false |
-| mask | <code>boolean</code> | 是否显示蒙层 | true |
-| maskClosable | <code>boolean</code> | 点击蒙层是否允许关闭 | true |
-| visible | <code>boolean</code> | 是否可见 | false |
-| zIndex | <code>number</code> | 设置蒙层的 z-index | 1000 |
-| bind:close | <code>function</code> | 点击关闭按钮或蒙层的回调函数 | - |
-| bind:closed | <code>function</code> | 关闭后的回调函数 | - |
+| prefixCls | `string` | 自定义类名前缀 | wux-popup |
+| animationPrefixCls | `string` | 自定义 animation 类名前缀 | wux-animate |
+| title | `string` | 标题 | - |
+| content | `string` | 内容 | - |
+| extra | `string` | 底部内容 | - |
+| position | `string` | 弹出层位置信息，可选值为 center、top、right、bottom、left | center |
+| wrapStyle | `string,object` | 自定义 wrap 样式 | - |
+| closable | `boolean` | 是否显示关闭按钮 | false |
+| mask | `boolean` | 是否显示蒙层 | true |
+| maskClosable | `boolean` | 点击蒙层是否允许关闭 | true |
+| visible | `boolean` | 是否可见 | false |
+| zIndex | `number` | 设置蒙层的 z-index | 1000 |
+| bind:close | `function` | 点击关闭按钮或蒙层的回调函数 | - |
+| bind:closed | `function` | 关闭后的回调函数 | - |
 
 ### Popup externalClasses
 

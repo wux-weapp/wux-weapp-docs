@@ -67,22 +67,22 @@ Page({
 
 | 参数 | 类型 | 描述 | 默认值 |
 | --- | --- | --- | --- |
-| prefixCls | <code>string</code> | 自定义类名前缀 | wux-result |
-| icon | <code>any</code> | 图标的配置项 | - |
-| icon.type | <code>string</code> | 图标的类型，可选值为 success、success_no_circle、info、warn、waiting、cancel、download、search、clear | success |
-| icon.size | <code>number</code> | 图标的大小 | 93 |
-| icon.color | <code>string</code> | 图标的颜色 | #33cd5f |
-| title | <code>string</code> | 标题 | - |
-| label | <code>string</code> | 描述 | - |
-| buttons | <code>array</code> | 按钮列表 | [] |
-| extra | <code>string</code> | 底部内容 | - |
-| fixed | <code>boolean</code> | 底部内容是否定位在底部 | false |
-| bind:click | <code>function</code> | 点击事件 | - |
-| bind:getuserinfo | <code>function</code> | 用户点击该按钮时，会返回获取到的用户信息，回调的detail数据与wx.getUserInfo返回的一致 | - |
-| bind:contact | <code>function</code> | 客服消息回调 | - |
-| bind:getphonenumber | <code>function</code> | 获取用户手机号回调 | - |
-| bind:error | <code>function</code> | 当使用开放能力时，发生错误的回调 | - |
-| bind:opensetting | <code>function</code> | 在打开授权设置页后回调 | - |
+| prefixCls | `string` | 自定义类名前缀 | wux-result |
+| icon | `any` | 图标的配置项 | - |
+| icon.type | `string` | 图标的类型，可选值为 success、success_no_circle、info、warn、waiting、cancel、download、search、clear | success |
+| icon.size | `number` | 图标的大小 | 93 |
+| icon.color | `string` | 图标的颜色 | #33cd5f |
+| title | `string` | 标题 | - |
+| label | `string` | 描述 | - |
+| buttons | `array` | 按钮列表 | [] |
+| extra | `string` | 底部内容 | - |
+| fixed | `boolean` | 底部内容是否定位在底部 | false |
+| bind:click | `function` | 点击事件 | - |
+| bind:getuserinfo | `function` | 用户点击该按钮时，会返回获取到的用户信息，回调的detail数据与wx.getUserInfo返回的一致 | - |
+| bind:contact | `function` | 客服消息回调 | - |
+| bind:getphonenumber | `function` | 获取用户手机号回调 | - |
+| bind:error | `function` | 当使用开放能力时，发生错误的回调 | - |
+| bind:opensetting | `function` | 在打开授权设置页后回调 | - |
 
 > 按钮列表：buttons 参数请参考 [Button](button.md)。
 
