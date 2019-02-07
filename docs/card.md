@@ -86,3 +86,9 @@
 | --- | --- |
 | body | 自定义内容 |
 | footer | 自定义尾部内容 |
+
+### Card externalClasses
+
+| 名称 | 描述 |
+| --- | --- |
+| wux-class | 根节点样式类 |
