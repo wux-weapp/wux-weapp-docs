@@ -76,3 +76,9 @@ Page({
 | from | <code>any</code> | 当前截止时间，不传默认当前时间 | - |
 | refreshable | <code>boolean</code> | 是否刷新时间 | false |
 | lang | <code>string</code> | 返回文本的语言，可选值为 en、zh_CN、zh_TW | zh_CN |
+
+### Timeago externalClasses
+
+| 名称 | 描述 |
+| --- | --- |
+| wux-class | 根节点样式类 |
