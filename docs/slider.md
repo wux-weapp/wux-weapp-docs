@@ -74,7 +74,7 @@ Page({
 
 ## API
 
-### Tag props
+### Slider props
 
 | 参数 | 类型 | 描述 | 默认值 |
 | --- | --- | --- | --- |
@@ -95,3 +95,9 @@ Page({
 | wrapStyle | <code>string,object</code> | 自定义 wrap 样式 | - |
 | bind:change | <code>function</code> | 拖动过程中触发的回调函数 `event.detail = { value: value, offsets: offsets }` | - |
 | bind:afterChange | <code>function</code> | 完成一次拖动后触发的回调函数 `event.detail = { value: value, offsets: offsets }` | - |
+
+### Slider externalClasses
+
+| 名称 | 描述 |
+| --- | --- |
+| wux-class | 根节点样式类 |
