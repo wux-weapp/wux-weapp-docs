@@ -77,6 +77,12 @@ Page({
 | title | <code>string</code> | 标题 | - |
 | label | <code>string</code> | 描述 | - |
 
+### CellGroup externalClasses
+
+| 名称 | 描述 |
+| --- | --- |
+| wux-class | 根节点样式类 |
+
 ### Cell props
 
 | 参数 | 类型 | 描述 | 默认值 |
@@ -118,3 +124,9 @@ Page({
 | - | 自定义标题或描述 |
 | header | 自定义左侧缩略图 |
 | footer | 自定义右侧内容 |
+
+### Cell externalClasses
+
+| 名称 | 描述 |
+| --- | --- |
+| wux-class | 根节点样式类 |
