@@ -111,3 +111,9 @@ Page({
 | status | <code>string</code> | 状态，可选值为 normal、progress、error、success | normal |
 | shape | <code>string</code> | 形状，可选值为 round、square | round |
 | showInfo | <code>boolean</code> | 在进度条右侧显示百分比 | false |
+
+### Progress externalClasses
+
+| 名称 | 描述 |
+| --- | --- |
+| wux-class | 根节点样式类 |
