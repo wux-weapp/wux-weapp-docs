@@ -68,6 +68,12 @@
 | prefixCls | <code>string</code> | 自定义类名前缀 | wux-skeleton |
 | active | <code>boolean</code> | 是否展示动画效果 | false |
 
+### Skeleton externalClasses
+
+| 名称 | 描述 |
+| --- | --- |
+| wux-class | 根节点样式类 |
+
 ### SkeletonAvatar props
 
 | 参数 | 类型 | 描述 | 默认值 |
@@ -76,6 +82,12 @@
 | shape | <code>string</code> | 指定头像的形状，可选值为 circle、rounded、square | circle |
 | size | <code>string</code> | 设置头像的大小，可选值为 small、default、large | default |
 
+### SkeletonAvatar externalClasses
+
+| 名称 | 描述 |
+| --- | --- |
+| wux-class | 根节点样式类 |
+
 ### SkeletonParagraph props
 
 | 参数 | 类型 | 描述 | 默认值 |
@@ -83,3 +95,9 @@
 | prefixCls | <code>string</code> | 自定义类名前缀 | wux-skeleton-paragraph |
 | rows | <code>number</code> | 设置段落占位图的行数 | 3 |
 | rounded | <code>boolean</code> | 是否圆角 | false |
+
+### SkeletonParagraph externalClasses
+
+| 名称 | 描述 |
+| --- | --- |
+| wux-class | 根节点样式类 |
