@@ -171,3 +171,9 @@ Page({
 | - | 自定义内容 |
 | title | 自定义提示标题 |
 | content | 自定义提示内容 |
+
+### Popover externalClasses
+
+| 名称 | 描述 |
+| --- | --- |
+| wux-class | 根节点样式类 |
