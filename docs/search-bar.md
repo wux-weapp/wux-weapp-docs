@@ -102,3 +102,9 @@ Page({
 | bind:confirm | <code>function</code> | 点击完成按钮时触发 | - |
 | bind:clear | <code>function</code> | 点击清除图标时触发 | - |
 | bind:cancel | <code>function</code> | 点击取消按钮时触发 | - |
+
+### SearchBar externalClasses
+
+| 名称 | 描述 |
+| --- | --- |
+| wux-class | 根节点样式类 |
