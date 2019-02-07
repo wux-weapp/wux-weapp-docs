@@ -121,3 +121,9 @@ Page({
 | - | 自定义内容 |
 | left | 自定义左侧按钮组，当 useSlots 为 true 时才生效 |
 | right | 自定义右侧按钮组，当 useSlots 为 true 时才生效 |
+
+### SwipeAction externalClasses
+
+| 名称 | 描述 |
+| --- | --- |
+| wux-class | 根节点样式类 |
