@@ -75,3 +75,9 @@ Page({
 | - | 自定义标题 |
 | left | 自定义导航左边内容 |
 | right | 自定义导航右边内容 |
+
+### NavBar externalClasses
+
+| 名称 | 描述 |
+| --- | --- |
+| wux-class | 根节点样式类 |
