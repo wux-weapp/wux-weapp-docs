@@ -97,6 +97,8 @@ Page({
 
 ## API
 
+### Popup props
+
 | 参数 | 类型 | 描述 | 默认值 |
 | --- | --- | --- | --- |
 | prefixCls | <code>string</code> | 自定义类名前缀 | wux-popup |
@@ -113,3 +115,14 @@ Page({
 | zIndex | <code>number</code> | 设置蒙层的 z-index | 1000 |
 | bind:close | <code>function</code> | 点击关闭按钮或蒙层的回调函数 | - |
 | bind:closed | <code>function</code> | 关闭后的回调函数 | - |
+
+### Popup externalClasses
+
+| 名称 | 描述 |
+| --- | --- |
+| wux-class | 根节点样式类 |
+| wux-content-class | 主容器样式类 |
+| wux-header-class | 头部内容样式类 |
+| wux-body-class | 主体内容样式类 |
+| wux-footer-class | 底部内容样式类 |
+| wux-close-class | 关闭按钮样式类 |
