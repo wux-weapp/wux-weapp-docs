@@ -146,3 +146,10 @@
 | 名称 | 描述 |
 | --- | --- |
 | - | 自定义内容 |
+
+### Button externalClasses
+
+| 名称 | 描述 |
+| --- | --- |
+| wux-class | 根节点样式类 |
+| wux-hover-class | 按钮按下去的样式类 |
