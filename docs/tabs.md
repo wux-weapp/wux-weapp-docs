@@ -184,6 +184,12 @@ Page({
 | direction | <code>string</code> | tab 面板的排列方向，可选值为 horizontal、vertical | horizontal |
 | bind:change | <code>function</code> | 切换面板的回调函数 | - |
 
+### Tabs externalClasses
+
+| 名称 | 描述 |
+| --- | --- |
+| wux-class | 根节点样式类 |
+
 ### Tab props
 
 | 参数 | 类型 | 描述 | 默认值 |
@@ -198,3 +204,9 @@ Page({
 | 名称 | 描述 |
 | --- | --- |
 | - | 自定义内容 |
+
+### Tab externalClasses
+
+| 名称 | 描述 |
+| --- | --- |
+| wux-class | 根节点样式类 |
