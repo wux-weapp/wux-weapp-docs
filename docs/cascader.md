@@ -181,3 +181,10 @@ Page({
 | bind:change | <code>function</code> | 选择完成后的回调函数 | - |
 | bind:close | <code>function</code> | 隐藏浮层的回调函数 | - |
 | bind:load | <code>function</code> | 动态加载选项的回调函数 | - |
+
+### Cascader externalClasses
+
+| 名称 | 描述 |
+| --- | --- |
+| wux-class | 根节点样式类 |
+| wux-scroll-view-class | 滚动区域节点样式类 |
