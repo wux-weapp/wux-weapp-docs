@@ -55,3 +55,9 @@
 | 名称 | 描述 |
 | --- | --- |
 | - | 自定义内容 |
+
+### WhiteSpace externalClasses
+
+| 名称 | 描述 |
+| --- | --- |
+| wux-class | 根节点样式类 |
