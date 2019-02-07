@@ -48,3 +48,9 @@ Wux Weapp 的图标使用开源项目 [ionicons](https://ionicons.com/) 4.3.0 �
 | size | <code>number</code> | 图标大小 | 32 |
 | color | <code>string</code> | 图标颜色 | - |
 | hidden | <code>boolean</code> | 是否隐藏组件 | false |
+
+### Icon externalClasses
+
+| 名称 | 描述 |
+| --- | --- |
+| wux-class | 根节点样式类 |
