@@ -92,3 +92,9 @@ Page({
 | --- | --- |
 | prev | 自定义左侧按钮内容 |
 | next | 自定义右侧按钮内容 |
+
+### Pagination externalClasses
+
+| 名称 | 描述 |
+| --- | --- |
+| wux-class | 根节点样式类 |
