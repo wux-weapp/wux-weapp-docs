@@ -96,6 +96,12 @@
 | prefixCls | <code>string</code> | 自定义类名前缀 | wux-row |
 | gutter | <code>number</code> | 栅格间隔 | 0 |
 
+### Row externalClasses
+
+| 名称 | 描述 |
+| --- | --- |
+| wux-class | 根节点样式类 |
+
 ### Col props
 
 | 参数 | 类型 | 描述 | 默认值 |
@@ -111,3 +117,9 @@
 | 名称 | 描述 |
 | --- | --- |
 | - | 自定义内容 |
+
+### Col externalClasses
+
+| 名称 | 描述 |
+| --- | --- |
+| wux-class | 根节点样式类 |
