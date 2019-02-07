@@ -89,3 +89,9 @@ Page({
 | disabled | <code>boolean</code> | 是否禁用 | false |
 | values | <code>array</code> | 选项数组 | [] |
 | bind:change | <code>function</code> | 切换面板的回调函数 | - |
+
+### SegmentedControl externalClasses
+
+| 名称 | 描述 |
+| --- | --- |
+| wux-class | 根节点样式类 |
