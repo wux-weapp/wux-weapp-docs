@@ -147,6 +147,12 @@ Page({
 | safeArea | <code>boolean</code> | 是否适配 iPhoneX，当 position 为 bottom/top 时才生效 | false |
 | bind:change | <code>function</code> | 切换面板的回调函数 | - |
 
+### TabBar externalClasses
+
+| 名称 | 描述 |
+| --- | --- |
+| wux-class | 根节点样式类 |
+
 ### TabBarItem props
 
 | 参数 | 类型 | 描述 | 默认值 |
@@ -164,3 +170,9 @@ Page({
 | - | 自定义标题 |
 | icon-on | 自定义默认展示图标 |
 | icon-off | 自定义选中后的展示图标 |
+
+### TabBarItem externalClasses
+
+| 名称 | 描述 |
+| --- | --- |
+| wux-class | 根节点样式类 |
