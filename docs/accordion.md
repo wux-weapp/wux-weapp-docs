@@ -122,3 +122,9 @@ Page({
 | --- | --- |
 | - | 自定义内容 |
 | header | 自定义左侧标题 |
+
+### Accordion externalClasses
+
+| 名称 | 描述 |
+| --- | --- |
+| wux-class | 根节点样式类 |
