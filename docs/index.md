@@ -68,6 +68,12 @@ Page({
 | height | <code>string,number</code> | 设置容器的高度 | 300 |
 | showIndicator | <code>boolean</code> | 是否显示提示框 | true |
 
+### Index externalClasses
+
+| 名称 | 描述 |
+| --- | --- |
+| wux-class | 根节点样式类 |
+
 ### indexItem props
 
 | 参数 | 类型 | 描述 | 默认值 |
@@ -80,3 +86,9 @@ Page({
 | 名称 | 描述 |
 | --- | --- |
 | - | 自定义内容 |
+
+### IndexItem externalClasses
+
+| 名称 | 描述 |
+| --- | --- |
+| wux-class | 根节点样式类 |
