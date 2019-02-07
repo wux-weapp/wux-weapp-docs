@@ -93,3 +93,9 @@ Page({
 | - | 自定义标题或描述 |
 | header | 自定义图标 |
 | footer | 自定义底部内容 |
+
+### Result externalClasses
+
+| 名称 | 描述 |
+| --- | --- |
+| wux-class | 根节点样式类 |
