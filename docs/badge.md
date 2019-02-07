@@ -97,3 +97,10 @@
 | 名称 | 描述 |
 | --- | --- |
 | - | 自定义内容 |
+
+### Badge externalClasses
+
+| 名称 | 描述 |
+| --- | --- |
+| wux-class | 根节点样式类 |
+| wux-badge-class | 展示的数字样式类 |
