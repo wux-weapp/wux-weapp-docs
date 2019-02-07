@@ -88,6 +88,12 @@
 | pending | <code>boolean</code> | 最后一个节点是否为幽灵节点 | false |
 | position | <code>string</code> | 时间轴和内容的相对位置，可选值为 left、alternate、right | left |
 
+### Timeline externalClasses
+
+| 名称 | 描述 |
+| --- | --- |
+| wux-class | 根节点样式类 |
+
 ### TimelineItem props
 
 | 参数 | 类型 | 描述 | 默认值 |
@@ -103,3 +109,9 @@
 | --- | --- |
 | - | 自定义内容 |
 | dot | 自定义时间轴点，当 custom 为 true 时才生效 |
+
+### TimelineItem externalClasses
+
+| 名称 | 描述 |
+| --- | --- |
+| wux-class | 根节点样式类 |
