@@ -130,3 +130,10 @@ Page({
 | - | 自定义内容 |
 | icon-on | 自定义已选中的内容 |
 | icon-off | 自定义未选中的内容 |
+
+### Selectable externalClasses
+
+| 名称 | 描述 |
+| --- | --- |
+| wux-class | 根节点样式类 |
+| wux-input-class | 选择框样式类 |
