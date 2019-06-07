@@ -36,6 +36,7 @@
   * [Calendar 日历](calendar.md)
   * [Cascader 级联选择器](cascader.md)
   * [Checkbox 复选框](checkbox.md)
+  * [Form 表单](form.md)
   * [Input 文本输入框](input.md)
   * [InputNumber 数字输入框](input-number.md)
   * [Radio 单选框](radio.md)
