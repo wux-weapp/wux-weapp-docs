@@ -82,6 +82,7 @@
   * [Circle 进度环](circle.md)
   * [Dialog 对话框](dialog.md)
   * [Gallery 画廊](gallery.md)
+  * [Landscape 压屏窗](landscape.md)
   * [Loading 指示器](loading.md)
   * [Notification 通知](notification.md)
   * [Popup 弹出框](popup.md)
