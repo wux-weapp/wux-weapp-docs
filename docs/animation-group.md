@@ -1,6 +1,6 @@
 # AnimationGroup 动画组
 
-将自定义的组件包裹在 `animation-group` 组件内，可以实现过渡/动画效果，预设 9 种过渡效果 `fadeIn`, `fadeInDown`, `fadeInLeft`, `fadeInRight`, `fadeInUp`, `slideInUp`, `slideInDown`, `slideInLeft`, `slideInRight` 可选用。
+将自定义的组件包裹在 `animation-group` 组件内，可以实现过渡/动画效果，预设 9 种过渡效果 `fadeIn`, `fadeInDown`, `fadeInLeft`, `fadeInRight`, `fadeInUp`, `slideInUp`, `slideInDown`, `slideInLeft`, `slideInRight`, `zoom`, `punch` 可选用。
 
 在进入/离开的过渡中，会有 6 个 class 切换：
 
@@ -99,6 +99,8 @@ Page({
             'slideInDown',
             'slideInLeft',
             'slideInRight',
+            'zoom',
+            'punch',
         ],
         index: 0,
         example: {
@@ -141,7 +143,7 @@ Page({
     },
     onChange(e) {
         const { animateStatus } = e.detail
-        
+
         switch (animateStatus) {
             case 'entering':
                 this.setData({ status: 'Entering…' })
