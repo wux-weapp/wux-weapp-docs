@@ -162,6 +162,8 @@ Page({
 | trigger | `string` | 触发行为，可选值为 click | click |
 | visible | `boolean` | 用于手动控制浮层显隐，当 `controlled` 为 `true` 时才生效 | false |
 | controlled | `boolean` | 是否受控 [说明文档](controlled.md) | false |
+| mask | `boolean` | 是否显示蒙层 | false |
+| maskClosable | `boolean` | 点击蒙层是否允许关闭 | true |
 | bind:change | `function` | 显示隐藏的回调函数 | - |
 
 ### Popover slot
