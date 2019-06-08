@@ -10,6 +10,7 @@
 {
     "navigationBarTitleText": "Slider",
     "usingComponents": {
+        "wux-icon": "../../dist/icon/index",
         "wux-slider": "../../dist/slider/index"
     }
 }
@@ -28,10 +29,19 @@
     <view class="page__bd page__bd_spacing">
         <view class="sub-title">Default</view>
         <wux-slider defaultValue="{{ [10] }}" />
+        <view class="sub-title">Custom tip</view>
+        <wux-slider defaultValue="{{ [10] }}" tipFormatter="{d} %" />
+        <view class="sub-title">No tip</view>
+        <wux-slider defaultValue="{{ [10] }}" tipFormatter="" />
         <view class="sub-title">Disabled</view>
         <wux-slider defaultValue="{{ [10] }}" disabled />
         <view class="sub-title">Show value</view>
         <wux-slider defaultValue="{{ [10] }}" showValue />
+        <view class="sub-title">Use icons</view>
+        <wux-slider defaultValue="{{ [10] }}">
+            <wux-icon wux-class="min" type="ios-volume-mute" slot="min" />
+            <wux-icon wux-class="max" type="ios-volume-high" slot="max" />
+        </wux-slider>
         <view class="sub-title">Step = 10</view>
         <wux-slider defaultValue="{{ [10] }}" showValue step="10" />
         <view class="sub-title">Show mark</view>
@@ -87,7 +97,8 @@ Page({
 | controlled | `boolean` | 是否受控 [说明文档](controlled.md) | false |
 | disabled | `boolean` | 是否禁用 | false |
 | showMark | `boolean` | 是否显示间断点，建议在 step 间隔不密集时使用 | false |
-| showValue | <code>boolean,object</code> | 是否显示最小、大值，参数支持对象格式如 `{ min: false, max: true }` | false |
+| showValue | `boolean,object` | 是否显示最小、大值，参数支持对象格式如 `{ min: false, max: true }` | false |
+| tipFormatter | `string` | 格式化当前滑块的值并显示 tip，当其为空时隐藏 tip。（`{d}` 为固定写法会被转化为当前滑块的值，如 `{d} %` 转化为 `n %`） | `{d}` |
 | markStyle | `string,object,array` | 间断点的样式，参数支持数组格式如 `[ 'background-color: red' ]` | - |
 | handleStyle | `string,object,array` | 滑块的样式，参数支持数组格式如 `[ 'background-color: red' ]` | - |
 | trackStyle | `string,object,array` | 选中部分滑动条的样式，参数支持数组格式如 `[ 'background-color: red' ]` | - |
