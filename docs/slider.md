@@ -107,6 +107,13 @@ Page({
 | bind:change | `function` | 拖动过程中触发的回调函数 `event.detail = { value: value, offsets: offsets }` | - |
 | bind:afterChange | `function` | 完成一次拖动后触发的回调函数 `event.detail = { value: value, offsets: offsets }` | - |
 
+### Slider slot
+
+| 名称 | 描述 |
+| --- | --- |
+| min | 自定义左侧内容，当 `showValue.min` 为 `false` 时才生效 |
+| max | 自定义右侧内容，当 `showValue.max` 为 `false` 时才生效 |
+
 ### Slider externalClasses
 
 | 名称 | 描述 |
