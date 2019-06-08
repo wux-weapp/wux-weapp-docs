@@ -181,6 +181,7 @@ Page({
 | unmountOnExit | `boolean` | 离开过渡完成时是否卸载组件 | true |
 | wrapCls | `string` | 自定义类名 | - |
 | wrapStyle | `string,object` | 自定义样式 | - |
+| disableScroll | `boolean` | 阻止移动触摸 | false |
 | bind:click | `function` | 点击组件时触发的回调函数 | - |
 | bind:enter | `function` | 进入过渡的开始状态时触发的回调函数 | - |
 | bind:entering | `function` | 进入过渡的结束状态时触发的回调函数 | - |
