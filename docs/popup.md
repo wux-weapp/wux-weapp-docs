@@ -113,6 +113,8 @@ Page({
 | maskClosable | `boolean` | 点击蒙层是否允许关闭 | true |
 | visible | `boolean` | 是否可见 | false |
 | zIndex | `number` | 设置蒙层的 z-index | 1000 |
+| hasHeader | `boolean` | 是否显示头部内容 | true |
+| hasFooter | `boolean` | 是否显示底部内容 | true |
 | bind:close | `function` | 点击关闭按钮或蒙层的回调函数 | - |
 | bind:closed | `function` | 关闭后的回调函数 | - |
 
