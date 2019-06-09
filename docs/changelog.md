@@ -1,3 +1,23 @@
+# v 3.6.0 (2019-06-09)
+
+- 增加组件：Form - 表单 用于收集表单元素的值，具体使用方法请参考对应文档
+- 增加组件：Landscape - 压屏窗
+- 更新组件：Popup - 弹出框 新增 hasHeader、hasFooter 属性
+- 更新组件：Radio - 单选框 新增 options 属性
+- 更新组件：Checkbox - 复选框 新增 options 属性
+- 更新组件：Refresher - 下拉刷新 新增 $startWuxRefresher 方法，补全遗漏的文档
+- 更新组件：AnimationGroup - 动画组 新增 disableScroll 属性，新增 zoom、punch 过渡效果
+- 更新组件：Accordion - 手风琴 修复嵌套渲染 bug [#243](https://github.com/wux-weapp/wux-weapp/issues/243) 修复异步渲染 bug [#239](https://github.com/wux-weapp/wux-weapp/issues/239)
+- 更新组件：Slider - 滑动选择器 新增 tipFormatter 属性，修复滑动效果异常 bug [#234](https://github.com/wux-weapp/wux-weapp/issues/234)
+- 更新组件：Select - 下拉框 修复滑动穿透 bug [#232](https://github.com/wux-weapp/wux-weapp/issues/232)
+- 更新组件：SwipeAction - 滑动操作 修复满屏无法滚动 bug [#227](https://github.com/wux-weapp/wux-weapp/issues/227)
+- 更新组件：Index - 索引选择器 修复异步获取数据源字母滑动失效 bug [#224](https://github.com/wux-weapp/wux-weapp/issues/224)
+- 更新组件：Cascader - 级联选择器 修复 chooseTitle 不显示 bug [#207](https://github.com/wux-weapp/wux-weapp/issues/207)
+- 更新组件：ActionSheet - 上拉菜单 基于 Popup 封装
+- 更新组件：Popover - 气泡框 新增 mask 属性
+- 更新组件：ActionSheet、Select、Cascader、KeyBoard、Calendar 等组件 iPhoneX 适配
+- 升级注意：此次更新内容需要依赖小程序基础库 2.6.6 以上版本
+
 # v 3.5.0 (2019-02-01)
 
 - 增加组件：SwipeAction - 滑动操作
