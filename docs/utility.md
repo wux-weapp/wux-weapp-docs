@@ -82,7 +82,7 @@
 ### Margin 边距类
 
 ```html
-<!-- top、right、bottom、left (0 - 30) -->
+<!-- top、right、bottom、left、vertical、horizontal (0 - 30) -->
 <view class="wux-m--0">No margin</view>
 <view class="wux-margin--0">No margin</view>
 <view class="wux-mt--0">No margin top</view>
