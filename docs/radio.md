@@ -53,6 +53,7 @@
                 <wux-radio title="AV" value="1" disabled />
                 <wux-radio title="PHP" value="2" disabled />
             </wux-radio-group>
+            <wux-radio-group name="f" value="{{ value5 }}" options="{{ options }}" title="Options" bind:change="onChange5" />
             <view class="btn-area">
                 <button formType="submit">Submit</button>
             </view>
@@ -68,13 +69,16 @@ Page({
         value2: '1',
         value3: '1',
         value4: '1',
+        value5: '1',
+        options: [{ title: 'Java', value: '1' }, { title: 'PHP', value: '2' }],
+        // options: ['1', '2'],
     },
     onChange(field, e) {
         this.setData({
             [field]: e.detail.value
         })
 
-        console.log('radio发生change事件，携带value值为：', e.detail.value)
+        console.log('radio发生change事件，携带value值为：', e.detail)
     },
     onChange1(e) {
         this.onChange('value1', e)
@@ -87,6 +91,9 @@ Page({
     },
     onChange4(e) {
         this.onChange('value4', e)
+    },
+    onChange5(e) {
+        this.onChange('value5', e)
     },
     formSubmit(e) {
         console.log('form发生了submit事件，携带数据为：', e.detail.value)
@@ -110,6 +117,7 @@ Page({
 | value | `string` | 在表单中的字段值（当前选中项的值） | - |
 | title | `string` | 标题 | - |
 | label | `string` | 描述 | - |
+| options | `array` | 以配置形式设置子元素，优先级高于 slot | [] |
 | bind:change | `function` | change 事件触发的回调函数 | - |
 
 ### Radio props
