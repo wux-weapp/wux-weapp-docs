@@ -102,7 +102,7 @@ Page({
 | isShowLoadingText | `boolean` | 是否显示 loadingText | false |
 | loadingText | `string` | 上拉加载时文字描述 | 正在加载 |
 | loadNoDataText | `string` | 上拉加载且没有数据时文字描述 | 没有更多数据 |
-| scrollTop | `number` | 页面滚动距离，滚动加载时需要设置 | 0 |
+| scrollTop | `number` | 页面滚动距离，上拉加载时需要设置 | 0 |
 | bind:pulling | `function` | 下拉开始的回调函数 | - |
 | bind:refresh | `function` | 下拉完成的回调函数 | - |
 
