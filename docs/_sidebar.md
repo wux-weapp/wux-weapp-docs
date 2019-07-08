@@ -39,6 +39,7 @@
   * [Form 表单](form.md)
   * [Input 文本输入框](input.md)
   * [InputNumber 数字输入框](input-number.md)
+  * [PickerView 单列选择器](picker-view.md)
   * [Radio 单选框](radio.md)
   * [Rater 评分](rater.md)
   * [SearchBar 搜索栏](search-bar.md)
