@@ -62,7 +62,7 @@ Page({
 
 | 参数 | 类型 | 描述 | 默认值 |
 | --- | --- | --- | --- |
-| prefixCls | `string` | 自定义类名前缀 | wux-picker |
+| prefixCls | `string` | 自定义类名前缀 | wux-popup-picker |
 | pickerPrefixCls | `string` | picker 自定义类名前缀 | wux-picker-col |
 | value | `array` | 当前值 | [] |
 | itemHeight | `number` | 每列子元素的高度 | 34 |
