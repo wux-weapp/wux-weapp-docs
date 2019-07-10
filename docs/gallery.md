@@ -64,7 +64,7 @@
                 </view>
             </view>
         </view>
-        <view class="weui-cells__title">带说明文案</view>
+        <view class="weui-cells__title">带说明文案 & 自定义图标</view>
         <view class="weui-cells weui-cells_after-title">
             <view class="weui-cell">
                 <view class="weui-cell__bd">
@@ -92,14 +92,10 @@ import { $wuxGallery } from '../../dist/index'
 Page({
     data: {
         urls: [
-            'https://unsplash.it/200/200',
-            'https://unsplash.it/300/300',
-            'https://unsplash.it/400/400',
-            'https://unsplash.it/600/600',
-            'https://unsplash.it/800/800',
-            'https://unsplash.it/900/900',
-            'https://unsplash.it/1000/1000',
-            'https://unsplash.it/1200/1200',
+            'https://wux.cdn.cloverstd.com/logo.png',
+            'https://wux.cdn.cloverstd.com/logo.png',
+            'https://wux.cdn.cloverstd.com/logo.png',
+            'https://wux.cdn.cloverstd.com/logo.png',
         ],
     },
     onLoad() {},
@@ -138,10 +134,14 @@ Page({
         $wuxGallery().show({
             current,
             urls: urls.map((n) => ({ image: n, remark: n })),
-            showDelete: false,
             indicatorDots: true,
             indicatorColor: '#fff',
             indicatorActiveColor: '#04BE02',
+            icon: 'https://wux.cdn.cloverstd.com/logo.png',
+            [`delete`]: (current, urls) => {
+                console.log('onIconClick')
+                return true
+            },
         })
     },
     previewImage(e) {
@@ -176,6 +176,7 @@ Page({
 | options.circular | `boolean` | 是否采用衔接滑动 | false |
 | options.vertical | `boolean` | 滑动方向是否为纵向 | false |
 | options.showDelete | `boolean` | 是否显示删除按钮 | true |
+| options.icon | `string` | 自定义图标 | - |
 | options.allowScale | `boolean` | 是否支持手势缩放 | true |
 | options.current | `number` | 当前显示图片的索引值 | 0 |
 | options.urls | `array` | 需要预览的图片链接列表 | [] |
