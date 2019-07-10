@@ -18,14 +18,14 @@
 ### 示例
 
 ```html
-<view class="page" style="{{ pageStyle }}">
+<view class="page">
     <view class="page__hd">
         <view class="page__title">FilterBar</view>
         <view class="page__desc">筛选栏</view>
     </view>
     <view class="page__bd">
         <wux-filterbar items="{{ items }}" bind:change="onChange" bind:open="onOpen" bind:close="onClose" />
-        <view class="weui-panel weui-panel_access">
+        <view class="weui-panel weui-panel_access" catchtouchmove="{{ opened ? 'noop' : '' }}">
             <view class="weui-panel__bd">
                 <view class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active" wx:for="{{ repos }}" wx:key="">
                     <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
@@ -54,9 +54,11 @@ Page({
                 type: 'radio',
                 label: 'Updated',
                 value: 'updated',
+                checked: true,
                 children: [{
                         label: 'Recently updated',
                         value: 'desc',
+                        checked: true, // 默认选中
                     },
                     {
                         label: 'Least recently updated',
@@ -81,6 +83,7 @@ Page({
                 type: 'filter',
                 label: '筛选',
                 value: 'filter',
+                checked: true,
                 children: [{
                         type: 'radio',
                         label: 'Languages（单选）',
@@ -118,6 +121,7 @@ Page({
                             {
                                 label: 'React',
                                 value: 'react',
+                                checked: true, // 默认选中
                             },
                             {
                                 label: 'Avalon',
@@ -274,10 +278,10 @@ Page({
         this.getRepos()
     },
     onChange(e) {
-        const { checkedItems, items } = e.detail
+        const { checkedItems, items, checkedValues } = e.detail
         const params = {}
 
-        console.log(checkedItems, items)
+        console.log(checkedItems, items, checkedValues)
 
         checkedItems.forEach((n) => {
             if (n.checked) {
@@ -303,6 +307,8 @@ Page({
                 }
             }
         })
+        
+        console.log('params', params)
 
         this.getRepos(params)
     },
@@ -312,6 +318,7 @@ Page({
         const q = `${query}+language:${language}`
         const data = Object.assign({
             q,
+            order: 'desc',
         }, params)
 
         wx.showLoading()
@@ -332,15 +339,15 @@ Page({
         })
     },
     onOpen(e) {
-        this.setData({
-            pageStyle: 'height: 100%; overflow: hidden',
-        })
+        this.setData({ opened: true })
     },
     onClose(e) {
-        this.setData({
-            pageStyle: '',
-        })
+        this.setData({ opened: false })
     },
+    /**
+     * 阻止触摸移动
+     */
+    noop() {},
 })
 ```
 
@@ -361,6 +368,8 @@ Page({
 | items[].value | `string` | 唯一值 | - |
 | items[].children | `array` | 子元素 | [] |
 | items[].groups | `array` | 所属分组 | [] |
+| confirmText | `string` | 确定按钮的文字 | 确定 |
+| cancelText | `string` | 取消按钮的文字 | 重置 |
 | bind:change | `function` | change 事件触发的回调函数 | - |
 | bind:scroll | `function` | scroll 事件触发的回调函数 | - |
 | bind:open | `function` | 打开 select 或 filter 时触发的回调函数 | - |
