@@ -36,6 +36,7 @@
         <wux-button block type="light" bind:click="prompt">Prompt Dialog</wux-button>
         <wux-button block type="light" bind:click="custom">Custom Dialog</wux-button>
         <wux-button block type="light" bind:click="vertical">Vertical Buttons Dialog</wux-button>
+        <wux-button block type="light" bind:click="openType">OpenType Dialog</wux-button>
     </view>
 </view>
 ```
@@ -170,6 +171,25 @@ Page({
             ],
         })
     },
+    openType() {
+        $wuxDialog().open({
+            resetOnClose: true,
+            title: '提示',
+            content: '获取用户信息',
+            buttons: [{
+                    text: '取消',
+                },
+                {
+                    text: '确定',
+                    type: 'primary',
+                    openType: 'getUserInfo',
+                    onGetUserInfo(e) {
+                        console.log(e)
+                    },
+                },
+            ],
+        })
+    },
 })
 ```
 
@@ -197,7 +217,25 @@ Page({
 | options.buttons[].text | `string` | 按钮的文本 | - |
 | options.buttons[].type | `string` | 按钮的类型，可选值为 default、primary | - |
 | options.buttons[].bold | `boolean` | 是否加粗按钮的文字 | - |
+| options.buttons[].disabled | `boolean` | 是否禁用 | false |
+| options.buttons[].openType | `string` | 微信开放能力，可选值为 contact、share、getUserInfo、getPhoneNumber、launchApp、openSetting、feedback | - |
+| options.buttons[].hoverClass | `string` | 指定按下去的样式类。当 hover-class="none" 时，没有点击态效果 | default |
+| options.buttons[].hoverStopPropagation | `boolean` | 指定是否阻止本节点的祖先节点出现点击态 | false |
+| options.buttons[].hoverStartTime | `number` | 按住后多久出现点击态，单位毫秒 | 20 |
+| options.buttons[].hoverStayTime | `number` | 手指松开后点击态保留时间，单位毫秒 | 70 |
+| options.buttons[].lang | `string` | 指定返回用户信息的语言，zh_CN 简体中文，zh_TW 繁体中文，en 英文。 | en |
+| options.buttons[].sessionFrom | `string` | 会话来源 | - |
+| options.buttons[].sendMessageTitle | `string` | 会话内消息卡片标题 | 当前标题 |
+| options.buttons[].sendMessagePath | `string` | 会话内消息卡片点击跳转小程序路径 | 当前分享路径 |
+| options.buttons[].sendMessageImg | `string` | 会话内消息卡片图片 | 截图 |
+| options.buttons[].showMessageCard | `boolean` | 显示会话内消息卡片 | false |
+| options.buttons[].appParameter | `string` | 打开 APP 时，向 APP 传递的参数 | - |
 | options.buttons[].onTap | `function` | 按钮的点击事件 | - |
+| options.buttons[].onGetUserInfo | `function` | 用户点击该按钮时，会返回获取到的用户信息，回调的detail数据与wx.getUserInfo返回的一致 | - 
+| options.buttons[].onContact | `function` | 客服消息回调 | - |
+| options.buttons[].onGotPhoneNumber | `function` | 获取用户手机号回调 | - |
+| options.buttons[].onError | `function` | 当使用开放能力时，发生错误的回调 | - |
+| options.buttons[].onOpenSetting | `function` | 在打开授权设置页后回调 | - |
 
 ### Dialog.alert
 
