@@ -1,6 +1,6 @@
 # Form 表单
 
-表单组件，包含 `<Checkbox />`、`<Radio />`、`<Switch />`、`<Input />`、`<Rater />`、`<InputNumber />`、`<Textarea />`、`<Slider />` 等元素。
+表单组件，包含 `<Checkbox />`、`<Radio />`、`<Switch />`、`<Input />`、`<Rater />`、`<InputNumber />`、`<Textarea />`、`<Slider />`、`<Picker />`、`<DatePicker />`、`<PopupSelect />` 等元素。
 
 - 表单元素需要使用 `<Field />` 来包裹，数据同步将被 `<Form />` 接管
 - 无需再使用 `onChange` 来做同步，但还是可以继续监听 `onChange` 等事件
@@ -29,10 +29,12 @@
         "wux-checkbox": "../../dist/checkbox/index",
         "wux-radio-group": "../../dist/radio-group/index",
         "wux-radio": "../../dist/radio/index",
-        "wux-switch": "../../dist/switch/index"
+        "wux-switch": "../../dist/switch/index",
+        "wux-picker": "../../dist/picker/index",
+        "wux-date-picker": "../../dist/date-picker/index",
+        "wux-popup-select": "../../dist/popup-select/index"
     }
 }
-
 ```
 
 ### 示例
@@ -94,6 +96,27 @@
                     </wux-field>
                 </wux-cell>
             </wux-cell-group>
+            <wux-cell-group title="Picker">
+                <wux-field name="picker" initialValue="{{ picker }}">
+                    <wux-picker options="{{ options1 }}" cascade bind:change="onValueChange">
+                        <wux-cell title="Picker" is-link extra="{{ picker }}"></wux-cell>
+                    </wux-picker>
+                </wux-field>
+            </wux-cell-group>
+            <wux-cell-group title="DatePicker">
+                <wux-field name="datePicker" initialValue="{{ datePicker }}">
+                    <wux-date-picker bind:change="onDatePickerChange">
+                        <wux-cell title="DatePicker" is-link extra="{{ datePicker }}"></wux-cell>
+                    </wux-date-picker>
+                </wux-field>
+            </wux-cell-group>
+            <wux-cell-group title="PopupSelect">
+                <wux-field name="popupSelect" initialValue="{{ popupSelect }}">
+                    <wux-popup-select options="{{ options2 }}" bind:change="onPopupSelectChange">
+                        <wux-cell title="PopupSelect" is-link extra="{{ popupSelect }}"></wux-cell>
+                    </wux-popup-select>
+                </wux-field>
+            </wux-cell-group>
             <view class="btn-area">
                 <button formType="submit">Default Form Submit</button>
             </view>
@@ -154,6 +177,27 @@
                     </wux-field>
                 </wux-cell>
             </wux-cell-group>
+            <wux-cell-group title="Picker">
+                <wux-field name="picker" initialValue="{{ picker }}">
+                    <wux-picker options="{{ options1 }}" cascade bind:change="onValueChange">
+                        <wux-cell title="Picker" is-link extra="{{ picker }}"></wux-cell>
+                    </wux-picker>
+                </wux-field>
+            </wux-cell-group>
+            <wux-cell-group title="DatePicker">
+                <wux-field name="datePicker" initialValue="{{ datePicker }}">
+                    <wux-date-picker bind:change="onDatePickerChange">
+                        <wux-cell title="DatePicker" is-link extra="{{ datePicker }}"></wux-cell>
+                    </wux-date-picker>
+                </wux-field>
+            </wux-cell-group>
+            <wux-cell-group title="PopupSelect">
+                <wux-field name="popupSelect" initialValue="{{ popupSelect }}">
+                    <wux-popup-select options="{{ options2 }}" bind:change="onPopupSelectChange">
+                        <wux-cell title="PopupSelect" is-link extra="{{ popupSelect }}"></wux-cell>
+                    </wux-popup-select>
+                </wux-field>
+            </wux-cell-group>
             <view class="btn-area">
                 <button bindtap="onSubmit">Wux Form Submit</button>
                 <button bindtap="onReset">Wux Form Reset</button>
@@ -165,13 +209,21 @@
 
 ```js
 import { $wuxForm } from '../../dist/index'
+import data from '../cascader/data'
 
 Page({
     data: {
         checkbox: ['1'],
         radio: '1',
         switch: true,
-        disabled: false,
+        picker: [],
+        datePicker: [],
+        popupSelect: '猎人',
+        options1: [],
+        options2: ['法官', '医生', '猎人', '学生', '记者', '其他'],
+    },
+    onLoad() {
+        this.setData({ options1: data })
     },
     onCheckboxChange(e) {
         const { value } = e.detail
@@ -186,6 +238,15 @@ Page({
     },
     onSwitchChange(e) {
         this.setData({ switch: e.detail.value })
+    },
+    onValueChange(e) {
+        this.setData({ picker: e.detail.value })
+    },
+    onDatePickerChange(e) {
+        this.setData({ datePicker: e.detail.value })
+    },
+    onPopupSelectChange(e) {
+        this.setData({ popupSelect: e.detail.value })
     },
     formSubmit(e) {
         console.log('Default Form Submit \n', e.detail.value)
