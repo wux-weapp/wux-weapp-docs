@@ -272,3 +272,11 @@ Page({
 | 名称 | 描述 |
 | --- | --- |
 | wux-class | 根节点样式类 |
+
+### Sticky.updated
+
+> 某些时候需要动态加载数据时可能导致 `<wux-sticky-item>` 高度计算不正确，此时需要手动调用一次使之正常
+
+```
+this.selectComponent(selector).updated()
+```
