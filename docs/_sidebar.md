@@ -8,12 +8,14 @@
 
 * [受控组件](controlled.md)
 
+* [FAQ](faq.md)
+
 * 基础组件
 
   * [AnimationGroup 动画组](animation-group.md)
   * [Button 按钮](button.md)
   * [Icon 图标](icon.md)
-  * [utility 工具类](utility.md)
+  * [Utility 工具类](utility.md)
 
 * 布局组件
 

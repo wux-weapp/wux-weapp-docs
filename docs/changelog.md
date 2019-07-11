@@ -1,3 +1,17 @@
+# v 3.7.0 (2019-07-11)
+
+- 更新组件：InputNumber - 数字输入框 修复精度问题
+- 更新组件：Dialog - 对话框 新增支持微信开放能力
+- 更新组件：FilterBar - 筛选栏 新增 confirmText、cancelText 参数，支持设置默认值及动态传入数据
+- 更新组件：Gallery - 画廊 新增 icon 属性，支持自定义图标
+- 增加组件：CascaderPickerView - 级联选择器 嵌入页面的联级选择器
+- 增加组件：MultiPickerView - 多列选择器 嵌入页面的多列滚动选择器
+- 增加组件：PickerView - 单列选择器 嵌入页面的单列滚动选择器
+- 增加组件：Picker - 选择器 弹出框形式的选择器，支持表单提交
+- 增加组件：DatePickerView - 日期选择器 嵌入页面的日期选择器
+- 增加组件：DatePicker - 日期选择器 弹出框形式的日期选择器，支持表单提交
+- 增加组件：PopupSelect - 下拉框 类似于 Select 组件，但其功能更为强大，并且支持表单提交
+
 # v 3.6.1 (2019-06-14)
 
 - 更新组件：Input - 文本输入框 修复 input value 不显示的问题

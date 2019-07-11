@@ -1,6 +1,6 @@
 ![logo](_images/logo.png)
 
-# Wux Weapp <small>3.6.1</small>
+# Wux Weapp <small>3.7.0</small>
 
 <p align="center">
     <a href="https://github.com/wux-weapp/wux-weapp/" target="_blank">
