@@ -1,3 +1,11 @@
+# v 3.7.1 (2019-07-12)
+
+- 更新组件：NoticeBar - 通告栏 优化组件，暴露 resetAnimation 等方法支持外部调用
+- 更新组件：Card - 卡片 新增 actions 属性
+- 更新组件：Checkbox - 复选框 支持包裹滑动组件使用
+- 更新组件：Input - 文本输入框 修复点击删除按钮显示 object 的问题
+- 更新组件：Textarea - 多行输入框 修复点击删除按钮显示 object 的问题
+
 # v 3.7.0 (2019-07-11)
 
 - 更新组件：InputNumber - 数字输入框 修复精度问题
