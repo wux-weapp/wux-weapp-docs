@@ -152,7 +152,7 @@ Page({
 | name | `string` | 文件对应的 key | file |
 | header | `object` | HTTP 请求 Header, header 中不能设置 Referer | {} |
 | formData | `object` | HTTP 请求中其他额外的 form data | {} |
-| uploaded | `boolean` | 默认的上传行为 | true |
+| uploaded | `boolean` | 默认的上传行为，`false` 时需要自行实现上传功能 | true |
 | disabled | `boolean` | 是否禁用 | false |
 | progress | `boolean` | 是否监听上传进度变化 | false |
 | listType | `string` | 上传列表的内建样式，可选值为 text、picture-card | text |
@@ -181,3 +181,21 @@ Page({
 | 名称 | 描述 |
 | --- | --- |
 | wux-class | 根节点样式类 |
+
+### 返回参数
+
+```
+{
+    file: { /* ... */ }, // 当前操作的文件对象
+    fileList: [ /* ... */ ], // 当前的文件列表
+}
+```
+
+```
+{
+    uid: 'uid', // 文件唯一标识，建议设置为负数，防止和内部产生的 id 冲突
+    url: 'xx.png', // 文件地址
+    status: 'done', // 状态，可选值为 uploading、done、error、remove
+    res: { /* ... */ }, // 服务端响应内容，
+}
+```
