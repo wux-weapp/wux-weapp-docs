@@ -46,12 +46,26 @@
         </wux-notice-bar>
         <view class="sub-title">Custom Style</view>
         <wux-notice-bar wux-class="notice-bar" icon="https://wux.cdn.cloverstd.com/logo.png" content="微信小程序自定义组件 https://github.com/wux-weapp/wux-weapp" />
+        <view class="sub-title">Async & slot</view>
+        <wux-notice-bar id="wux-notice-bar">{{ content }}</wux-notice-bar>
     </view>
 </view>
 ```
 
 ```js
 Page({
+    data: {
+        content: '微信小程序自定义组件 https://github.com/wux-weapp/wux-weapp',
+    },
+    onLoad() {
+        setTimeout(() => {
+            this.setData({
+                content: 'Wux Weapp 是一套组件化、可复用、易扩展的微信小程序 UI 组件库。80+ 丰富的组件，能够满足移动端开发的基本需求。',
+            })
+            this.notice = this.selectComponent('#wux-notice-bar')
+            this.notice.resetAnimation()
+        }, 3000)
+    },
     onClick() {
         wx.showModal({
             title: 'Thank you for your support!',
@@ -95,3 +109,15 @@ Page({
 | 名称 | 描述 |
 | --- | --- |
 | wux-class | 根节点样式类 |
+
+### NoticeBar.method
+
+- NoticeBar.startAnimation
+- NoticeBar.stopAnimation
+- NoticeBar.resetAnimation
+
+> 当我们使用 slot 自定义内容时或某些时候需要动态加载数据时可能导致内容长度计算不正确，此时需要手动调用一次使之正常
+
+```
+this.selectComponent(selector).resetAnimation()
+```
