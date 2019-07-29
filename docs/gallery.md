@@ -92,10 +92,10 @@ import { $wuxGallery } from '../../dist/index'
 Page({
     data: {
         urls: [
-            'https://wux.cdn.cloverstd.com/logo.png',
-            'https://wux.cdn.cloverstd.com/logo.png',
-            'https://wux.cdn.cloverstd.com/logo.png',
-            'https://wux.cdn.cloverstd.com/logo.png',
+            'http://cdn.skyvow.cn/logo.png',
+            'http://cdn.skyvow.cn/logo.png',
+            'http://cdn.skyvow.cn/logo.png',
+            'http://cdn.skyvow.cn/logo.png',
         ],
     },
     onLoad() {},
@@ -137,7 +137,7 @@ Page({
             indicatorDots: true,
             indicatorColor: '#fff',
             indicatorActiveColor: '#04BE02',
-            icon: 'https://wux.cdn.cloverstd.com/logo.png',
+            icon: 'http://cdn.skyvow.cn/logo.png',
             [`delete`]: (current, urls) => {
                 console.log('onIconClick')
                 return true

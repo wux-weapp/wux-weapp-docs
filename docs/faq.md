@@ -45,5 +45,5 @@
 
 ### 你们有接受捐助的渠道吗，比如支付宝或者微信支付？
 
-![alipay](https://wux.cdn.cloverstd.com/alipay.jpg ':size=256')
-![wxpay](https://wux.cdn.cloverstd.com/wxpay.jpg ':size=256')
+![alipay](http://cdn.skyvow.cn/alipay.jpg ':size=256')
+![wxpay](http://cdn.skyvow.cn/wxpay.jpg ':size=256')

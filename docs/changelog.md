@@ -1,3 +1,8 @@
+# v 3.7.2 (2019-07-29)
+
+- 更新组件：Picker - 选择器 修复 mode 为 month 时，取得 label 却是日期 bug [#276](https://github.com/wux-weapp/wux-weapp/issues/276)
+- 更新组件：Utility - 工具类 修复 wux-hairline--buttom 单词错误 [#281](https://github.com/wux-weapp/wux-weapp/issues/281)
+
 # v 3.7.1 (2019-07-12)
 
 - 更新组件：NoticeBar - 通告栏 优化组件，暴露 resetAnimation 等方法支持外部调用
