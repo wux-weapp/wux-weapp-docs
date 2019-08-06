@@ -131,7 +131,7 @@ Page({
 | options.closeOnSelect | `boolean` | 用户选择一个时间后就自动关闭，当 `multiple` 为 `false` 时才生效 | true |
 | options.weekHeader | `boolean` | 是否显示周名称 | true |
 | options.toolbar | `boolean` | 是否显示工具栏 | true |
-| options.value | `array` | 默认时间选择值 | [] |
+| options.value | `array` | 默认时间选择值，如 ['2000-01-01'] | [] |
 | options.onMonthAdd | `function` | 添加月份时的回调函数 | - |
 | options.onChange | `function` | 选择日期时的回调函数 | - |
 | options.onOpen | `function` | 打开日历时的回调函数 | - |
