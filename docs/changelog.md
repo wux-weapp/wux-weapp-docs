@@ -1,9 +1,17 @@
-# v 3.7.2 (2019-07-29)
+# 更新日志
+
+`Wux Weapp` 严格遵循 [Semantic Versioning 2.0.0](http://semver.org/lang/zh-CN/) 语义化版本规范。
+
+- 修订版本号（0.0.x）：向下兼容的 bugfix 修复。
+- 次版本号（0.x.0）：含有新特性的向下兼容的版本。
+- 主版本号（x.0.0）：含有破坏性更新和新特性，不向下兼容的版本。
+
+## v 3.7.2 (2019-07-29)
 
 - 更新组件：Picker - 选择器 修复 mode 为 month 时，取得 label 却是日期 bug [#276](https://github.com/wux-weapp/wux-weapp/issues/276)
 - 更新组件：Utility - 工具类 修复 wux-hairline--buttom 单词错误 [#281](https://github.com/wux-weapp/wux-weapp/issues/281)
 
-# v 3.7.1 (2019-07-12)
+## v 3.7.1 (2019-07-12)
 
 - 更新组件：NoticeBar - 通告栏 优化组件，暴露 resetAnimation 等方法支持外部调用
 - 更新组件：Card - 卡片 新增 actions 属性
@@ -11,7 +19,7 @@
 - 更新组件：Input - 文本输入框 修复点击删除按钮显示 object 的问题
 - 更新组件：Textarea - 多行输入框 修复点击删除按钮显示 object 的问题
 
-# v 3.7.0 (2019-07-11)
+## v 3.7.0 (2019-07-11)
 
 - 更新组件：InputNumber - 数字输入框 修复精度问题
 - 更新组件：Dialog - 对话框 新增支持微信开放能力
@@ -25,11 +33,11 @@
 - 增加组件：DatePicker - 日期选择器 弹出框形式的日期选择器，支持表单提交
 - 增加组件：PopupSelect - 下拉框 类似于 Select 组件，但其功能更为强大，并且支持表单提交
 
-# v 3.6.1 (2019-06-14)
+## v 3.6.1 (2019-06-14)
 
 - 更新组件：Input - 文本输入框 修复 input value 不显示的问题
 
-# v 3.6.0 (2019-06-09)
+## v 3.6.0 (2019-06-09)
 
 - 增加组件：Form - 表单 用于收集表单元素的值，具体使用方法请参考对应文档
 - 增加组件：Landscape - 压屏窗
@@ -49,7 +57,7 @@
 - 更新组件：ActionSheet、Select、Cascader、KeyBoard、Calendar 等组件 iPhoneX 适配
 - 升级注意：此次更新内容需要依赖小程序基础库 2.6.6 以上版本
 
-# v 3.5.0 (2019-02-01)
+## v 3.5.0 (2019-02-01)
 
 - 增加组件：SwipeAction - 滑动操作
 - 增加组件：Skeleton - 骨架屏
@@ -58,11 +66,11 @@
 - 更新组件：Select - 下拉框 新增自动定位的功能 [#203](https://github.com/wux-weapp/wux-weapp/issues/203)
 - 更新组件：List - 列表 修复点击效果不显示的问题
 
-# v 3.4.2 (2019-01-23)
+## v 3.4.2 (2019-01-23)
 
 - 修复 v3.4.1 遗留 BUG，优化关联组件的性能
 
-# v 3.4.1 (2019-01-22)
+## v 3.4.1 (2019-01-22)
 
 - 增加组件：Sticky - 吸顶容器
 - 增加组件：Index - 索引选择器
@@ -70,20 +78,20 @@
 - 更新组件：Utility - 工具类 新增支持 1 像素边框
 - 更新组件 style 相关的属性支持传入对象（如 [Avatar](avatar.md)、[Card](card.md) 等等），优化关联组件的性能
 
-# v 3.4.0 (2019-01-05)
+## v 3.4.0 (2019-01-05)
 
 - 增加组件：Timeago - 多久之前
 - 更新组件：新增 prefixCls 属性，支持自定义类名前缀
 - 更新组件：支持 [全局样式](https://developers.weixin.qq.com/miniprogram/dev/framework/custom-component/wxml-wxss.html)
 - 升级注意：此次更新内容需要依赖小程序基础库 2.2.3 以上版本
 
-# v 3.3.2 (2019-01-04)
+## v 3.3.2 (2019-01-04)
 
 - 更新组件：TabBar - 标签栏 修复 tabbar iPhoneX 适配 [#179](https://github.com/wux-weapp/wux-weapp/issues/179)
 - 更新组件：Accordion - 手风琴 修复缺少 multipleSlots 参数的问题 [#173](https://github.com/wux-weapp/wux-weapp/issues/173)
 - 更新组件：AnimationGroup - 动画组 修复 slideInRight 动画状态下页面溢出的问题 [#170](https://github.com/wux-weapp/wux-weapp/issues/170)
 
-# v 3.3.1 (2018-12-19)
+## v 3.3.1 (2018-12-19)
 
 - 更新组件：Icon - 图标 新增 hidden 属性
 - 更新组件：Prompt - 提示消息 新增支持微信开放能力
@@ -101,7 +109,7 @@
 - 更新组件：Tabs - 标签页 新增 direction 属性，支持竖排
 - 更新组件：ActionSheet - 上拉菜单 新增支持图标及微信开放功能
 
-# v 3.3.0 (2018-11-08)
+## v 3.3.0 (2018-11-08)
 
 - 增加组件：Utility - 工具类 [内置样式](utility.md)
 - 增加组件：Selectable - 选框组
@@ -113,7 +121,7 @@
 - 更新组件：KeyBoard - 数字键盘 基于 Popup 封装，新增 password、maxlength 属性
 - 更新组件：Upload - 上传 新增 max、defaultFileList、controlled 属性，before 事件返回 fileList 属性，升级注意语法有变动具体使用方法请参考对应文档
 
-# v 3.2.0 (2018-10-26)
+## v 3.2.0 (2018-10-26)
 
 - 增加组件：Cascader - 级联选择器
 - 增加组件：Slider - 滑动选择器
@@ -135,7 +143,7 @@
 - 更新组件：Loading - 指示器 新增 mask 属性
 - 更新组件：Accordion、FloatingButton、InputNumber、Popover、Rater、SearchBar、SegmentedControl、Tabbar、Tabs 移除 auto 属性，新增 controlled 属性，升级注意 `<wux-component auto="{{ false }}" />` 需改为 `<wux-component controlled />`
 
-# v 3.1.0 (2018-09-14)
+## v 3.1.0 (2018-09-14)
 
 - 增加组件：Alert - 警告框
 - 增加组件：Progress - 进度条
@@ -147,15 +155,15 @@
 - 更新组件：Result - 结果页 修复 observer 单词错误
 - 更新组件：Upload - 上传 Fix upload button style [#94](https://github.com/wux-weapp/wux-weapp/pull/94)
 
-# v 3.0.6 (2018-08-24)
+## v 3.0.6 (2018-08-24)
 
 - 更新组件：ActionSheet - 上拉菜单 修复组件定位问题 [#88](https://github.com/wux-weapp/wux-weapp/issues/88)
 
-# v 3.0.5 (2018-08-23)
+## v 3.0.5 (2018-08-23)
 
 - 更新组件：AnimationGroup - 动画组 新增 mountOnEnter、unmountOnExit 属性，并修复一些已知问题 [#86](https://github.com/wux-weapp/wux-weapp/issues/86)
 
-# v 3.0.4 (2018-08-15)
+## v 3.0.4 (2018-08-15)
 
 - 增加组件：Popup - 弹出框
 - 增加组件：Icon - 图标
@@ -170,7 +178,7 @@
 - 更新组件：Toast - 提示框 新增 icon 属性，支持传入图标
 - 更新组件：Select - 下拉框 callback 新增 index、options 属性
 
-# v 3.0.3 (2018-08-03)
+## v 3.0.3 (2018-08-03)
 
 - 增加组件：Select - 下拉框
 - 增加组件：NoticeBar - 通告栏
@@ -184,7 +192,7 @@
 - 更新组件：Toast - 提示框 函数调用后，返回值支持 promise 接口
 - 更新组件：Notification - 通知 函数调用后，返回值支持 promise 接口
 
-# v 3.0.2 (2018-07-23)
+## v 3.0.2 (2018-07-23)
 
 - 增加组件：Tabs - 标签页
 - 增加组件：Avatar - 头像
@@ -201,7 +209,7 @@
 - 更新组件：Rater - 评分组件 更新 activeColor 属性默认值为 #ffc900
 - 更新组件：List - 列表 新增 hoverClass 属性
 
-# v 3.0.1 (2018-07-09)
+## v 3.0.1 (2018-07-09)
 
 - 增加组件：List - 列表
 - 增加组件：Radio - 单选框
@@ -212,6 +220,6 @@
 - 增加组件：Card - 卡片
 - 增加组件：Media - 媒体对象
 
-# v 3.0.0 (2018-06-25)
+## v 3.0.0 (2018-06-25)
 
 - 基于 Component 构造器重构自定义组件
