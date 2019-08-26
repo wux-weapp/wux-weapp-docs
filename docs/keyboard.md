@@ -122,6 +122,7 @@ Page({
             showCancel: true,
             disorder: false,
             maxlength: 4,
+            closeOnReject: false,
             callback(value) {
                 console.log(`输入的密码是：${value}`)
 
@@ -171,7 +172,8 @@ Page({
 | options.showCancel | `boolean` | 是否显示取消按钮 | true |
 | options.disorder | `boolean` | 是否打乱键盘 | false |
 | options.password | `boolean` | 是否密码类型 | true |
-| options.maxlength | <code>number,string</code> | 最大输入长度，设置为 -1 的时候不限制最大长度 | 6 |
+| options.maxlength | `number,string` | 最大输入长度，设置为 -1 的时候不限制最大长度 | 6 |
+| options.closeOnReject | `boolean` | Promise 返回 reject 时关闭组件 | true |
 | options.onChange | `function` | change 事件触发的回调函数 | - |
 | options.callback | `function` | 输入完成后的回调函数 | - |
 | options.onClose | `function` | 输入完成后的回调函数，优先级高于 callback | - |
