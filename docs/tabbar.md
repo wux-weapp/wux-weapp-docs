@@ -143,6 +143,7 @@ Page({
 | current | `string` | 用于手动激活 tab 面板的 key，当 `controlled` 为 `true` 时才生效 | - |
 | controlled | `boolean` | 是否受控 [说明文档](controlled.md) | false |
 | theme | `string` | 主题色，可选值为 light、stable、positive、calm、assertive、balanced、energized、royal、dark | balanced |
+| backgroundColor | `string` | 背景色 | #fff |
 | position | `string` | 标签栏位置，可选值为 bottom、top | - |
 | safeArea | `boolean` | 是否适配 iPhoneX，当 `position` 为 `bottom/top` 时才生效 | false |
 | bind:change | `function` | 切换面板的回调函数 | - |
