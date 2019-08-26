@@ -6,6 +6,16 @@
 - 次版本号（0.x.0）：含有新特性的向下兼容的版本。
 - 主版本号（x.0.0）：含有破坏性更新和新特性，不向下兼容的版本。
 
+## v 3.8.0 (2019-08-26)
+
+- 增加组件：VirtualList - 虚拟列表
+- 更新组件：InputNumber - 数字输入框 修复动态设置 min、max 无法点击的问题
+- 更新组件：Image - 图片 修复 shape 为 thumbnail 时图片溢出的问题
+- 更新组件：Index - 索引选择器 新增支持振动反馈效果
+- 更新组件：Button - 按钮 兼容 "style":"v2" 新版的组件样式，涉及的组件为 `Button`、`List`、`Dialog`、`FabButton` [#289](https://github.com/wux-weapp/wux-weapp/issues/289)
+- 更新组件：KeyBoard - 数字键盘 keyboard 回调问题 [#290](https://github.com/wux-weapp/wux-weapp/issues/290)
+- 更新组件：TabBar - 标签栏 新增 backgroundColor 属性 [#298](https://github.com/wux-weapp/wux-weapp/issues/298)
+
 ## v 3.7.2 (2019-07-29)
 
 - 更新组件：Picker - 选择器 修复 mode 为 month 时，取得 label 却是日期 bug [#276](https://github.com/wux-weapp/wux-weapp/issues/276)
