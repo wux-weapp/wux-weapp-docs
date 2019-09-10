@@ -52,12 +52,18 @@
         <view class="sub-title">With cellGroup</view>
         <wux-cell-group>
             <wux-swipe-action autoClose left="{{ left }}" right="{{ right }}" bind:click="onClick">
-                <wux-cell title="Have left and right buttons"></wux-cell>
+                <wux-cell title="Have left and right buttons" bind:click="onCellClick"></wux-cell>
             </wux-swipe-action>
             <wux-swipe-action autoClose left="{{ left }}">
-                <wux-cell title="Only left buttons"></wux-cell>
+                <wux-cell title="Only left buttons" bind:click="onCellClick"></wux-cell>
             </wux-swipe-action>
             <wux-swipe-action autoClose right="{{ right }}">
+                <wux-cell title="Only right buttons" bind:click="onCellClick"></wux-cell>
+            </wux-swipe-action>
+        </wux-cell-group>
+        <view class="sub-title">Using data</view>
+        <wux-cell-group>
+            <wux-swipe-action autoClose right="{{ right }}" data="2019" bind:click="onClick">
                 <wux-cell title="Only right buttons"></wux-cell>
             </wux-swipe-action>
         </wux-cell-group>
@@ -87,9 +93,18 @@ Page({
     },
     onClick(e) {
         console.log('onClick', e.detail)
+        if (e.detail.data) {
+            wx.showModal({
+                title: `The data is ${e.detail.data}`,
+                showCancel: !1,
+            })
+        }
     },
     onShare() {
         console.log('onShare')
+    },
+    onCellClick() {
+        console.log('onCellClick')
     },
 })
 ```
@@ -114,6 +129,7 @@ Page({
 | right[].text | `string` | 按钮文本 | - |
 | right[].style | `string` | 按钮样式 | - |
 | useSlots | `boolean` | 是否使用插槽 | false |
+| data | `any` | 自定义数据传给 click 事件 | - |
 | bind:click | `function` | 点击事件 | - |
 | bind:open | `function` | 打开事件 | - |
 | bind:close | `function` | 关闭事件 | - |

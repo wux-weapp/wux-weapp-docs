@@ -6,6 +6,13 @@
 - 次版本号（0.x.0）：含有新特性的向下兼容的版本。
 - 主版本号（x.0.0）：含有破坏性更新和新特性，不向下兼容的版本。
 
+## v 3.8.1 (2019-09-10)
+
+- 更新组件：SwipeAction - 滑动操作 新增 data 属性
+- 更新组件：DatePicker - 日期选择器 修复日期在 iOS 端的问题 [#304](https://github.com/wux-weapp/wux-weapp/issues/304)
+- 更新组件：Popover - 气泡框 修复 popover 开启 mask 遮罩时的点击问题 [#308](https://github.com/wux-weapp/wux-weapp/issues/308)
+- 升级注意：修复 iOS 低版本下提示 Object.getOwnPropertyDescriptors 报错的问题 [#306](https://github.com/wux-weapp/wux-weapp/issues/306)
+
 ## v 3.8.0 (2019-08-26)
 
 - 增加组件：VirtualList - 虚拟列表
