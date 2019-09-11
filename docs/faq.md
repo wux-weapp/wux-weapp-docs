@@ -26,6 +26,10 @@
 - 检查 `page.wxml` 文件是否引入组件
 - 检查 `page.js` 是否正确调用组件
 
+### 当我使用 PopupSelect/Select 组件时，无法选中元素是什么问题？
+
+参考：[select](https://github.com/wux-weapp/wux-weapp/issues/299)
+
 ### 当我使用 mpvue/wepy 第三方框架时无法正确引入组件？
 
 参考：[mpvue、wepy 接入](https://github.com/wux-weapp/wux-weapp/issues/197)
@@ -34,6 +38,14 @@
 
 参考：[npm 安装 3.6.0+ 找不到版本的问题](https://github.com/wux-weapp/wux-weapp/issues/265)
 
+### 当我设置 xxxx="true" (如 controlled="true") 的时候它并没有生效？
+
+`Boolean` 类型，应该这么写 `xxxx="{{ true }}"`，而非 `string` 类型 `xxxx="true"`
+
+### 如何关闭 iOS 自带振动反馈?
+
+参考：[怎么关闭pick view 的手机震动 vibrate](https://github.com/wux-weapp/wux-weapp/issues/313)
+
 ### 如何解决自定义弹窗后禁止屏幕滚动（滚动穿透）的问题？
 
 建议在弹出层加上 `catchtouchmove` 事件
@@ -41,7 +53,7 @@
 ### 当我使用 textarea 等组件时层级太高遮挡其他组件，如何解决？
 
 - 参考：[cover-view/cover-image](https://developers.weixin.qq.com/miniprogram/dev/component/cover-view.html)
-- 建议滚动时 wx:if 控制显隐
+- 建议使用 `wx:if` 控制显隐
 
 ### 你们有接受捐助的渠道吗，比如支付宝或者微信支付？
 
