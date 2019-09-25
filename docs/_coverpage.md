@@ -1,6 +1,8 @@
-![logo](_images/logo.png)
+![logo](_images/logo2.png)
 
 # Wux Weapp <small>3.8.1</small>
+
+<style>section.cover,section.cover .anchor span{color:#fff}section.cover.has-mask .mask{display:none;}</style>
 
 <p align="center">
     <a href="https://github.com/wux-weapp/wux-weapp/" target="_blank">
@@ -30,3 +32,5 @@
 
 [GitHub](https://github.com/wux-weapp/wux-weapp/)
 [Get Started](introduce)
+
+![](_images/home_bg.jpg)
