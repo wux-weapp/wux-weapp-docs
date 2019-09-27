@@ -6,6 +6,11 @@
 - 次版本号（0.x.0）：含有新特性的向下兼容的版本。
 - 主版本号（x.0.0）：含有破坏性更新和新特性，不向下兼容的版本。
 
+## v 3.8.2 (2019-09-27)
+
+- 更新组件：DatePicker - 日期选择器 修复日期显示错误 [#316](https://github.com/wux-weapp/wux-weapp/issues/316)
+- 更新组件：Cascader - 级联选择器 修复初始值设置不正确 [#320](https://github.com/wux-weapp/wux-weapp/issues/320)
+
 ## v 3.8.1 (2019-09-10)
 
 - 更新组件：SwipeAction - 滑动操作 新增 data 属性
