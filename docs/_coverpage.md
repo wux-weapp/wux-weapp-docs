@@ -33,4 +33,4 @@
 [GitHub](https://github.com/wux-weapp/wux-weapp/)
 [Get Started](introduce)
 
-![](_images/home_bg.jpg)
+[//]: #(![](_images/home_bg.jpg))
