@@ -1,4 +1,4 @@
-![logo](_images/logo2.png)
+![logo](_images/logo.png)
 
 # Wux Weapp <small>3.8.2</small>
 
