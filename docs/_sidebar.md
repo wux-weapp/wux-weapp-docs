@@ -2,6 +2,8 @@
 
 * [快速上手](quickstart.md)
 
+* [定制主题](customize-theme.md)
+
 * [更新日志](changelog.md)
 
 * [内置样式](utility.md)
