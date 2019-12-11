@@ -2,7 +2,7 @@
 
 * [快速上手](quickstart.md)
 
-* [定制主题](customize-theme.md)
+* [量身定制](customize-theme.md)
 
 * [更新日志](changelog.md)
 

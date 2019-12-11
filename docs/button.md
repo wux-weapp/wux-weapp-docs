@@ -119,7 +119,7 @@
 | size | `string` | 按钮的大小，可选值为 small、default、large | default |
 | disabled | `boolean` | 是否禁用 | false |
 | loading | `boolean` | 名称前是否带 loading 图标 | false |
-| formType | `string` | 用于 `<form/>` 组件，点击分别会触发 `<form/>` 组件的 submit/reset 事件 | - |
+| formType | `string` | ~~用于 `<form/>` 组件，点击分别会触发 `<form/>` 组件的 submit/reset 事件~~ | - |
 | openType | `string` | 微信开放能力，可选值为 contact、share、getUserInfo、getPhoneNumber | - |
 | hoverClass | `string` | 指定按钮按下去的样式类。当 hover-class="none" 时，没有点击态效果 | default |
 | hoverStopPropagation | `boolean` | 指定是否阻止本节点的祖先节点出现点击态 | false |
