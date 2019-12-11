@@ -62,8 +62,8 @@
 
 以下是一个定制的典型例子，对 `config.json` 的 `components`, `themes` 属性进行相应配置。
 
-- `components` 参考 [config.json](https://github.com/wux-weapp/wux-weapp/tree/master/scripts/config.json) 进行组件定制化配置。
 - `themes` 参考 [default.less](https://github.com/wux-weapp/wux-weapp/tree/master/src/styles/themes/default.less) 进行主题定制化配置。
+- `components` 参考 [config.json](https://github.com/wux-weapp/wux-weapp/tree/master/scripts/config.json) 进行组件定制化配置。
 
 !> 注意：编译完成后在对应的目录可以找到定制后的文件（此示例为 `./build` 目录）。
 
