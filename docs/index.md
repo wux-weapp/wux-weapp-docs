@@ -18,6 +18,8 @@
 
 ### 示例
 
+!> 注意：示例中组件为了撑满屏，设置高度为 `100%`，继承了父级元素高度，所以需要设置 `Page{ height: 100% }`，否则会导致组件右侧导航点击无效。
+
 ```html
 <wux-index height="100%" bind:change="onChange">
     <wux-index-item wx:for="{{ alphabet }}" wx:key="" name="{{ item.initial }}">
