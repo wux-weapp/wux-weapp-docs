@@ -6,24 +6,33 @@
 
 <p align="center">
     <a href="https://github.com/wux-weapp/wux-weapp/" target="_blank">
-    	<img alt="star this repo" src="http://githubbadges.com/star.svg?user=wux-weapp&repo=wux-weapp&style=flat" />
+        <img alt="star this repo" src="https://img.shields.io/github/stars/wux-weapp/wux-weapp" />
     </a>
-	<a href="https://github.com/wux-weapp/wux-weapp/fork" target="_blank">
-		<img alt="fork this repo" src="http://githubbadges.com/fork.svg?user=wux-weapp&repo=wux-weapp&style=flat" />
-	</a>
-	<a href="https://www.npmjs.com/package/wux-weapp" target="_blank">
-    	<img src='https://img.shields.io/npm/v/wux-weapp.svg' />
+    <a href="https://github.com/wux-weapp/wux-weapp/fork" target="_blank">
+        <img alt="fork this repo" src="https://img.shields.io/github/forks/wux-weapp/wux-weapp" />
+    </a>
+    <a href="https://circleci.com/gh/wux-weapp/wux-weapp" target="_blank">
+        <img alt="circleci" src="https://img.shields.io/circleci/build/github/wux-weapp/wux-weapp/master.svg" />
+    </a>
+    <a href="https://travis-ci.org/wux-weapp/wux-weapp" target="_blank">
+        <img alt="travis" src="https://img.shields.io/travis/wux-weapp/wux-weapp.svg" />
+    </a>
+    <a href="https://github.com/wux-weapp/wux-weapp/actions" target="_blank">
+        <img alt="github workflow" src="https://img.shields.io/github/workflow/status/wux-weapp/wux-weapp/test" />
     </a>
     <br />
-	<a href="https://www.npmjs.com/package/wux-weapp" target="_blank">
-		<img src="https://img.shields.io/npm/dm/wux-weapp.svg?style=flat" />
-	</a>
-	<a href="https://www.npmjs.com/package/wux-weapp" target="_blank">
-		<img src="https://img.shields.io/npm/dt/wux-weapp.svg?style=flat" />
-	</a>
-	<a href="https://www.npmjs.com/package/wux-weapp" target="_blank">
-		<img src="https://img.shields.io/npm/l/wux-weapp.svg?style=flat" />
-	</a>
+    <a href="https://www.npmjs.com/package/wux-weapp" target="_blank">
+        <img alt="npm" src="https://img.shields.io/npm/v/wux-weapp.svg" />
+    </a>
+    <a href="https://www.npmjs.com/package/wux-weapp" target="_blank">
+        <img alt="downloads" src="https://img.shields.io/npm/dm/wux-weapp.svg" />
+    </a>
+    <a href="https://www.npmjs.com/package/wux-weapp" target="_blank">
+        <img alt="downloads" src="https://img.shields.io/npm/dt/wux-weapp.svg" />
+    </a>
+    <a href="https://www.npmjs.com/package/wux-weapp" target="_blank">
+        <img alt="license" src="https://img.shields.io/npm/l/wux-weapp.svg" />
+    </a>
 </p>
 
 > 微信小程序 UI 组件库
