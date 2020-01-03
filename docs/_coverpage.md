@@ -12,13 +12,13 @@
         <img alt="fork this repo" src="https://img.shields.io/github/forks/wux-weapp/wux-weapp" />
     </a>
     <a href="https://circleci.com/gh/wux-weapp/wux-weapp" target="_blank">
-        <img alt="circleci" src="https://img.shields.io/circleci/build/github/wux-weapp/wux-weapp/master.svg" />
+        <img alt="circleci" src="https://img.shields.io/circleci/build/github/wux-weapp/wux-weapp/master.svg?label=circleci" />
     </a>
     <a href="https://travis-ci.org/wux-weapp/wux-weapp" target="_blank">
-        <img alt="travis" src="https://img.shields.io/travis/wux-weapp/wux-weapp.svg" />
+        <img alt="travis" src="https://img.shields.io/travis/wux-weapp/wux-weapp.svg?label=travis" />
     </a>
     <a href="https://github.com/wux-weapp/wux-weapp/actions" target="_blank">
-        <img alt="github workflow" src="https://img.shields.io/github/workflow/status/wux-weapp/wux-weapp/test" />
+        <img alt="github workflow" src="https://img.shields.io/github/workflow/status/wux-weapp/wux-weapp/test?label=github workflow" />
     </a>
     <br />
     <a href="https://www.npmjs.com/package/wux-weapp" target="_blank">
