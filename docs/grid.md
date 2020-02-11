@@ -28,50 +28,50 @@
     <view class="page__bd">
         <view class="sub-title">Default</view>
         <wux-grids>
-            <wux-grid thumb="http://cdn.skyvow.cn/logo.png" label="Wux Weapp" />
-            <wux-grid thumb="http://cdn.skyvow.cn/logo.png" label="Wux Weapp" />
-            <wux-grid thumb="http://cdn.skyvow.cn/logo.png" label="Wux Weapp" />
-            <wux-grid thumb="http://cdn.skyvow.cn/logo.png" label="Wux Weapp" />
-            <wux-grid thumb="http://cdn.skyvow.cn/logo.png" label="Wux Weapp" />
-            <wux-grid thumb="http://cdn.skyvow.cn/logo.png" label="Wux Weapp" />
-            <wux-grid thumb="http://cdn.skyvow.cn/logo.png" label="Wux Weapp" />
-            <wux-grid thumb="http://cdn.skyvow.cn/logo.png" label="Wux Weapp" />
-            <wux-grid thumb="http://cdn.skyvow.cn/logo.png" label="Wux Weapp" />
+            <wux-grid thumb="https://cdn.skyvow.cn/logo.png" label="Wux Weapp" />
+            <wux-grid thumb="https://cdn.skyvow.cn/logo.png" label="Wux Weapp" />
+            <wux-grid thumb="https://cdn.skyvow.cn/logo.png" label="Wux Weapp" />
+            <wux-grid thumb="https://cdn.skyvow.cn/logo.png" label="Wux Weapp" />
+            <wux-grid thumb="https://cdn.skyvow.cn/logo.png" label="Wux Weapp" />
+            <wux-grid thumb="https://cdn.skyvow.cn/logo.png" label="Wux Weapp" />
+            <wux-grid thumb="https://cdn.skyvow.cn/logo.png" label="Wux Weapp" />
+            <wux-grid thumb="https://cdn.skyvow.cn/logo.png" label="Wux Weapp" />
+            <wux-grid thumb="https://cdn.skyvow.cn/logo.png" label="Wux Weapp" />
         </wux-grids>
         <view class="sub-title">Square = true</view>
         <wux-grids square>
-            <wux-grid thumb="http://cdn.skyvow.cn/logo.png" label="Wux Weapp" />
-            <wux-grid thumb="http://cdn.skyvow.cn/logo.png" label="Wux Weapp" />
-            <wux-grid thumb="http://cdn.skyvow.cn/logo.png" label="Wux Weapp" />
-            <wux-grid thumb="http://cdn.skyvow.cn/logo.png" label="Wux Weapp" />
-            <wux-grid thumb="http://cdn.skyvow.cn/logo.png" label="Wux Weapp" />
-            <wux-grid thumb="http://cdn.skyvow.cn/logo.png" label="Wux Weapp" />
-            <wux-grid thumb="http://cdn.skyvow.cn/logo.png" label="Wux Weapp" />
-            <wux-grid thumb="http://cdn.skyvow.cn/logo.png" label="Wux Weapp" />
-            <wux-grid thumb="http://cdn.skyvow.cn/logo.png" label="Wux Weapp" />
+            <wux-grid thumb="https://cdn.skyvow.cn/logo.png" label="Wux Weapp" />
+            <wux-grid thumb="https://cdn.skyvow.cn/logo.png" label="Wux Weapp" />
+            <wux-grid thumb="https://cdn.skyvow.cn/logo.png" label="Wux Weapp" />
+            <wux-grid thumb="https://cdn.skyvow.cn/logo.png" label="Wux Weapp" />
+            <wux-grid thumb="https://cdn.skyvow.cn/logo.png" label="Wux Weapp" />
+            <wux-grid thumb="https://cdn.skyvow.cn/logo.png" label="Wux Weapp" />
+            <wux-grid thumb="https://cdn.skyvow.cn/logo.png" label="Wux Weapp" />
+            <wux-grid thumb="https://cdn.skyvow.cn/logo.png" label="Wux Weapp" />
+            <wux-grid thumb="https://cdn.skyvow.cn/logo.png" label="Wux Weapp" />
         </wux-grids>
         <view class="sub-title">Bordered = false</view>
         <wux-grids bordered="{{ false }}">
-            <wux-grid thumb="http://cdn.skyvow.cn/logo.png" label="Wux Weapp" />
-            <wux-grid thumb="http://cdn.skyvow.cn/logo.png" label="Wux Weapp" />
-            <wux-grid thumb="http://cdn.skyvow.cn/logo.png" label="Wux Weapp" />
-            <wux-grid thumb="http://cdn.skyvow.cn/logo.png" label="Wux Weapp" />
-            <wux-grid thumb="http://cdn.skyvow.cn/logo.png" label="Wux Weapp" />
-            <wux-grid thumb="http://cdn.skyvow.cn/logo.png" label="Wux Weapp" />
-            <wux-grid thumb="http://cdn.skyvow.cn/logo.png" label="Wux Weapp" />
-            <wux-grid thumb="http://cdn.skyvow.cn/logo.png" label="Wux Weapp" />
-            <wux-grid thumb="http://cdn.skyvow.cn/logo.png" label="Wux Weapp" />
+            <wux-grid thumb="https://cdn.skyvow.cn/logo.png" label="Wux Weapp" />
+            <wux-grid thumb="https://cdn.skyvow.cn/logo.png" label="Wux Weapp" />
+            <wux-grid thumb="https://cdn.skyvow.cn/logo.png" label="Wux Weapp" />
+            <wux-grid thumb="https://cdn.skyvow.cn/logo.png" label="Wux Weapp" />
+            <wux-grid thumb="https://cdn.skyvow.cn/logo.png" label="Wux Weapp" />
+            <wux-grid thumb="https://cdn.skyvow.cn/logo.png" label="Wux Weapp" />
+            <wux-grid thumb="https://cdn.skyvow.cn/logo.png" label="Wux Weapp" />
+            <wux-grid thumb="https://cdn.skyvow.cn/logo.png" label="Wux Weapp" />
+            <wux-grid thumb="https://cdn.skyvow.cn/logo.png" label="Wux Weapp" />
         </wux-grids>
         <view class="sub-title">Col = 4</view>
         <wux-grids col="4">
-            <wux-grid thumb="http://cdn.skyvow.cn/logo.png" label="Wux Weapp" />
-            <wux-grid thumb="http://cdn.skyvow.cn/logo.png" label="Wux Weapp" />
-            <wux-grid thumb="http://cdn.skyvow.cn/logo.png" label="Wux Weapp" />
-            <wux-grid thumb="http://cdn.skyvow.cn/logo.png" label="Wux Weapp" />
-            <wux-grid thumb="http://cdn.skyvow.cn/logo.png" label="Wux Weapp" />
-            <wux-grid thumb="http://cdn.skyvow.cn/logo.png" label="Wux Weapp" />
-            <wux-grid thumb="http://cdn.skyvow.cn/logo.png" label="Wux Weapp" />
-            <wux-grid thumb="http://cdn.skyvow.cn/logo.png" label="Wux Weapp" />
+            <wux-grid thumb="https://cdn.skyvow.cn/logo.png" label="Wux Weapp" />
+            <wux-grid thumb="https://cdn.skyvow.cn/logo.png" label="Wux Weapp" />
+            <wux-grid thumb="https://cdn.skyvow.cn/logo.png" label="Wux Weapp" />
+            <wux-grid thumb="https://cdn.skyvow.cn/logo.png" label="Wux Weapp" />
+            <wux-grid thumb="https://cdn.skyvow.cn/logo.png" label="Wux Weapp" />
+            <wux-grid thumb="https://cdn.skyvow.cn/logo.png" label="Wux Weapp" />
+            <wux-grid thumb="https://cdn.skyvow.cn/logo.png" label="Wux Weapp" />
+            <wux-grid thumb="https://cdn.skyvow.cn/logo.png" label="Wux Weapp" />
         </wux-grids>
         <view class="sub-title">Custom content</view>
         <wux-grids>

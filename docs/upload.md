@@ -61,17 +61,17 @@ Page({
         fileList: [{
                 uid: 0,
                 status: 'uploading',
-                url: 'http://cdn.skyvow.cn/qrcode.jpg',
+                url: 'https://cdn.skyvow.cn/qrcode.jpg',
             },
             {
                 uid: 1,
                 status: 'done',
-                url: 'http://cdn.skyvow.cn/qrcode.jpg',
+                url: 'https://cdn.skyvow.cn/qrcode.jpg',
             },
             {
                 uid: 2,
                 status: 'error',
-                url: 'http://cdn.skyvow.cn/qrcode.jpg',
+                url: 'https://cdn.skyvow.cn/qrcode.jpg',
             }
         ],
     },

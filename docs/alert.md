@@ -51,11 +51,11 @@
         <wux-white-space />
         <wux-alert closable title="微信小程序自定义组件" label="https://github.com/wux-weapp/wux-weapp" />
         <view class="sub-title">Thumb</view>
-        <wux-alert thumb="http://cdn.skyvow.cn/logo.png" label="https://github.com/wux-weapp/wux-weapp" />
+        <wux-alert thumb="https://cdn.skyvow.cn/logo.png" label="https://github.com/wux-weapp/wux-weapp" />
         <wux-white-space />
-        <wux-alert thumb="http://cdn.skyvow.cn/logo.png" label="https://github.com/wux-weapp/wux-weapp" />
+        <wux-alert thumb="https://cdn.skyvow.cn/logo.png" label="https://github.com/wux-weapp/wux-weapp" />
         <wux-white-space />
-        <wux-alert thumb="http://cdn.skyvow.cn/logo.png" label="https://github.com/wux-weapp/wux-weapp" />
+        <wux-alert thumb="https://cdn.skyvow.cn/logo.png" label="https://github.com/wux-weapp/wux-weapp" />
         <view class="sub-title">Slot</view>
         <wux-alert theme="balanced">
             <wux-icon wux-class="thumb" type="ios-checkmark-circle-outline" size="20" color="#fff" slot="header" />

@@ -50,9 +50,9 @@
         </view>
         <view class="sub-title">Src</view>
         <view>
-            <wux-avatar size="small" src="http://cdn.skyvow.cn/logo.png" />
-            <wux-avatar src="http://cdn.skyvow.cn/logo.png" />
-            <wux-avatar size="large" src="http://cdn.skyvow.cn/logo.png" />
+            <wux-avatar size="small" src="https://cdn.skyvow.cn/logo.png" />
+            <wux-avatar src="https://cdn.skyvow.cn/logo.png" />
+            <wux-avatar size="large" src="https://cdn.skyvow.cn/logo.png" />
         </view>
     </view>
 </view>
