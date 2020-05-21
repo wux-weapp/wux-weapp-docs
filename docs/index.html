@@ -14,14 +14,38 @@
     <link rel="apple-touch-icon-precomposed" href="_images/logo.png">
     <link rel="shortcut icon" type="image/ico" href="_images/favicon.ico">
     <link rel="stylesheet" href="_scripts/lib/themes/vue.css">
+    <style>.layui-layer{border-radius:12px !important}.hide{display:none}#ilove{background:#fff;border-radius:12px;text-align:center}.ilove__title{padding:12px}.ilove__title p{margin: 0 0 6px}</style>
     <style>table{display:table!important}.markdown-section p>img{box-shadow: 0 8px 20px rgba(143,168,191,0.35)}.markdown-section code{color:#3498DB;}.markdown-section ul li{list-style-type: disc}</style>
 </head>
 
 <body>
+    <div id="ilove" class="hide" style="width: 640px; height: 400px;">
+        <div class="ilove__title">
+            <p>iLove恋爱小事 - by hcc</p>
+            <p>记录您的幸福瞬间 & 传递爱的讯息！</p>
+            <p>快邀请你的另一半，一起来体验吧~</p>
+        </div>
+        <img src="https://cdn.skyvow.cn/ilove/static/wx_mini_qrcode.jpg" alt="微信小程序 - iLove恋爱小事" width="256" height="256">
+        <img src="https://cdn.skyvow.cn/ilove/static/qq_mini_qrcode.jpg" alt="QQ小程序 - iLove恋爱小事" width="256" height="256">
+    </div>
     <div id="app"></div>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="_scripts/layer/layer.js"></script>
     <script src="_scripts/html2json.js"></script>
     <script src="_scripts/doraemon.js"></script>
     <script>
+        setTimeout(function () {
+            layer.open({
+                type: 1,
+                title: false,
+                closeBtn: 0,
+                area: ['auto'],
+                skin: 'layui-layer-nobg',
+                shadeClose: true,
+                content: $('#ilove')
+            })
+        }, 1000)
+
         window.$docsify = {
             themeColor: '#36D7B7',
             coverpage: true,
