@@ -25,7 +25,7 @@
     </view>
     <view class="page__bd page__bd_spacing">
         <view class="sub-title">Button with text</view>
-        <wux-pagination defaultCurrent="1" total="5">
+        <wux-pagination defaultCurrent="1" total="5" bind:prev="onPrev" bind:next="onNext">
             <view slot="prev">Prev</view>
             <view slot="next">Next</view>
         </wux-pagination>
@@ -64,6 +64,12 @@ Page({
             current: e.detail.current,
         })
     },
+    onPrev(e) {
+        console.log('onPrev', e)
+    },
+    onNext(e) {
+        console.log('onNext', e)
+    },
 })
 ```
 
@@ -85,6 +91,8 @@ Page({
 | total | `number` | 总页数 | 0 |
 | simple | `boolean` | 是否隐藏数值 | false |
 | bind:change | `function` | change 事件触发的回调函数 | - |
+| bind:prev | `function` | 左侧按钮点击事件 | - |
+| bind:next | `function` | 右侧按钮点击事件 | - |
 
 ### Pagination slot
 

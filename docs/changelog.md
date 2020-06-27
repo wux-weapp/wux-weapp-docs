@@ -6,6 +6,13 @@
 - 次版本号（0.x.0）：含有新特性的向下兼容的版本。
 - 主版本号（x.0.0）：含有破坏性更新和新特性，不向下兼容的版本。
 
+## v 3.8.6 (2020-06-27)
+
+- 更新组件：List - 列表 新增 hasLine 属性 [#356](https://github.com/wux-weapp/wux-weapp/issues/356)
+- 更新组件：Pagination - 分页器 新增 prev 和 next 支持自定义的 function [#362](https://github.com/wux-weapp/wux-weapp/issues/362)
+- 更新组件：FilterBar - 筛选栏 修复右上角的选项提示显示错误 [#383](https://github.com/wux-weapp/wux-weapp/issues/383)
+- 修复组件 wx:key 警告问题，涉及的组件为 `Calendar`、`Card`、`Cascader`、`Checkbox`、`Dialog`、`FilterBar`、`Index`、`Pagination`、`Radio`、`Rater`、`Skeleton`、`Silder`、`SwipeAction` [#369](https://github.com/wux-weapp/wux-weapp/issues/369)
+
 ## v 3.8.5 (2019-12-20)
 
 - 更新组件：List - 列表 优化箭头图标

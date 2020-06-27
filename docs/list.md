@@ -105,6 +105,7 @@ Page({
 | title | `string` | 左侧标题 | - |
 | label | `string` | 标题下方的描述信息 | - |
 | extra | `string` | 右侧内容 | - |
+| hasLine | `boolean` | 是否有底部横线 | true |
 | isLink | `boolean` | 是否展示右侧箭头并开启尝试以 url 跳转 | - |
 | url | `string` | 跳转链接 | - |
 | delta | `number` | 当 open-type 为 'navigateBack' 时有效，表示回退的层数 | 1 |
