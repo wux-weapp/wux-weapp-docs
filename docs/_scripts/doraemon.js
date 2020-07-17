@@ -28,6 +28,10 @@
 	// Inner HTML
 	var div = document.createElement('div')
 	div.innerHTML = htmlText
+	div.addEventListener('click', function (e) {
+		e.stopPropagation()
+		document.body.style.cursor = `url('_images/favicon.png'),auto`
+	})
 	document.body.appendChild(div)
 
 	// Observer Node
