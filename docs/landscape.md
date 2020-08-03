@@ -20,10 +20,10 @@
 
 ```html
 <wux-landscape visible="{{ visible1 }}" bind:close="onClose1">
-    <image src="https://cdn.skyvow.cn/redpacket.png" style="height: 350px" />
+    <image src="http://cdn.skyvow.cn/redpacket.png" style="height: 350px" />
 </wux-landscape>
 <wux-landscape visible="{{ visible2 }}" bind:close="onClose2" mask="{{ false }}">
-    <image src="https://cdn.skyvow.cn/redpacket.png" style="height: 350px" />
+    <image src="http://cdn.skyvow.cn/redpacket.png" style="height: 350px" />
 </wux-landscape>
 
 <view class="page">

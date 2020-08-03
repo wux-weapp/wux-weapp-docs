@@ -34,7 +34,7 @@
 
 ## 谁在使用
 
-![case](https://cdn.skyvow.cn/cases.png)
+![case](http://cdn.skyvow.cn/cases.png)
 
 ?> 如果您的公司或产品使用了 Wux Weapp，欢迎到 [这里](https://github.com/wux-weapp/wux-weapp/issues/123) 留言。
 
@@ -48,4 +48,4 @@
 
 您可以扫码添加下方的小助手微信并备注 Wux Weapp 进交流群。
 
-![case](https://cdn.skyvow.cn/wechat.png ':size=256')
+![case](http://cdn.skyvow.cn/wechat.png ':size=256')

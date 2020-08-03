@@ -48,7 +48,7 @@
             </wux-cell>
             <wux-cell hover-class="none">
                 <wux-input placeholder="Input your QQ">
-                    <image style="width: 20px; height: 20px; margin-right: 5px" src="https://cdn.skyvow.cn/logo.png" />
+                    <image style="width: 20px; height: 20px; margin-right: 5px" src="http://cdn.skyvow.cn/logo.png" />
                 </wux-input>
             </wux-cell>
         </wux-cell-group>

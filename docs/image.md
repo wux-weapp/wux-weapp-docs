@@ -78,7 +78,7 @@
             </wux-col>
             <wux-col span="4">
                 <wux-image wux-class="image" src="error">
-                    <image src="https://cdn.skyvow.cn/logo.png" slot="error" />
+                    <image src="http://cdn.skyvow.cn/logo.png" slot="error" />
                 </wux-image>
             </wux-col>
         </wux-row>
