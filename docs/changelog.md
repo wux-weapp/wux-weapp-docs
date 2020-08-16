@@ -6,6 +6,10 @@
 - 次版本号（0.x.0）：含有新特性的向下兼容的版本。
 - 主版本号（x.0.0）：含有破坏性更新和新特性，不向下兼容的版本。
 
+## v 3.8.7 (2020-08-16)
+
+- 更新组件：FilterBar - 筛选栏 修复 filter 中 radio 类型无法选中的问题 [#383](https://github.com/wux-weapp/wux-weapp/issues/391)
+
 ## v 3.8.6 (2020-06-27)
 
 - 更新组件：List - 列表 新增 hasLine 属性 [#356](https://github.com/wux-weapp/wux-weapp/issues/356)
