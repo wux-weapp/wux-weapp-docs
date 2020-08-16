@@ -8,7 +8,7 @@
 
 ## v 3.8.7 (2020-08-16)
 
-- 更新组件：FilterBar - 筛选栏 修复 filter 中 radio 类型无法选中的问题 [#383](https://github.com/wux-weapp/wux-weapp/issues/391)
+- 更新组件：FilterBar - 筛选栏 修复 filter 中 radio 类型无法选中的问题 [#391](https://github.com/wux-weapp/wux-weapp/issues/391)
 
 ## v 3.8.6 (2020-06-27)
 
