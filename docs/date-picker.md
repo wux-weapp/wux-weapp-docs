@@ -137,7 +137,7 @@ Page({
 | prefixCls | `string` | 自定义类名前缀 | wux-date-picker |
 | multiPickerPrefixCls | `string` | multPicker 自定义类名前缀 | wux-picker |
 | pickerPrefixCls | `string` | picker 自定义类名前缀 | wux-picker-col |
-| value | `any` | 当前选中时间，例如字符串 `2000-01-01 00:00:00` 或时间戳 `946656000000` 或者数组 `[2000, 1, 1, 0, 0]` | - |
+| value | `any` | 当前选中时间，例如字符串 `2000-02-01 00:00:00` 或时间戳 `949334400000` 或者数组 `[2000, 1, 1, 0, 0]` | - |
 | itemHeight | `number` | 每列子元素的高度 | 34 |
 | itemStyle | `string,object` | 每列子元素的样式 | - |
 | indicatorStyle | `string,object` | 设置选择器中间选中框的样式 | - |
@@ -148,8 +148,8 @@ Page({
 | mode | `string` | 日期选择的类型，可选值为 datetime、date、year、month、time | datetime |
 | minuteStep | `number` | 分钟数递增步长 | 1 |
 | use12Hours | `boolean` | 是否显示 12 小时制 | false |
-| minDate | `any` | 最小可选日期 | `2000-01-01 00:00:00` |
-| maxDate | `any` | 最大可选日期 | `2030-01-01 23:59:59` |
+| minDate | `any` | 最小可选日期 | `2000-02-01 00:00:00` |
+| maxDate | `any` | 最大可选日期 | `2030-02-01 23:59:59` |
 | minHour | `number` | 最小可选小时 | 0 |
 | maxHour | `number` | 最大可选小时 | 23 |
 | minMinute | `number` | 最小可选分钟 | 0 |
