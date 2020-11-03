@@ -3,7 +3,7 @@ function regSW() {
     if ('serviceWorker' in navigator) {
         // 注册
         navigator.serviceWorker
-            .register('sw.js', {scope: '/'})
+            .register('sw.js', {scope: '.'})
             .then( function(registration) {
                 console.log('ServiceWorker 注册成功！作用域为: ', registration.scope);
             })
