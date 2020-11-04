@@ -1,12 +1,12 @@
 'use strict';
 
-const version = 'wuxui_3.8.7_20201103';
+const version = 'wuxui_3.8.7_20201104';
 const __DEVELOPMENT__ = false;
 const __DEBUG__ = false;
 const offlineResources = [
-    '/',
-    '/offline.html',
-    '/_images/logo.png',
+    './',
+    './offline.html',
+    './_images/logo.png',
 ];
 
 const ignoreCache = [
@@ -73,7 +73,7 @@ function sendNotify(title, options, event) {
 
     const notificationPromise = self.registration.showNotification(title || 'Hi：', Object.assign({
         body: '这是一个通知示例',
-        icon: '/_images/logo.png',
+        icon: './_images/logo.png',
         tag: 'push'
     }, options));
 
@@ -123,9 +123,9 @@ function onInstall(event) {
 function offlineResponse(request) {
     log('(offline)', request.method, request.url);
     if (request.url.match(/\.(jpg|png|gif|svg|jpeg)(\?.*)?$/)) {
-        return caches.match('/_images/logo.png');
+        return caches.match('./_images/logo.png');
     } else {
-        return caches.match('/offline.html');
+        return caches.match('./offline.html');
     }
 }
 

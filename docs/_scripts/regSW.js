@@ -3,7 +3,7 @@ function regSW() {
     if ('serviceWorker' in navigator) {
         // 注册
         navigator.serviceWorker
-            .register('sw.js', {scope: '.'})
+            .register('./sw.js', {scope: './'})
             .then( function(registration) {
                 console.log('ServiceWorker 注册成功！作用域为: ', registration.scope);
             })
@@ -51,7 +51,7 @@ function regSW() {
  
                 var notification = new Notification("Hi，网络不给力哟", {
                     body: '您的网络貌似离线了，不过在 wuxui 里访问过的页面还可以继续打开~',
-                    icon: '/_images/logo.png'
+                    icon: './_images/logo.png'
                 });
  
                 notification.onclick = function() {
