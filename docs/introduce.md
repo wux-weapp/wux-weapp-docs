@@ -34,7 +34,7 @@
 
 ## 谁在使用
 
-![case](http://cdn.skyvow.cn/cases.png)
+![case](_images/cases.png)
 
 ?> 如果您的公司或产品使用了 Wux Weapp，欢迎到 [这里](https://github.com/wux-weapp/wux-weapp/issues/123) 留言。
 
@@ -50,6 +50,6 @@
 注意：如果添加『Wux 小猪手』没有反应，可以再尝试添加后边作者『Skyvow』微信。
 
 <p>
-  <img src="http://cdn.skyvow.cn/wxrobot-helper.png" width="256" style="display: inline;">
-  <img src="http://cdn.skyvow.cn/wechat.png" width="256" style="display: inline;">
+  <img src="_images/wxrobot-helper.png" width="256" style="display: inline;">
+  <img src="_images/wechat.png" width="256" style="display: inline;">
 </p>
