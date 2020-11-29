@@ -10,7 +10,7 @@
 ## 版本
 
 <a href="https://www.npmjs.com/package/wux-weapp" target="_blank">
-    <img src='https://img.shields.io/npm/v/wux-weapp.svg' />
+  <img src='https://img.shields.io/npm/v/wux-weapp.svg' />
 </a>
 
 ## 支持环境
@@ -46,6 +46,10 @@
 
 ## 社区互助
 
-您可以扫码添加下方的小助手微信并备注 Wux Weapp 进交流群。
+您可以扫码添加下方的左侧『Wux 小助手』微信并备注『Wux Weapp』或者『加群』进交流群。
+注意：如果添加『Wux 小猪手』没有反应，可以再尝试添加后边作者『Skyvow』微信。
 
-![case](http://cdn.skyvow.cn/wechat.png ':size=256')
+<p>
+  <img src="http://cdn.skyvow.cn/wxrobot-helper.png" width="256" style="display: inline;">
+  <img src="http://cdn.skyvow.cn/wechat.png" width="256" style="display: inline;">
+</p>
