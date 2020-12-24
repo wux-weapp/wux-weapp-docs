@@ -1,15 +1,15 @@
 'use strict';
 
-const version = 'wuxui_3.8.7_20201129';
-const __DEVELOPMENT__ = false;
-const __DEBUG__ = false;
-const offlineResources = [
+var version = 'wuxui_3.8.7_20201224';
+var __DEVELOPMENT__ = false;
+var __DEBUG__ = false;
+var offlineResources = [
     './',
     './offline.html',
     './_images/logo.png',
 ];
 
-const ignoreCache = [
+var ignoreCache = [
     /https?:\/\/hm.baidu.com\//,
     // /https?:\/\/cdn.bootcdn.net\//,
     /https?:\/\/static.duoshuo.com\//,
@@ -22,7 +22,7 @@ const ignoreCache = [
 ];
 
 // 慎重使用全局可变变量，因为 serviceWork 不可控的停止和重启，会导致它们的取值在后续读取时无法预测
-let port;
+var port;
 
 
 /**
@@ -71,7 +71,7 @@ function sendNotify(title, options, event) {
         return;
     }
 
-    const notificationPromise = self.registration.showNotification(title || 'Hi：', Object.assign({
+    var notificationPromise = self.registration.showNotification(title || 'Hi：', Object.assign({
         body: '这是一个通知示例',
         icon: './_images/logo.png',
         tag: 'push'
@@ -86,7 +86,7 @@ function sendNotify(title, options, event) {
 
 function onClickNotify(event) {
     event.notification.close();
-    const url = "https://wuxui.com";
+    var url = "https://wuxui.com";
 
     event.waitUntil(
         self.clients.matchAll({
@@ -140,7 +140,7 @@ function cachedOrOffline(request) {
 function networkedAndCache(request) {
     return fetch(request)
         .then(response => {
-            const copy = response.clone();
+            var copy = response.clone();
 
             caches.open(cacheKey('resources'))
                 .then(cache => {
@@ -174,7 +174,7 @@ function networkedOrOffline(request) {
 }
 
 function onFetch(event) {
-    const request = event.request;
+    var request = event.request;
 
     // 应当永远从网络请求的资源
     // 如果请求失败，则使用离线资源替代
@@ -263,8 +263,8 @@ function onMessage(event) {
 
     // 如果是要求一条通知，则发送
     if (event.data.type === 'notify') {
-        const {title, options} = event.data.info || {};
-        sendNotify(title, options, event);
+        var info = event.data.info || {};
+        sendNotify(info.title, info.options, event);
     }
 }
 
