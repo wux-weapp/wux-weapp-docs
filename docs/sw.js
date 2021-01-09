@@ -10,7 +10,7 @@ var offlineResources = [
 ];
 
 var ignoreCache = [
-    /http?:\/\/api.seniverse.com\//,
+    /https?:\/\/api.seniverse.com\//,
     /https?:\/\/hm.baidu.com\//,
     // /https?:\/\/cdn.bootcdn.net\//,
     /https?:\/\/static.duoshuo.com\//,
