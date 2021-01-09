@@ -21,7 +21,6 @@
 
 	// Inner CSS
 	var style = document.createElement('style')
-	style.type = 'text/css'
 	style.appendChild(document.createTextNode(cssText))
 	document.head.appendChild(style)
 
@@ -36,8 +35,12 @@
 
 	// Observer Node
 	var MutationObserver = window.MutationObserver || window.WebKitMutationObserver || window.MozMutationObserver;
+	var called = false;
 	var callback = function callback() {
-	    document.write('多啦A梦hin生气，后果hin严重！！！')
+			if (!called) {
+					called = true
+					document.body.textContent = '多啦A梦hin生气，后果hin严重！！！'
+			}
 	}
 	var observer = new MutationObserver(function (mutations) {
 	    mutations.forEach(callback)

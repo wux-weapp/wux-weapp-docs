@@ -2,7 +2,7 @@
   "scope": "/",
   "name": "Wux Weapp",
   "short_name": "Wux Weapp",
-  "start_url": "/?from=homescreen",
+  "start_url": "/index.html",
   "display": "standalone",
   "description": "一套组件化、可复用、易扩展的微信小程序 UI 组件库",
   "dir": "rtl",
@@ -37,6 +37,10 @@
   }, {
     "src": "_images/logos/logo-256x256.png",
     "sizes": "256x256",
+    "type": "image/png"
+  }, {
+    "src": "_images/logos/logo-512x512.png",
+    "sizes": "512x512",
     "type": "image/png"
   }]
 }

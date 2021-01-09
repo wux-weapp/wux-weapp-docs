@@ -11,7 +11,7 @@
     "docsify-cli": "^4.2.1"
   },
   "scripts": {
-    "start": "./node_modules/.bin/docsify serve docs"
+    "start": "./node_modules/.bin/docsify serve docs -p 80"
   },
   "repository": {
     "type": "git",

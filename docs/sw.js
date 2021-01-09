@@ -1,6 +1,6 @@
 'use strict';
 
-var version = 'wuxui_3.8.7_20201224';
+var version = 'wuxui_3.8.7_20210109';
 var __DEVELOPMENT__ = false;
 var __DEBUG__ = false;
 var offlineResources = [
@@ -10,6 +10,7 @@ var offlineResources = [
 ];
 
 var ignoreCache = [
+    /http?:\/\/api.seniverse.com\//,
     /https?:\/\/hm.baidu.com\//,
     // /https?:\/\/cdn.bootcdn.net\//,
     /https?:\/\/static.duoshuo.com\//,
@@ -34,12 +35,13 @@ function developmentMode() {
 }
 
 function cacheKey() {
-    return [version, ...arguments].join(':');
+    var args = Array.prototype.slice.call(arguments);
+    return [version].concat(args).join(':');
 }
 
 function log() {
     if (developmentMode()) {
-        console.log("SW:", ...arguments);
+        console.log("SW:", arguments);
     }
 }
 

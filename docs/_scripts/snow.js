@@ -62,8 +62,20 @@
   window.performance && (e = "snow", n = { ls: window.localStorage }, t = document.body, o = document.getElementsByTagName("html")[0], s = window.innerWidth, i = window.innerHeight, g = 150, v = 500, d = p = !(c = !0), l = [], h = t, (I = document.createElement("canvas")).height = 2 * (i + 50), I.width = 2 * s, I.style.height = i + 50 + "px", I.style.width = s + "px", I.style.position = "fixed", I.style.zIndex = "300", I.style.left = "0", I.style.top = "0", I.style.pointerEvents = "none", m = document.createElement("div"), (u = new Image).src = "https://mms-mis.cdn.bcebos.com/tox/sd2020/%E9%9B%AA%E5%9C%B0-0.png", u.style.height = "100%", m.appendChild(u), m.style.height = i + "px", m.style.width = s + "px", m.style.position = "fixed", m.style.zIndex = "300", m.style.left = "0", m.style.top = i + "px", m.style.display = 720 <= s ? "none" : "block", m.style.transition = "top linear ".concat(g, "s 0s, opacity ease 2s 0s"), m.addEventListener("click", function () {
     M(), d ? l.push(setTimeout(_, 800)) : T()
   }), (w = new Image).src = "https://mms-mis.cdn.bcebos.com/tox/sd2020/%E9%9B%AA%E8%8A%B1.png", (f = new Image).src = "https://mms-mis.cdn.bcebos.com/tox/sd2020/snowball.png", b = [w, f])
+  var called = false
+  var timer = setTimeout(function () {
+    if (!called) {
+      called = true
+      clearTimeout(timer)
+      y()
+    }
+  }, 1500)
   window.onload = function () {
-    y()
+    if (!called) {
+      called = true
+      clearTimeout(timer)
+      y()
+    }
   }
   window.onunload = function () {
     _()
