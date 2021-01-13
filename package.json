@@ -8,7 +8,7 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "docsify-cli": "^4.2.1"
+    "docsify-cli": "^4.4.2"
   },
   "scripts": {
     "start": "./node_modules/.bin/docsify serve docs -p 80"
