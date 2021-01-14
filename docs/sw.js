@@ -1,6 +1,6 @@
 'use strict';
 
-var version = 'wuxui_3.8.7_20210109';
+var version = 'wuxui_3.8.7_20210114';
 var __DEVELOPMENT__ = false;
 var __DEBUG__ = false;
 var offlineResources = [
