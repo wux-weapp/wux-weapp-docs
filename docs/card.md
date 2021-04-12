@@ -95,6 +95,7 @@ Page({
 | 参数 | 类型 | 描述 | 默认值 |
 | --- | --- | --- | --- |
 | prefixCls | `string` | 自定义类名前缀 | wux-card |
+| hoverClass | `string` | 指定按钮按下去的样式类。当 hover-class="none" 时，没有点击态效果 | none |
 | bordered | `boolean` | 是否有边框 | false |
 | full | `boolean` | 是否通栏 | false |
 | title | `string` | 卡片标题 | - |

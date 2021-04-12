@@ -1,6 +1,6 @@
 ![logo](_images/logo.png)
 
-# Wux Weapp <small>3.8.7</small>
+# Wux Weapp <small>3.8.8</small>
 
 <style>section.cover,section.cover .anchor span{color:#fff}section.cover.has-mask .mask{display:none;}</style>
 

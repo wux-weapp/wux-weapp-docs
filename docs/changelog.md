@@ -6,6 +6,14 @@
 - 次版本号（0.x.0）：含有新特性的向下兼容的版本。
 - 主版本号（x.0.0）：含有破坏性更新和新特性，不向下兼容的版本。
 
+## v 3.8.8 (2021-04-12)
+
+- 更新组件：FilterBar - 筛选栏 修复 标签使用错误
+- 更新组件：Qrcode - 二维码 新增 whiteSpace 属性，支持留白
+- 更新组件：Card - 卡片 新增 hoverClass 属性，支持点击态效果 [#397](https://github.com/wux-weapp/wux-weapp/pull/397)
+- 更新组件：Index - 索引选择器 修复 点击定位偏移问题 [#399](https://github.com/wux-weapp/wux-weapp/pull/399)
+- 更新组件：Dialog - 对话框 修复 对话框按钮颜色问题 [#402](https://github.com/wux-weapp/wux-weapp/pull/402)
+
 ## v 3.8.7 (2020-08-16)
 
 - 更新组件：FilterBar - 筛选栏 修复 filter 中 radio 类型无法选中的问题 [#391](https://github.com/wux-weapp/wux-weapp/issues/391)

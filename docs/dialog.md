@@ -1,6 +1,6 @@
 # Dialog 对话框
 
-模态对话框，在浮层中显示，引导用户进行相关操作。
+模态对话框，在浮层中显示，引导用户进行相关操作。，预设 9 种颜色 `light`, `stable`, `positive`, `calm`, `assertive`, `balanced`, `energized`, `royal`, `dark` 可选用。
 
 ## 使用指南
 
@@ -215,7 +215,7 @@ Page({
 | options.zIndex | `number` | 设置蒙层的 z-index | 1000 |
 | options.buttons | `array` | 按钮 | [] |
 | options.buttons[].text | `string` | 按钮的文本 | - |
-| options.buttons[].type | `string` | 按钮的类型，可选值为 default、primary | - |
+| options.buttons[].type | `string` | 按钮的类型，可选值为 light、stable、positive、calm、assertive、balanced/primary、energized、royal、dark/default | - |
 | options.buttons[].bold | `boolean` | 是否加粗按钮的文字 | - |
 | options.buttons[].disabled | `boolean` | 是否禁用 | false |
 | options.buttons[].openType | `string` | 微信开放能力，可选值为 contact、share、getUserInfo、getPhoneNumber、launchApp、openSetting、feedback | - |
@@ -246,7 +246,7 @@ Page({
 | options.title | `string` | 提示标题 | - |
 | options.content | `string` | 提示文本 | - |
 | options.confirmText | `string` | 确定按钮的文字 | 确定 |
-| options.confirmType | `string` | 确定按钮的类型 | primary |
+| options.confirmType | `string` | 确定按钮的类型，可选值为 light、stable、positive、calm、assertive、balanced/primary、energized、royal、dark/default | primary |
 | options.onConfirm | `function` | 确定按钮的点击事件 | - |
 
 ### Dialog.confirm
@@ -258,10 +258,10 @@ Page({
 | options.title | `string` | 提示标题 | - |
 | options.content | `string` | 提示文本 | - |
 | options.confirmText | `string` | 确定按钮的文字 | 确定 |
-| options.confirmType | `string` | 确定按钮的类型 | primary |
+| options.confirmType | `string` | 确定按钮的类型，可选值为 light、stable、positive、calm、assertive、balanced/primary、energized、royal、dark/default | primary |
 | options.onConfirm | `function` | 确定按钮的点击事件 | - |
 | options.cancelText | `string` | 取消按钮的文字 | 取消 |
-| options.cancelType | `string` | 取消按钮的类型 | default |
+| options.cancelType | `string` | 取消按钮的类型，可选值为 light、stable、positive、calm、assertive、balanced/primary、energized、royal、dark/default | default |
 | options.onCancel | `function` | 取消按钮的点击事件 | - |
 
 ### Dialog.prompt
@@ -278,10 +278,10 @@ Page({
 | options.placeholder | `string` | 输入框为空时占位符 | - |
 | options.maxlength | `number` | 最大输入长度，设置为 -1 的时候不限制最大长度 | -1 |
 | options.confirmText | `string` | 确定按钮的文字 | 确定 |
-| options.confirmType | `string` | 确定按钮的类型 | primary |
+| options.confirmType | `string` | 确定按钮的类型，可选值为 light、stable、positive、calm、assertive、balanced/primary、energized、royal、dark/default | primary |
 | options.onConfirm | `function` | 确定按钮的点击事件 | - |
 | options.cancelText | `string` | 取消按钮的文字 | 取消 |
-| options.cancelType | `string` | 取消按钮的类型 | default |
+| options.cancelType | `string` | 取消按钮的类型，可选值为 light、stable、positive、calm、assertive、balanced/primary、energized、royal、dark/default | default |
 | options.onCancel | `function` | 取消按钮的点击事件 | - |
 
 > 以上函数调用后，会返回一个引用，可以通过该引用手动关闭对话框

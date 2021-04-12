@@ -69,6 +69,7 @@ Page({
 | prefixCls | `string` | 自定义类名前缀 | wux-index |
 | height | <code>string,number</code> | 设置容器的高度 | 300 |
 | showIndicator | `boolean` | 是否显示提示框 | true |
+| parentOffsetTop | `number` | 定位偏移量 | 0 |
 
 ### Index externalClasses
 
