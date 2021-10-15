@@ -1,12 +1,13 @@
 'use strict';
 
-var version = 'wuxui_3.8.8_20210625';
+var version = 'wuxui_3.8.8_20211015';
 var __DEVELOPMENT__ = false;
 var __DEBUG__ = false;
 var offlineResources = [
     './',
     './offline.html',
     './_images/logo.png',
+    './_images/favicon.ico',
 ];
 
 var ignoreCache = [

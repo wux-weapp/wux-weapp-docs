@@ -7,6 +7,20 @@
   .script('_scripts/hmac-sha1.js')
   .script('_scripts/weather.js')
   .wait(function () {
+    $('#ilove').css({
+      width: '640px',
+      height: '400px'
+    })
+    .html(`
+      <div class="ilove__title">
+        <p></p>
+        <p>iLove恋爱小事 - by hcc</p>
+        <p>记录您的幸福瞬间 & 传递爱的讯息！</p>
+        <p>快邀请你的另一半，一起来体验吧~</p>
+      </div>
+      <img src="_images/wx_mini_qrcode.jpg" alt="微信小程序 - iLove恋爱小事" width="256" height="256">
+      <img src="_images/qq_mini_qrcode.jpg" alt="QQ小程序 - iLove恋爱小事" width="256" height="256">
+    `)
     setTimeout(function () {
       layer.open({
         type: 1,
