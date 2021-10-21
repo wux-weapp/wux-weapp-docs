@@ -31,7 +31,7 @@
     <meta name="apple-mobile-web-app-title" content="Wux Weapp">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta name="theme-color" content="#B20000">
+    <meta name="theme-color" content="#22ab28">
     <link rel="apple-touch-icon" href="_images/apple-touch-icon-192x192@white.png">
     <link rel="apple-touch-icon-precomposed" href="_images/apple-touch-icon-192x192@white.png">
     <link rel="apple-touch-startup-image" href="_images/apple-touch-icon-192x192@white.png">
@@ -44,8 +44,37 @@
 
     <!-- Other Styles -->
     <link rel="stylesheet" href="_scripts/lib/themes/vue.css">
-    <style>.layui-layer{border-radius:12px !important}.hide{display:none}#ilove{background:#fff;border-radius:12px;text-align:center}.ilove__title{padding:12px}.ilove__title p{margin: 0 0 6px}</style>
-    <style>.markdown-section p>img{box-shadow: 0 8px 20px rgba(143,168,191,0.35)}.markdown-section code{color:#3498DB;}.markdown-section ul li{list-style-type: disc}</style>
+    <style>
+        .layui-layer {
+            border-radius: 12px !important
+        }
+        .hide {
+            display: none
+        }
+        #ilove {
+            background: #fff;
+            border-radius: 12px;
+            text-align: center
+        }
+        .ilove__title {
+            padding: 12px
+        }
+        .ilove__title p {
+            margin: 0 0 6px
+        }
+    </style>
+    <style>
+        .markdown-section p>img {
+            box-shadow: 0 8px 20px rgba(143, 168, 191, 0.35)
+        }
+        .markdown-section code {
+            background-color: #def5df;
+            color: #22ab28
+        }
+        .markdown-section ul li {
+            list-style-type: circle
+        }
+    </style>
     <script>
         var _hmt = _hmt || [];
         (function () {
@@ -70,7 +99,7 @@
     <script src="_scripts/init.js"></script>
     <script>
         window.$docsify = {
-            themeColor: '#B20000',
+            themeColor: '#22ab28',
             coverpage: true,
             loadSidebar: true,
             loadNavbar: true,
@@ -107,6 +136,7 @@
     </script>
     <script src="_scripts/lib/docsify.min.js"></script>
     <script src="_scripts/lib/plugins/search.min.js"></script>
+    <script src="_scripts/lib/plugins/emoji.min.js"></script>
     <script src="_scripts/dist/docsify-copy-code.min.js"></script>
     <script src="_scripts/regSW.js"></script>
 </body>

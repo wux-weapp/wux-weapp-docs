@@ -2,12 +2,13 @@
 
 # Wux Weapp <small>3.8.8</small>
 
-<style>section.cover,section.cover .anchor span{color:#fff}section.cover.has-mask .mask{display:none;}</style>
+<!-- 背景 -->
+<!-- <style>section.cover,section.cover .anchor span{color:#fff}section.cover.has-mask .mask{display:none;}</style>
 <style>
 .cover.show{position: relative;background-image: linear-gradient(180deg, #D43420 54%, #B1271B 91%) !important}
 .cover.show:after{content: ""; position: absolute; top: 50%; left: 10px; width: 440px; height: 376px; z-index: 1; background-image: url(_images/party.png); background-size: contain; transform: translateY(-50%);}
 </style>
-
+ -->
 
 <div align="center">
     <a href="https://github.com/wux-weapp/wux-weapp/" target="_blank">
