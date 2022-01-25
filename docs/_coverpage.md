@@ -1,14 +1,14 @@
-![logo](_images/logo.png)
+![logo](_images/logo2.png)
 
 # Wux Weapp <small>3.8.8</small>
 
 <!-- 背景 -->
-<!-- <style>section.cover,section.cover .anchor span{color:#fff}section.cover.has-mask .mask{display:none;}</style>
+<style>section.cover,section.cover .anchor span{color:#fff}section.cover.has-mask .mask{display:none;}</style>
 <style>
-.cover.show{position: relative;background-image: linear-gradient(180deg, #D43420 54%, #B1271B 91%) !important}
-.cover.show:after{content: ""; position: absolute; top: 50%; left: 10px; width: 440px; height: 376px; z-index: 1; background-image: url(_images/party.png); background-size: contain; transform: translateY(-50%);}
+.cover.show{position: relative;background-image: linear-gradient(to bottom, rgba(241, 62, 62, 0.45), #fff) !important}
+.cover.show:after{content: ""; position: absolute; top: 0; right: 80px; width: 462px; height: 130px; z-index: 1; background-image: url(_images/xiaonianyeah.webp); background-repeat: no-repeat; background-size: contain;}
 </style>
- -->
+
 
 <div align="center">
     <a href="https://github.com/wux-weapp/wux-weapp/" target="_blank">

@@ -1,9 +1,9 @@
 (function() {
 	// default theme
 	window.$doraemon = {
-		bodyColor: '#22ab28',
-		bellColor: '#f1e149',
-		mouthColor: '#ddc555',
+		bodyColor: '#f13e3e',
+		bellColor: '#fad401',
+		mouthColor: '#e4161f',
 	}
 
 	// htmlText & cssText
