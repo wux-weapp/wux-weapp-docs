@@ -18,7 +18,7 @@ function regSW() {
             }
  
             // 建立一个消息管道，用于当前页面与 SW 之间的消息传递，也便于 SW 知道该消息的来源
-            var channel = new window.MessageChannel();
+            let channel = new window.MessageChannel();
  
             channel.port1.onmessage = function(e) {
                 console.log('get Message: ', e.data);
@@ -49,7 +49,7 @@ function regSW() {
                     return;
                 }
  
-                var notification = new Notification("Hi，网络不给力哟", {
+                let notification = new Notification("Hi，网络不给力哟", {
                     body: '您的网络貌似离线了，不过在 wuxui 里访问过的页面还可以继续打开~',
                     icon: './_images/logo.png'
                 });

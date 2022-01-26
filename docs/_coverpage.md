@@ -3,12 +3,55 @@
 # Wux Weapp <small>3.8.8</small>
 
 <!-- 背景 -->
-<style>section.cover,section.cover .anchor span{color:#fff}section.cover.has-mask .mask{display:none;}</style>
 <style>
-.cover.show{position: relative;background-image: linear-gradient(to bottom, rgba(241, 62, 62, 0.45), #fff) !important}
-.cover.show:after{content: ""; position: absolute; top: 0; right: 80px; width: 462px; height: 130px; z-index: 1; background-image: url(_images/xiaonianyeah.webp); background-repeat: no-repeat; background-size: contain;}
+section.cover,section.cover .anchor span {
+	color: #fff
+}
+section.cover.has-mask .mask {
+	display: none;
+}
 </style>
-
+<style>
+.github-corner {
+    z-index: 10;
+}
+.cover.show {
+	position: relative;
+	background-image: linear-gradient(to bottom, rgba(var(--theme-color-rgb), 0.45), #fff) !important
+}
+.cover.show:after {
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 80px;
+	width: 462px;
+    max-width: 80%;
+	height: 130px;
+	z-index: 1;
+	background-image: url(_images/xiaonianyeah.webp);
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+.cover.show:before {
+    content: "";
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 100vw;
+	height: 100vh;
+    z-index: 1;
+	background-image: url(_images/2022yeah.jpeg);
+	background-position: top center;
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+@media (max-width: 767px) {
+    .cover.show:after {
+        right: 0;
+    }
+}
+</style>
 
 <div align="center">
     <a href="https://github.com/wux-weapp/wux-weapp/" target="_blank">

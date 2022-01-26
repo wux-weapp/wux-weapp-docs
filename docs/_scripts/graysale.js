@@ -1,10 +1,10 @@
-var pad = function (num) { return num < 9 ? '0' + num : num }
-var day = new Date().getDate()
-var month = new Date().getMonth() + 1
-var year = new Date().getFullYear()
-var date = year + '-' + pad(month) + '-' + pad(day)
+let pad = function (num) { return num < 9 ? '0' + num : num }
+let day = new Date().getDate()
+let month = new Date().getMonth() + 1
+let year = new Date().getFullYear()
+let date = year + '-' + pad(month) + '-' + pad(day)
 
-var include = [{
+let include = [{
 	date: '2020-04-04',
 	text: [
 		'4月4日',
@@ -14,7 +14,7 @@ var include = [{
 	],
 }]
 
-var index = include.map(function(v) { return v.date }).indexOf(date)
+let index = include.map(function(v) { return v.date }).indexOf(date)
 
 if (index !== -1) {
 	document.documentElement.style['-webkit-filter'] = 'grayscale(100%)'

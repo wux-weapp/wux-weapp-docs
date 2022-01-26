@@ -62,14 +62,23 @@
         .ilove__title p {
             margin: 0 0 6px
         }
+        .ilove__content {
+            padding-bottom: 12px;
+        }
+        @media (max-width: 767px) {
+            .ilove__content img {
+                width: 128px;
+                height: 128px;
+            }
+        }
     </style>
     <style>
         .markdown-section p>img {
             box-shadow: 0 8px 20px rgba(143, 168, 191, 0.35)
         }
         .markdown-section code {
-            background-color: rgba(241, 62, 62, 0.15);
-            color: #f13e3e
+            background-color: rgba(var(--theme-color-rgb), 0.15);
+            color: var(--theme-color)
         }
         .markdown-section ul li {
             list-style-type: circle
@@ -88,6 +97,31 @@
             s.parentNode.insertBefore(hm, s);
         })();
     </script>
+    <script>
+        ~(function() {
+            function showRGB (c) {
+                let a = c.substring(1).toLowerCase()
+                let b = []
+                let len = a.length
+                for (let x = 0; x < 3; x++) {
+                    b[0] = len == 6 ? a.substr(x * 2, 2) : a.substr(x * 1, 1) + a.substr(x * 1, 1)
+                    b[3] = "0123456789abcdef"
+                    b[1] = b[0].substr(0, 1)
+                    b[2] = b[0].substr(1, 1)
+                    b[20 + x] = b[3].indexOf(b[1]) * 16 + b[3].indexOf(b[2])
+                }
+                return b[20] + "," + b[21] + "," + b[22]
+            }
+            let color = document.getElementsByTagName('meta')[17].content
+            let root = document.createElement('style')
+            root.textContent = `:root {
+                --theme-color: ${color};
+                --theme-color-rgb: ${showRGB(color)}
+            }
+            `
+            document.head.appendChild(root)
+        })()
+    </script>
 </head>
 
 <body>
@@ -99,7 +133,6 @@
     <script src="_scripts/init.js"></script>
     <script>
         window.$docsify = {
-            themeColor: '#f13e3e',
             coverpage: true,
             loadSidebar: true,
             loadNavbar: true,
@@ -118,7 +151,7 @@
             },
             plugins: [
                 function(hook) {
-                    var footer = [
+                    let footer = [
                         '<hr/>',
                         '<footer>',
                         '<span><a href="https://github.com/skyvow">Made with by skyvow</a></span>',

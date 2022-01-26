@@ -1,10 +1,10 @@
-var idx = 0
-var tips = ['WuxUI 🐮', 'MiniProgram 🐶', 'VSCode 🐱', 'Atom 🐯', 'Sublime Text 2/3 🐻']
+let idx = 0
+let tips = ['WuxUI 🐮', 'MiniProgram 🐶', 'VSCode 🐱', 'Atom 🐯', 'Sublime Text 2/3 🐻']
 $(document).ready(function ($) {
   $('body').click(function (e) {
-    var $i = $('<span></span>').text(tips[idx])
+    let $i = $('<span></span>').text(tips[idx])
     idx = (idx + 1) % tips.length
-    var x = e.pageX,
+    let x = e.pageX,
       y = e.pageY
     $i.css({
       'z-index': 10000,
