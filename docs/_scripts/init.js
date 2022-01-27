@@ -2,8 +2,6 @@
   $LAB
   .script('_scripts/mouseEffects.js')
   .script('_scripts/layer/layer.js')
-  .script('_scripts/html2json.js')
-  .script('_scripts/doraemon.js')
   .script('_scripts/hmac-sha1.js')
   .script('_scripts/weather.js')
   .wait(function () {
