@@ -1,4 +1,4 @@
-![logo](_images/logo2.png)
+![logo](_images/logo.png)
 
 # Wux Weapp <small>3.8.8</small>
 
@@ -22,13 +22,13 @@ section.cover.has-mask .mask {
 .cover.show:after {
 	content: "";
 	position: absolute;
-	top: 0;
+	top: 44px;
 	right: 80px;
-	width: 462px;
+	width: 256px;
     max-width: 80%;
-	height: 130px;
+	height: 75px;
 	z-index: 1;
-	background-image: url(_images/xiaonianyeah.webp);
+	background-image: url(_images/2022olympic.webp);
 	background-repeat: no-repeat;
 	background-size: contain;
 }
@@ -40,7 +40,7 @@ section.cover.has-mask .mask {
 	width: 100vw;
 	height: 100vh;
     z-index: 1;
-	background-image: url(_images/2022yeah.jpeg);
+	background-image: url(_images/2022dongao.webp);
 	background-position: top center;
 	background-attachment: fixed;
 	background-size: cover;
@@ -48,12 +48,13 @@ section.cover.has-mask .mask {
 }
 @media (max-width: 767px) {
     .cover.show:after {
+        display: none;
         right: 0;
     }
 }
 </style>
 
-<div align="center">
+<div>
     <a href="https://github.com/wux-weapp/wux-weapp/" target="_blank">
         <img alt="star this repo" src="https://img.shields.io/github/stars/wux-weapp/wux-weapp" />
     </a>

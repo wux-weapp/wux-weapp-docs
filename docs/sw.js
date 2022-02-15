@@ -1,12 +1,13 @@
 'use strict';
 
-var version = 'wuxui_3.8.8_20220127';
+var version = 'wuxui_3.8.8_20220215';
 var __DEVELOPMENT__ = false;
 var __DEBUG__ = false;
 var offlineResources = [
     './',
     './offline.html',
     './_images/logo.png',
+    './_images/logo2.png',
     './_images/favicon.ico',
 ];
 
