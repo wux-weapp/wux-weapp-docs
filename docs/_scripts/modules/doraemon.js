@@ -123,6 +123,7 @@ class CustomDoraemon extends HTMLElement {
       .dora {
           --dora-body-color: var(--theme-color, #35a1c9);
           --dora-bell-color: #fde746;
+          --dora-blush-color: #ffc1c2;
           --dora-nose-color: #d80517;
           --dora-mouth-color: #e4161f;
           --dora-tongue-color: #ef6c1c;
@@ -137,7 +138,7 @@ class CustomDoraemon extends HTMLElement {
           width: var(--dora-height);
           height: var(--dora-height);
           box-sizing: border-box;
-          animation: dora-volar 1s linear 2s infinite alternate;
+          /** animation: dora-volar 1s linear 2s infinite alternate; */
       }
       .dora__head {
           width: calc(var(--height-10) * 20);
@@ -323,6 +324,22 @@ class CustomDoraemon extends HTMLElement {
           display: inline-block;
           top: calc(var(--height-10) * 4.5);
           left: 0;
+      }
+      .dora__whiskers:after {
+        content: "";
+        width: 70%;
+        height: 40%;
+        background: radial-gradient(var(--dora-blush-color, #ffc1c2), transparent);
+        position: absolute;
+        top: 6%;
+        right: 2%;
+        border-radius: 50%;
+        filter: blur(2px);
+        z-index: -1;
+      }
+      .dora__whiskers + .dora__nose + .dora__whiskers:after {
+        right: unset;
+        left: 2%;
       }
       .dora__whisker {
           width: calc(var(--height-10) * 6);
