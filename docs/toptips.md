@@ -8,11 +8,11 @@
 
 ```json
 {
-    "navigationBarTitleText": "Toptips",
-    "usingComponents": {
-        "wux-button": "../../dist/button/index",
-        "wux-toptips": "../../dist/toptips/index"
-    }
+  "navigationBarTitleText": "Toptips",
+  "usingComponents": {
+    "wux-button": "../../dist/button/index",
+    "wux-toptips": "../../dist/toptips/index"
+  }
 }
 ```
 
@@ -24,19 +24,25 @@
 <wux-toptips id="wux-toptips" />
 
 <view class="page">
-    <view class="page__hd">
-        <view class="page__title">Toptips</view>
-        <view class="page__desc">顶部提示</view>
-    </view>
-    <view class="page__bd page__bd_spacing">
-        <wux-button block type="light" bind:click="showToptips1">Show</wux-button>
-        <wux-button block type="light" bind:click="showToptips2">Success</wux-button>
-        <wux-button block type="light" bind:click="showToptips3">Info</wux-button>
-        <wux-button block type="light" bind:click="showToptips4">Warn</wux-button>
-        <wux-button block type="light" bind:click="showToptips5">Error</wux-button>
-        <wux-button block type="light" bind:click="showToptips6">Use return value to close</wux-button>
-        <wux-button block type="light" bind:click="showToptips7">Use promise to know when closed</wux-button>
-    </view>
+  <view class="page__hd">
+    <view class="page__title">Toptips</view>
+    <view class="page__desc">顶部提示</view>
+  </view>
+  <view class="page__bd page__bd_spacing">
+    <wux-button block type="light" bind:click="showToptips1">Show</wux-button>
+    <wux-button block type="light" bind:click="showToptips2"
+      >Success</wux-button
+    >
+    <wux-button block type="light" bind:click="showToptips3">Info</wux-button>
+    <wux-button block type="light" bind:click="showToptips4">Warn</wux-button>
+    <wux-button block type="light" bind:click="showToptips5">Error</wux-button>
+    <wux-button block type="light" bind:click="showToptips6"
+      >Use return value to close</wux-button
+    >
+    <wux-button block type="light" bind:click="showToptips7"
+      >Use promise to know when closed</wux-button
+    >
+  </view>
 </view>
 ```
 
@@ -44,70 +50,70 @@
 import { $wuxToptips } from '../../dist/index'
 
 Page({
-    showToptips1() {
-        $wuxToptips().show({
-            icon: 'cancel',
-            hidden: false,
-            text: 'Toptips Title',
-            duration: 3000,
-            success() {},
-        })
-    },
-    showToptips2() {
-        $wuxToptips().success({
-            hidden: false,
-            text: 'Toptips Title',
-            duration: 3000,
-            success() {},
-        })
-    },
-    showToptips3() {
-        $wuxToptips().info({
-            hidden: false,
-            text: 'Toptips Title',
-            duration: 3000,
-            success() {},
-        })
-    },
-    showToptips4() {
-        $wuxToptips().warn({
-            hidden: false,
-            text: 'Toptips Title',
-            duration: 3000,
-            success() {},
-        })
-    },
-    showToptips5() {
-        $wuxToptips().error({
-            hidden: false,
-            text: 'Toptips Title',
-            duration: 3000,
-            success() {},
-        })
-    },
-    showToptips6() {
-        if (this.timeout) clearTimeout(this.timeout)
+  showToptips1() {
+    $wuxToptips().show({
+      icon: 'cancel',
+      hidden: false,
+      text: 'Toptips Title',
+      duration: 3000,
+      success() {},
+    })
+  },
+  showToptips2() {
+    $wuxToptips().success({
+      hidden: false,
+      text: 'Toptips Title',
+      duration: 3000,
+      success() {},
+    })
+  },
+  showToptips3() {
+    $wuxToptips().info({
+      hidden: false,
+      text: 'Toptips Title',
+      duration: 3000,
+      success() {},
+    })
+  },
+  showToptips4() {
+    $wuxToptips().warn({
+      hidden: false,
+      text: 'Toptips Title',
+      duration: 3000,
+      success() {},
+    })
+  },
+  showToptips5() {
+    $wuxToptips().error({
+      hidden: false,
+      text: 'Toptips Title',
+      duration: 3000,
+      success() {},
+    })
+  },
+  showToptips6() {
+    if (this.timeout) clearTimeout(this.timeout)
 
-        const hide = $wuxToptips().show({
-            icon: 'cancel',
-            hidden: false,
-            text: 'Toptips Title',
-            duration: 3000,
-        })
+    const hide = $wuxToptips().show({
+      icon: 'cancel',
+      hidden: false,
+      text: 'Toptips Title',
+      duration: 3000,
+    })
 
-        this.timeout = setTimeout(hide, 1000)
-    },
-    showToptips7() {
-        const hide = $wuxToptips().show({
-            icon: 'cancel',
-            hidden: false,
-            text: 'Toptips Title',
-            duration: 3000,
-        })
+    this.timeout = setTimeout(hide, 1000)
+  },
+  showToptips7() {
+    const hide = $wuxToptips().show({
+      icon: 'cancel',
+      hidden: false,
+      text: 'Toptips Title',
+      duration: 3000,
+    })
 
-        // hide.promise.then(() => console.log('success'))
-        hide.then(() => console.log('success'))
-    },
+    // hide.promise.then(() => console.log('success'))
+    hide.then(() => console.log('success'))
+  },
 })
 ```
 
@@ -117,16 +123,16 @@ Page({
 
 ## API
 
-| 参数 | 类型 | 描述 | 默认值 |
-| --- | --- | --- | --- |
-| options | `object` | 配置项 | - |
-| options.prefixCls | `string` | 自定义类名前缀 | wux-toptips |
-| options.classNames | `any` | 过渡的类名，更多内置过渡效果请参考 [AnimationGroup](animation-group.md) | wux-animate--slideInDown |
-| options.icon | `string` | 图标类型 | cancel |
-| options.hidden | `boolean` | 是否隐藏图标 | false |
-| options.text | `string` | 报错文本 | - |
-| options.duration | `number` | 多少毫秒后消失 | 3000 |
-| options.success | `function` | 消失后的回调函数 | - |
+| 参数               | 类型       | 描述                                                                    | 默认值                   |
+| ------------------ | ---------- | ----------------------------------------------------------------------- | ------------------------ |
+| options            | `object`   | 配置项                                                                  | -                        |
+| options.prefixCls  | `string`   | 自定义类名前缀                                                          | wux-toptips              |
+| options.classNames | `any`      | 过渡的类名，更多内置过渡效果请参考 [AnimationGroup](animation-group.md) | wux-animate--slideInDown |
+| options.icon       | `string`   | 图标类型                                                                | cancel                   |
+| options.hidden     | `boolean`  | 是否隐藏图标                                                            | false                    |
+| options.text       | `string`   | 报错文本                                                                | -                        |
+| options.duration   | `number`   | 多少毫秒后消失                                                          | 3000                     |
+| options.success    | `function` | 消失后的回调函数                                                        | -                        |
 
 ### Toptips.method
 

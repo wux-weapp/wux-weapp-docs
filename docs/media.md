@@ -8,10 +8,10 @@
 
 ```json
 {
-    "navigationBarTitleText": "Media",
-    "usingComponents": {
-        "wux-media": "../../dist/media/index"
-    }
+  "navigationBarTitleText": "Media",
+  "usingComponents": {
+    "wux-media": "../../dist/media/index"
+  }
 }
 ```
 
@@ -19,22 +19,44 @@
 
 ```html
 <view class="page">
-    <view class="page__hd">
-        <view class="page__title">Media</view>
-        <view class="page__desc">媒体对象</view>
-    </view>
-    <view class="page__bd">
-        <view class="sub-title">Default</view>
-        <wux-media title="标题一" label="由各种物质组成的巨型球状天体，叫做星球。星球有一定的形状，有自己的运行轨道。"></wux-media>
-        <view class="sub-title">Thumb</view>
-        <wux-media thumb="http://cdn.skyvow.cn/logo.png" title="标题一" label="由各种物质组成的巨型球状天体，叫做星球。星球有一定的形状，有自己的运行轨道。"></wux-media>
-        <view class="sub-title">Custom thumb style</view>
-        <wux-media thumb="http://cdn.skyvow.cn/logo.png" thumb-style="border-radius: 50%" title="标题一" label="由各种物质组成的巨型球状天体，叫做星球。星球有一定的形状，有自己的运行轨道。"></wux-media>
-        <view class="sub-title">Nesting</view>
-        <wux-media align="flex-start" thumb="http://cdn.skyvow.cn/logo.png" title="标题一" label="由各种物质组成的巨型球状天体，叫做星球。星球有一定的形状，有自己的运行轨道。">
-            <wux-media align="flex-start" thumb="http://cdn.skyvow.cn/logo.png" title="标题一" label="由各种物质组成的巨型球状天体，叫做星球。星球有一定的形状，有自己的运行轨道。"></wux-media>
-        </wux-media>
-    </view>
+  <view class="page__hd">
+    <view class="page__title">Media</view>
+    <view class="page__desc">媒体对象</view>
+  </view>
+  <view class="page__bd">
+    <view class="sub-title">Default</view>
+    <wux-media
+      title="标题一"
+      label="由各种物质组成的巨型球状天体，叫做星球。星球有一定的形状，有自己的运行轨道。"
+    ></wux-media>
+    <view class="sub-title">Thumb</view>
+    <wux-media
+      thumb="http://cdn.skyvow.cn/logo.png"
+      title="标题一"
+      label="由各种物质组成的巨型球状天体，叫做星球。星球有一定的形状，有自己的运行轨道。"
+    ></wux-media>
+    <view class="sub-title">Custom thumb style</view>
+    <wux-media
+      thumb="http://cdn.skyvow.cn/logo.png"
+      thumb-style="border-radius: 50%"
+      title="标题一"
+      label="由各种物质组成的巨型球状天体，叫做星球。星球有一定的形状，有自己的运行轨道。"
+    ></wux-media>
+    <view class="sub-title">Nesting</view>
+    <wux-media
+      align="flex-start"
+      thumb="http://cdn.skyvow.cn/logo.png"
+      title="标题一"
+      label="由各种物质组成的巨型球状天体，叫做星球。星球有一定的形状，有自己的运行轨道。"
+    >
+      <wux-media
+        align="flex-start"
+        thumb="http://cdn.skyvow.cn/logo.png"
+        title="标题一"
+        label="由各种物质组成的巨型球状天体，叫做星球。星球有一定的形状，有自己的运行轨道。"
+      ></wux-media>
+    </wux-media>
+  </view>
 </view>
 ```
 
@@ -46,23 +68,23 @@
 
 ### Media props
 
-| 参数 | 类型 | 描述 | 默认值 |
-| --- | --- | --- | --- |
-| prefixCls | `string` | 自定义类名前缀 | wux-media |
-| title | `string` | 标题 | - |
-| thumb | `string` | 标题图片 | - |
-| thumbStyle | `string,object` | 标题图片样式 | - |
-| label | `string` | 标题辅助内容 | - |
-| align | `string` | 对齐方式，可选值为 start、center、end、baseline、stretch | center |
+| 参数       | 类型            | 描述                                                     | 默认值    |
+| ---------- | --------------- | -------------------------------------------------------- | --------- |
+| prefixCls  | `string`        | 自定义类名前缀                                           | wux-media |
+| title      | `string`        | 标题                                                     | -         |
+| thumb      | `string`        | 标题图片                                                 | -         |
+| thumbStyle | `string,object` | 标题图片样式                                             | -         |
+| label      | `string`        | 标题辅助内容                                             | -         |
+| align      | `string`        | 对齐方式，可选值为 start、center、end、baseline、stretch | center    |
 
 ### Media slot
 
-| 名称 | 描述 |
-| --- | --- |
-| - | 自定义内容 |
+| 名称 | 描述       |
+| ---- | ---------- |
+| -    | 自定义内容 |
 
 ### Media externalClasses
 
-| 名称 | 描述 |
-| --- | --- |
+| 名称      | 描述         |
+| --------- | ------------ |
 | wux-class | 根节点样式类 |

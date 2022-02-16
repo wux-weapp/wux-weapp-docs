@@ -8,11 +8,11 @@
 
 ```json
 {
-    "navigationBarTitleText": "Steps",
-    "usingComponents": {
-        "wux-steps": "../../dist/steps/index",
-        "wux-step": "../../dist/step/index"
-    }
+  "navigationBarTitleText": "Steps",
+  "usingComponents": {
+    "wux-steps": "../../dist/steps/index",
+    "wux-step": "../../dist/step/index"
+  }
 }
 ```
 
@@ -20,48 +20,72 @@
 
 ```html
 <view class="page">
-    <view class="page__hd">
-        <view class="page__title">Steps</view>
-        <view class="page__desc">步骤条</view>
+  <view class="page__hd">
+    <view class="page__title">Steps</view>
+    <view class="page__desc">步骤条</view>
+  </view>
+  <view class="page__bd">
+    <view class="sub-title">Default</view>
+    <wux-steps>
+      <wux-step
+        status="finish"
+        title="Finished"
+        content="This is description"
+      ></wux-step>
+      <wux-step
+        status="process"
+        title="In Progress"
+        content="This is description"
+      ></wux-step>
+      <wux-step
+        status="wait"
+        title="Waiting"
+        content="This is description"
+      ></wux-step>
+    </wux-steps>
+    <view class="sub-title">Direction = vertical</view>
+    <wux-steps direction="vertical">
+      <wux-step
+        status="finish"
+        title="Finished"
+        content="This is description"
+      ></wux-step>
+      <wux-step
+        status="process"
+        title="In Progress"
+        content="This is description"
+      ></wux-step>
+      <wux-step
+        status="error"
+        title="Error"
+        content="This is description"
+      ></wux-step>
+    </wux-steps>
+    <view class="sub-title">Current</view>
+    <wux-steps current="{{ current }}">
+      <wux-step title="First"></wux-step>
+      <wux-step title="Second"></wux-step>
+      <wux-step title="Third"></wux-step>
+    </wux-steps>
+    <view class="button-sp-area">
+      <button type="default" bindtap="onClick">Next step</button>
     </view>
-    <view class="page__bd">
-        <view class="sub-title">Default</view>
-        <wux-steps>
-            <wux-step status="finish" title="Finished" content="This is description"></wux-step>
-            <wux-step status="process" title="In Progress" content="This is description"></wux-step>
-            <wux-step status="wait" title="Waiting" content="This is description"></wux-step>
-        </wux-steps>
-        <view class="sub-title">Direction = vertical</view>
-        <wux-steps direction="vertical">
-            <wux-step status="finish" title="Finished" content="This is description"></wux-step>
-            <wux-step status="process" title="In Progress" content="This is description"></wux-step>
-            <wux-step status="error" title="Error" content="This is description"></wux-step>
-        </wux-steps>
-        <view class="sub-title">Current</view>
-        <wux-steps current="{{ current }}">
-            <wux-step title="First"></wux-step>
-            <wux-step title="Second"></wux-step>
-            <wux-step title="Third"></wux-step>
-        </wux-steps>
-        <view class="button-sp-area">
-            <button type="default" bindtap="onClick">Next step</button>
-        </view>
-    </view>
+  </view>
 </view>
 ```
 
 ```js
 Page({
-    data: {
-        current: 1,
-    },
-    onClick() {
-        const current = this.data.current + 1 > 2 ? 0 : this.data.current + 1
+  data: {
+    current: 1,
+  },
+  onClick() {
+    const current = this.data.current + 1 > 2 ? 0 : this.data.current + 1
 
-        this.setData({
-            current,
-        })
-    },
+    this.setData({
+      current,
+    })
+  },
 })
 ```
 
@@ -73,37 +97,37 @@ Page({
 
 ### Steps props
 
-| 参数 | 类型 | 描述 | 默认值 |
-| --- | --- | --- | --- |
-| prefixCls | `string` | 自定义类名前缀 | wux-steps |
-| current | `number` | 指定当前步骤，从 0 开始记数。在子 `Step` 元素中，可以通过 status 属性覆盖状态 | 0 |
-| direction | `string` | step 样式，可选值为 vertical、horizontal | horizontal |
+| 参数      | 类型     | 描述                                                                          | 默认值     |
+| --------- | -------- | ----------------------------------------------------------------------------- | ---------- |
+| prefixCls | `string` | 自定义类名前缀                                                                | wux-steps  |
+| current   | `number` | 指定当前步骤，从 0 开始记数。在子 `Step` 元素中，可以通过 status 属性覆盖状态 | 0          |
+| direction | `string` | step 样式，可选值为 vertical、horizontal                                      | horizontal |
 
 ### Steps externalClasses
 
-| 名称 | 描述 |
-| --- | --- |
+| 名称      | 描述         |
+| --------- | ------------ |
 | wux-class | 根节点样式类 |
 
 ### Step props
 
-| 参数 | 类型 | 描述 | 默认值 |
-| --- | --- | --- | --- |
-| prefixCls | `string` | 自定义类名前缀 | wux-step |
-| status | `string` | 指定状态，可选值为 wait、process、finish、error。当不配置该属性时，会使用 `Steps` 的 current 来自动指定状态 | - |
-| title | `string` | 标题 | - |
-| content | `string` | 步骤的详情描述 | - |
-| icon | `string` | 步骤图标 | - |
+| 参数      | 类型     | 描述                                                                                                        | 默认值   |
+| --------- | -------- | ----------------------------------------------------------------------------------------------------------- | -------- |
+| prefixCls | `string` | 自定义类名前缀                                                                                              | wux-step |
+| status    | `string` | 指定状态，可选值为 wait、process、finish、error。当不配置该属性时，会使用 `Steps` 的 current 来自动指定状态 | -        |
+| title     | `string` | 标题                                                                                                        | -        |
+| content   | `string` | 步骤的详情描述                                                                                              | -        |
+| icon      | `string` | 步骤图标                                                                                                    | -        |
 
 ### Step slot
 
-| 名称 | 描述 |
-| --- | --- |
-| title | 自定义标题 |
+| 名称    | 描述       |
+| ------- | ---------- |
+| title   | 自定义标题 |
 | content | 自定义描述 |
 
 ### Step externalClasses
 
-| 名称 | 描述 |
-| --- | --- |
+| 名称      | 描述         |
+| --------- | ------------ |
 | wux-class | 根节点样式类 |

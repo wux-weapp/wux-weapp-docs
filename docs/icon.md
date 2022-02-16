@@ -8,10 +8,10 @@ Wux Weapp 的图标使用开源项目 [ionicons](https://ionicons.com/) 4.3.0 �
 
 ```json
 {
-    "navigationBarTitleText": "Icon",
-    "usingComponents": {
-        "wux-icon": "../../dist/icon/index"
-    }
+  "navigationBarTitleText": "Icon",
+  "usingComponents": {
+    "wux-icon": "../../dist/icon/index"
+  }
 }
 ```
 
@@ -19,18 +19,18 @@ Wux Weapp 的图标使用开源项目 [ionicons](https://ionicons.com/) 4.3.0 �
 
 ```html
 <view class="page">
-    <view class="page__hd">
-        <view class="page__title">Icon</view>
-        <view class="page__desc">图标</view>
-    </view>
-    <view class="page__bd">
-        <wux-icon type="ios-add" />
-        <wux-icon type="md-add" />
-        <wux-icon size="32" />
-        <wux-icon size="64" />
-        <wux-icon color="#33cd5f" />
-        <wux-icon color="#387ef5" />
-    </view>
+  <view class="page__hd">
+    <view class="page__title">Icon</view>
+    <view class="page__desc">图标</view>
+  </view>
+  <view class="page__bd">
+    <wux-icon type="ios-add" />
+    <wux-icon type="md-add" />
+    <wux-icon size="32" />
+    <wux-icon size="64" />
+    <wux-icon color="#33cd5f" />
+    <wux-icon color="#387ef5" />
+  </view>
 </view>
 ```
 
@@ -42,15 +42,15 @@ Wux Weapp 的图标使用开源项目 [ionicons](https://ionicons.com/) 4.3.0 �
 
 ### Icon props
 
-| 参数 | 类型 | 描述 | 默认值 |
-| --- | --- | --- | --- |
-| type | `string` | 图标名称，可选值参考 [ionicons](https://ionicons.com/) 4.3.0 版本 | - |
-| size | `number` | 图标大小 | 32 |
-| color | `string` | 图标颜色 | - |
-| hidden | `boolean` | 是否隐藏组件 | false |
+| 参数   | 类型      | 描述                                                              | 默认值 |
+| ------ | --------- | ----------------------------------------------------------------- | ------ |
+| type   | `string`  | 图标名称，可选值参考 [ionicons](https://ionicons.com/) 4.3.0 版本 | -      |
+| size   | `number`  | 图标大小                                                          | 32     |
+| color  | `string`  | 图标颜色                                                          | -      |
+| hidden | `boolean` | 是否隐藏组件                                                      | false  |
 
 ### Icon externalClasses
 
-| 名称 | 描述 |
-| --- | --- |
+| 名称      | 描述         |
+| --------- | ------------ |
 | wux-class | 根节点样式类 |

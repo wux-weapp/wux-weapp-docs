@@ -8,10 +8,10 @@
 
 ```json
 {
-    "navigationBarTitleText": "Avatar",
-    "usingComponents": {
-        "wux-avatar": "../../dist/avatar/index"
-    }
+  "navigationBarTitleText": "Avatar",
+  "usingComponents": {
+    "wux-avatar": "../../dist/avatar/index"
+  }
 }
 ```
 
@@ -19,42 +19,44 @@
 
 ```html
 <view class="page">
-    <view class="page__hd">
-        <view class="page__title">Avatar</view>
-        <view class="page__desc">头像</view>
+  <view class="page__hd">
+    <view class="page__title">Avatar</view>
+    <view class="page__desc">头像</view>
+  </view>
+  <view class="page__bd page__bd_spacing">
+    <view class="sub-title">Default</view>
+    <view>
+      <wux-avatar size="small">U</wux-avatar>
+      <wux-avatar>U</wux-avatar>
+      <wux-avatar size="large">U</wux-avatar>
     </view>
-    <view class="page__bd page__bd_spacing">
-        <view class="sub-title">Default</view>
-        <view>
-            <wux-avatar size="small">U</wux-avatar>
-            <wux-avatar>U</wux-avatar>
-            <wux-avatar size="large">U</wux-avatar>
-        </view>
-        <view class="sub-title">Shape = square</view>
-        <view>
-            <wux-avatar shape="square" size="small">U</wux-avatar>
-            <wux-avatar shape="square">U</wux-avatar>
-            <wux-avatar shape="square" size="large">U</wux-avatar>
-        </view>
-        <view class="sub-title">Custom Style</view>
-        <view>
-            <wux-avatar wux-class="wux-avatar--custom" size="small">U</wux-avatar>
-            <wux-avatar body-style="background-color: #11c1f3">U</wux-avatar>
-            <wux-avatar body-style="background-color: #33cd5f" size="large">U</wux-avatar>
-        </view>
-        <view class="sub-title">Scale</view>
-        <view>
-            <wux-avatar scale size="small">Wux</wux-avatar>
-            <wux-avatar scale>Weapp</wux-avatar>
-            <wux-avatar scale size="large">Skyvow</wux-avatar>
-        </view>
-        <view class="sub-title">Src</view>
-        <view>
-            <wux-avatar size="small" src="http://cdn.skyvow.cn/logo.png" />
-            <wux-avatar src="http://cdn.skyvow.cn/logo.png" />
-            <wux-avatar size="large" src="http://cdn.skyvow.cn/logo.png" />
-        </view>
+    <view class="sub-title">Shape = square</view>
+    <view>
+      <wux-avatar shape="square" size="small">U</wux-avatar>
+      <wux-avatar shape="square">U</wux-avatar>
+      <wux-avatar shape="square" size="large">U</wux-avatar>
     </view>
+    <view class="sub-title">Custom Style</view>
+    <view>
+      <wux-avatar wux-class="wux-avatar--custom" size="small">U</wux-avatar>
+      <wux-avatar body-style="background-color: #11c1f3">U</wux-avatar>
+      <wux-avatar body-style="background-color: #33cd5f" size="large"
+        >U</wux-avatar
+      >
+    </view>
+    <view class="sub-title">Scale</view>
+    <view>
+      <wux-avatar scale size="small">Wux</wux-avatar>
+      <wux-avatar scale>Weapp</wux-avatar>
+      <wux-avatar scale size="large">Skyvow</wux-avatar>
+    </view>
+    <view class="sub-title">Src</view>
+    <view>
+      <wux-avatar size="small" src="http://cdn.skyvow.cn/logo.png" />
+      <wux-avatar src="http://cdn.skyvow.cn/logo.png" />
+      <wux-avatar size="large" src="http://cdn.skyvow.cn/logo.png" />
+    </view>
+  </view>
 </view>
 ```
 
@@ -66,23 +68,23 @@
 
 ### Avatar props
 
-| 参数 | 类型 | 描述 | 默认值 |
-| --- | --- | --- | --- |
-| prefixCls | `string` | 自定义类名前缀 | wux-avatar |
-| shape | `string` | 指定头像的形状，可选值为 circle、square | circle |
-| size | `string` | 设置头像的大小，可选值为 small、default、large | default |
-| src | `string` | 图片类头像的资源地址 | - |
-| bodyStyle | `string,object` | 自定义样式 | - |
-| scale | `boolean` | 是否自动调整大小 | false |
+| 参数      | 类型            | 描述                                           | 默认值     |
+| --------- | --------------- | ---------------------------------------------- | ---------- |
+| prefixCls | `string`        | 自定义类名前缀                                 | wux-avatar |
+| shape     | `string`        | 指定头像的形状，可选值为 circle、square        | circle     |
+| size      | `string`        | 设置头像的大小，可选值为 small、default、large | default    |
+| src       | `string`        | 图片类头像的资源地址                           | -          |
+| bodyStyle | `string,object` | 自定义样式                                     | -          |
+| scale     | `boolean`       | 是否自动调整大小                               | false      |
 
 ### Avatar slot
 
-| 名称 | 描述 |
-| --- | --- |
-| - | 自定义内容 |
+| 名称 | 描述       |
+| ---- | ---------- |
+| -    | 自定义内容 |
 
 ### Avatar externalClasses
 
-| 名称 | 描述 |
-| --- | --- |
+| 名称      | 描述         |
+| --------- | ------------ |
 | wux-class | 根节点样式类 |

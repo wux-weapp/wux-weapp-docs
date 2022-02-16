@@ -8,10 +8,10 @@
 
 ```json
 {
-    "navigationBarTitleText": "Divider",
-    "usingComponents": {
-        "wux-divider": "../../dist/divider/index"
-    }
+  "navigationBarTitleText": "Divider",
+  "usingComponents": {
+    "wux-divider": "../../dist/divider/index"
+  }
 }
 ```
 
@@ -19,26 +19,26 @@
 
 ```html
 <view class="page">
-    <view class="page__hd">
-        <view class="page__title">Divider</view>
-        <view class="page__desc">分割线</view>
-    </view>
-    <view class="page__bd">
-        <wux-divider show-text="{{ false }}" />
-        <wux-divider show-text="{{ false }}" dashed />
-        <wux-divider position="left" text="Wux Weapp" />
-        <wux-divider text="Wux Weapp" />
-        <wux-divider position="right" text="Wux Weapp" />
-        <wux-divider dashed position="left" text="Wux Weapp" />
-        <wux-divider dashed text="Wux Weapp" />
-        <wux-divider dashed position="right" text="Wux Weapp" />
-        <wux-divider>
-            <view class="loadmore">
-                <view class="loading"></view>
-                <text class="text">正在加载</text>
-            </view>
-        </wux-divider>
-    </view>
+  <view class="page__hd">
+    <view class="page__title">Divider</view>
+    <view class="page__desc">分割线</view>
+  </view>
+  <view class="page__bd">
+    <wux-divider show-text="{{ false }}" />
+    <wux-divider show-text="{{ false }}" dashed />
+    <wux-divider position="left" text="Wux Weapp" />
+    <wux-divider text="Wux Weapp" />
+    <wux-divider position="right" text="Wux Weapp" />
+    <wux-divider dashed position="left" text="Wux Weapp" />
+    <wux-divider dashed text="Wux Weapp" />
+    <wux-divider dashed position="right" text="Wux Weapp" />
+    <wux-divider>
+      <view class="loadmore">
+        <view class="loading"></view>
+        <text class="text">正在加载</text>
+      </view>
+    </wux-divider>
+  </view>
 </view>
 ```
 
@@ -50,22 +50,22 @@
 
 ### Divider props
 
-| 参数 | 类型 | 描述 | 默认值 |
-| --- | --- | --- | --- |
-| prefixCls | `string` | 自定义类名前缀 | wux-divider |
-| position | `string` | 分割线文字的位置，可选值为 left、center、right | center |
-| dashed | `boolean` | 是否显示虚线 | false |
-| text | `string` | 文字 | - |
-| showText | `boolean` | 是否显示文字 | true |
+| 参数      | 类型      | 描述                                           | 默认值      |
+| --------- | --------- | ---------------------------------------------- | ----------- |
+| prefixCls | `string`  | 自定义类名前缀                                 | wux-divider |
+| position  | `string`  | 分割线文字的位置，可选值为 left、center、right | center      |
+| dashed    | `boolean` | 是否显示虚线                                   | false       |
+| text      | `string`  | 文字                                           | -           |
+| showText  | `boolean` | 是否显示文字                                   | true        |
 
 ### Divider slot
 
-| 名称 | 描述 |
-| --- | --- |
-| - | 自定义内容 |
+| 名称 | 描述       |
+| ---- | ---------- |
+| -    | 自定义内容 |
 
 ### Divider externalClasses
 
-| 名称 | 描述 |
-| --- | --- |
+| 名称      | 描述         |
+| --------- | ------------ |
 | wux-class | 根节点样式类 |

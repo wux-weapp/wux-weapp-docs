@@ -8,11 +8,11 @@
 
 ```json
 {
-    "navigationBarTitleText": "WingBlank",
-    "usingComponents": {
-        "wux-wing-blank": "../../dist/wing-blank/index",
-        "wux-white-space": "../../dist/white-space/index"
-    }
+  "navigationBarTitleText": "WingBlank",
+  "usingComponents": {
+    "wux-wing-blank": "../../dist/wing-blank/index",
+    "wux-white-space": "../../dist/white-space/index"
+  }
 }
 ```
 
@@ -20,27 +20,27 @@
 
 ```html
 <view class="page">
-    <view class="page__hd">
-        <view class="page__title">WingBlank</view>
-        <view class="page__desc">两翼留白</view>
-    </view>
-    <view class="page__bd">
-        <wux-wing-blank size="small">
-            <view class="placeholder">Wux</view>
-        </wux-wing-blank>
-        <wux-white-space />
-        <wux-wing-blank size="default">
-            <view class="placeholder">Wux</view>
-        </wux-wing-blank>
-        <wux-white-space />
-        <wux-wing-blank size="large">
-            <view class="placeholder">Wux</view>
-        </wux-wing-blank>
-        <wux-white-space />
-        <wux-wing-blank body-style="margin-left: 20px; margin-right: 20px">
-            <view class="placeholder">Wux</view>
-        </wux-wing-blank>
-    </view>
+  <view class="page__hd">
+    <view class="page__title">WingBlank</view>
+    <view class="page__desc">两翼留白</view>
+  </view>
+  <view class="page__bd">
+    <wux-wing-blank size="small">
+      <view class="placeholder">Wux</view>
+    </wux-wing-blank>
+    <wux-white-space />
+    <wux-wing-blank size="default">
+      <view class="placeholder">Wux</view>
+    </wux-wing-blank>
+    <wux-white-space />
+    <wux-wing-blank size="large">
+      <view class="placeholder">Wux</view>
+    </wux-wing-blank>
+    <wux-white-space />
+    <wux-wing-blank body-style="margin-left: 20px; margin-right: 20px">
+      <view class="placeholder">Wux</view>
+    </wux-wing-blank>
+  </view>
 </view>
 ```
 
@@ -52,20 +52,20 @@
 
 ### WingBlank props
 
-| 参数 | 类型 | 描述 | 默认值 |
-| --- | --- | --- | --- |
-| prefixCls | `string` | 自定义类名前缀 | wux-wingblank |
-| size | `string` | 两翼留白的间距，可选值为 small、default、large | default |
-| bodyStyle | `string,object` | 自定义样式 | - |
+| 参数      | 类型            | 描述                                           | 默认值        |
+| --------- | --------------- | ---------------------------------------------- | ------------- |
+| prefixCls | `string`        | 自定义类名前缀                                 | wux-wingblank |
+| size      | `string`        | 两翼留白的间距，可选值为 small、default、large | default       |
+| bodyStyle | `string,object` | 自定义样式                                     | -             |
 
 ### WingBlank slot
 
-| 名称 | 描述 |
-| --- | --- |
-| - | 自定义内容 |
+| 名称 | 描述       |
+| ---- | ---------- |
+| -    | 自定义内容 |
 
 ### WingBlank externalClasses
 
-| 名称 | 描述 |
-| --- | --- |
+| 名称      | 描述         |
+| --------- | ------------ |
 | wux-class | 根节点样式类 |

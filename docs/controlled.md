@@ -12,7 +12,7 @@ Wux Weapp 一些组件中存在 `defaultXxxx`、`xxxx`、`controlled` 其中一�
 一般用于`无任何动态初始值`信息的情况； 例如某些 `form` 表单创建信息时，`input` 表单元素都没有初始值，需要用户输入的情况。
 
 ```html
-<wux-input label="name" defaultValue="Wux Weapp">
+<wux-input label="name" defaultValue="Wux Weapp"></wux-input>
 ```
 
 ### 什么时候使用受控组件
@@ -20,7 +20,7 @@ Wux Weapp 一些组件中存在 `defaultXxxx`、`xxxx`、`controlled` 其中一�
 一般用在需要`动态设置其初始值`的情况；例如某些 `form` 表单信息编辑时，`input` 表单元素需要初始显示服务器返回的某个值然后进行编辑的情况。
 
 ```html
-<wux-input label="name" value="{{ name }}" controlled>
+<wux-input label="name" value="{{ name }}" controlled></wux-input>
 ```
 
 ### 优势与劣势

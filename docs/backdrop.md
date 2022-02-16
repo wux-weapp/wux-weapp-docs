@@ -8,11 +8,11 @@
 
 ```json
 {
-    "navigationBarTitleText": "Backdrop",
-    "usingComponents": {
-        "wux-button": "../../dist/button/index",
-        "wux-backdrop": "../../dist/backdrop/index"
-    }
+  "navigationBarTitleText": "Backdrop",
+  "usingComponents": {
+    "wux-button": "../../dist/button/index",
+    "wux-backdrop": "../../dist/backdrop/index"
+  }
 }
 ```
 
@@ -24,17 +24,21 @@
 <wux-backdrop id="wux-backdrop" />
 
 <view class="page">
-    <view class="page__hd">
-        <view class="page__title">Backdrop</view>
-        <view class="page__desc">背景幕</view>
+  <view class="page__hd">
+    <view class="page__title">Backdrop</view>
+    <view class="page__desc">背景幕</view>
+  </view>
+  <view class="page__bd page__bd_spacing">
+    <view class="btn-group">
+      <wux-button block type="light" bind:click="retain"
+        >保持背景幕 retain</wux-button
+      >
+      <wux-button block type="light" bind:click="release"
+        >释放背景幕 release</wux-button
+      >
     </view>
-    <view class="page__bd page__bd_spacing">
-        <view class="btn-group">
-            <wux-button block type="light" bind:click="retain">保持背景幕 retain</wux-button>
-            <wux-button block type="light" bind:click="release">释放背景幕 release</wux-button>
-        </view>
-        <view class="text-center">背景幕锁：{{ locks }}</view>
-    </view>
+    <view class="text-center">背景幕锁：{{ locks }}</view>
+  </view>
 </view>
 ```
 
@@ -42,24 +46,24 @@
 import { $wuxBackdrop } from '../../dist/index'
 
 Page({
-    data: {
-        locks: 0,
-    },
-    onLoad() {
-        this.$wuxBackdrop = $wuxBackdrop()
-    },
-    retain() {
-        this.$wuxBackdrop.retain()
-        this.setData({
-            locks: this.$wuxBackdrop.backdropHolds
-        })
-    },
-    release() {
-        this.$wuxBackdrop.release()
-        this.setData({
-            locks: this.$wuxBackdrop.backdropHolds
-        })
-    }
+  data: {
+    locks: 0,
+  },
+  onLoad() {
+    this.$wuxBackdrop = $wuxBackdrop()
+  },
+  retain() {
+    this.$wuxBackdrop.retain()
+    this.setData({
+      locks: this.$wuxBackdrop.backdropHolds,
+    })
+  },
+  release() {
+    this.$wuxBackdrop.release()
+    this.setData({
+      locks: this.$wuxBackdrop.backdropHolds,
+    })
+  },
 })
 ```
 
@@ -69,12 +73,12 @@ Page({
 
 ## API
 
-| 参数 | 类型 | 描述 | 默认值 |
-| --- | --- | --- | --- |
-| prefixCls | `string` | 自定义类名前缀 | wux-backdrop |
-| classNames | `any` | 过渡的类名，更多内置过渡效果请参考 [AnimationGroup](animation-group.md) | wux-animate--fadeIn |
-| transparent | `boolean` | 是否显示透明蒙层 | false |
-| zIndex | `number` | 设置蒙层的 z-index | 1000 |
+| 参数        | 类型      | 描述                                                                    | 默认值              |
+| ----------- | --------- | ----------------------------------------------------------------------- | ------------------- |
+| prefixCls   | `string`  | 自定义类名前缀                                                          | wux-backdrop        |
+| classNames  | `any`     | 过渡的类名，更多内置过渡效果请参考 [AnimationGroup](animation-group.md) | wux-animate--fadeIn |
+| transparent | `boolean` | 是否显示透明蒙层                                                        | false               |
+| zIndex      | `number`  | 设置蒙层的 z-index                                                      | 1000                |
 
 ### Backdrop.method
 

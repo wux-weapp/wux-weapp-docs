@@ -8,11 +8,11 @@
 
 ```json
 {
-    "navigationBarTitleText": "Toast",
-    "usingComponents": {
-        "wux-button": "../../dist/button/index",
-        "wux-toast": "../../dist/toast/index"
-    }
+  "navigationBarTitleText": "Toast",
+  "usingComponents": {
+    "wux-button": "../../dist/button/index",
+    "wux-toast": "../../dist/toast/index"
+  }
 }
 ```
 
@@ -24,19 +24,29 @@
 <wux-toast id="wux-toast" />
 
 <view class="page">
-    <view class="page__hd">
-        <view class="page__title">Toast</view>
-        <view class="page__desc">提示框</view>
-    </view>
-    <view class="page__bd page__bd_spacing">
-        <wux-button block type="light" bind:click="showToast">Success</wux-button>
-        <wux-button block type="light" bind:click="showToastCancel">Cancel</wux-button>
-        <wux-button block type="light" bind:click="showToastErr">Forbidden</wux-button>
-        <wux-button block type="light" bind:click="showToastText">Text</wux-button>
-        <wux-button block type="light" bind:click="showToastIcon">Custom Icon</wux-button>
-        <wux-button block type="light" bind:click="showToastReturn">Use return value to close</wux-button>
-        <wux-button block type="light" bind:click="showToastPromie">Use promise to know when closed</wux-button>
-    </view>
+  <view class="page__hd">
+    <view class="page__title">Toast</view>
+    <view class="page__desc">提示框</view>
+  </view>
+  <view class="page__bd page__bd_spacing">
+    <wux-button block type="light" bind:click="showToast">Success</wux-button>
+    <wux-button block type="light" bind:click="showToastCancel"
+      >Cancel</wux-button
+    >
+    <wux-button block type="light" bind:click="showToastErr"
+      >Forbidden</wux-button
+    >
+    <wux-button block type="light" bind:click="showToastText">Text</wux-button>
+    <wux-button block type="light" bind:click="showToastIcon"
+      >Custom Icon</wux-button
+    >
+    <wux-button block type="light" bind:click="showToastReturn"
+      >Use return value to close</wux-button
+    >
+    <wux-button block type="light" bind:click="showToastPromie"
+      >Use promise to know when closed</wux-button
+    >
+  </view>
 </view>
 ```
 
@@ -44,105 +54,105 @@
 import { $wuxToast } from '../../dist/index'
 
 Page({
-    data: {},
-    onLoad() {},
-    showToast() {
-        $wuxToast().show({
-            type: 'success',
-            duration: 1500,
-            color: '#fff',
-            text: '已完成',
-            success: () => console.log('已完成')
-        })
+  data: {},
+  onLoad() {},
+  showToast() {
+    $wuxToast().show({
+      type: 'success',
+      duration: 1500,
+      color: '#fff',
+      text: '已完成',
+      success: () => console.log('已完成'),
+    })
 
-        // The same as above
-        // $wuxToast().success('已完成', {
-        //     duration: 1500,
-        //     color: '#fff',
-        //     success: () => console.log('已完成')
-        // })
-    },
-    showToastCancel() {
-        $wuxToast().show({
-            type: 'cancel',
-            duration: 1500,
-            color: '#fff',
-            text: '取消操作',
-            success: () => console.log('取消操作')
-        })
+    // The same as above
+    // $wuxToast().success('已完成', {
+    //     duration: 1500,
+    //     color: '#fff',
+    //     success: () => console.log('已完成')
+    // })
+  },
+  showToastCancel() {
+    $wuxToast().show({
+      type: 'cancel',
+      duration: 1500,
+      color: '#fff',
+      text: '取消操作',
+      success: () => console.log('取消操作'),
+    })
 
-        // The same as above
-        // $wuxToast().error('取消操作', {
-        //     duration: 1500,
-        //     color: '#fff',
-        //     success: () => console.log('取消操作')
-        // })
-    },
-    showToastErr() {
-        $wuxToast().show({
-            type: 'forbidden',
-            duration: 1500,
-            color: '#fff',
-            text: '禁止操作',
-            success: () => console.log('禁止操作')
-        })
+    // The same as above
+    // $wuxToast().error('取消操作', {
+    //     duration: 1500,
+    //     color: '#fff',
+    //     success: () => console.log('取消操作')
+    // })
+  },
+  showToastErr() {
+    $wuxToast().show({
+      type: 'forbidden',
+      duration: 1500,
+      color: '#fff',
+      text: '禁止操作',
+      success: () => console.log('禁止操作'),
+    })
 
-        // The same as above
-        // $wuxToast().warning('禁止操作', {
-        //     duration: 1500,
-        //     color: '#fff',
-        //     success: () => console.log('禁止操作')
-        // })
-    },
-    showToastText() {
-        $wuxToast().show({
-            type: 'text',
-            duration: 1500,
-            color: '#fff',
-            text: '文本提示',
-            success: () => console.log('文本提示')
-        })
+    // The same as above
+    // $wuxToast().warning('禁止操作', {
+    //     duration: 1500,
+    //     color: '#fff',
+    //     success: () => console.log('禁止操作')
+    // })
+  },
+  showToastText() {
+    $wuxToast().show({
+      type: 'text',
+      duration: 1500,
+      color: '#fff',
+      text: '文本提示',
+      success: () => console.log('文本提示'),
+    })
 
-        // The same as above
-        // $wuxToast().info('文本提示', {
-        //     duration: 1500,
-        //     color: '#fff',
-        //     success: () => console.log('文本提示')
-        // })
-    },
-    showToastIcon() {
-        $wuxToast().show({
-            type: 'default',
-            duration: 1500,
-            color: '#fff',
-            icon: 'ios-happy',
-            text: '自定义图标',
-            success: () => console.log('自定义图标')
-        })
-    },
-    showToastReturn() {
-        if (this.timeout) clearTimeout(this.timeout)
+    // The same as above
+    // $wuxToast().info('文本提示', {
+    //     duration: 1500,
+    //     color: '#fff',
+    //     success: () => console.log('文本提示')
+    // })
+  },
+  showToastIcon() {
+    $wuxToast().show({
+      type: 'default',
+      duration: 1500,
+      color: '#fff',
+      icon: 'ios-happy',
+      text: '自定义图标',
+      success: () => console.log('自定义图标'),
+    })
+  },
+  showToastReturn() {
+    if (this.timeout) clearTimeout(this.timeout)
 
-        const hide = $wuxToast().show({
-            type: 'success',
-            duration: 1500,
-            color: '#fff',
-            text: '已完成',
-        })
+    const hide = $wuxToast().show({
+      type: 'success',
+      duration: 1500,
+      color: '#fff',
+      text: '已完成',
+    })
 
-        this.timeout = setTimeout(hide, 1000)
-    },
-    showToastPromie() {
-        const hide = $wuxToast().show({
-            type: 'success',
-            duration: 1500,
-            color: '#fff',
-            text: '已完成',
-        })
+    this.timeout = setTimeout(hide, 1000)
+  },
+  showToastPromie() {
+    const hide = $wuxToast().show({
+      type: 'success',
+      duration: 1500,
+      color: '#fff',
+      text: '已完成',
+    })
 
-        // hide.promise.then(() => console.log('success'))
-        hide.then(() => console.log('success'))
-    },
+    // hide.promise.then(() => console.log('success'))
+    hide.then(() => console.log('success'))
+  },
 })
 ```
 
@@ -152,18 +162,18 @@ Page({
 
 ## API
 
-| 参数 | 类型 | 描述 | 默认值 |
-| --- | --- | --- | --- |
-| options | `object` | 配置项 | - |
-| options.prefixCls | `string` | 自定义类名前缀 | wux-toast |
-| options.classNames | `any` | 过渡的类名，更多内置过渡效果请参考 [AnimationGroup](animation-group.md) | wux-animate--fadeIn |
-| options.type | `string` | 提示类型，可选值为 default、success、cancel、forbidden、text | default |
-| options.duration | `number` | 提示延迟时间 | 1500 |
-| options.color | `string` | 图标颜色 | #fff |
-| options.text | `string` | 提示文本 | - |
-| options.icon | `string` | 图标名称 | - |
-| options.mask | `boolean` | 是否显示蒙层 | true |
-| options.success | `function` | 关闭后的回调函数 | - |
+| 参数               | 类型       | 描述                                                                    | 默认值              |
+| ------------------ | ---------- | ----------------------------------------------------------------------- | ------------------- |
+| options            | `object`   | 配置项                                                                  | -                   |
+| options.prefixCls  | `string`   | 自定义类名前缀                                                          | wux-toast           |
+| options.classNames | `any`      | 过渡的类名，更多内置过渡效果请参考 [AnimationGroup](animation-group.md) | wux-animate--fadeIn |
+| options.type       | `string`   | 提示类型，可选值为 default、success、cancel、forbidden、text            | default             |
+| options.duration   | `number`   | 提示延迟时间                                                            | 1500                |
+| options.color      | `string`   | 图标颜色                                                                | #fff                |
+| options.text       | `string`   | 提示文本                                                                | -                   |
+| options.icon       | `string`   | 图标名称                                                                | -                   |
+| options.mask       | `boolean`  | 是否显示蒙层                                                            | true                |
+| options.success    | `function` | 关闭后的回调函数                                                        | -                   |
 
 ### Toast.method
 

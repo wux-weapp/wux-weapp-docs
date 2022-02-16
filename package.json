@@ -6,12 +6,26 @@
   "directories": {
     "doc": "docs"
   },
-  "dependencies": {},
   "devDependencies": {
-    "docsify-cli": "^4.4.2"
+    "docsify-cli": "^4.4.2",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.3.4",
+    "prettier": "^2.5.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,css,json,md}": [
+      "prettier --write",
+      "git add"
+    ]
   },
   "scripts": {
-    "start": "./node_modules/.bin/docsify serve docs -p 80"
+    "start": "./node_modules/.bin/docsify serve docs -p 80",
+    "format": "prettier --write docs"
   },
   "repository": {
     "type": "git",

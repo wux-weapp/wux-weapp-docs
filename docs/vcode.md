@@ -8,10 +8,10 @@
 
 ```json
 {
-    "navigationBarTitleText": "Vcode",
-    "usingComponents": {
-        "wux-vcode": "../../dist/vcode/index"
-    }
+  "navigationBarTitleText": "Vcode",
+  "usingComponents": {
+    "wux-vcode": "../../dist/vcode/index"
+  }
 }
 ```
 
@@ -19,47 +19,54 @@
 
 ```html
 <view class="page">
-    <view class="page__hd">
-        <view class="page__title">Vcode</view>
-        <view class="page__desc">验证码</view>
-    </view>
-    <view class="page__bd">
-        <view class="weui-cells__title">默认 & 自定义</view>
-        <view class="weui-cells weui-cells_after-title">
-            <view class="weui-cell weui-cell_input weui-cell_vcode">
-                <view class="weui-cell__hd">
-                    <view class="weui-label">验证码</view>
-                </view>
-                <view class="weui-cell__bd">
-                    <input class="weui-input" placeholder="请输入验证码" />
-                </view>
-                <view class="weui-cell__ft" style="text-align: left">
-                    <wux-vcode bind:change="onChange" />
-                </view>
-            </view>
-            <view class="weui-cell weui-cell_input weui-cell_vcode">
-                <view class="weui-cell__hd">
-                    <view class="weui-label">验证码</view>
-                </view>
-                <view class="weui-cell__bd">
-                    <input class="weui-input" placeholder="请输入验证码" />
-                </view>
-                <view class="weui-cell__ft" style="text-align: left">
-                    <wux-vcode canvas-id="custom-canvas" bg-color="#e6f6ff" font-color="#165189" has-point="{{ false }}" has-line="{{ false }}" bind:change="onChange" />
-                </view>
-            </view>
+  <view class="page__hd">
+    <view class="page__title">Vcode</view>
+    <view class="page__desc">验证码</view>
+  </view>
+  <view class="page__bd">
+    <view class="weui-cells__title">默认 & 自定义</view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input weui-cell_vcode">
+        <view class="weui-cell__hd">
+          <view class="weui-label">验证码</view>
         </view>
+        <view class="weui-cell__bd">
+          <input class="weui-input" placeholder="请输入验证码" />
+        </view>
+        <view class="weui-cell__ft" style="text-align: left">
+          <wux-vcode bind:change="onChange" />
+        </view>
+      </view>
+      <view class="weui-cell weui-cell_input weui-cell_vcode">
+        <view class="weui-cell__hd">
+          <view class="weui-label">验证码</view>
+        </view>
+        <view class="weui-cell__bd">
+          <input class="weui-input" placeholder="请输入验证码" />
+        </view>
+        <view class="weui-cell__ft" style="text-align: left">
+          <wux-vcode
+            canvas-id="custom-canvas"
+            bg-color="#e6f6ff"
+            font-color="#165189"
+            has-point="{{ false }}"
+            has-line="{{ false }}"
+            bind:change="onChange"
+          />
+        </view>
+      </view>
     </view>
+  </view>
 </view>
 ```
 
 ```js
 Page({
-    data: {},
-    onLoad() {},
-    onChange(e) {
-        console.log(`验证码：${e.detail.value}`)
-    },
+  data: {},
+  onLoad() {},
+  onChange(e) {
+    console.log(`验证码：${e.detail.value}`)
+  },
 })
 ```
 
@@ -71,14 +78,14 @@ Page({
 
 ### Vcode props
 
-| 参数 | 类型 | 描述 | 默认值 |
-| --- | --- | --- | --- |
-| str | `string` | 验证码范围 | ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789 |
-| num | `number` | 验证码长度 | 6 |
-| width | `number` | 画布宽度 | 120 |
-| height | `number` | 画布高度 | 40 |
-| bgColor | `string` | 画布背景色 | - |
-| fontColor | `string` | 画布字体颜色 | - |
-| hasPoint | `boolean` | 是否显示干扰点 | true |
-| hasLine | `boolean` | 是否显示干扰线 | true |
-| bind:change | `function` | 点击事件的回调函数 | - |
+| 参数        | 类型       | 描述               | 默认值                                                         |
+| ----------- | ---------- | ------------------ | -------------------------------------------------------------- |
+| str         | `string`   | 验证码范围         | ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789 |
+| num         | `number`   | 验证码长度         | 6                                                              |
+| width       | `number`   | 画布宽度           | 120                                                            |
+| height      | `number`   | 画布高度           | 40                                                             |
+| bgColor     | `string`   | 画布背景色         | -                                                              |
+| fontColor   | `string`   | 画布字体颜色       | -                                                              |
+| hasPoint    | `boolean`  | 是否显示干扰点     | true                                                           |
+| hasLine     | `boolean`  | 是否显示干扰线     | true                                                           |
+| bind:change | `function` | 点击事件的回调函数 | -                                                              |

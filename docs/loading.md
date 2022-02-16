@@ -8,11 +8,11 @@
 
 ```json
 {
-    "navigationBarTitleText": "Loading",
-    "usingComponents": {
-        "wux-button": "../../dist/button/index",
-        "wux-loading": "../../dist/loading/index"
-    }
+  "navigationBarTitleText": "Loading",
+  "usingComponents": {
+    "wux-button": "../../dist/button/index",
+    "wux-loading": "../../dist/loading/index"
+  }
 }
 ```
 
@@ -24,13 +24,15 @@
 <wux-loading id="wux-loading" />
 
 <view class="page">
-    <view class="page__hd">
-        <view class="page__title">Loading</view>
-        <view class="page__desc">指示器</view>
-    </view>
-    <view class="page__bd page__bd_spacing">
-        <wux-button block type="light" bind:click="showLoading">加载中提示</wux-button>
-    </view>
+  <view class="page__hd">
+    <view class="page__title">Loading</view>
+    <view class="page__desc">指示器</view>
+  </view>
+  <view class="page__bd page__bd_spacing">
+    <wux-button block type="light" bind:click="showLoading"
+      >加载中提示</wux-button
+    >
+  </view>
 </view>
 ```
 
@@ -38,18 +40,18 @@
 import { $wuxLoading } from '../../dist/index'
 
 Page({
-    data: {},
-    onLoad() {},
-    showLoading() {
-        this.$wuxLoading = $wuxLoading()
-        this.$wuxLoading.show({
-            text: '数据加载中',
-        })
+  data: {},
+  onLoad() {},
+  showLoading() {
+    this.$wuxLoading = $wuxLoading()
+    this.$wuxLoading.show({
+      text: '数据加载中',
+    })
 
-        setTimeout(() => {
-            this.$wuxLoading.hide()
-        }, 1500)
-    },
+    setTimeout(() => {
+      this.$wuxLoading.hide()
+    }, 1500)
+  },
 })
 ```
 
@@ -59,13 +61,13 @@ Page({
 
 ## API
 
-| 参数 | 类型 | 描述 | 默认值 |
-| --- | --- | --- | --- |
-| options | `object` | 配置项 | - |
-| options.prefixCls | `string` | 自定义类名前缀 | wux-loading |
-| options.classNames | `any` | 过渡的类名，更多内置过渡效果请参考 [AnimationGroup](animation-group.md) | wux-animate--fadeIn |
-| options.text | `string` | 提示文本 | 数据加载中 |
-| options.mask | `boolean` | 是否显示蒙层 | true |
+| 参数               | 类型      | 描述                                                                    | 默认值              |
+| ------------------ | --------- | ----------------------------------------------------------------------- | ------------------- |
+| options            | `object`  | 配置项                                                                  | -                   |
+| options.prefixCls  | `string`  | 自定义类名前缀                                                          | wux-loading         |
+| options.classNames | `any`     | 过渡的类名，更多内置过渡效果请参考 [AnimationGroup](animation-group.md) | wux-animate--fadeIn |
+| options.text       | `string`  | 提示文本                                                                | 数据加载中          |
+| options.mask       | `boolean` | 是否显示蒙层                                                            | true                |
 
 ### Loading.method
 

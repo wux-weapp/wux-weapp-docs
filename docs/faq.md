@@ -44,7 +44,7 @@
 
 ### 如何关闭 iOS 自带振动反馈?
 
-参考：[怎么关闭pick view 的手机震动 vibrate](https://github.com/wux-weapp/wux-weapp/issues/313)
+参考：[怎么关闭 pick view 的手机震动 vibrate](https://github.com/wux-weapp/wux-weapp/issues/313)
 
 ### 如何解决自定义弹窗后禁止屏幕滚动（滚动穿透）的问题？
 

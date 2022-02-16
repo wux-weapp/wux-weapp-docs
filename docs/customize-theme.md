@@ -32,10 +32,10 @@
 @font-size-base: 14px; // 主字号
 @heading-color: rgba(0, 0, 0, 0.85); // 标题色
 @text-color: rgba(0, 0, 0, 0.65); // 主文本色
-@text-color-secondary : rgba(0, 0, 0, .45); // 次文本色
+@text-color-secondary: rgba(0, 0, 0, 0.45); // 次文本色
 @border-radius-base: 4px; // 组件/浮层圆角
 @border-color-base: #d9d9d9; // 边框色
-@opacity-disabled: .3; // 禁用态透明度
+@opacity-disabled: 0.3; // 禁用态透明度
 @active-state-bg: #ececec; // 点击态背景色
 ```
 
@@ -74,7 +74,7 @@
 git clone https://github.com/wux-weapp/wux-weapp.git
 
 # 进入项目根目录
-cd wux-weapp 
+cd wux-weapp
 
 # 新建一个配置文件，若已创建可忽略此步骤
 touch config.custom.json
@@ -90,24 +90,22 @@ config.custom.json 格式如下：
 
 ```json
 {
-    "components": [
-        "accordion"
-    ],
-    "themes": {
-		"light": "white"
-	}
+  "components": ["accordion"],
+  "themes": {
+    "light": "white"
+  }
 }
 ```
 
 ### 相关命令
 
-|`npm run <script>`|描述|
-|------------------|-----------|
-|`build`|编译程序到 `packages` 目录下（`build:core`、 `build:es`、`build:lib` 合集）。|
-|`build:core`|编译程序到 `packages/core` 目录下（未编译 `Less` 版，仅用于编译 `es` 与 `lib`）。|
-|`build:es`|编译程序到 `packages/es` 目录下（未压缩 `ES6` 版）。|
-|`build:lib`|编译程序到 `packages/lib` 目录下（压缩 `ES5` 版）。|
-|`start`|编译程序到 `example/dist` 目录下（仅用于 `demo` 使用）。|
+| `npm run <script>` | 描述                                                                              |
+| ------------------ | --------------------------------------------------------------------------------- |
+| `build`            | 编译程序到 `packages` 目录下（`build:core`、 `build:es`、`build:lib` 合集）。     |
+| `build:core`       | 编译程序到 `packages/core` 目录下（未编译 `Less` 版，仅用于编译 `es` 与 `lib`）。 |
+| `build:es`         | 编译程序到 `packages/es` 目录下（未压缩 `ES6` 版）。                              |
+| `build:lib`        | 编译程序到 `packages/lib` 目录下（压缩 `ES5` 版）。                               |
+| `start`            | 编译程序到 `example/dist` 目录下（仅用于 `demo` 使用）。                          |
 
 - `--config` 自定义配置文件路径。如 `npm run build -- --config path/to/config.custom.js`
 - `--output` 自定义输出文件目录。如 `npm run build -- --output path/to/build`

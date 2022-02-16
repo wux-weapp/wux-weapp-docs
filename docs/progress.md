@@ -8,12 +8,12 @@
 
 ```json
 {
-    "navigationBarTitleText": "Progress",
-    "usingComponents": {
-        "wux-white-space": "../../dist/white-space/index",
-        "wux-button": "../../dist/button/index",
-        "wux-progress": "../../dist/progress/index"
-    }
+  "navigationBarTitleText": "Progress",
+  "usingComponents": {
+    "wux-white-space": "../../dist/white-space/index",
+    "wux-button": "../../dist/button/index",
+    "wux-progress": "../../dist/progress/index"
+  }
 }
 ```
 
@@ -21,74 +21,74 @@
 
 ```html
 <view class="page">
-    <view class="page__hd">
-        <view class="page__title">Progress</view>
-        <view class="page__desc">进度条</view>
-    </view>
-    <view class="page__bd page__bd_spacing">
-        <view class="sub-title">Status</view>
-        <wux-progress status="normal" percent="50" />
-        <wux-white-space />
-        <wux-progress status="progress" percent="50" />
-        <wux-white-space />
-        <wux-progress status="error" percent="50" />
-        <wux-white-space />
-        <wux-progress status="success" percent="50" />
-        <view class="sub-title">ActiveColor</view>
-        <wux-progress active-color="#11c1f3" percent="50" />
-        <wux-white-space />
-        <wux-progress active-color="#ffc900" percent="50" />
-        <wux-white-space />
-        <wux-progress active-color="#886aea" percent="50" />
-        <view class="sub-title">BackgroundColor</view>
-        <wux-progress background-color="#fff" percent="25" />
-        <wux-white-space />
-        <wux-progress background-color="#f3f3f3" percent="50" />
-        <wux-white-space />
-        <wux-progress background-color="#f8f8f8" percent="75" />
-        <view class="sub-title">Shape</view>
-        <wux-progress shape="square" percent="25" />
-        <wux-white-space />
-        <wux-progress shape="square" percent="50" />
-        <wux-white-space />
-        <wux-progress shape="square" percent="75" />
-        <view class="sub-title">BarStyle</view>
-        <wux-progress bar-style="background-color: #5cb85c" percent="25" />
-        <wux-white-space />
-        <wux-progress bar-style="background-color: #5bc0de" percent="50" />
-        <wux-white-space />
-        <wux-progress bar-style="background-color: #f0ad4e" percent="75" />
-        <view class="sub-title">StrokeWidth</view>
-        <wux-progress stroke-width="8" percent="25" />
-        <wux-white-space />
-        <wux-progress stroke-width="10" percent="50" />
-        <wux-white-space />
-        <wux-progress stroke-width="12" percent="75" />
-        <view class="sub-title">ShowInfo</view>
-        <wux-progress show-info percent="{{ percent }}" />
-        <wux-progress show-info percent="{{ percent }}" />
-        <wux-progress show-info percent="{{ percent }}" />
-        <wux-button block type="light" bind:click="add">Add</wux-button>
-    </view>
+  <view class="page__hd">
+    <view class="page__title">Progress</view>
+    <view class="page__desc">进度条</view>
+  </view>
+  <view class="page__bd page__bd_spacing">
+    <view class="sub-title">Status</view>
+    <wux-progress status="normal" percent="50" />
+    <wux-white-space />
+    <wux-progress status="progress" percent="50" />
+    <wux-white-space />
+    <wux-progress status="error" percent="50" />
+    <wux-white-space />
+    <wux-progress status="success" percent="50" />
+    <view class="sub-title">ActiveColor</view>
+    <wux-progress active-color="#11c1f3" percent="50" />
+    <wux-white-space />
+    <wux-progress active-color="#ffc900" percent="50" />
+    <wux-white-space />
+    <wux-progress active-color="#886aea" percent="50" />
+    <view class="sub-title">BackgroundColor</view>
+    <wux-progress background-color="#fff" percent="25" />
+    <wux-white-space />
+    <wux-progress background-color="#f3f3f3" percent="50" />
+    <wux-white-space />
+    <wux-progress background-color="#f8f8f8" percent="75" />
+    <view class="sub-title">Shape</view>
+    <wux-progress shape="square" percent="25" />
+    <wux-white-space />
+    <wux-progress shape="square" percent="50" />
+    <wux-white-space />
+    <wux-progress shape="square" percent="75" />
+    <view class="sub-title">BarStyle</view>
+    <wux-progress bar-style="background-color: #5cb85c" percent="25" />
+    <wux-white-space />
+    <wux-progress bar-style="background-color: #5bc0de" percent="50" />
+    <wux-white-space />
+    <wux-progress bar-style="background-color: #f0ad4e" percent="75" />
+    <view class="sub-title">StrokeWidth</view>
+    <wux-progress stroke-width="8" percent="25" />
+    <wux-white-space />
+    <wux-progress stroke-width="10" percent="50" />
+    <wux-white-space />
+    <wux-progress stroke-width="12" percent="75" />
+    <view class="sub-title">ShowInfo</view>
+    <wux-progress show-info percent="{{ percent }}" />
+    <wux-progress show-info percent="{{ percent }}" />
+    <wux-progress show-info percent="{{ percent }}" />
+    <wux-button block type="light" bind:click="add">Add</wux-button>
+  </view>
 </view>
 ```
 
 ```js
 Page({
-    data: {
-        percent: 50,
-    },
-    add() {
-        let percent = this.data.percent + 10
+  data: {
+    percent: 50,
+  },
+  add() {
+    let percent = this.data.percent + 10
 
-        if (this.data.percent >= 100) {
-            percent = 0
-        }
+    if (this.data.percent >= 100) {
+      percent = 0
+    }
 
-        this.setData({
-            percent,
-        })
-    },
+    this.setData({
+      percent,
+    })
+  },
 })
 ```
 
@@ -100,20 +100,20 @@ Page({
 
 ### Progress props
 
-| 参数 | 类型 | 描述 | 默认值 |
-| --- | --- | --- | --- |
-| prefixCls | `string` | 自定义类名前缀 | wux-progress |
-| percent | `number` | 百分比 0~100 | 0 |
-| strokeWidth | `string` | 进度条线的宽度，单位 px | 10 |
-| activeColor | `string` | 已选择的进度条的颜色，优先级高于 status 的默认颜色 | - |
-| backgroundColor | `string` | 未选择的进度条的颜色 | #f3f3f3 |
-| barStyle | `string,object` | 进度样式 | - |
-| status | `string` | 状态，可选值为 normal、progress、error、success | normal |
-| shape | `string` | 形状，可选值为 round、square | round |
-| showInfo | `boolean` | 在进度条右侧显示百分比 | false |
+| 参数            | 类型            | 描述                                               | 默认值       |
+| --------------- | --------------- | -------------------------------------------------- | ------------ |
+| prefixCls       | `string`        | 自定义类名前缀                                     | wux-progress |
+| percent         | `number`        | 百分比 0~100                                       | 0            |
+| strokeWidth     | `string`        | 进度条线的宽度，单位 px                            | 10           |
+| activeColor     | `string`        | 已选择的进度条的颜色，优先级高于 status 的默认颜色 | -            |
+| backgroundColor | `string`        | 未选择的进度条的颜色                               | #f3f3f3      |
+| barStyle        | `string,object` | 进度样式                                           | -            |
+| status          | `string`        | 状态，可选值为 normal、progress、error、success    | normal       |
+| shape           | `string`        | 形状，可选值为 round、square                       | round        |
+| showInfo        | `boolean`       | 在进度条右侧显示百分比                             | false        |
 
 ### Progress externalClasses
 
-| 名称 | 描述 |
-| --- | --- |
+| 名称      | 描述         |
+| --------- | ------------ |
 | wux-class | 根节点样式类 |

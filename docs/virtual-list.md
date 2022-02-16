@@ -8,12 +8,12 @@
 
 ```json
 {
-    "navigationBarTitleText": "VirtualList",
-    "enablePullDownRefresh": true,
-    "usingComponents": {
-        "wux-virtual-list": "../../dist/virtual-list/index",
-        "wux-virtual-item": "../../dist/virtual-item/index"
-    }
+  "navigationBarTitleText": "VirtualList",
+  "enablePullDownRefresh": true,
+  "usingComponents": {
+    "wux-virtual-list": "../../dist/virtual-list/index",
+    "wux-virtual-item": "../../dist/virtual-item/index"
+  }
 }
 ```
 
@@ -21,20 +21,20 @@
 
 ```html
 <wux-virtual-list
-    id="wux-virtual-list"
-    enablePageScroll
-    height="{{ height }}"
-    itemHeight="100"
-    itemBuffer="30"
-    disableScroll="{{ disableScroll }}"
-    bind:change="onChange"
+  id="wux-virtual-list"
+  enablePageScroll
+  height="{{ height }}"
+  itemHeight="100"
+  itemBuffer="30"
+  disableScroll="{{ disableScroll }}"
+  bind:change="onChange"
 >
-    <wux-virtual-item wx:for="{{ virtual.items }}" wx:key="item">
-        <view class="item">
-            <view class="index">{{ '#' + item }}</view>
-            <view class="desc">Wux NB</view>
-        </view>
-    </wux-virtual-item>
+  <wux-virtual-item wx:for="{{ virtual.items }}" wx:key="item">
+    <view class="item">
+      <view class="index">{{ '#' + item }}</view>
+      <view class="desc">Wux NB</view>
+    </view>
+  </wux-virtual-item>
 </wux-virtual-list>
 ```
 
@@ -44,57 +44,61 @@ let itemCount = 1000
 let items = [...new Array(itemCount)].map((v, i) => i)
 
 Page({
-    data: {
-        disableScroll: false,
-        height,
-    },
-    onLoad() {
-        this.updated(items)
-    },
-    updated(items) {
-        const startTime = Date.now()
-        this.virtualList = this.virtualList || this.selectComponent('#wux-virtual-list')
-        this.virtualList.render(items, () => {
-            const diffTime = Date.now() - startTime
-            console.log(`onSuccess - render time: ${diffTime}ms`)
-        })
-    },
-    loadData() {
-        if (itemCount >= 10000) return
-        if (this.data.disableScroll) return
-        this.setData({ disableScroll: true })
-        wx.showLoading()
-        setTimeout(() => {
-            itemCount += 1000
-            items = [...new Array(itemCount)].map((v, i) => i)
-            this.updated(items)
-            this.setData({ disableScroll: false })
-            wx.hideLoading()
-            wx.stopPullDownRefresh()
-        }, 3000)
-        console.log('loadData')
-    },
-    onChange(e) {
-        const { startIndex, endIndex } = e.detail
-        if (this.data.startIndex !== startIndex || this.data.endIndex !== endIndex) {
-            this.setData(e.detail)
-            console.log('onChange', e.detail)
-        }
-    },
-    onPageScroll(e) {
-        // 当页面滚动时调用组件 scrollHandler 方法
-        this.virtualList.scrollHandler({ detail: e })
-        // console.log('onPageScroll', e)
-    },
-    onReachBottom() {
-        this.loadData()
-        console.log('onReachBottom')
-    },
-    onPullDownRefresh() {
-        itemCount = 0
-        this.loadData()
-        console.log('onPullDownRefresh')
-    },
+  data: {
+    disableScroll: false,
+    height,
+  },
+  onLoad() {
+    this.updated(items)
+  },
+  updated(items) {
+    const startTime = Date.now()
+    this.virtualList =
+      this.virtualList || this.selectComponent('#wux-virtual-list')
+    this.virtualList.render(items, () => {
+      const diffTime = Date.now() - startTime
+      console.log(`onSuccess - render time: ${diffTime}ms`)
+    })
+  },
+  loadData() {
+    if (itemCount >= 10000) return
+    if (this.data.disableScroll) return
+    this.setData({ disableScroll: true })
+    wx.showLoading()
+    setTimeout(() => {
+      itemCount += 1000
+      items = [...new Array(itemCount)].map((v, i) => i)
+      this.updated(items)
+      this.setData({ disableScroll: false })
+      wx.hideLoading()
+      wx.stopPullDownRefresh()
+    }, 3000)
+    console.log('loadData')
+  },
+  onChange(e) {
+    const { startIndex, endIndex } = e.detail
+    if (
+      this.data.startIndex !== startIndex ||
+      this.data.endIndex !== endIndex
+    ) {
+      this.setData(e.detail)
+      console.log('onChange', e.detail)
+    }
+  },
+  onPageScroll(e) {
+    // 当页面滚动时调用组件 scrollHandler 方法
+    this.virtualList.scrollHandler({ detail: e })
+    // console.log('onPageScroll', e)
+  },
+  onReachBottom() {
+    this.loadData()
+    console.log('onReachBottom')
+  },
+  onPullDownRefresh() {
+    itemCount = 0
+    this.loadData()
+    console.log('onPullDownRefresh')
+  },
 })
 ```
 
@@ -106,47 +110,47 @@ Page({
 
 ### VirtualList props
 
-| 参数 | 类型 | 描述 | 默认值 |
-| --- | --- | --- | --- |
-| prefixCls | `string` | 自定义类名前缀 | wux-virtual-list |
-| itemHeight | `number` | 子元素高度 | 50 |
-| itemBuffer | `number` | 可视容器外加载的元素个数，值越大性能越高 | 0 |
-| scrollToIndex | `number` | 设置滚动条到对应子元素的位置 | 0 |
-| upperThreshold | `number` | 距顶部多远时，触发 scrolltoupper 事件 | 50 |
-| lowerThreshold | `number` | 距底部多远时，触发 scrolltolower 事件 | 50 |
-| scrollWithAnimation | `boolean` | 在设置滚动条位置时使用动画过渡 | false |
-| enableBackToTop | `boolean` | iOS点击顶部状态栏、安卓双击标题栏时，滚动条返回顶部，只支持竖向 | false |
-| disableScroll | `boolean` | 是否禁用滚动 | false |
-| enablePageScroll | `boolean` | 是否启用页面滚动，默认使用 `<scroll-view/>` 滚动 | false |
-| height | `number` | 可视容器高度 | 300 |
-| debounce | `number` | 是否防抖 | 0 |
-| bind:change | `function` | 数据变化时的回调函数 | - |
-| bind:scroll | `function` | 滚动时触发 | - |
-| bind:scrolltoupper | `function` | 滚动到顶部时触发 | - |
-| bind:scrolltolower | `function` | 滚动到底部时触发 | - |
+| 参数                | 类型       | 描述                                                             | 默认值           |
+| ------------------- | ---------- | ---------------------------------------------------------------- | ---------------- |
+| prefixCls           | `string`   | 自定义类名前缀                                                   | wux-virtual-list |
+| itemHeight          | `number`   | 子元素高度                                                       | 50               |
+| itemBuffer          | `number`   | 可视容器外加载的元素个数，值越大性能越高                         | 0                |
+| scrollToIndex       | `number`   | 设置滚动条到对应子元素的位置                                     | 0                |
+| upperThreshold      | `number`   | 距顶部多远时，触发 scrolltoupper 事件                            | 50               |
+| lowerThreshold      | `number`   | 距底部多远时，触发 scrolltolower 事件                            | 50               |
+| scrollWithAnimation | `boolean`  | 在设置滚动条位置时使用动画过渡                                   | false            |
+| enableBackToTop     | `boolean`  | iOS 点击顶部状态栏、安卓双击标题栏时，滚动条返回顶部，只支持竖向 | false            |
+| disableScroll       | `boolean`  | 是否禁用滚动                                                     | false            |
+| enablePageScroll    | `boolean`  | 是否启用页面滚动，默认使用 `<scroll-view/>` 滚动                 | false            |
+| height              | `number`   | 可视容器高度                                                     | 300              |
+| debounce            | `number`   | 是否防抖                                                         | 0                |
+| bind:change         | `function` | 数据变化时的回调函数                                             | -                |
+| bind:scroll         | `function` | 滚动时触发                                                       | -                |
+| bind:scrolltoupper  | `function` | 滚动到顶部时触发                                                 | -                |
+| bind:scrolltolower  | `function` | 滚动到底部时触发                                                 | -                |
 
 ### VirtualList externalClasses
 
-| 名称 | 描述 |
-| --- | --- |
+| 名称      | 描述         |
+| --------- | ------------ |
 | wux-class | 根节点样式类 |
 
 ### VirtualItem props
 
-| 参数 | 类型 | 描述 | 默认值 |
-| --- | --- | --- | --- |
+| 参数      | 类型     | 描述           | 默认值           |
+| --------- | -------- | -------------- | ---------------- |
 | prefixCls | `string` | 自定义类名前缀 | wux-virtual-item |
 
 ### VirtualItem slot
 
-| 名称 | 描述 |
-| --- | --- |
-| - | 自定义内容 |
+| 名称 | 描述       |
+| ---- | ---------- |
+| -    | 自定义内容 |
 
 ### VirtualItem externalClasses
 
-| 名称 | 描述 |
-| --- | --- |
+| 名称      | 描述         |
+| --------- | ------------ |
 | wux-class | 根节点样式类 |
 
 ### 外部方法

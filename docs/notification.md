@@ -8,11 +8,11 @@
 
 ```json
 {
-    "navigationBarTitleText": "Notification",
-    "usingComponents": {
-        "wux-button": "../../dist/button/index",
-        "wux-notification": "../../dist/notification/index"
-    }
+  "navigationBarTitleText": "Notification",
+  "usingComponents": {
+    "wux-button": "../../dist/button/index",
+    "wux-notification": "../../dist/notification/index"
+  }
 }
 ```
 
@@ -24,16 +24,24 @@
 <wux-notification id="wux-notification" />
 
 <view class="page">
-    <view class="page__hd">
-        <view class="page__title">Notification</view>
-        <view class="page__desc">通知</view>
-    </view>
-    <view class="page__bd page__bd_spacing">
-        <wux-button block type="light" bind:click="showNotification">Show Notification</wux-button>
-        <wux-button block type="light" bind:click="closeNotification">Close Notification</wux-button>
-        <wux-button block type="light" bind:click="showNotificationReturn">Use return value to close</wux-button>
-        <wux-button block type="light" bind:click="showNotificationPromise">Use promise to know when closed</wux-button>
-    </view>
+  <view class="page__hd">
+    <view class="page__title">Notification</view>
+    <view class="page__desc">通知</view>
+  </view>
+  <view class="page__bd page__bd_spacing">
+    <wux-button block type="light" bind:click="showNotification"
+      >Show Notification</wux-button
+    >
+    <wux-button block type="light" bind:click="closeNotification"
+      >Close Notification</wux-button
+    >
+    <wux-button block type="light" bind:click="showNotificationReturn"
+      >Use return value to close</wux-button
+    >
+    <wux-button block type="light" bind:click="showNotificationPromise"
+      >Use promise to know when closed</wux-button
+    >
+  </view>
 </view>
 ```
 
@@ -41,54 +49,54 @@
 import { $wuxNotification } from '../../dist/index'
 
 Page({
-    data: {},
-    onLoad() {},
-    showNotification() {
-        this.closeNotification = $wuxNotification().show({
-            image: 'http://cdn.skyvow.cn/logo.png',
-            title: '宝宝',
-            text: '嘤嘤嘤，人家拿小拳拳捶你胸口!!!',
-            data: {
-                message: '逗你玩的!!!'
-            },
-            duration: 3000,
-            onClick(data) {
-                console.log(data)
-            },
-            onClose(data) {
-                console.log(data)
-            },
-        })
-    },
-    showNotificationReturn() {
-        if (this.timeout) clearTimeout(this.timeout)
+  data: {},
+  onLoad() {},
+  showNotification() {
+    this.closeNotification = $wuxNotification().show({
+      image: 'http://cdn.skyvow.cn/logo.png',
+      title: '宝宝',
+      text: '嘤嘤嘤，人家拿小拳拳捶你胸口!!!',
+      data: {
+        message: '逗你玩的!!!',
+      },
+      duration: 3000,
+      onClick(data) {
+        console.log(data)
+      },
+      onClose(data) {
+        console.log(data)
+      },
+    })
+  },
+  showNotificationReturn() {
+    if (this.timeout) clearTimeout(this.timeout)
 
-        const hide = $wuxNotification().show({
-            image: 'http://cdn.skyvow.cn/logo.png',
-            title: '宝宝',
-            text: '嘤嘤嘤，人家拿小拳拳捶你胸口!!!',
-            data: {
-                message: '逗你玩的!!!'
-            },
-            duration: 3000,
-        })
+    const hide = $wuxNotification().show({
+      image: 'http://cdn.skyvow.cn/logo.png',
+      title: '宝宝',
+      text: '嘤嘤嘤，人家拿小拳拳捶你胸口!!!',
+      data: {
+        message: '逗你玩的!!!',
+      },
+      duration: 3000,
+    })
 
-        this.timeout = setTimeout(hide, 1000)
-    },
-    showNotificationPromise() {
-        const hide = $wuxNotification().show({
-            image: 'http://cdn.skyvow.cn/logo.png',
-            title: '宝宝',
-            text: '嘤嘤嘤，人家拿小拳拳捶你胸口!!!',
-            data: {
-                message: '逗你玩的!!!'
-            },
-            duration: 3000,
-        })
+    this.timeout = setTimeout(hide, 1000)
+  },
+  showNotificationPromise() {
+    const hide = $wuxNotification().show({
+      image: 'http://cdn.skyvow.cn/logo.png',
+      title: '宝宝',
+      text: '嘤嘤嘤，人家拿小拳拳捶你胸口!!!',
+      data: {
+        message: '逗你玩的!!!',
+      },
+      duration: 3000,
+    })
 
-        // hide.promise.then(() => console.log('success'))
-        hide.then(() => console.log('success'))
-    },
+    // hide.promise.then(() => console.log('success'))
+    hide.then(() => console.log('success'))
+  },
 })
 ```
 
@@ -98,18 +106,18 @@ Page({
 
 ## API
 
-| 参数 | 类型 | 描述 | 默认值 |
-| --- | --- | --- | --- |
-| options | `object` | 配置项 | - |
-| options.prefixCls | `string` | 自定义类名前缀 | wux-notification |
-| options.classNames | `any` | 过渡的类名，更多内置过渡效果请参考 [AnimationGroup](animation-group.md) | wux-animate--slideInDown |
-| options.image | `string` | 通知的图标 | - |
-| options.title | `string` | 通知的标题 | - |
-| options.text | `string` | 通知的文本 | - |
-| options.duration | `number` | 多少毫秒后消失 | 3000 |
-| options.data | `any` | 自定义数据传给 onClick、onClose | - |
-| options.onClick | `function` | 点击后的回调函数 | - |
-| options.onClose | `function` | 消失后的回调函数 | - |
+| 参数               | 类型       | 描述                                                                    | 默认值                   |
+| ------------------ | ---------- | ----------------------------------------------------------------------- | ------------------------ |
+| options            | `object`   | 配置项                                                                  | -                        |
+| options.prefixCls  | `string`   | 自定义类名前缀                                                          | wux-notification         |
+| options.classNames | `any`      | 过渡的类名，更多内置过渡效果请参考 [AnimationGroup](animation-group.md) | wux-animate--slideInDown |
+| options.image      | `string`   | 通知的图标                                                              | -                        |
+| options.title      | `string`   | 通知的标题                                                              | -                        |
+| options.text       | `string`   | 通知的文本                                                              | -                        |
+| options.duration   | `number`   | 多少毫秒后消失                                                          | 3000                     |
+| options.data       | `any`      | 自定义数据传给 onClick、onClose                                         | -                        |
+| options.onClick    | `function` | 点击后的回调函数                                                        | -                        |
+| options.onClose    | `function` | 消失后的回调函数                                                        | -                        |
 
 ### Notification.method
 

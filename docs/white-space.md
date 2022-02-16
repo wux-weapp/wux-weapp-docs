@@ -8,10 +8,10 @@
 
 ```json
 {
-    "navigationBarTitleText": "WhiteSpace",
-    "usingComponents": {
-        "wux-white-space": "../../dist/white-space/index"
-    }
+  "navigationBarTitleText": "WhiteSpace",
+  "usingComponents": {
+    "wux-white-space": "../../dist/white-space/index"
+  }
 }
 ```
 
@@ -19,20 +19,20 @@
 
 ```html
 <view class="page">
-    <view class="page__hd">
-        <view class="page__title">WhiteSpace</view>
-        <view class="page__desc">上下留白</view>
-    </view>
-    <view class="page__bd">
-        <wux-white-space size="small" />
-        <view class="placeholder">Wux</view>
-        <wux-white-space size="default" />
-        <view class="placeholder">Wux</view>
-        <wux-white-space size="large" />
-        <view class="placeholder">Wux</view>
-        <wux-white-space body-style="height: 20px" />
-        <view class="placeholder">Wux</view>
-    </view>
+  <view class="page__hd">
+    <view class="page__title">WhiteSpace</view>
+    <view class="page__desc">上下留白</view>
+  </view>
+  <view class="page__bd">
+    <wux-white-space size="small" />
+    <view class="placeholder">Wux</view>
+    <wux-white-space size="default" />
+    <view class="placeholder">Wux</view>
+    <wux-white-space size="large" />
+    <view class="placeholder">Wux</view>
+    <wux-white-space body-style="height: 20px" />
+    <view class="placeholder">Wux</view>
+  </view>
 </view>
 ```
 
@@ -44,20 +44,20 @@
 
 ### WhiteSpace props
 
-| 参数 | 类型 | 描述 | 默认值 |
-| --- | --- | --- | --- |
-| prefixCls | `string` | 自定义类名前缀 | wux-whitespace |
-| size | `string` | 上下留白的间距，可选值为 small、default、large | default |
-| bodyStyle | `string,object` | 自定义样式 | - |
+| 参数      | 类型            | 描述                                           | 默认值         |
+| --------- | --------------- | ---------------------------------------------- | -------------- |
+| prefixCls | `string`        | 自定义类名前缀                                 | wux-whitespace |
+| size      | `string`        | 上下留白的间距，可选值为 small、default、large | default        |
+| bodyStyle | `string,object` | 自定义样式                                     | -              |
 
 ### WhiteSpace slot
 
-| 名称 | 描述 |
-| --- | --- |
-| - | 自定义内容 |
+| 名称 | 描述       |
+| ---- | ---------- |
+| -    | 自定义内容 |
 
 ### WhiteSpace externalClasses
 
-| 名称 | 描述 |
-| --- | --- |
+| 名称      | 描述         |
+| --------- | ------------ |
 | wux-class | 根节点样式类 |

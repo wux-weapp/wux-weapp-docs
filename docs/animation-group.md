@@ -17,10 +17,10 @@
 
 ```json
 {
-    "navigationBarTitleText": "AnimationGroup",
-    "usingComponents": {
-        "wux-animation-group": "../../dist/animation-group/index"
-    }
+  "navigationBarTitleText": "AnimationGroup",
+  "usingComponents": {
+    "wux-animation-group": "../../dist/animation-group/index"
+  }
 }
 ```
 
@@ -28,137 +28,189 @@
 
 ```html
 <view class="page">
-    <view class="page__hd">
-        <view class="page__title">AnimationGroup</view>
-        <view class="page__desc">动画组</view>
-    </view>
-    <view class="page__bd">
-        <view class="weui-cells weui-cells_after-title">
-            <view class="weui-cell weui-cell_select">
-                <view class="weui-cell__hd weui-cell__hd_in-select-after">
-                    <view class="weui-label" style="width: auto;">Switch classNames</view>
-                </view>
-                <view class="weui-cell__bd">
-                    <picker bindchange="pickerChange" value="{{ index }}" range="{{ items }}">
-                        <view class="weui-select weui-select_in-select-after" style="padding-left: 30px;">{{ items[index] }}</view>
-                    </picker>
-                </view>
-            </view>
-            <view class="weui-cell weui-cell_switch">
-                <view class="weui-cell__bd">Enable or disable enter transitions</view>
-                <view class="weui-cell__ft">
-                    <switch data-model="example.enter" bindchange="switchChange" checked="{{ example.enter }}" />
-                </view>
-            </view>
-            <view class="weui-cell weui-cell_switch">
-                <view class="weui-cell__bd">Enable or disable exit transitions</view>
-                <view class="weui-cell__ft">
-                    <switch data-model="example.exit" bindchange="switchChange" checked="{{ example.exit }}" />
-                </view>
-            </view>
-            <view class="weui-cell weui-cell_switch">
-                <view class="weui-cell__bd">Switch state</view>
-                <view class="weui-cell__ft">
-                    <switch data-model="example.in" bindchange="switchChange" checked="{{ example.in }}" />
-                </view>
-            </view>
-            <view class="weui-cell weui-cell_switch">
-                <view class="weui-cell__bd">Toggle</view>
-                <view class="weui-cell__ft">
-                    <switch bindchange="onToggle" checked="{{ show }}" />
-                </view>
-            </view>
+  <view class="page__hd">
+    <view class="page__title">AnimationGroup</view>
+    <view class="page__desc">动画组</view>
+  </view>
+  <view class="page__bd">
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_select">
+        <view class="weui-cell__hd weui-cell__hd_in-select-after">
+          <view class="weui-label" style="width: auto;">Switch classNames</view>
         </view>
-        <wux-animation-group wux-class="example" in="{{ example.in }}" enter="{{ example.enter }}" exit="{{ example.exit }}" class-names="{{ example.classNames }}" bind:click="onClick" bind:enter="onEnter" bind:entering="onEntering" bind:entered="onEntered" bind:exit="onExit"
-            bind:exiting="onExiting" bind:exited="onExited">
-            <view class="weui-article">
-                <view class="weui-article__p">
-                    微信小程序自定义组件 https://github.com/wux-weapp/wux-weapp
-                </view>
-            </view>
-        </wux-animation-group>
-        <wux-animation-group wux-class="example" in="{{ show }}" duration="{{ 1000 }}" unmountOnExit="{{ false }}" bind:change="onChange">
-            <view class="weui-article">
-                <view class="weui-article__p">{{ status }}</view>
-            </view>
-        </wux-animation-group>
+        <view class="weui-cell__bd">
+          <picker
+            bindchange="pickerChange"
+            value="{{ index }}"
+            range="{{ items }}"
+          >
+            <view
+              class="weui-select weui-select_in-select-after"
+              style="padding-left: 30px;"
+              >{{ items[index] }}</view
+            >
+          </picker>
+        </view>
+      </view>
+      <view class="weui-cell weui-cell_switch">
+        <view class="weui-cell__bd">Enable or disable enter transitions</view>
+        <view class="weui-cell__ft">
+          <switch
+            data-model="example.enter"
+            bindchange="switchChange"
+            checked="{{ example.enter }}"
+          />
+        </view>
+      </view>
+      <view class="weui-cell weui-cell_switch">
+        <view class="weui-cell__bd">Enable or disable exit transitions</view>
+        <view class="weui-cell__ft">
+          <switch
+            data-model="example.exit"
+            bindchange="switchChange"
+            checked="{{ example.exit }}"
+          />
+        </view>
+      </view>
+      <view class="weui-cell weui-cell_switch">
+        <view class="weui-cell__bd">Switch state</view>
+        <view class="weui-cell__ft">
+          <switch
+            data-model="example.in"
+            bindchange="switchChange"
+            checked="{{ example.in }}"
+          />
+        </view>
+      </view>
+      <view class="weui-cell weui-cell_switch">
+        <view class="weui-cell__bd">Toggle</view>
+        <view class="weui-cell__ft">
+          <switch bindchange="onToggle" checked="{{ show }}" />
+        </view>
+      </view>
     </view>
+    <wux-animation-group
+      wux-class="example"
+      in="{{ example.in }}"
+      enter="{{ example.enter }}"
+      exit="{{ example.exit }}"
+      class-names="{{ example.classNames }}"
+      bind:click="onClick"
+      bind:enter="onEnter"
+      bind:entering="onEntering"
+      bind:entered="onEntered"
+      bind:exit="onExit"
+      bind:exiting="onExiting"
+      bind:exited="onExited"
+    >
+      <view class="weui-article">
+        <view class="weui-article__p">
+          微信小程序自定义组件 https://github.com/wux-weapp/wux-weapp
+        </view>
+      </view>
+    </wux-animation-group>
+    <wux-animation-group
+      wux-class="example"
+      in="{{ show }}"
+      duration="{{ 1000 }}"
+      unmountOnExit="{{ false }}"
+      bind:change="onChange"
+    >
+      <view class="weui-article">
+        <view class="weui-article__p">{{ status }}</view>
+      </view>
+    </wux-animation-group>
+  </view>
 </view>
 ```
 
 ```js
 Page({
-    data: {
-        items: [
-            'fadeIn',
-            'fadeInDown',
-            'fadeInLeft',
-            'fadeInRight',
-            'fadeInUp',
-            'slideInUp',
-            'slideInDown',
-            'slideInLeft',
-            'slideInRight',
-            'zoom',
-            'punch',
-        ],
-        index: 0,
-        example: {
-            classNames: 'wux-animate--fadeIn',
-            enter: true,
-            exit: true,
-            in: false,
-        },
-        show: false,
-        status: '',
+  data: {
+    items: [
+      'fadeIn',
+      'fadeInDown',
+      'fadeInLeft',
+      'fadeInRight',
+      'fadeInUp',
+      'slideInUp',
+      'slideInDown',
+      'slideInLeft',
+      'slideInRight',
+      'zoom',
+      'punch',
+    ],
+    index: 0,
+    example: {
+      classNames: 'wux-animate--fadeIn',
+      enter: true,
+      exit: true,
+      in: false,
     },
-    pickerChange(e) {
-        const index = e.detail.value
-        const value = this.data.items[index]
-        const classNames = `wux-animate--${value}`
+    show: false,
+    status: '',
+  },
+  pickerChange(e) {
+    const index = e.detail.value
+    const value = this.data.items[index]
+    const classNames = `wux-animate--${value}`
 
-        this.setData({
-            index,
-            'example.classNames': classNames,
-        })
-    },
-    switchChange(e) {
-        const { model } = e.currentTarget.dataset
+    this.setData({
+      index,
+      'example.classNames': classNames,
+    })
+  },
+  switchChange(e) {
+    const { model } = e.currentTarget.dataset
 
-        this.setData({
-            [model]: e.detail.value,
-        })
-    },
-    onClick() { console.log('onClick') },
-    onEnter(e) { console.log('onEnter', e.detail) },
-    onEntering(e) { console.log('onEntering', e.detail) },
-    onEntered(e) { console.log('onEntered', e.detail) },
-    onExit() { console.log('onExit') },
-    onExiting() { console.log('onExiting') },
-    onExited() { console.log('onExited') },
-    onToggle() {
-        this.setData({
-            show: !this.data.show,
-        })
-    },
-    onChange(e) {
-        const { animateStatus } = e.detail
+    this.setData({
+      [model]: e.detail.value,
+    })
+  },
+  onClick() {
+    console.log('onClick')
+  },
+  onEnter(e) {
+    console.log('onEnter', e.detail)
+  },
+  onEntering(e) {
+    console.log('onEntering', e.detail)
+  },
+  onEntered(e) {
+    console.log('onEntered', e.detail)
+  },
+  onExit() {
+    console.log('onExit')
+  },
+  onExiting() {
+    console.log('onExiting')
+  },
+  onExited() {
+    console.log('onExited')
+  },
+  onToggle() {
+    this.setData({
+      show: !this.data.show,
+    })
+  },
+  onChange(e) {
+    const { animateStatus } = e.detail
 
-        switch (animateStatus) {
-            case 'entering':
-                this.setData({ status: 'Entering…' })
-                break
-            case 'entered':
-                this.setData({ status: 'Entered!' })
-                break
-            case 'exiting':
-                this.setData({ status: 'Exiting…' })
-                break
-            case 'exited':
-                this.setData({ status: 'Exited!' })
-                break
-        }
-    },
+    switch (animateStatus) {
+      case 'entering':
+        this.setData({ status: 'Entering…' })
+        break
+      case 'entered':
+        this.setData({ status: 'Entered!' })
+        break
+      case 'exiting':
+        this.setData({ status: 'Exiting…' })
+        break
+      case 'exited':
+        this.setData({ status: 'Exited!' })
+        break
+    }
+  },
 })
 ```
 
@@ -170,37 +222,37 @@ Page({
 
 ### AnimationGroup props
 
-| 参数 | 类型 | 描述 | 默认值 |
-| --- | --- | --- | --- |
-| in | `boolean` | 触发组件进入或离开过渡的状态 | false |
-| classNames | `any` | 过渡的类名 | - |
-| duration | `any` | 过渡持续时间 | - |
-| type | `string` | 过渡动效的类型 | transition |
-| appear | `boolean` | 首次挂载时是否触发进入过渡 | false |
-| enter | `boolean` | 是否启用进入过渡 | true |
-| exit | `boolean` | 是否启用离开过渡 | true |
-| mountOnEnter | `boolean` | 首次进入过渡时是否懒挂载组件 | true |
-| unmountOnExit | `boolean` | 离开过渡完成时是否卸载组件 | true |
-| wrapCls | `string` | 自定义类名 | - |
-| wrapStyle | `string,object` | 自定义样式 | - |
-| disableScroll | `boolean` | 阻止移动触摸 | false |
-| bind:click | `function` | 点击组件时触发的回调函数 | - |
-| bind:enter | `function` | 进入过渡的开始状态时触发的回调函数 | - |
-| bind:entering | `function` | 进入过渡的结束状态时触发的回调函数 | - |
-| bind:entered | `function` | 进入过渡的完成状态时触发的回调函数 | - |
-| bind:exit | `function` | 离开过渡的开始状态时触发的回调函数 | - |
-| bind:exiting | `function` | 离开过渡的结束状态时触发的回调函数 | - |
-| bind:exited | `function` | 离开过渡的完成状态时触发的回调函数 | - |
-| bind:change | `function` | 监听状态变化的回调函数 | - |
+| 参数          | 类型            | 描述                               | 默认值     |
+| ------------- | --------------- | ---------------------------------- | ---------- |
+| in            | `boolean`       | 触发组件进入或离开过渡的状态       | false      |
+| classNames    | `any`           | 过渡的类名                         | -          |
+| duration      | `any`           | 过渡持续时间                       | -          |
+| type          | `string`        | 过渡动效的类型                     | transition |
+| appear        | `boolean`       | 首次挂载时是否触发进入过渡         | false      |
+| enter         | `boolean`       | 是否启用进入过渡                   | true       |
+| exit          | `boolean`       | 是否启用离开过渡                   | true       |
+| mountOnEnter  | `boolean`       | 首次进入过渡时是否懒挂载组件       | true       |
+| unmountOnExit | `boolean`       | 离开过渡完成时是否卸载组件         | true       |
+| wrapCls       | `string`        | 自定义类名                         | -          |
+| wrapStyle     | `string,object` | 自定义样式                         | -          |
+| disableScroll | `boolean`       | 阻止移动触摸                       | false      |
+| bind:click    | `function`      | 点击组件时触发的回调函数           | -          |
+| bind:enter    | `function`      | 进入过渡的开始状态时触发的回调函数 | -          |
+| bind:entering | `function`      | 进入过渡的结束状态时触发的回调函数 | -          |
+| bind:entered  | `function`      | 进入过渡的完成状态时触发的回调函数 | -          |
+| bind:exit     | `function`      | 离开过渡的开始状态时触发的回调函数 | -          |
+| bind:exiting  | `function`      | 离开过渡的结束状态时触发的回调函数 | -          |
+| bind:exited   | `function`      | 离开过渡的完成状态时触发的回调函数 | -          |
+| bind:change   | `function`      | 监听状态变化的回调函数             | -          |
 
 ### AnimationGroup slot
 
-| 名称 | 描述 |
-| --- | --- |
-| - | 自定义内容 |
+| 名称 | 描述       |
+| ---- | ---------- |
+| -    | 自定义内容 |
 
 ### AnimationGroup externalClasses
 
-| 名称 | 描述 |
-| --- | --- |
+| 名称      | 描述         |
+| --------- | ------------ |
 | wux-class | 根节点样式类 |

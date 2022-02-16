@@ -8,11 +8,11 @@
 
 ```json
 {
-    "navigationBarTitleText": "Spin",
-    "usingComponents": {
-        "wux-button": "../../dist/button/index",
-        "wux-spin": "../../dist/spin/index"
-    }
+  "navigationBarTitleText": "Spin",
+  "usingComponents": {
+    "wux-button": "../../dist/button/index",
+    "wux-spin": "../../dist/spin/index"
+  }
 }
 ```
 
@@ -20,35 +20,37 @@
 
 ```html
 <view class="page">
-    <view class="page__hd">
-        <view class="page__title">Spin</view>
-        <view class="page__desc">加载中</view>
-    </view>
-    <view class="page__bd page__bd_spacing">
-        <view class="sub-title">Default</view>
-        <wux-spin wux-class="spin" />
-        <view class="sub-title">Size</view>
-        <wux-spin wux-class="spin" size="small" />
-        <wux-spin wux-class="spin" size="default" />
-        <wux-spin wux-class="spin" size="large" />
-        <view class="sub-title">Nested</view>
-        <wux-spin nested spinning="{{ spinning }}" tip="Loading...">
-            <view>微信小程序自定义组件 https://github.com/wux-weapp/wux-weapp</view>
-            <view>微信小程序自定义组件 https://github.com/wux-weapp/wux-weapp</view>
-            <view>微信小程序自定义组件 https://github.com/wux-weapp/wux-weapp</view>
-        </wux-spin>
-        <wux-button block type="light" bind:click="onClick">Switch State</wux-button>
-    </view>
+  <view class="page__hd">
+    <view class="page__title">Spin</view>
+    <view class="page__desc">加载中</view>
+  </view>
+  <view class="page__bd page__bd_spacing">
+    <view class="sub-title">Default</view>
+    <wux-spin wux-class="spin" />
+    <view class="sub-title">Size</view>
+    <wux-spin wux-class="spin" size="small" />
+    <wux-spin wux-class="spin" size="default" />
+    <wux-spin wux-class="spin" size="large" />
+    <view class="sub-title">Nested</view>
+    <wux-spin nested spinning="{{ spinning }}" tip="Loading...">
+      <view>微信小程序自定义组件 https://github.com/wux-weapp/wux-weapp</view>
+      <view>微信小程序自定义组件 https://github.com/wux-weapp/wux-weapp</view>
+      <view>微信小程序自定义组件 https://github.com/wux-weapp/wux-weapp</view>
+    </wux-spin>
+    <wux-button block type="light" bind:click="onClick"
+      >Switch State</wux-button
+    >
+  </view>
 </view>
 ```
 
 ```js
 Page({
-    onClick(e) {
-        this.setData({
-            spinning: !this.data.spinning,
-        })
-    },
+  onClick(e) {
+    this.setData({
+      spinning: !this.data.spinning,
+    })
+  },
 })
 ```
 
@@ -60,23 +62,23 @@ Page({
 
 ### Spin props
 
-| 参数 | 类型 | 描述 | 默认值 |
-| --- | --- | --- | --- |
-| prefixCls | `string` | 自定义类名前缀 | wux-spin |
-| classNames | `any` | 过渡的类名，更多内置过渡效果请参考 [AnimationGroup](animation-group.md) | wux-animate--fadeIn |
-| tip | `string` | 自定义描述文案 | - |
-| size | `string` | 组件大小，可选值为 small、default、large | default |
-| spinning | `boolean` | 是否为加载中状态，仅当 nested 为 true 时生效 | true |
-| nested | `boolean` | 是否作为包裹元素 | false |
+| 参数       | 类型      | 描述                                                                    | 默认值              |
+| ---------- | --------- | ----------------------------------------------------------------------- | ------------------- |
+| prefixCls  | `string`  | 自定义类名前缀                                                          | wux-spin            |
+| classNames | `any`     | 过渡的类名，更多内置过渡效果请参考 [AnimationGroup](animation-group.md) | wux-animate--fadeIn |
+| tip        | `string`  | 自定义描述文案                                                          | -                   |
+| size       | `string`  | 组件大小，可选值为 small、default、large                                | default             |
+| spinning   | `boolean` | 是否为加载中状态，仅当 nested 为 true 时生效                            | true                |
+| nested     | `boolean` | 是否作为包裹元素                                                        | false               |
 
 ### Spin slot
 
-| 名称 | 描述 |
-| --- | --- |
-| - | 自定义内容 |
+| 名称 | 描述       |
+| ---- | ---------- |
+| -    | 自定义内容 |
 
 ### Spin externalClasses
 
-| 名称 | 描述 |
-| --- | --- |
+| 名称      | 描述         |
+| --------- | ------------ |
 | wux-class | 根节点样式类 |

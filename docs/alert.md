@@ -8,12 +8,12 @@
 
 ```json
 {
-    "navigationBarTitleText": "Alert",
-    "usingComponents": {
-        "wux-white-space": "../../dist/white-space/index",
-        "wux-icon": "../../dist/icon/index",
-        "wux-alert": "../../dist/alert/index"
-    }
+  "navigationBarTitleText": "Alert",
+  "usingComponents": {
+    "wux-white-space": "../../dist/white-space/index",
+    "wux-icon": "../../dist/icon/index",
+    "wux-alert": "../../dist/alert/index"
+  }
 }
 ```
 
@@ -21,58 +21,115 @@
 
 ```html
 <view class="page">
-    <view class="page__hd">
-        <view class="page__title">Alert</view>
-        <view class="page__desc">警告框</view>
-    </view>
-    <view class="page__bd page__bd_spacing">
-        <view class="sub-title">Theme</view>
-        <wux-alert theme="light" title="https://github.com/wux-weapp/wux-weapp" />
-        <wux-white-space />
-        <wux-alert theme="stable" title="https://github.com/wux-weapp/wux-weapp" />
-        <wux-white-space />
-        <wux-alert theme="positive" title="https://github.com/wux-weapp/wux-weapp" />
-        <wux-white-space />
-        <wux-alert theme="calm" title="https://github.com/wux-weapp/wux-weapp" />
-        <wux-white-space />
-        <wux-alert theme="assertive" title="https://github.com/wux-weapp/wux-weapp" />
-        <wux-white-space />
-        <wux-alert theme="balanced" title="https://github.com/wux-weapp/wux-weapp" />
-        <wux-white-space />
-        <wux-alert theme="energized" title="https://github.com/wux-weapp/wux-weapp" />
-        <wux-white-space />
-        <wux-alert theme="royal" title="https://github.com/wux-weapp/wux-weapp" />
-        <wux-white-space />
-        <wux-alert theme="dark" title="https://github.com/wux-weapp/wux-weapp" />
-        <view class="sub-title">Closable</view>
-        <wux-alert closable title="微信小程序自定义组件" label="https://github.com/wux-weapp/wux-weapp" />
-        <wux-white-space />
-        <wux-alert closable title="微信小程序自定义组件" label="https://github.com/wux-weapp/wux-weapp" />
-        <wux-white-space />
-        <wux-alert closable title="微信小程序自定义组件" label="https://github.com/wux-weapp/wux-weapp" />
-        <view class="sub-title">Thumb</view>
-        <wux-alert thumb="http://cdn.skyvow.cn/logo.png" label="https://github.com/wux-weapp/wux-weapp" />
-        <wux-white-space />
-        <wux-alert thumb="http://cdn.skyvow.cn/logo.png" label="https://github.com/wux-weapp/wux-weapp" />
-        <wux-white-space />
-        <wux-alert thumb="http://cdn.skyvow.cn/logo.png" label="https://github.com/wux-weapp/wux-weapp" />
-        <view class="sub-title">Slot</view>
-        <wux-alert theme="balanced">
-            <wux-icon wux-class="thumb" type="ios-checkmark-circle-outline" size="20" color="#fff" slot="header" />
-            <text>微信小程序自定义组件</text>
-            <wux-icon wux-class="close" type="ios-close-circle-outline" size="20" color="#fff" slot="footer" />
-        </wux-alert>
-        <wux-white-space />
-        <wux-alert theme="energized">
-            <wux-icon wux-class="thumb" type="ios-alert" size="20" color="#fff" slot="header" />
-            <text>微信小程序自定义组件</text>
-        </wux-alert>
-        <wux-white-space />
-        <wux-alert theme="assertive">
-            <wux-icon wux-class="thumb" type="ios-close-circle-outline" size="20" color="#fff" slot="header" />
-            <text>微信小程序自定义组件</text>
-        </wux-alert>
-    </view>
+  <view class="page__hd">
+    <view class="page__title">Alert</view>
+    <view class="page__desc">警告框</view>
+  </view>
+  <view class="page__bd page__bd_spacing">
+    <view class="sub-title">Theme</view>
+    <wux-alert theme="light" title="https://github.com/wux-weapp/wux-weapp" />
+    <wux-white-space />
+    <wux-alert theme="stable" title="https://github.com/wux-weapp/wux-weapp" />
+    <wux-white-space />
+    <wux-alert
+      theme="positive"
+      title="https://github.com/wux-weapp/wux-weapp"
+    />
+    <wux-white-space />
+    <wux-alert theme="calm" title="https://github.com/wux-weapp/wux-weapp" />
+    <wux-white-space />
+    <wux-alert
+      theme="assertive"
+      title="https://github.com/wux-weapp/wux-weapp"
+    />
+    <wux-white-space />
+    <wux-alert
+      theme="balanced"
+      title="https://github.com/wux-weapp/wux-weapp"
+    />
+    <wux-white-space />
+    <wux-alert
+      theme="energized"
+      title="https://github.com/wux-weapp/wux-weapp"
+    />
+    <wux-white-space />
+    <wux-alert theme="royal" title="https://github.com/wux-weapp/wux-weapp" />
+    <wux-white-space />
+    <wux-alert theme="dark" title="https://github.com/wux-weapp/wux-weapp" />
+    <view class="sub-title">Closable</view>
+    <wux-alert
+      closable
+      title="微信小程序自定义组件"
+      label="https://github.com/wux-weapp/wux-weapp"
+    />
+    <wux-white-space />
+    <wux-alert
+      closable
+      title="微信小程序自定义组件"
+      label="https://github.com/wux-weapp/wux-weapp"
+    />
+    <wux-white-space />
+    <wux-alert
+      closable
+      title="微信小程序自定义组件"
+      label="https://github.com/wux-weapp/wux-weapp"
+    />
+    <view class="sub-title">Thumb</view>
+    <wux-alert
+      thumb="http://cdn.skyvow.cn/logo.png"
+      label="https://github.com/wux-weapp/wux-weapp"
+    />
+    <wux-white-space />
+    <wux-alert
+      thumb="http://cdn.skyvow.cn/logo.png"
+      label="https://github.com/wux-weapp/wux-weapp"
+    />
+    <wux-white-space />
+    <wux-alert
+      thumb="http://cdn.skyvow.cn/logo.png"
+      label="https://github.com/wux-weapp/wux-weapp"
+    />
+    <view class="sub-title">Slot</view>
+    <wux-alert theme="balanced">
+      <wux-icon
+        wux-class="thumb"
+        type="ios-checkmark-circle-outline"
+        size="20"
+        color="#fff"
+        slot="header"
+      />
+      <text>微信小程序自定义组件</text>
+      <wux-icon
+        wux-class="close"
+        type="ios-close-circle-outline"
+        size="20"
+        color="#fff"
+        slot="footer"
+      />
+    </wux-alert>
+    <wux-white-space />
+    <wux-alert theme="energized">
+      <wux-icon
+        wux-class="thumb"
+        type="ios-alert"
+        size="20"
+        color="#fff"
+        slot="header"
+      />
+      <text>微信小程序自定义组件</text>
+    </wux-alert>
+    <wux-white-space />
+    <wux-alert theme="assertive">
+      <wux-icon
+        wux-class="thumb"
+        type="ios-close-circle-outline"
+        size="20"
+        color="#fff"
+        slot="header"
+      />
+      <text>微信小程序自定义组件</text>
+    </wux-alert>
+  </view>
 </view>
 ```
 
@@ -84,27 +141,27 @@
 
 ### Alert props
 
-| 参数 | 类型 | 描述 | 默认值 |
-| --- | --- | --- | --- |
-| prefixCls | `string` | 自定义类名前缀 | wux-alert |
-| classNames | `any` | 过渡的类名，更多内置过渡效果请参考 [AnimationGroup](animation-group.md) | wux-animate--fadeIn |
-| theme | `string` | 主题色，可选值为 light、stable、positive、calm、assertive、balanced、energized、royal、dark | balanced |
-| thumb | `string` | 缩略图 | - |
-| title | `string` | 标题 | - |
-| label | `string` | 描述 | - |
-| closable | `boolean` | 是否显示关闭按钮 | false |
-| bind:click | `function` | 点击关闭或者操作区域的回调函数 | - |
+| 参数       | 类型       | 描述                                                                                        | 默认值              |
+| ---------- | ---------- | ------------------------------------------------------------------------------------------- | ------------------- |
+| prefixCls  | `string`   | 自定义类名前缀                                                                              | wux-alert           |
+| classNames | `any`      | 过渡的类名，更多内置过渡效果请参考 [AnimationGroup](animation-group.md)                     | wux-animate--fadeIn |
+| theme      | `string`   | 主题色，可选值为 light、stable、positive、calm、assertive、balanced、energized、royal、dark | balanced            |
+| thumb      | `string`   | 缩略图                                                                                      | -                   |
+| title      | `string`   | 标题                                                                                        | -                   |
+| label      | `string`   | 描述                                                                                        | -                   |
+| closable   | `boolean`  | 是否显示关闭按钮                                                                            | false               |
+| bind:click | `function` | 点击关闭或者操作区域的回调函数                                                              | -                   |
 
 ### Alert slot
 
-| 名称 | 描述 |
-| --- | --- |
-| - | 自定义标题或描述 |
-| header | 自定义缩略图 |
-| footer | 自定义右侧内容 |
+| 名称   | 描述             |
+| ------ | ---------------- |
+| -      | 自定义标题或描述 |
+| header | 自定义缩略图     |
+| footer | 自定义右侧内容   |
 
 ### Alert externalClasses
 
-| 名称 | 描述 |
-| --- | --- |
+| 名称      | 描述         |
+| --------- | ------------ |
 | wux-class | 根节点样式类 |

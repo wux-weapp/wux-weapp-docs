@@ -8,10 +8,10 @@
 
 ```json
 {
-    "navigationBarTitleText": "Gallery",
-    "usingComponents": {
-        "wux-gallery": "../../dist/gallery/index"
-    }
+  "navigationBarTitleText": "Gallery",
+  "usingComponents": {
+    "wux-gallery": "../../dist/gallery/index"
+  }
 }
 ```
 
@@ -23,66 +23,78 @@
 <wux-gallery id="wux-gallery" />
 
 <view class="page">
-    <view class="page__hd">
-        <view class="page__title">Gallery</view>
-        <view class="page__desc">画廊</view>
+  <view class="page__hd">
+    <view class="page__title">Gallery</view>
+    <view class="page__desc">画廊</view>
+  </view>
+  <view class="page__bd">
+    <view class="weui-cells__title">基于小程序原生的wx.previewImage</view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell">
+        <view class="weui-cell__bd">
+          <view class="weui-uploader">
+            <view class="weui-uploader__bd">
+              <view class="weui-uploader__files">
+                <block wx:for-items="{{ urls }}" wx:key="{{ index }}">
+                  <view
+                    class="weui-uploader__file"
+                    bindtap="previewImage"
+                    data-current="{{ item }}"
+                  >
+                    <image class="weui-uploader__img" src="{{ item }}" />
+                  </view>
+                </block>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
     </view>
-    <view class="page__bd">
-        <view class="weui-cells__title">基于小程序原生的wx.previewImage</view>
-        <view class="weui-cells weui-cells_after-title">
-            <view class="weui-cell">
-                <view class="weui-cell__bd">
-                    <view class="weui-uploader">
-                        <view class="weui-uploader__bd">
-                            <view class="weui-uploader__files">
-                                <block wx:for-items="{{ urls }}" wx:key="{{ index }}">
-                                    <view class="weui-uploader__file" bindtap="previewImage" data-current="{{ item }}">
-                                        <image class="weui-uploader__img" src="{{ item }}" />
-                                    </view>
-                                </block>
-                            </view>
-                        </view>
-                    </view>
-                </view>
+    <view class="weui-cells__title">自定义gallery</view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell">
+        <view class="weui-cell__bd">
+          <view class="weui-uploader">
+            <view class="weui-uploader__bd">
+              <view class="weui-uploader__files">
+                <block wx:for-items="{{ urls }}" wx:key="{{ index }}">
+                  <view
+                    class="weui-uploader__file"
+                    bindtap="showGallery"
+                    data-current="{{ index }}"
+                  >
+                    <image class="weui-uploader__img" src="{{ item }}" />
+                  </view>
+                </block>
+              </view>
             </view>
+          </view>
         </view>
-        <view class="weui-cells__title">自定义gallery</view>
-        <view class="weui-cells weui-cells_after-title">
-            <view class="weui-cell">
-                <view class="weui-cell__bd">
-                    <view class="weui-uploader">
-                        <view class="weui-uploader__bd">
-                            <view class="weui-uploader__files">
-                                <block wx:for-items="{{ urls }}" wx:key="{{ index }}">
-                                    <view class="weui-uploader__file" bindtap="showGallery" data-current="{{ index }}">
-                                        <image class="weui-uploader__img" src="{{ item }}" />
-                                    </view>
-                                </block>
-                            </view>
-                        </view>
-                    </view>
-                </view>
-            </view>
-        </view>
-        <view class="weui-cells__title">带说明文案 & 自定义图标</view>
-        <view class="weui-cells weui-cells_after-title">
-            <view class="weui-cell">
-                <view class="weui-cell__bd">
-                    <view class="weui-uploader">
-                        <view class="weui-uploader__bd">
-                            <view class="weui-uploader__files">
-                                <block wx:for-items="{{ urls }}" wx:key="{{ index }}">
-                                    <view class="weui-uploader__file" bindtap="showGallery2" data-current="{{ index }}">
-                                        <image class="weui-uploader__img" src="{{ item }}" />
-                                    </view>
-                                </block>
-                            </view>
-                        </view>
-                    </view>
-                </view>
-            </view>
-        </view>
+      </view>
     </view>
+    <view class="weui-cells__title">带说明文案 & 自定义图标</view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell">
+        <view class="weui-cell__bd">
+          <view class="weui-uploader">
+            <view class="weui-uploader__bd">
+              <view class="weui-uploader__files">
+                <block wx:for-items="{{ urls }}" wx:key="{{ index }}">
+                  <view
+                    class="weui-uploader__file"
+                    bindtap="showGallery2"
+                    data-current="{{ index }}"
+                  >
+                    <image class="weui-uploader__img" src="{{ item }}" />
+                  </view>
+                </block>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
 </view>
 ```
 
@@ -90,69 +102,69 @@
 import { $wuxGallery } from '../../dist/index'
 
 Page({
-    data: {
-        urls: [
-            'http://cdn.skyvow.cn/logo.png',
-            'http://cdn.skyvow.cn/logo.png',
-            'http://cdn.skyvow.cn/logo.png',
-            'http://cdn.skyvow.cn/logo.png',
-        ],
-    },
-    onLoad() {},
-    showGallery(e) {
-        const { current } = e.currentTarget.dataset
-        const { urls } = this.data
+  data: {
+    urls: [
+      'http://cdn.skyvow.cn/logo.png',
+      'http://cdn.skyvow.cn/logo.png',
+      'http://cdn.skyvow.cn/logo.png',
+      'http://cdn.skyvow.cn/logo.png',
+    ],
+  },
+  onLoad() {},
+  showGallery(e) {
+    const { current } = e.currentTarget.dataset
+    const { urls } = this.data
 
-        this.$wuxGallery = $wuxGallery()
+    this.$wuxGallery = $wuxGallery()
 
-        this.$wuxGallery.show({
-            current,
-            urls,
-            [`delete`]: (current, urls) => {
-                urls.splice(current, 1)
-                this.setData({
-                    urls,
-                })
-                return true
-            },
-            cancel() {
-                console.log('Close gallery')
-            },
-            onTap(current, urls) {
-                console.log(current, urls)
-                return true
-            },
-            onChange(e) {
-                console.log(e)
-            },
+    this.$wuxGallery.show({
+      current,
+      urls,
+      [`delete`]: (current, urls) => {
+        urls.splice(current, 1)
+        this.setData({
+          urls,
         })
-    },
-    showGallery2(e) {
-        const { current } = e.currentTarget.dataset
-        const { urls } = this.data
+        return true
+      },
+      cancel() {
+        console.log('Close gallery')
+      },
+      onTap(current, urls) {
+        console.log(current, urls)
+        return true
+      },
+      onChange(e) {
+        console.log(e)
+      },
+    })
+  },
+  showGallery2(e) {
+    const { current } = e.currentTarget.dataset
+    const { urls } = this.data
 
-        $wuxGallery().show({
-            current,
-            urls: urls.map((n) => ({ image: n, remark: n })),
-            indicatorDots: true,
-            indicatorColor: '#fff',
-            indicatorActiveColor: '#04BE02',
-            icon: 'http://cdn.skyvow.cn/logo.png',
-            [`delete`]: (current, urls) => {
-                console.log('onIconClick')
-                return true
-            },
-        })
-    },
-    previewImage(e) {
-        const { current } = e.currentTarget.dataset
-        const { urls } = this.data
+    $wuxGallery().show({
+      current,
+      urls: urls.map((n) => ({ image: n, remark: n })),
+      indicatorDots: true,
+      indicatorColor: '#fff',
+      indicatorActiveColor: '#04BE02',
+      icon: 'http://cdn.skyvow.cn/logo.png',
+      [`delete`]: (current, urls) => {
+        console.log('onIconClick')
+        return true
+      },
+    })
+  },
+  previewImage(e) {
+    const { current } = e.currentTarget.dataset
+    const { urls } = this.data
 
-        wx.previewImage({
-            current,
-            urls,
-        })
-    },
+    wx.previewImage({
+      current,
+      urls,
+    })
+  },
 })
 ```
 
@@ -162,27 +174,27 @@ Page({
 
 ## API
 
-| 参数 | 类型 | 描述 | 默认值 |
-| --- | --- | --- | --- |
-| options | `object` | 配置项 | - |
-| options.prefixCls | `string` | 自定义类名前缀 | wux-gallery |
-| options.classNames | `any` | 过渡的类名，更多内置过渡效果请参考 [AnimationGroup](animation-group.md) | wux-animate--slideInRight |
-| options.indicatorDots | `boolean` | 是否显示面板指示点 | false |
-| options.indicatorColor | `string` | 指示点颜色 | rgba(0, 0, 0, .3) |
-| options.indicatorActiveColor | `string` | 当前选中的指示点颜色 | #000000 |
-| options.autoplay | `boolean` | 是否自动切换 | false |
-| options.interval | `number` | 自动切换时间间隔 | 5000 |
-| options.duration | `number` | 滑动动画时长 | 500 |
-| options.circular | `boolean` | 是否采用衔接滑动 | false |
-| options.vertical | `boolean` | 滑动方向是否为纵向 | false |
-| options.showDelete | `boolean` | 是否显示删除按钮 | true |
-| options.icon | `string` | 自定义图标 | - |
-| options.allowScale | `boolean` | 是否支持手势缩放 | true |
-| options.current | `number` | 当前显示图片的索引值 | 0 |
-| options.urls | `array` | 需要预览的图片链接列表 | [] |
-| options.delete | `function` | 点击删除的回调函数，返回值为 true 时将会关闭组件 | - |
-| options.cancel | `function` | 点击关闭的回调函数 | - |
-| options.onTap | `function` | 图片点击事件，返回值为 true 时将会关闭组件 | - |
+| 参数                         | 类型       | 描述                                                                    | 默认值                    |
+| ---------------------------- | ---------- | ----------------------------------------------------------------------- | ------------------------- |
+| options                      | `object`   | 配置项                                                                  | -                         |
+| options.prefixCls            | `string`   | 自定义类名前缀                                                          | wux-gallery               |
+| options.classNames           | `any`      | 过渡的类名，更多内置过渡效果请参考 [AnimationGroup](animation-group.md) | wux-animate--slideInRight |
+| options.indicatorDots        | `boolean`  | 是否显示面板指示点                                                      | false                     |
+| options.indicatorColor       | `string`   | 指示点颜色                                                              | rgba(0, 0, 0, .3)         |
+| options.indicatorActiveColor | `string`   | 当前选中的指示点颜色                                                    | #000000                   |
+| options.autoplay             | `boolean`  | 是否自动切换                                                            | false                     |
+| options.interval             | `number`   | 自动切换时间间隔                                                        | 5000                      |
+| options.duration             | `number`   | 滑动动画时长                                                            | 500                       |
+| options.circular             | `boolean`  | 是否采用衔接滑动                                                        | false                     |
+| options.vertical             | `boolean`  | 滑动方向是否为纵向                                                      | false                     |
+| options.showDelete           | `boolean`  | 是否显示删除按钮                                                        | true                      |
+| options.icon                 | `string`   | 自定义图标                                                              | -                         |
+| options.allowScale           | `boolean`  | 是否支持手势缩放                                                        | true                      |
+| options.current              | `number`   | 当前显示图片的索引值                                                    | 0                         |
+| options.urls                 | `array`    | 需要预览的图片链接列表                                                  | []                        |
+| options.delete               | `function` | 点击删除的回调函数，返回值为 true 时将会关闭组件                        | -                         |
+| options.cancel               | `function` | 点击关闭的回调函数                                                      | -                         |
+| options.onTap                | `function` | 图片点击事件，返回值为 true 时将会关闭组件                              | -                         |
 
 ### Gallery.method
 

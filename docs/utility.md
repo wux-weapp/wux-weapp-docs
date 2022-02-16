@@ -66,9 +66,15 @@
 ### Ellipsis 文字省略
 
 ```html
-<view class="wux-ellipsis">One line: https://github.com/wux-weapp/wux-weapp</view>
-<view class="wux-ellipsis--l2">Two lines: https://github.com/wux-weapp/wux-weapp</view>
-<view class="wux-ellipsis--l3">Three lines: https://github.com/wux-weapp/wux-weapp</view>
+<view class="wux-ellipsis"
+  >One line: https://github.com/wux-weapp/wux-weapp</view
+>
+<view class="wux-ellipsis--l2"
+  >Two lines: https://github.com/wux-weapp/wux-weapp</view
+>
+<view class="wux-ellipsis--l3"
+  >Three lines: https://github.com/wux-weapp/wux-weapp</view
+>
 ```
 
 ### Floats 浮动类
