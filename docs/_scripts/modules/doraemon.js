@@ -138,7 +138,7 @@ class CustomDoraemon extends HTMLElement {
           width: var(--dora-height);
           height: var(--dora-height);
           box-sizing: border-box;
-          /** animation: dora-volar 1s linear 2s infinite alternate; */
+          animation: dora-volar 1s linear 2s infinite alternate;
       }
       .dora__head {
           width: calc(var(--height-10) * 20);
