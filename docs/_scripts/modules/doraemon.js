@@ -633,7 +633,7 @@ class CustomDoraemon extends HTMLElement {
       childList: true,
       subtree: true,
     })
-    el.addEventListener('DOMNodeRemoved', callback)
+    !MutationObserver && el.addEventListener('DOMNodeRemoved', callback)
     window.addEventListener('resize', onResize)
     onResize()
   }
