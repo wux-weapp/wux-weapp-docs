@@ -1,4 +1,4 @@
-![logo](_images/logo.png)
+![logo](_images/logo2.png)
 
 # Wux Weapp <small>3.8.8</small>
 
@@ -22,13 +22,13 @@ section.cover.has-mask .mask {
 .cover.show:after {
 	content: "";
 	position: absolute;
-	top: 44px;
-	right: 80px;
-	width: 256px;
+	top: 22px;
+	right: 40px;
+	width: 375px;
     max-width: 80%;
-	height: 75px;
+	height: 180px;
 	z-index: 1;
-	background-image: url(_images/2022olympic.webp);
+	background-image: url(_images/party02.png);
 	background-repeat: no-repeat;
 	background-size: contain;
 }
@@ -40,7 +40,7 @@ section.cover.has-mask .mask {
 	width: 100vw;
 	height: 100vh;
     z-index: 1;
-	background-image: url(_images/2022dongao.webp);
+	background-image: url(_images/2022lhui.png);
 	background-position: top center;
 	background-attachment: fixed;
 	background-size: cover;
