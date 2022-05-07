@@ -1,6 +1,6 @@
 ![logo](_images/logo2.png)
 
-# Wux Weapp <small>3.8.8</small>
+# Wux Weapp <small>3.8.9</small>
 
 <!-- 背景 -->
 <style>
