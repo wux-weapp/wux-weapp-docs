@@ -15,11 +15,11 @@ section.cover.has-mask .mask {
 .github-corner {
     z-index: 10;
 }
-.cover.show {
+section.cover.show {
 	position: relative;
 	background-image: linear-gradient(to bottom, rgba(var(--theme-color-rgb), 0.45), #fff) !important
 }
-.cover.show:after {
+section.cover.show:after {
 	content: "";
 	position: absolute;
 	top: 22px;
@@ -31,8 +31,9 @@ section.cover.has-mask .mask {
 	background-image: url(_images/party02.png);
 	background-repeat: no-repeat;
 	background-size: contain;
+    filter: var(--filter);
 }
-.cover.show:before {
+section.cover.show:before {
     content: "";
 	position: absolute;
 	top: 0;
@@ -45,9 +46,10 @@ section.cover.has-mask .mask {
 	background-attachment: fixed;
 	background-size: cover;
 	background-repeat: no-repeat;
+    filter: var(--filter);
 }
 @media (max-width: 767px) {
-    .cover.show:after {
+    section.cover.show:after {
         display: none;
         right: 0;
     }

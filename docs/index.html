@@ -67,6 +67,7 @@
 
     <!-- Other Styles -->
     <link rel="stylesheet" href="_scripts/lib/themes/vue.css" />
+    <link rel="stylesheet" href="_scripts/lib/plugins/docsify-darklight-theme.min.css">
     <style>
       .layui-layer {
         border-radius: 12px !important;
@@ -76,6 +77,7 @@
       }
       #ilove {
         background: #fff;
+        background-color: var(--background);
         border-radius: 12px;
         text-align: center;
       }
@@ -88,6 +90,9 @@
       .ilove__content {
         padding-bottom: 12px;
       }
+      .ilove__content > img {
+        filter: var(--filter);
+      }
       @media (max-width: 767px) {
         .ilove__content img {
           width: 128px;
@@ -98,6 +103,7 @@
     <style>
       .markdown-section p > img {
         box-shadow: 0 8px 20px rgba(143, 168, 191, 0.35);
+        filter: var(--filter);
       }
       .markdown-section code {
         background-color: rgba(var(--theme-color-rgb), 0.15);
@@ -105,6 +111,52 @@
       }
       .markdown-section ul li {
         list-style-type: circle;
+      }
+    </style>
+    <style>
+      @media screen and (max-width: 768px) {
+        #docsify-darklight-theme {
+          top: 2px;
+        }
+      }
+      .layui-layer, .markdown-section p > img {
+        box-shadow: var(--boxShadow) !important;
+      }
+      .markdown-section code {
+        border-radius: 4px;
+      }
+      .markdown-section p.tip {
+        border-bottom-right-radius: 4px;
+        border-top-right-radius: 4px;
+      }
+      .markdown-section pre, .markdown-section iframe, .markdown-section table {
+        border-radius: 12px;
+      }
+      .markdown-section hr {
+        border-color: var(--borderColor);
+      }
+      .markdown-section table {
+        display: inline-block;
+        width: auto;
+        max-width: 100%;
+        border: 1px solid #e6e6e6;
+      }
+      .markdown-section table thead tr,
+      .markdown-section table thead th {
+        border-top: none;
+      }
+      .markdown-section table tr:last-child td {
+        border-bottom: none;
+      }
+      .markdown-section table tr td:first-child, .markdown-section table tr th:first-child {
+        border-left: none;
+      }
+      .markdown-section table tr td:last-child, .markdown-section table tr th:last-child {
+        border-right: none;
+      }
+      .markdown-section td, .markdown-section th {
+        padding: 10px 24px;
+        border-color: var(--borderColor);
       }
     </style>
     <script>
@@ -156,6 +208,27 @@
     <div id="app"></div>
     <script>
       window.$docsify = {
+        darklightTheme: {
+          siteFont: '-apple-system, BlinkMacSystemFont, Segoe UI, PingFang SC',
+          bodyFontSize: '15px',
+          light: {
+            accent: 'var(--theme-color)',
+            coverBackground: 'unset',
+            filter: 'unset',
+            toogleImage: 'url(\/_images\/moon\.svg)'
+          },
+          dark: {
+            background: '#232527',
+            borderColor: '#2F3134',
+            codeTextColor: '#C8CED6',
+            codeBackgroundColor: '#0D0D0E',
+            boxShadow: '0 3px 12px rgba(0, 0, 0, .2)',
+            accent: 'var(--theme-color)',
+            coverBackground: 'unset',
+            filter: 'brightness(.85)',
+            toogleImage: 'url(\/_images\/sun\.svg)'
+          }
+        },
         coverpage: true,
         loadSidebar: true,
         loadNavbar: true,
@@ -200,6 +273,7 @@
     <script src="_scripts/lib/plugins/emoji.min.js"></script>
     <script src="_scripts/lib/plugins/docsify-copy-code.min.js"></script>
     <script src="_scripts/lib/plugins/progress.min.js"></script>
+    <script src="_scripts/lib/plugins/docsify-darklight-theme.min.js"></script>
     <script type="module" src="_scripts/modules/main.js"></script>
   </body>
 </html>
