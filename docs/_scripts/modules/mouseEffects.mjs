@@ -7,8 +7,6 @@ const defaultTips = [
 ]
 
 class MouseEffects {
-  static id = 0
-
   constructor(tips = defaultTips) {
     this.tips = tips
   }
@@ -37,5 +35,7 @@ class MouseEffects {
     MouseEffects.id = (MouseEffects.id + 1) % this.tips.length
   }
 }
+
+MouseEffects.id = 0
 
 export const mouseEffects = new MouseEffects()

@@ -1,5 +1,5 @@
-import { loadScript } from '../../utils/loadScript.js'
-import { loadWeather } from '../../utils/loadWeather.js'
+import { loadScript } from '../../utils/loadScript.mjs'
+import { loadWeather } from '../../utils/loadWeather.mjs'
 
 const initLAB = () => {
   loadScript('_scripts/modules/LAB/LAB.min.js').then(() => {

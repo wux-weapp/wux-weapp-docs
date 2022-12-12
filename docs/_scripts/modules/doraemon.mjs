@@ -1,4 +1,4 @@
-class CustomDoraemon extends HTMLElement {
+class DoraemonView extends HTMLElement {
   constructor() {
     super()
     const shadow = this.attachShadow({ mode: 'open' })
@@ -6,7 +6,7 @@ class CustomDoraemon extends HTMLElement {
     this.setNode(template.content)
     this.setStyle(template.content)
     shadow.appendChild(template.content.cloneNode(true))
-    CustomDoraemon.observer(shadow)
+    DoraemonView.observer(shadow)
   }
 
   setNode(container) {
@@ -595,17 +595,18 @@ class CustomDoraemon extends HTMLElement {
     `
     container.appendChild(style)
   }
+}
 
-  static disabled = false
+DoraemonView.disabled = false
 
-  static observer(el, onResizeCb) {
+DoraemonView.observer = (el, onResizeCb) => {
     const MutationObserver =
       window.MutationObserver ||
       window.WebKitMutationObserver ||
       window.MozMutationObserver
     const callback = () => {
-      if (!CustomDoraemon.disabled) {
-        CustomDoraemon.disabled = true
+      if (!DoraemonView.disabled) {
+        DoraemonView.disabled = true
         document.body.textContent = '多啦A梦hin生气，后果hin严重！！！'
       }
     }
@@ -636,7 +637,6 @@ class CustomDoraemon extends HTMLElement {
     !MutationObserver && el.addEventListener('DOMNodeRemoved', callback)
     window.addEventListener('resize', onResize)
     onResize()
-  }
 }
 
-export { CustomDoraemon }
+export { DoraemonView }
