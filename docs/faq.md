@@ -57,5 +57,5 @@
 
 ### 你们有接受捐助的渠道吗，比如支付宝或者微信支付？
 
-![alipay](_images/alipay.jpg ':size=256')
-![wxpay](_images/wxpay.jpg ':size=256')
+![alipay](_images/tinified/alipay.jpg ':size=256x256')
+![wxpay](_images/tinified/wxpay.jpg ':size=256x256')

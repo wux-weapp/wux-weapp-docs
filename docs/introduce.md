@@ -10,7 +10,7 @@
 ## 版本
 
 <a href="https://www.npmjs.com/package/wux-weapp" target="_blank">
-  <img src='https://img.shields.io/npm/v/wux-weapp.svg' />
+  <img alt="npm" src='https://img.shields.io/npm/v/wux-weapp.svg' />
 </a>
 
 ## 支持环境
@@ -23,7 +23,7 @@
 
 您可以扫描下方的小程序码体验。
 
-![logo](_images/qrcode.jpg)
+![logo](_images/tinified/qrcode.jpg ':size=256x256')
 
 ## 相关链接
 
@@ -34,7 +34,7 @@
 
 ## 谁在使用
 
-![case](_images/cases.png)
+![case](_images/tinified/cases.png)
 
 ?> 如果您的公司或产品使用了 Wux Weapp，欢迎到 [这里](https://github.com/wux-weapp/wux-weapp/issues/123) 留言。
 
@@ -50,6 +50,6 @@
 注意：如果添加『Wux 小猪手』没有反应，可以再尝试添加后边作者『Skyvow』微信。
 
 <p>
-  <img src="_images/wxrobot-helper.png" width="256" style="display: inline;">
-  <img src="_images/wechat.png" width="256" style="display: inline;">
+  <img alt="wxrobot" src="_images/tinified/wxrobot-helper.png" width="256" height="256" style="display: inline;">
+  <img alt="wechat" src="_images/tinified/wechat.png" width="256" height="256" style="display: inline;">
 </p>

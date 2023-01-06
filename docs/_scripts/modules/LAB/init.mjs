@@ -22,8 +22,8 @@ const initLAB = () => {
           <p>快邀请你的另一半，一起来体验吧~</p>
         </div>
         <div class="ilove__content">
-          <img src="_images/wx_mini_qrcode.jpg" alt="微信小程序 - iLove恋爱小事" width="256" height="256">
-          <img src="_images/qq_mini_qrcode.jpg" alt="QQ小程序 - iLove恋爱小事" width="256" height="256">
+          <img src="_images/tinified/wx_mini_qrcode.jpg" alt="微信小程序 - iLove恋爱小事" width="256" height="256">
+          <img src="_images/tinified/qq_mini_qrcode.jpg" alt="QQ小程序 - iLove恋爱小事" width="256" height="256">
         </div>
       `)
       setTimeout(() => {

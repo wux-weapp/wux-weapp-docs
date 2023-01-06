@@ -1,4 +1,4 @@
-![logo](_images/logo2.png)
+![logo](_images/tinified/logo2.png ':size=128x128')
 
 # Wux Weapp <small>3.8.9</small>
 
@@ -28,7 +28,7 @@ section.cover.show:after {
     max-width: 80%;
 	height: 180px;
 	z-index: 1;
-	background-image: url(_images/party02.png);
+	background-image: url(_images/tinified/party02.png);
 	background-repeat: no-repeat;
 	background-size: contain;
     filter: var(--filter);
@@ -41,7 +41,7 @@ section.cover.show:before {
 	width: 100vw;
 	height: 100vh;
     z-index: 1;
-	background-image: url(_images/2022lhui.png);
+	background-image: url(_images/tinified/2022lhui.png);
 	background-position: top center;
 	background-attachment: fixed;
 	background-size: cover;
@@ -55,8 +55,18 @@ section.cover.show:before {
     }
 }
 </style>
+<style>
+.img-shields {
+    font-size: 0;
+}
+.img-shields > a:not(:last-child) {
+    display: inline-block;
+    margin-right: 6px;
+    margin-bottom: 6px;
+}
+</style>
 
-<div>
+<div class="img-shields">
     <a href="https://github.com/wux-weapp/wux-weapp/" target="_blank">
         <img alt="star this repo" src="https://img.shields.io/github/stars/wux-weapp/wux-weapp" />
     </a>
@@ -70,7 +80,7 @@ section.cover.show:before {
         <img alt="travis" src="https://img.shields.io/travis/wux-weapp/wux-weapp.svg?label=travis" />
     </a>
     <a href="https://github.com/wux-weapp/wux-weapp/actions" target="_blank">
-        <img alt="github workflow" src="https://img.shields.io/github/workflow/status/wux-weapp/wux-weapp/test?label=github workflow" />
+        <img alt="github workflow" src="https://img.shields.io/github/actions/workflow/status/wux-weapp/wux-weapp/test.yml?label=github workflow" />
     </a>
     <br />
     <a href="https://www.npmjs.com/package/wux-weapp" target="_blank">
@@ -104,4 +114,4 @@ section.cover.show:before {
 [GitHub](https://github.com/wux-weapp/wux-weapp/)
 [Get Started](introduce)
 
-[//]: #(![](_images/home_bg.jpg))
+[//]: #(![](_images/tinified/home_bg.jpg))
