@@ -68,6 +68,7 @@
     <!-- Other Styles -->
     <link rel="stylesheet" href="_scripts/lib/themes/vue.css" />
     <link rel="stylesheet" href="_scripts/lib/plugins/docsify-darklight-theme.min.css">
+    <link rel="stylesheet" href="_scripts/lib/plugins/gitalk.min.css">
     <style>
       footer {
         text-align: center !important;
@@ -230,7 +231,8 @@
             accent: 'var(--theme-color)',
             coverBackground: 'unset',
             filter: 'unset',
-            toogleImage: 'url(\/_images\/moon\.svg)'
+            toogleImage: 'url(\/_images\/moon\.svg)',
+            colorHeaderLogo: '#6190e8'
           },
           dark: {
             background: '#232527',
@@ -241,7 +243,8 @@
             accent: 'var(--theme-color)',
             coverBackground: 'unset',
             filter: 'brightness(.85)',
-            toogleImage: 'url(\/_images\/sun\.svg)'
+            toogleImage: 'url(\/_images\/sun\.svg)',
+            colorHeaderLogo: '#f0f6fc'
           }
         },
         coverpage: true,
@@ -267,6 +270,17 @@
         },
         plugins: [
           function (hook) {
+            let gitalkContainer = '<div id="gitalk-container"></div>'
+
+            hook.doneEach(function (_) {
+              let el = document.getElementById('gitalk-container')
+              while (el.hasChildNodes()) {
+                el.removeChild(el.firstChild)
+              }
+              // eslint-disable-next-line
+              window.gitalk.render('gitalk-container')
+            })
+
             let footer = [
               '<hr/>',
               '<footer>',
@@ -280,7 +294,7 @@
             ].join('')
 
             hook.afterEach(function (html) {
-              return html + footer
+              return html + gitalkContainer + footer
             })
           },
         ],
@@ -294,6 +308,19 @@
     <script src="_scripts/lib/plugins/docsify-copy-code.min.js"></script>
     <script src="_scripts/lib/plugins/progress.min.js"></script>
     <script src="_scripts/lib/plugins/docsify-darklight-theme.min.js"></script>
+    <script src="_scripts/lib/plugins/gitalk.min.js"></script>
     <script type="module" src="_scripts/modules/main.mjs"></script>
+    <script>
+      window.gitalk = new Gitalk({
+        clientID: '6d719b04a310bedcb43d',
+        clientSecret: 'ecc7091d308a176118d7937977a903faacab775e',
+        repo: 'wux-weapp',
+        owner: 'wux-weapp',
+        admin: ['skyvow'],
+        id: 'WuxUI',
+        // facebook-like distraction free mode
+        distractionFreeMode: false
+      })
+    </script>
   </body>
 </html>
