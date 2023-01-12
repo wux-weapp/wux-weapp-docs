@@ -311,9 +311,12 @@
     <script src="_scripts/lib/plugins/gitalk.min.js"></script>
     <script type="module" src="_scripts/modules/main.mjs"></script>
     <script>
+      const isGithubPages = window.location.hostname.indexOf('wux-weapp.github.io') !== -1
+      const clientID = isGithubPages ? 'a6b9004e6cce417efc34' : '6d719b04a310bedcb43d'
+      const clientSecret = isGithubPages ? 'f1f1f3c9c85642155dc9e45815109c7891520fe0' : 'ecc7091d308a176118d7937977a903faacab775e'
       window.gitalk = new Gitalk({
-        clientID: '6d719b04a310bedcb43d',
-        clientSecret: 'ecc7091d308a176118d7937977a903faacab775e',
+        clientID,
+        clientSecret,
         repo: 'wux-weapp',
         owner: 'wux-weapp',
         admin: ['skyvow'],
