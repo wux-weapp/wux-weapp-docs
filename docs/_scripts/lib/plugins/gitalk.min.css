@@ -1248,15 +1248,6 @@
   }
 }
 
-.gt-container .gt-ico-github svg {
-  fill: var(--colorHeaderLogo, #6190e8)
-}
-
-.gt-container .gt-btn-preview,
-.gt-container .gt-btn-preview:hover {
-  background-color: var(--codeBackgroundColor);
-}
-
 .gt-container .gt-header-preview,
 .gt-container .gt-comment-content,
 .gt-container .gt-comment-admin .gt-comment-content,
@@ -1269,6 +1260,14 @@
 .gt-container .gt-comment-content:hover,
 .gt-container .gt-comment-admin .gt-comment-content:hover {
   box-shadow: 0 0.625em 3.75em 0 var(--codeBackgroundColor);
+}
+
+.gt-container .gt-comment-content {
+  border-radius: 5px;
+}
+
+.gt-container .gt-header-textarea {
+  font-family: var(--siteFont),Helvetica Neue,Arial,sans-serif;
 }
 
 .gt-container .gt-comment-body {
@@ -1285,12 +1284,51 @@
   border-color: var(--borderColor);
 }
 
+.gt-container .gt-popup .gt-action.is--active:before {
+  background-color: var(--accent);
+}
+
 .gt-container a.is--active {
   color: var(--textColor) !important;
 }
 
 .gt-container .gt-avatar img {
   filter: var(--filter);
+}
+
+.gt-container .gt-header-controls-tip,
+.gt-container a,
+.gt-container a:hover,
+.gt-container .gt-comment-username {
+  color: var(--accent);
+}
+
+.gt-container .gt-svg svg {
+  fill: var(--accent) !important;
+}
+
+.gt-container .gt-ico-github .gt-svg svg {
+  fill: var(--colorHeaderLogo, #6190e8) !important;
+}
+
+.gt-container .gt-link,
+.gt-container .gt-link:hover {
+  border-color: var(--accent) !important;
+}
+
+.gt-container .gt-btn {
+  background-color: var(--accent);
+  border-color: var(--accent);
+}
+
+.gt-container .gt-btn-preview,
+.gt-container .gt-btn-preview:hover {
+  background-color: var(--codeBackgroundColor);
+  color: var(--accent);
+}
+
+.gt-container .gt-btn-preview:hover {
+  border-color: var(--accent);
 }
 
 /*# sourceMappingURL=gitalk.css.map*/
