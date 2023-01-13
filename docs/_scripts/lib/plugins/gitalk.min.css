@@ -1258,6 +1258,7 @@
 }
 
 .gt-container .gt-header-preview,
+.gt-container .gt-comment-content,
 .gt-container .gt-comment-admin .gt-comment-content,
 .gt-container .gt-header-textarea,
 .gt-container .gt-header-textarea:hover {
@@ -1265,6 +1266,7 @@
   color: var(--textColor) !important;
 }
 
+.gt-container .gt-comment-content:hover,
 .gt-container .gt-comment-admin .gt-comment-content:hover {
   box-shadow: 0 0.625em 3.75em 0 var(--codeBackgroundColor);
 }
@@ -1281,6 +1283,10 @@
 .gt-container .gt-popup {
   background-color: var(--background);
   border-color: var(--borderColor);
+}
+
+.gt-container a.is--active {
+  color: var(--textColor) !important;
 }
 
 .gt-container .gt-avatar img {
