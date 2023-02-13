@@ -148,6 +148,8 @@ Page({
 | bind:getphonenumber  | `function` | 获取用户手机号回调                                                                                                                                                                 | -            |
 | bind:error           | `function` | 当使用开放能力时，发生错误的回调                                                                                                                                                   | -            |
 | bind:opensetting     | `function` | 在打开授权设置页后回调                                                                                                                                                             | -            |
+| bind:launchapp     | `function` | 打开 APP 成功的回调，open-type=launchApp时有效                                                                        | -            |
+| bind:chooseavatar     | `function` | 获取用户头像回调，open-type=chooseAvatar时有效                                                                        | -            |
 
 > 更多参数说明请参考微信官方的表单组件 [Button](https://developers.weixin.qq.com/miniprogram/dev/component/button.html)。
 

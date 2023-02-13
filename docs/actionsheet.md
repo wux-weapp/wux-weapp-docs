@@ -141,6 +141,8 @@ Page({
 | bind:getphonenumber                    | `function` | 获取用户手机号回调                                                                                   | -                                |
 | bind:error                             | `function` | 当使用开放能力时，发生错误的回调                                                                     | -                                |
 | bind:opensetting                       | `function` | 在打开授权设置页后回调                                                                               | -                                |
+| bind:launchapp     | `function` | 打开 APP 成功的回调，open-type=launchApp时有效                                                                        | -            |
+| bind:chooseavatar     | `function` | 获取用户头像回调，open-type=chooseAvatar时有效                                                                        | -            |
 | options.buttonClicked                  | `function` | 按钮点击事件，返回值为 true 时将会关闭组件                                                           | -                                |
 | options.cancelText                     | `string`   | 取消按钮的文本                                                                                       | 取消                             |
 | options.cancel                         | `function` | 取消按钮或蒙层点击事件                                                                               | -                                |

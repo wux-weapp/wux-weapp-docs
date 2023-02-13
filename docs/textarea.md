@@ -212,6 +212,10 @@ Page({
 | selection-start   | `number`        | 光标起始位置，自动聚集时有效，需与 selection-end 搭配使用   | -1                |
 | selection-end     | `number`        | 光标结束位置，自动聚集时有效，需与 selection-start 搭配使用 | -1                |
 | adjust-position   | `boolean`       | 键盘弹起时，是否自动上推页面                                | true              |
+| hold-keyboard     | `boolean`       | focus时，点击页面的时候不收起键盘                                | false              |
+| disable-default-padding     | `boolean`       | 是否去掉 iOS 下的默认内边距                                | false              |
+| confirm-type     | `string`        | 设置键盘右下角按钮的文字                                | return              |
+| confirm-hold     | `boolean`       | 点击键盘右下角按钮时是否保持键盘不收起                                | false              |
 | rows              | `number`        | 行数                                                        | 1                 |
 | hasCount          | `boolean`       | 是否显示计数功能                                            | false             |
 | clear             | `boolean`       | 是否显示清除图标，当 `disabled` 为 `false` 时才生效         | false             |
@@ -221,6 +225,7 @@ Page({
 | bind:focus        | `function`      | 输入框聚焦时触发                                            | -                 |
 | bind:blur         | `function`      | 输入框失去焦点时触发                                        | -                 |
 | bind:confirm      | `function`      | 点击完成按钮时触发                                          | -                 |
+| bind:keyboardheightchange      | `function`      | 键盘高度发生变化的时候触发此事件                                          | -                 |
 | bind:clear        | `function`      | 点击清除图标时触发                                          | -                 |
 | bind:error        | `function`      | 点击报错图标时触发                                          | -                 |
 

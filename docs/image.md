@@ -131,7 +131,9 @@
 | prefixCls      | `string`   | 自定义类名前缀                                                                                       | wux-image   |
 | src            | `string`   | 图片资源地址                                                                                         | -           |
 | mode           | `string`   | 图片裁剪、缩放的模式，可参考 [image](https://mp.weixin.qq.com/debug/wxadoc/dev/component/image.html) | scaleToFill |
+| webp       | `boolean`  | 默认不解析 webP 格式，只支持网络资源                                               | false       |
 | lazyLoad       | `boolean`  | 图片懒加载。只针对 page 与 scroll-view 下的 image 有效                                               | false       |
+| showMenuByLongpress       | `boolean`  | 长按图片显示发送给朋友、收藏、保存图片、搜一搜、打开名片/前往群聊/打开小程序（若图片中包含对应二维码或小程序码）的菜单                                               | false       |
 | shape          | `string`   | 形状，可选值为 normal、rounded、circle、thumbnail                                                    | normal      |
 | width          | `any`      | 默认宽度，单位 px                                                                                    | 300         |
 | height         | `any`      | 默认高度，单位 px                                                                                    | 225         |

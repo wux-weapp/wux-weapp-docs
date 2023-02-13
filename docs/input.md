@@ -183,7 +183,7 @@ Page({
 | defaultValue      | `string`        | 默认值，当 `controlled` 为 `false` 时才生效                 | -                 |
 | value             | `string`        | 当前值，当 `controlled` 为 `true` 时才生效                  | -                 |
 | controlled        | `boolean`       | 是否受控 [说明文档](controlled.md)                          | false             |
-| type              | `string`        | 类型，可选值为 text、number、idcard、digit                  | text              |
+| type              | `string`        | 类型，可选值为 text、number、idcard、digit、safe-password、nickname                  | text              |
 | password          | `boolean`       | 是否是密码类型                                              | false             |
 | placeholder       | `string`        | 输入框为空时占位符                                          | -                 |
 | placeholder-style | `string,object` | 指定 placeholder 的样式                                     | -                 |
@@ -193,17 +193,27 @@ Page({
 | cursor-spacing    | `number`        | 指定光标与键盘的距离，单位 px                               | 11                |
 | focus             | `boolean`       | 获取焦点                                                    | false             |
 | confirm-type      | `string`        | 设置键盘右下角按钮的文字，仅在 type='text'时生效            | done              |
+| always-embed      | `boolean`       | 强制 input 处于同层状态，默认 focus 时 input 会切到非同层状态 (仅在 iOS 下生效)	                      | false             |
 | confirm-hold      | `boolean`       | 点击键盘右下角按钮时是否保持键盘不收起                      | false             |
 | cursor            | `number`        | 指定 focus 时的光标位置                                     | -1                |
 | selection-start   | `number`        | 光标起始位置，自动聚集时有效，需与 selection-end 搭配使用   | -1                |
 | selection-end     | `number`        | 光标结束位置，自动聚集时有效，需与 selection-start 搭配使用 | -1                |
 | adjust-position   | `boolean`       | 键盘弹起时，是否自动上推页面                                | true              |
+| hold-keyboard     | `boolean`       | focus时，点击页面的时候不收起键盘                                | false              |
+| safe-password-cert-path     | `string`        | 安全键盘加密公钥的路径，只支持包内路径                                | -              |
+| safe-password-length     | `number`        | 安全键盘输入密码长度                                | -              |
+| safe-password-time-stamp     | `number`        | 安全键盘加密时间戳                                | -              |
+| safe-password-nonce     | `string`        | 安全键盘加密盐值                                | -              |
+| safe-password-salt     | `string`        | 安全键盘计算 hash 盐值，若指定custom-hash 则无效                                | -              |
+| safe-password-custom-hash     | `string`        | 安全键盘计算 hash 的算法表达式，如 `md5(sha1('foo' + sha256(sm3(password + 'bar'))))`                                | -              |
 | clear             | `boolean`       | 是否显示清除图标，当 `disabled` 为 `false` 时才生效         | false             |
 | error             | `boolean`       | 是否显示报错图标                                            | false             |
 | bind:change       | `function`      | 键盘输入时触发                                              | -                 |
 | bind:focus        | `function`      | 输入框聚焦时触发                                            | -                 |
 | bind:blur         | `function`      | 输入框失去焦点时触发                                        | -                 |
 | bind:confirm      | `function`      | 点击完成按钮时触发                                          | -                 |
+| bind:keyboardheightchange      | `function`      | 键盘高度发生变化的时候触发此事件                                          | -                 |
+| bind:nicknamereview      | `function`      | 用户昵称审核完毕后触发，仅在 type 为 "nickname" 时有效                                          | -                 |
 | bind:clear        | `function`      | 点击清除图标时触发                                          | -                 |
 | bind:error        | `function`      | 点击报错图标时触发                                          | -                 |
 

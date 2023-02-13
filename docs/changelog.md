@@ -6,6 +6,24 @@
 - 次版本号（0.x.0）：含有新特性的向下兼容的版本。
 - 主版本号（x.0.0）：含有破坏性更新和新特性，不向下兼容的版本。
 
+## v 3.9.0 (2023-02-13)
+
+- 💄 增加组件：WaterMark - 水印
+- 🐞 更新组件：ActionSheet - 上拉菜单 新增支持 bindlaunchapp & bindchooseavatar 事件
+- 🐞 更新组件：Button - 按钮 新增支持 bindlaunchapp & bindchooseavatar 事件
+- 🐞 更新组件：List - 列表 新增支持 bindlaunchapp & bindchooseavatar 事件
+- 🐞 更新组件：Dialog - 对话框 新增支持 bindlaunchapp & bindchooseavatar 事件
+- 🐞 更新组件：FabButton - 浮动按钮 新增支持 bindlaunchapp & bindchooseavatar 事件
+- 🐞 更新组件：Prompt - 提示消息 新增支持 bindlaunchapp & bindchooseavatar 事件
+- 🐞 更新组件：Result - 结果页 新增支持 bindlaunchapp & bindchooseavatar 事件
+- 🐞 更新组件：Image - 图片 新增支持 webp & show-menu-by-longpress 属性
+- 🐞 更新组件：Index - 索引选择器 新增支持右侧索引条激活态 & 组件滚动性能优化
+- 🐞 更新组件：Input - 文本输入框 新增支持 always-embed & hold-keyboard & safe-password-** 等属性
+- 🐞 更新组件：Textarea - 多行输入框 新增支持 hold-keyboard	& disable-default-padding & confirm-type & confirm-hold 属性
+- 🐞 更新组件：Tabs - 标签页 修复 tabs 设置 scroll 后，如果点击到屏幕边缘的标签，tab 无法跟随滚动 [#400](https://github.com/wux-weapp/wux-weapp/pull/400)
+- 🐞 更新组件：Toptips - 顶部提示 修复 text 文本样式不生效
+- 🐞 更新组件：Select - 下拉框 修复初始化 max 为 NAN 错误
+
 ## v 3.8.9 (2022-05-07)
 
 - 🐞 更新组件：FilterBar - 筛选栏 修复 filter text type common groups bug [#410](https://github.com/wux-weapp/wux-weapp/pull/410)

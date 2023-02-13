@@ -254,6 +254,8 @@ Page({
 | options.buttons[].onGotPhoneNumber     | `function` | 获取用户手机号回调                                                                                              | -            |
 | options.buttons[].onError              | `function` | 当使用开放能力时，发生错误的回调                                                                                | -            |
 | options.buttons[].onOpenSetting        | `function` | 在打开授权设置页后回调                                                                                          | -            |
+| options.buttons[].onLaunchApp     | `function` | 打开 APP 成功的回调，open-type=launchApp时有效                                                                        | -            |
+| options.buttons[].onChooseAvatar     | `function` | 获取用户头像回调，open-type=chooseAvatar时有效                                                                        | -            |
 
 ### Dialog.alert
 
