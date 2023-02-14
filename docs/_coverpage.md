@@ -19,7 +19,7 @@ section.cover.show {
 	position: relative;
 	background-image: linear-gradient(to bottom, rgba(var(--theme-color-rgb), 0.45), #fff) !important
 }
-section.cover.show:after {
+/* section.cover.show:after {
 	content: "";
 	position: absolute;
 	top: 22px;
@@ -32,7 +32,7 @@ section.cover.show:after {
 	background-repeat: no-repeat;
 	background-size: contain;
     filter: var(--filter);
-}
+} */
 section.cover.show:before {
     content: "";
 	position: absolute;
@@ -41,7 +41,7 @@ section.cover.show:before {
 	width: 100vw;
 	height: 100vh;
     z-index: 1;
-	background-image: url(_images/tinified/2022lhui.png);
+	background-image: url(_images/tinified/214.jpg);
 	background-position: top center;
 	background-attachment: fixed;
 	background-size: cover;

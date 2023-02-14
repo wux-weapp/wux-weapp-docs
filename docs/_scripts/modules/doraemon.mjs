@@ -125,8 +125,11 @@ class DoraemonView extends HTMLElement {
           --dora-bell-color: #fde746;
           --dora-blush-color: #ffc1c2;
           --dora-nose-color: #d80517;
+          --dora-nose-color: #bc66fd;
           --dora-mouth-color: #e4161f;
+          --dora-mouth-color: #e1aafd;
           --dora-tongue-color: #ef6c1c;
+          --dora-tongue-color: #fc68a4;
           --dora-height: 256px;
           --dora-border-width: 1px;
           --dora-border-color: #000;
