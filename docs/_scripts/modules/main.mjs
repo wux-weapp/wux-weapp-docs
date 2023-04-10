@@ -16,9 +16,9 @@ document.addEventListener('DOMContentLoaded', () => {
       rootEl.style.display = hide ? 'none' : 'block'
     })
   })
-  import('./LAB/init.mjs').then(({ initLAB }) => {
-    initLAB()
-  })
+  // import('./LAB/init.mjs').then(({ initLAB }) => {
+  //   initLAB()
+  // })
 
   // graysale()
   regSW()

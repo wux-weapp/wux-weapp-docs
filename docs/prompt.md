@@ -132,14 +132,15 @@ Page({
 
 ### Prompt props
 
-| 参数           | 类型       | 描述                                                                    | 默认值              |
-| -------------- | ---------- | ----------------------------------------------------------------------- | ------------------- |
-| prefixCls      | `string`   | 自定义类名前缀                                                          | wux-prompt          |
-| classNames     | `any`      | 过渡的类名，更多内置过渡效果请参考 [AnimationGroup](animation-group.md) | wux-animate--fadeIn |
-| icon           | `string`   | 图标                                                                    | -                   |
-| title          | `string`   | 标题                                                                    | -                   |
-| text           | `string`   | 文本                                                                    | -                   |
-| buttons        | `array`    | 按钮                                                                    | []                  |
-| buttons[].text | `string`   | 按钮的文本                                                              | -                   |
-| visible        | `boolean`  | 是否显示组件                                                            | false               |
-| bind:click     | `function` | 按钮点击事件                                                            | -                   |
+| 参数           | 类型            | 描述                                                                    | 默认值              |
+| -------------- | --------------- | ----------------------------------------------------------------------- | ------------------- |
+| prefixCls      | `string`        | 自定义类名前缀                                                          | wux-prompt          |
+| classNames     | `any`           | 过渡的类名，更多内置过渡效果请参考 [AnimationGroup](animation-group.md) | wux-animate--fadeIn |
+| icon           | `string`        | 图标                                                                    | -                   |
+| title          | `string`        | 标题                                                                    | -                   |
+| text           | `string`        | 文本                                                                    | -                   |
+| buttons        | `array`         | 按钮                                                                    | []                  |
+| buttons[].text | `string`        | 按钮的文本                                                              | -                   |
+| visible        | `boolean`       | 是否显示组件                                                            | false               |
+| wrapStyle      | `string,object` | 自定义样式                                                              | -                   |
+| bind:click     | `function`      | 按钮点击事件                                                            | -                   |

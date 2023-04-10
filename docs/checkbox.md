@@ -144,16 +144,20 @@ Page({
 
 ### CheckboxGroup props
 
-| 参数               | 类型       | 描述                                  | 默认值             |
-| ------------------ | ---------- | ------------------------------------- | ------------------ |
-| prefixCls          | `string`   | 自定义类名前缀                        | wux-checkbox-group |
-| cellGroupPrefixCls | `string`   | 自定义 cellGroup 类名前缀             | wux-cell-group     |
-| name               | `string`   | 在表单中的字段名                      | -                  |
-| value              | `array`    | 在表单中的字段值（当前选中项的值）    | []                 |
-| title              | `string`   | 标题                                  | -                  |
-| label              | `string`   | 描述                                  | -                  |
-| options            | `array`    | 以配置形式设置子元素，优先级高于 slot | []                 |
-| bind:change        | `function` | change 事件触发的回调函数             | -                  |
+| 参数               | 类型            | 描述                                           | 默认值             |
+| ------------------ | --------------- | ---------------------------------------------- | ------------------ |
+| prefixCls          | `string`        | 自定义类名前缀                                 | wux-checkbox-group |
+| cellGroupPrefixCls | `string`        | 自定义 cellGroup 类名前缀                      | wux-cell-group     |
+| name               | `string`        | 在表单中的字段名                               | -                  |
+| value              | `array`         | 在表单中的字段值（当前选中项的值）             | []                 |
+| title              | `string`        | 标题                                           | -                  |
+| label              | `string`        | 描述                                           | -                  |
+| options            | `array`         | 以配置形式设置子元素，优先级高于 slot          | []                 |
+| disabled           | `boolean`       | 是否禁用                                       | false              |
+| readOnly           | `boolean`       | 是否只读                                       | false              |
+| mode               | `string`        | 支持默认和卡片两种模式，可选值为 default、card | default            |
+| bodyStyle          | `string,object` | 自定义样式                                     | -                  |
+| bind:change        | `function`      | change 事件触发的回调函数                      | -                  |
 
 ### Checkbox props
 
@@ -168,5 +172,6 @@ Page({
 | value               | `string`   | 当前项的值                                                                                  | -              |
 | checked             | `boolean`  | 是否默认选中                                                                                | false          |
 | disabled            | `boolean`  | 是否不可修改                                                                                | false          |
+| readOnly            | `boolean`  | 是否只读                                                                                    | false          |
 | color               | `string`   | 主题色，可选值为 light、stable、positive、calm、assertive、balanced、energized、royal、dark | balanced       |
 | bind:change         | `function` | change 事件触发的回调函数，优先级低于父级 change 事件                                       | -              |

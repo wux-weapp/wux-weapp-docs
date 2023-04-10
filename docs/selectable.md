@@ -157,6 +157,7 @@ Page({
 | checked        | `boolean`       | 当前是否选中，当 `controlled` 为 `true` 时才生效                                            | false          |
 | controlled     | `boolean`       | 是否受控 [说明文档](controlled.md)                                                          | false          |
 | disabled       | `boolean`       | 是否禁用                                                                                    | false          |
+| readOnly       | `boolean`       | 是否只读                                                                                    | false          |
 | color          | `string`        | 主题色，可选值为 light、stable、positive、calm、assertive、balanced、energized、royal、dark | balanced       |
 | wrapStyle      | `string,object` | 自定义样式                                                                                  | -              |
 | bind:change    | `function`      | change 事件触发的回调函数                                                                   | -              |

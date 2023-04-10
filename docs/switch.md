@@ -149,6 +149,46 @@
         <wux-cell title="Disabled off">
           <wux-switch name="f" slot="footer" value="{{ false }}" disabled />
         </wux-cell>
+        <wux-cell title="Custom Text">
+          <wux-switch
+            name="g"
+            slot="footer"
+            value="{{ value5 }}"
+            checkedText="开"
+            uncheckedText="关"
+            bind:change="onChange5"
+          />
+        </wux-cell>
+        <wux-cell title="Custom Text">
+          <wux-switch
+            name="h"
+            slot="footer"
+            value="{{ value5 }}"
+            bind:change="onChange5"
+          >
+            <text slot="checked">√</text>
+            <text slot="unchecked">×</text>
+          </wux-switch>
+        </wux-cell>
+        <wux-cell title="Loading">
+          <wux-switch
+            name="i"
+            slot="footer"
+            value="{{ value6 }}"
+            loading
+            bind:change="onChange6"
+          />
+        </wux-cell>
+        <wux-cell title="Async">
+          <wux-switch
+            name="j"
+            slot="footer"
+            color="positive"
+            value="{{ value7 }}"
+            loading="{{ loading }}"
+            bind:change="onChange7"
+          />
+        </wux-cell>
       </wux-cell-group>
       <view class="btn-area">
         <button formType="submit">Submit</button>
@@ -167,6 +207,10 @@ Page({
     value2: false,
     value3: true,
     value4: true,
+    value5: false,
+    value6: false,
+    value7: false,
+    loading: false,
   },
   onChange(field, e) {
     this.setData({
@@ -190,6 +234,20 @@ Page({
   onChange5(e) {
     this.onChange('value5', e)
   },
+  onChange6(e) {
+    this.onChange('value6', e)
+  },
+  onChange7(e) {
+    this.setData({
+      loading: true,
+    })
+    setTimeout(() => {
+      this.setData({
+        loading: false,
+      })
+      this.onChange('value7', e)
+    }, 1500)
+  },
   formSubmit(e) {
     console.log('form发生了submit事件，携带数据为：', e.detail.value)
   },
@@ -204,17 +262,27 @@ Page({
 
 ### Switch props
 
-| 参数        | 类型       | 描述                                                                                        | 默认值     |
-| ----------- | ---------- | ------------------------------------------------------------------------------------------- | ---------- |
-| prefixCls   | `string`   | 自定义类名前缀                                                                              | wux-switch |
-| name        | `string`   | 在表单中的字段名                                                                            | -          |
-| value       | `boolean`  | 在表单中的字段值（当前选中项的值）                                                          | -          |
-| disabled    | `boolean`  | 是否不可修改                                                                                | false      |
-| color       | `string`   | 主题色，可选值为 light、stable、positive、calm、assertive、balanced、energized、royal、dark | balanced   |
-| bind:change | `function` | change 事件触发的回调函数                                                                   | -          |
+| 参数          | 类型       | 描述                                                                                        | 默认值     |
+| ------------- | ---------- | ------------------------------------------------------------------------------------------- | ---------- |
+| prefixCls     | `string`   | 自定义类名前缀                                                                              | wux-switch |
+| name          | `string`   | 在表单中的字段名                                                                            | -          |
+| value         | `boolean`  | 在表单中的字段值（当前选中项的值）                                                          | -          |
+| disabled      | `boolean`  | 是否不可修改                                                                                | false      |
+| color         | `string`   | 主题色，可选值为 light、stable、positive、calm、assertive、balanced、energized、royal、dark | balanced   |
+| loading       | `boolean`  | 加载中的开关                                                                                | false      |
+| checkedText   | `string`   | 选中时的内容                                                                                | -          |
+| uncheckedText | `string`   | 非选中时的内容                                                                              | -          |
+| bind:change   | `function` | change 事件触发的回调函数                                                                   | -          |
 
 ### Switch externalClasses
 
 | 名称      | 描述         |
 | --------- | ------------ |
 | wux-class | 根节点样式类 |
+
+### Switch slot
+
+| 名称      | 描述           |
+| --------- | -------------- |
+| checked   | 选中时的内容   |
+| unchecked | 非选中时的内容 |

@@ -104,11 +104,13 @@ Page({
 
 ### CellGroup props
 
-| 参数      | 类型     | 描述           | 默认值         |
-| --------- | -------- | -------------- | -------------- |
-| prefixCls | `string` | 自定义类名前缀 | wux-cell-group |
-| title     | `string` | 标题           | -              |
-| label     | `string` | 描述           | -              |
+| 参数      | 类型            | 描述                                           | 默认值         |
+| --------- | --------------- | ---------------------------------------------- | -------------- |
+| prefixCls | `string`        | 自定义类名前缀                                 | wux-cell-group |
+| title     | `string`        | 标题                                           | -              |
+| label     | `string`        | 描述                                           | -              |
+| mode      | `string`        | 支持默认和卡片两种模式，可选值为 default、card | default        |
+| bodyStyle | `string,object` | 自定义样式                                     | -              |
 
 ### CellGroup externalClasses
 
@@ -148,8 +150,8 @@ Page({
 | bind:getphonenumber  | `function` | 获取用户手机号回调                                                                                                                                                                 | -            |
 | bind:error           | `function` | 当使用开放能力时，发生错误的回调                                                                                                                                                   | -            |
 | bind:opensetting     | `function` | 在打开授权设置页后回调                                                                                                                                                             | -            |
-| bind:launchapp     | `function` | 打开 APP 成功的回调，open-type=launchApp时有效                                                                        | -            |
-| bind:chooseavatar     | `function` | 获取用户头像回调，open-type=chooseAvatar时有效                                                                        | -            |
+| bind:launchapp       | `function` | 打开 APP 成功的回调，open-type=launchApp 时有效                                                                                                                                    | -            |
+| bind:chooseavatar    | `function` | 获取用户头像回调，open-type=chooseAvatar 时有效                                                                                                                                    | -            |
 
 > 更多参数说明请参考微信官方的表单组件 [Button](https://developers.weixin.qq.com/miniprogram/dev/component/button.html)。
 

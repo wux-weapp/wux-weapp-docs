@@ -115,6 +115,9 @@ Page({
 | extra              | `string`        | 底部内容                                                  | -           |
 | position           | `string`        | 弹出层位置信息，可选值为 center、top、right、bottom、left | center      |
 | wrapStyle          | `string,object` | 自定义 wrap 样式                                          | -           |
+| containerStyle     | `string,object` | 自定义 container 样式                                     | -           |
+| contentStyle       | `string,object` | 自定义 content 样式                                       | -           |
+| bodyStyle          | `string,object` | 自定义 body 样式                                          | -           |
 | closable           | `boolean`       | 是否显示关闭按钮                                          | false       |
 | mask               | `boolean`       | 是否显示蒙层                                              | true        |
 | maskClosable       | `boolean`       | 点击蒙层是否允许关闭                                      | true        |
@@ -123,7 +126,8 @@ Page({
 | hasHeader          | `boolean`       | 是否显示头部内容                                          | true        |
 | hasFooter          | `boolean`       | 是否显示底部内容                                          | true        |
 | bind:close         | `function`      | 点击关闭按钮或蒙层的回调函数                              | -           |
-| bind:closed        | `function`      | 关闭后的回调函数                                          | -           |
+| bind:closed        | `function`      | 完全关闭后触发                                          | -           |
+| bind:showed        | `function`      | 完全展示后触发                                          | -           |
 
 ### Popup externalClasses
 

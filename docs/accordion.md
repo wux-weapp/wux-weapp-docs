@@ -165,17 +165,19 @@ Page({
 
 ### AccordionGroup props
 
-| 参数               | 类型       | 描述                                                            | 默认值              |
-| ------------------ | ---------- | --------------------------------------------------------------- | ------------------- |
-| prefixCls          | `string`   | 自定义类名前缀                                                  | wux-accordion-group |
-| cellGroupPrefixCls | `string`   | 自定义 cellGroup 类名前缀                                       | wux-cell-group      |
-| defaultCurrent     | `array`    | 默认激活 tab 面板的 key，当 `controlled` 为 `false` 时才生效    | -                   |
-| current            | `array`    | 用于手动激活 tab 面板的 key，当 `controlled` 为 `true` 时才生效 | -                   |
-| controlled         | `boolean`  | 是否受控 [说明文档](controlled.md)                              | false               |
-| accordion          | `boolean`  | 是否手风琴模式                                                  | false               |
-| title              | `string`   | 标题                                                            | -                   |
-| label              | `string`   | 描述                                                            | -                   |
-| bind:change        | `function` | 切换面板的回调函数                                              | -                   |
+| 参数               | 类型            | 描述                                                            | 默认值              |
+| ------------------ | --------------- | --------------------------------------------------------------- | ------------------- |
+| prefixCls          | `string`        | 自定义类名前缀                                                  | wux-accordion-group |
+| cellGroupPrefixCls | `string`        | 自定义 cellGroup 类名前缀                                       | wux-cell-group      |
+| defaultCurrent     | `array`         | 默认激活 tab 面板的 key，当 `controlled` 为 `false` 时才生效    | -                   |
+| current            | `array`         | 用于手动激活 tab 面板的 key，当 `controlled` 为 `true` 时才生效 | -                   |
+| controlled         | `boolean`       | 是否受控 [说明文档](controlled.md)                              | false               |
+| accordion          | `boolean`       | 是否手风琴模式                                                  | false               |
+| title              | `string`        | 标题                                                            | -                   |
+| label              | `string`        | 描述                                                            | -                   |
+| mode               | `string`        | 支持默认和卡片两种模式，可选值为 default、card                  | default             |
+| bodyStyle          | `string,object` | 自定义样式                                                      | -                   |
+| bind:change        | `function`      | 切换面板的回调函数                                              | -                   |
 
 ### Accordion props
 

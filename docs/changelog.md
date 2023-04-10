@@ -6,6 +6,31 @@
 - 次版本号（0.x.0）：含有新特性的向下兼容的版本。
 - 主版本号（x.0.0）：含有破坏性更新和新特性，不向下兼容的版本。
 
+## v 3.10.0 (2023-04-10)
+
+- 💄 增加组件：App - 包裹组件
+- 💄 增加组件：CascaderView - 级联选择视图
+- 💄 增加组件：Ellipsis - 文本省略
+- 💄 增加组件：FloatingPanel - 浮动面板
+- 💄 增加组件：Footer - 页脚
+- 🐞 更新组件：Accordion - 手风琴 新增 mode & bodyStyle 属性
+- 🐞 更新组件：Backdrop - 背景幕 新增 mountOnEnter & unmountOnExit & visible 属性，支持 showed & closed & click 事件
+- 🐞 更新组件：Button - 按钮 支持 [`wx://form-field-button`](https://developers.weixin.qq.com/miniprogram/dev/framework/custom-component/behaviors.html#%E5%86%85%E7%BD%AE%20behaviors) 使 form 组件可以识别到这个自定义组件内部的 button
+- 🐞 更新组件：Cascader - 级联选择器 基于 `CascaderView` 组件重构，新增 cancelText & confirmText & full & height & skipAnimation 属性
+- 🐞 更新组件：Checkbox - 复选框 新增 mode & bodyStyle & disabled & readOnly 属性
+- 🐞 更新组件：Input - 文本输入框 新增 readOnly & onlyShowClearWhenFocus & min & max 属性
+- 🐞 更新组件：List - 列表 新增 mode & bodyStyle 属性
+- 🐞 更新组件：Popup - 弹出框 新增 containerStyle & contentStyle & bodyStyle 属性，支持 showed 事件
+- 🐞 更新组件：PopupSelect - 下拉框 新增 notFoundContent 属性，支持用 OptGroup 进行选项分组
+- 🐞 更新组件：Prompt - 提示消息 新增 wrapStyle 属性
+- 🐞 更新组件：Radio - 单选框 新增 mode & bodyStyle & disabled & readOnly 属性
+- 🐞 更新组件：SearchBar - 搜索栏 新增 onlyShowClearWhenFocus 属性
+- 🐞 更新组件：Select - 下拉框 新增 notFoundContent 属性，支持用 OptGroup 进行选项分组
+- 🐞 更新组件：Selectable - 选框组 新增 readOnly 属性
+- 🐞 更新组件：Switch - 开关选择器 新增 loading & checkedText & uncheckedText 属性
+- 🐞 更新组件：Tabs - 标签页 新增 justify & activeLineMode 属性
+- 🐞 更新组件：Textarea - 多行输入框 新增 readOnly 属性
+
 ## v 3.9.0 (2023-02-13)
 
 - 💄 增加组件：WaterMark - 水印

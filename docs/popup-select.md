@@ -51,7 +51,6 @@
       <wux-popup-select
         value="{{ value2 }}"
         options="{{ options2 }}"
-        multiple
         data-index="2"
         bind:confirm="onConfirm"
         bind:valueChange="onValueChange"
@@ -77,6 +76,27 @@
           extra="{{ displayValue3 }}"
         ></wux-cell>
       </wux-popup-select>
+      <wux-popup-select
+        value="{{ value4 }}"
+        options="{{ options4 }}"
+        data-index="4"
+        bind:confirm="onConfirm"
+        bind:valueChange="onValueChange"
+      >
+        <wux-cell title="Group" is-link extra="{{ displayValue4 }}"></wux-cell>
+      </wux-popup-select>
+      <wux-popup-select
+        value="{{ value5 }}"
+        options="{{ options5 }}"
+        notFoundContent="{{ null }}"
+        data-index="5"
+        bind:confirm="onConfirm"
+        bind:valueChange="onValueChange"
+        bind:visibleChange="onVisibleChange5"
+      >
+        <wux-cell title="Async" is-link extra="{{ displayValue5 }}"></wux-cell>
+        <wux-spin slot="notFoundContent" spinColor="dark" />
+      </wux-popup-select>
     </wux-cell-group>
     <view class="button-sp-area">
       <wux-button block type="light" bind:click="onClick"
@@ -93,9 +113,13 @@ Page({
     value1: '',
     value2: '',
     value3: '',
+    value4: '',
+    value5: '',
     displayValue1: '请选择',
     displayValue2: '请选择',
     displayValue3: '请选择',
+    displayValue4: '请选择',
+    displayValue5: '请选择',
     options1: ['法官', '医生', '猎人', '学生', '记者', '其他'],
     options2: [
       {
@@ -109,6 +133,7 @@ Page({
       {
         title: 'iPhone 5S',
         value: '003',
+        disabled: true,
       },
       {
         title: 'iPhone 6',
@@ -121,6 +146,7 @@ Page({
       {
         title: 'iPhone 6P',
         value: '006',
+        disabled: true,
       },
       {
         title: 'iPhone 6SP',
@@ -161,6 +187,23 @@ Page({
         value: '6',
       },
     ],
+    options4: [
+      {
+        title: '富二代',
+        options: [
+          { title: '王撕葱', value: 'wang' },
+          { title: '秦愤', value: 'qin' },
+        ],
+      },
+      {
+        title: '练习生',
+        options: [
+          { title: '蔡🏀', value: 'cai' },
+          { title: '赵四', value: 'zhao', disabled: true },
+        ],
+      },
+    ],
+    options5: [],
   },
   setValue(values, key) {
     this.setData({
@@ -183,6 +226,16 @@ Page({
   onClick() {
     this.setData({ visible: true })
   },
+  onVisibleChange5(e) {
+    if (e.detail.visible && !this.data.options5.length) {
+      setTimeout(() => {
+        this.setData({
+          options5: this.data.options1,
+          value5: this.data.options1[1],
+        })
+      }, 3000)
+    }
+  },
 })
 ```
 
@@ -192,34 +245,44 @@ Page({
 
 ## API
 
-| 参数                | 类型            | 描述                                                           | 默认值     |
-| ------------------- | --------------- | -------------------------------------------------------------- | ---------- |
-| prefixCls           | `string`        | 自定义类名前缀                                                 | wux-select |
-| value               | `string, array` | 指定当前选中的条目                                             | -          |
-| multiple            | `boolean`       | 是否支持多选                                                   | false      |
-| max                 | `number`        | 最多选择几项，设置为 -1 的时候不限制选择                       | -1         |
-| options             | `array`         | 下拉列表                                                       | []         |
-| options[].value     | `string`        | 属性值                                                         | -          |
-| options[].label     | `string`        | 描述                                                           | -          |
-| toolbar             | `object`        | 工具栏配置项                                                   | {}         |
-| toolbar.title       | `string`        | 标题的文字                                                     | 请选择     |
-| toolbar.cancelText  | `string`        | 取消按钮的文字                                                 | 取消       |
-| toolbar.confirmText | `string`        | 确定按钮的文字                                                 | 确定       |
-| trigger             | `string`        | 触发事件，当包裹的子元素为 `<wux-cell />` 时，点击控制组件显隐 | onClick    |
-| defaultVisible      | `boolean`       | 默认是否显隐，当 `controlled` 为 `false` 时才生效              | false      |
-| visible             | `boolean`       | 用于手动控制组件显隐，当 `controlled` 为 `true` 时才生效       | false      |
-| controlled          | `boolean`       | 是否受控 [说明文档](controlled.md)                             | false      |
-| disabled            | `boolean`       | 是否禁用                                                       | false      |
-| bind:change         | `function`      | 选择完成后的回调函数                                           | -          |
-| bind:confirm        | `function`      | 点击确定按钮时的回调函数                                       | -          |
-| bind:cancel         | `function`      | 点击取消按钮时的回调函数                                       | -          |
-| bind:visibleChange  | `function`      | 当显隐状态变化时的回调函数                                     | -          |
-| bind:valueChange    | `function`      | 每列数据选择变化后的回调函数                                   | -          |
+| 参数                | 类型                    | 描述                                                           | 默认值                                    |
+| ------------------- | ----------------------- | -------------------------------------------------------------- | ----------------------------------------- |
+| prefixCls           | `string`                | 自定义类名前缀                                                 | wux-select                                |
+| value               | `string, array`         | 指定当前选中的条目                                             | -                                         |
+| multiple            | `boolean`               | 是否支持多选                                                   | false                                     |
+| max                 | `number`                | 最多选择几项，设置为 -1 的时候不限制选择                       | -1                                        |
+| notFoundContent     | `string,object,boolean` | 当下拉列表为空时显示的内容                                     | { icon: '', title: '', text: '暂无数据' } |
+| options             | `array`                 | 下拉列表                                                       | []                                        |
+| options[].value     | `string`                | 默认根据此属性值进行筛选值                                     | -                                         |
+| options[].title     | `string`                | 选项上的 title 提示                                            | -                                         |
+| options[].disabled  | `boolean`               | 是否禁用                                                       | -                                         |
+| toolbar             | `object`                | 工具栏配置项                                                   | {}                                        |
+| toolbar.title       | `string`                | 标题的文字                                                     | 请选择                                    |
+| toolbar.cancelText  | `string`                | 取消按钮的文字                                                 | 取消                                      |
+| toolbar.confirmText | `string`                | 确定按钮的文字                                                 | 确定                                      |
+| trigger             | `string`                | 触发事件，当包裹的子元素为 `<wux-cell />` 时，点击控制组件显隐 | onClick                                   |
+| defaultVisible      | `boolean`               | 默认是否显隐，当 `controlled` 为 `false` 时才生效              | false                                     |
+| visible             | `boolean`               | 用于手动控制组件显隐，当 `controlled` 为 `true` 时才生效       | false                                     |
+| controlled          | `boolean`               | 是否受控 [说明文档](controlled.md)                             | false                                     |
+| disabled            | `boolean`               | 是否禁用                                                       | false                                     |
+| bind:change         | `function`              | 选择完成后的回调函数                                           | -                                         |
+| bind:confirm        | `function`              | 点击确定按钮时的回调函数                                       | -                                         |
+| bind:cancel         | `function`              | 点击取消按钮时的回调函数                                       | -                                         |
+| bind:visibleChange  | `function`              | 当显隐状态变化时的回调函数                                     | -                                         |
+| bind:valueChange    | `function`              | 每列数据选择变化后的回调函数                                   | -                                         |
+
+### OptGroup props
+
+| 参数    | 类型     | 描述     | 默认值 |
+| ------- | -------- | -------- | ------ |
+| title   | `string` | 组名     | -      |
+| options | `string` | 下拉列表 | []     |
 
 ### PopupSelect slot
 
-| 名称 | 描述                         |
-| ---- | ---------------------------- |
-| -    | 建议包裹 `<wux-cell />` 组件 |
+| 名称            | 描述                         |
+| --------------- | ---------------------------- |
+| -               | 建议包裹 `<wux-cell />` 组件 |
+| notFoundContent | 当下拉列表为空时显示的内容   |
 
 > 下拉列表：options 参数请参考 [Radio](radio.md) 或 [Checkbox](checkbox.md)。

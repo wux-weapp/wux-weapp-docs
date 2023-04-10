@@ -40,6 +40,7 @@
   - [Calendar 日历](calendar.md)
   - [Cascader 级联选择器](cascader.md)
   - [CascaderPickerView 级联选择器](cascader-picker-view.md)
+  - [CascaderView 级联选择视图](cascader-view.md)
   - [Checkbox 复选框](checkbox.md)
   - [DatePicker 日期选择器](date-picker.md)
   - [DatePickerView 日期选择器](date-picker-view.md)
@@ -71,7 +72,10 @@
   - [CountDown 倒计时](countdown.md)
   - [CountUp 计数器](countup.md)
   - [Divider 分割线](divider.md)
+  - [Ellipsis 文本省略](ellipsis.md)
   - [FabButton 浮动按钮](fab-button.md)
+  - [FloatingPanel 浮动面板](floating-panel.md)
+  - [Footer 页脚](footer.md)
   - [Image 图片](image.md)
   - [Index 索引选择器](index.md)
   - [List 列表](list.md)
@@ -106,6 +110,7 @@
 
 - 扩展组件
 
+  - [App 包裹组件](app.md)
   - [FilterBar 筛选栏](filterbar.md)
   - [KeyBoard 数字键盘](keyboard.md)
   - [Refresher 下拉刷新](refresher.md)
