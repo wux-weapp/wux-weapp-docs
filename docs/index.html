@@ -67,8 +67,11 @@
 
     <!-- Other Styles -->
     <link rel="stylesheet" href="_scripts/lib/themes/vue.css" />
-    <link rel="stylesheet" href="_scripts/lib/plugins/docsify-darklight-theme.min.css">
-    <link rel="stylesheet" href="_scripts/lib/plugins/gitalk.min.css">
+    <link
+      rel="stylesheet"
+      href="_scripts/lib/plugins/docsify-darklight-theme.min.css"
+    />
+    <link rel="stylesheet" href="_scripts/lib/plugins/gitalk.min.css" />
     <style>
       footer {
         text-align: center !important;
@@ -135,7 +138,8 @@
           top: 2px;
         }
       }
-      .layui-layer, .markdown-section p > img {
+      .layui-layer,
+      .markdown-section p > img {
         box-shadow: var(--boxShadow) !important;
       }
       .markdown-section code {
@@ -145,7 +149,9 @@
         border-bottom-right-radius: 4px;
         border-top-right-radius: 4px;
       }
-      .markdown-section pre, .markdown-section iframe, .markdown-section table {
+      .markdown-section pre,
+      .markdown-section iframe,
+      .markdown-section table {
         border-radius: 12px;
       }
       .markdown-section hr {
@@ -164,13 +170,16 @@
       .markdown-section table tr:last-child td {
         border-bottom: none;
       }
-      .markdown-section table tr td:first-child, .markdown-section table tr th:first-child {
+      .markdown-section table tr td:first-child,
+      .markdown-section table tr th:first-child {
         border-left: none;
       }
-      .markdown-section table tr td:last-child, .markdown-section table tr th:last-child {
+      .markdown-section table tr td:last-child,
+      .markdown-section table tr th:last-child {
         border-right: none;
       }
-      .markdown-section td, .markdown-section th {
+      .markdown-section td,
+      .markdown-section th {
         padding: 10px 24px;
         border-color: var(--borderColor);
       }
@@ -232,7 +241,7 @@
             coverBackground: 'unset',
             filter: 'unset',
             toogleImage: 'url(\/_images\/moon\.svg)',
-            colorHeaderLogo: 'var(--theme-color)'
+            colorHeaderLogo: 'var(--theme-color)',
           },
           dark: {
             background: '#232527',
@@ -244,8 +253,8 @@
             coverBackground: 'unset',
             filter: 'brightness(.85)',
             toogleImage: 'url(\/_images\/sun\.svg)',
-            colorHeaderLogo: '#f0f6fc'
-          }
+            colorHeaderLogo: '#f0f6fc',
+          },
         },
         coverpage: true,
         loadSidebar: true,
@@ -281,11 +290,15 @@
               window.gitalk.render('gitalk-container')
             })
 
+            let isWuxUIPages =
+              window.location.hostname.indexOf('wuxui.com') !== -1
             let footer = [
               '<hr/>',
               '<footer>',
               '<span><a href="https://github.com/skyvow/" target="_blank">Made with by skyvow</a></span><br />',
-              '<span><a href="https://beian.miit.gov.cn/" target="_blank">互联网ICP备案：皖ICP备19012780号-2</a> |</span>',
+              isWuxUIPages
+                ? '<span><a href="https://beian.miit.gov.cn/" target="_blank">互联网ICP备案：皖ICP备19012780号-2</a> |</span>'
+                : '<span><a href="https://beian.miit.gov.cn/" target="_blank">互联网ICP备案：皖ICP备19012780号-1</a> |</span>',
               '<span><a href="http://www.shjbzx.cn/" target="_blank">上海互联网举报中心</a> |</span>',
               '<span><a href="//jbts.mct.gov.cn/" target="_blank">12345政务服务便民热线</a> |</span>',
               '<span><a href="http://www.shdf.gov.cn/shdf/channels/740.html" target="_blank">扫黄打非举报</a></span><br />',
@@ -311,9 +324,14 @@
     <script src="_scripts/lib/plugins/gitalk.min.js"></script>
     <script type="module" src="_scripts/modules/main.mjs"></script>
     <script>
-      const isGithubPages = window.location.hostname.indexOf('wux-weapp.github.io') !== -1
-      const clientID = isGithubPages ? 'a6b9004e6cce417efc34' : '6d719b04a310bedcb43d'
-      const clientSecret = isGithubPages ? 'f1f1f3c9c85642155dc9e45815109c7891520fe0' : 'ecc7091d308a176118d7937977a903faacab775e'
+      const isGithubPages =
+        window.location.hostname.indexOf('wux-weapp.github.io') !== -1
+      const clientID = isGithubPages
+        ? 'a6b9004e6cce417efc34'
+        : '6d719b04a310bedcb43d'
+      const clientSecret = isGithubPages
+        ? 'f1f1f3c9c85642155dc9e45815109c7891520fe0'
+        : 'ecc7091d308a176118d7937977a903faacab775e'
       window.gitalk = new Gitalk({
         clientID,
         clientSecret,
@@ -322,7 +340,7 @@
         admin: ['skyvow'],
         id: 'WuxUI',
         // facebook-like distraction free mode
-        distractionFreeMode: false
+        distractionFreeMode: false,
       })
     </script>
   </body>
