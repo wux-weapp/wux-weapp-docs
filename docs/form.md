@@ -152,7 +152,7 @@
       </view>
     </form>
     <view class="sub-title">Wux Form</view>
-    <wux-form id="wux-form" bind:change="onChange">
+    <wux-form id="wux-form" bind:change="onValuesChange">
       <wux-field name="checkbox" initialValue="{{ checkbox }}">
         <wux-checkbox-group>
           <wux-checkbox title="Java" value="1" />
@@ -214,18 +214,14 @@
       </wux-cell-group>
       <wux-cell-group title="Picker">
         <wux-field name="picker" initialValue="{{ picker }}">
-          <wux-picker
-            options="{{ options1 }}"
-            cascade
-            bind:change="onValueChange"
-          >
+          <wux-picker options="{{ options1 }}" cascade>
             <wux-cell title="Picker" is-link extra="{{ picker }}"></wux-cell>
           </wux-picker>
         </wux-field>
       </wux-cell-group>
       <wux-cell-group title="DatePicker">
         <wux-field name="datePicker" initialValue="{{ datePicker }}">
-          <wux-date-picker bind:change="onDatePickerChange">
+          <wux-date-picker>
             <wux-cell
               title="DatePicker"
               is-link
@@ -236,10 +232,7 @@
       </wux-cell-group>
       <wux-cell-group title="PopupSelect">
         <wux-field name="popupSelect" initialValue="{{ popupSelect }}">
-          <wux-popup-select
-            options="{{ options2 }}"
-            bind:change="onPopupSelectChange"
-          >
+          <wux-popup-select options="{{ options2 }}">
             <wux-cell
               title="PopupSelect"
               is-link
@@ -251,6 +244,7 @@
       <view class="btn-area">
         <button bindtap="onSubmit">Wux Form Submit</button>
         <button bindtap="onReset">Wux Form Reset</button>
+        <button bindtap="onFill">Fill Form</button>
       </view>
     </wux-form>
   </view>
@@ -261,13 +255,25 @@
 import { $wuxForm } from '../../dist/index'
 import data from '../cascader/data'
 
+function getDateString(date = new Date()) {
+  return {
+    year: date.getFullYear() + '',
+    month: date.getMonth() + '',
+    day: date.getDate() + '',
+    hour: date.getHours() + '',
+    minute: date.getMinutes() + '',
+  }
+}
+
+const { year, month, day, hour, minute } = getDateString()
+
 Page({
   data: {
     checkbox: ['1'],
     radio: '1',
     switch: true,
     picker: [],
-    datePicker: [],
+    datePicker: [year, month, day, hour, minute],
     popupSelect: '猎人',
     options1: [],
     options2: ['法官', '医生', '猎人', '学生', '记者', '其他'],
@@ -303,39 +309,36 @@ Page({
     console.log('Default Form Submit \n', e.detail.value)
   },
   onSubmit() {
-    const { getFieldsValue, getFieldValue, setFieldsValue } = $wuxForm()
+    const { getFieldsValue } = $wuxForm()
     const value = getFieldsValue()
 
     console.log('Wux Form Submit \n', value)
   },
-  onChange(e) {
-    const { form, changedValues, allValues } = e.detail
+  onValuesChange(e) {
+    const { changedValues, allValues } = e.detail
+    this.setDataFromValue(changedValues)
 
-    console.log('onChange \n', changedValues, allValues)
+    console.log('onValuesChange \n', changedValues, allValues)
   },
   onReset() {
-    const { getFieldsValue, setFieldsValue } = $wuxForm()
-    const fields = getFieldsValue()
+    const { getFieldsValue, resetFields } = $wuxForm()
+    resetFields()
+    const value = getFieldsValue()
+    this.setDataFromValue(value)
 
-    for (let item in fields) {
-      if ({}.hasOwnProperty.call(fields, item)) {
-        if (Array.isArray(fields[item])) {
-          fields[item] = []
-          if (item === 'slider') {
-            fields[item] = [10, 80]
-          }
-        } else if (typeof fields[item] === 'boolean') {
-          fields[item] = false
-        } else if (typeof fields[item] === 'number') {
-          fields[item] = 0
-        } else {
-          fields[item] = ''
-        }
-      }
-    }
-
+    console.log('Wux Form Reset \n', value)
+  },
+  onFill() {
+    const { setFieldsValue } = $wuxForm()
     setFieldsValue({
-      ...fields,
+      textarea: 'Hello wux! Hello wux! Hello wux!',
+    })
+  },
+  setDataFromValue(changedValues) {
+    Object.keys(changedValues).forEach((field) => {
+      this.setData({
+        [field]: changedValues[field],
+      })
     })
   },
 })

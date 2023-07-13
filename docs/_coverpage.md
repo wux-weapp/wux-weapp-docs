@@ -1,6 +1,6 @@
 ![logo](_images/tinified/logo2.png ':size=128x128')
 
-# Wux Weapp <small>3.10.0</small>
+# Wux Weapp <small>3.10.1</small>
 
 <!-- 背景 -->
 <style>

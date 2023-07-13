@@ -89,16 +89,35 @@
         <wux-input-number shape="circle" color="dark" slot="footer" />
       </wux-cell>
     </wux-cell-group>
-    <wux-cell-group title="设置 callback 回调函数，在调试窗口中输出">
+    <wux-cell-group title="监听 onChange 事件，在调试窗口中输出">
       <wux-cell title="数量" hover-class="none">
         <wux-input-number
-          longpress
           disabled="{{ false }}"
           value="{{ value }}"
           controlled
           min="{{ -10 }}"
           max="{{ 10 }}"
           bind:change="onChange"
+          slot="footer"
+        />
+      </wux-cell>
+    </wux-cell-group>
+    <wux-cell-group title="格式化到整数">
+      <wux-cell title="数量" hover-class="none">
+        <wux-input-number
+          digits="{{ 0 }}"
+          disabled="{{ false }}"
+          default-value="1"
+          slot="footer"
+        />
+      </wux-cell>
+    </wux-cell-group>
+    <wux-cell-group title="格式化到一位小数">
+      <wux-cell title="数量" hover-class="none">
+        <wux-input-number
+          digits="{{ 1 }}"
+          disabled="{{ false }}"
+          default-value="1.1"
           slot="footer"
         />
       </wux-cell>
@@ -139,7 +158,7 @@
       </wux-cell>
     </wux-cell-group>
     <wux-cell-group title="循环输出多个组件">
-      <block wx:for="{{ items }}" wx:key="">
+      <block wx:for="{{ items }}" wx:key="index">
         <wux-cell title="{{ item.text }}" hover-class="none">
           <wux-input-number default-value="{{ item.value }}" slot="footer" />
         </wux-cell>
@@ -196,6 +215,7 @@ Page({
 | longpress    | `boolean`  | 是否支持长按                                                                                | false            |
 | color        | `string`   | 主题色，可选值为 light、stable、positive、calm、assertive、balanced、energized、royal、dark | balanced         |
 | shape        | `string`   | 形状，可选值为 circle、square                                                               | square           |
+| digits       | `number`   | 格式化到小数点后固定位数，设置为 0 表示格式化到整数                                               | -                |
 | bind:change  | `function` | 监听值变化的回调函数                                                                        | -                |
 | bind:focus   | `function` | 输入框聚焦时触发的回调函数                                                                  | -                |
 | bind:blur    | `function` | 输入框失去焦点时触发的回调函数                                                              | -                |
