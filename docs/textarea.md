@@ -235,6 +235,7 @@ Page({
 | 名称 | 描述           |
 | ---- | -------------- |
 | -    | 自定义左侧内容 |
+| keyboard-accessory    | 设置工具栏视图 |
 
 ### Textarea externalClasses
 

@@ -130,6 +130,7 @@
 | full                 | `boolean`  | 是否通栏                                                                                      | false        |
 | outline              | `boolean`  | 是否镂空                                                                                      | false        |
 | bordered             | `boolean`  | 是否带边框                                                                                    | true         |
+| shape     | `string` | 指定头像的形状，可选值为 default、rounded、rectangular | default              |
 | size                 | `string`   | 按钮的大小，可选值为 small、default、large                                                    | default      |
 | disabled             | `boolean`  | 是否禁用                                                                                      | false        |
 | loading              | `boolean`  | 名称前是否带 loading 图标                                                                     | false        |

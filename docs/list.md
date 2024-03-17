@@ -111,6 +111,7 @@ Page({
 | label     | `string`        | 描述                                           | -              |
 | mode      | `string`        | 支持默认和卡片两种模式，可选值为 default、card | default        |
 | bodyStyle | `string,object` | 自定义样式                                     | -              |
+| hasLine              | `boolean`  | 是否有底部横线 | true         |
 
 ### CellGroup externalClasses
 
@@ -144,6 +145,8 @@ Page({
 | isLink               | `boolean`  | 是否展示右侧箭头并开启尝试以 url 跳转                                                                                                                                              | -            |
 | url                  | `string`   | 跳转链接                                                                                                                                                                           | -            |
 | delta                | `number`   | 当 open-type 为 'navigateBack' 时有效，表示回退的层数                                                                                                                              | 1            |
+| wrapStyle     | `string,object` | 自定义样式                         | -          |
+| align                | `string`   | 对齐方式，可选值为 flex-start、center | center            |
 | bind:click           | `function` | 点击事件                                                                                                                                                                           | -            |
 | bind:getuserinfo     | `function` | 用户点击该按钮时，会返回获取到的用户信息，回调的 detail 数据与 wx.getUserInfo 返回的一致                                                                                           | -            |
 | bind:contact         | `function` | 客服消息回调                                                                                                                                                                       | -            |

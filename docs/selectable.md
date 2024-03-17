@@ -160,6 +160,9 @@ Page({
 | readOnly       | `boolean`       | 是否只读                                                                                    | false          |
 | color          | `string`        | 主题色，可选值为 light、stable、positive、calm、assertive、balanced、energized、royal、dark | balanced       |
 | wrapStyle      | `string,object` | 自定义样式                                                                                  | -              |
+| iconSize      | `string` | 图标大小，当 `type` 为 `checkbox` 时，默认值为 23 | -              |
+| iconOn      | `string` | 选中时的图标，当 `type` 为 `checkbox` 时，默认值为 success | -              |
+| iconOff      | `string` | 未选中时的图标，当 `type` 为 `checkbox` 时，默认值为 circle | -              |
 | bind:change    | `function`      | change 事件触发的回调函数                                                                   | -              |
 
 ### Selectable slot

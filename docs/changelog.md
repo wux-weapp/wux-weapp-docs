@@ -6,6 +6,25 @@
 - 次版本号（0.x.0）：含有新特性的向下兼容的版本。
 - 主版本号（x.0.0）：含有破坏性更新和新特性，不向下兼容的版本。
 
+## v 3.11.0 (2024-03-18)
+
+- 💄 增加组件：ESign - 电子签名
+- 💄 增加组件：SafeArea - 安全区
+- 💄 增加组件：SelectorGroup - 选择组
+- 🐞 更新组件：Badge - 徽章 新增 position & backgroundColor & hideShadow & title 属性
+- 🐞 更新组件：Calendar - 日历 修复日历组件跳无法找到对应组件 [#420](https://github.com/wux-weapp/wux-weapp/pull/420)
+- 🐞 更新组件：Checkbox - 复选框 新增 hasLine & withListComponent & iconPosition & iconSize & iconOn & iconOff 属性
+- 🐞 更新组件：Form - 表单 新增 validate & validateTrigger & preserve & rules & validateFirst & hidden 等属性，支持表单验证功能
+- 🐞 更新组件：Index - 索引选择器 新增 indicatorPosition 属性
+- 🐞 更新组件：Input - 文本输入框 新增 visibilityToggle 属性，支持密码可见
+- 🐞 更新组件：List - 列表 新增 align & hasLine 属性
+- 🐞 更新组件：Popover - 气泡框 新增 useSlot & slotRect & relativeRect 属性
+- 🐞 更新组件：Popup - 弹出框 新增 safeArea & safeAreaStyle 属性，支持安全区适配
+- 🐞 更新组件：PopupSelect - 下拉框 新增 virtualized 属性，支持使用虚拟列表
+- 🐞 更新组件：Radio - 单选框 新增 hasLine & withListComponent & iconPosition & iconSize & iconOn & iconOff 属性
+- 🐞 更新组件：Selectable - 选框组 新增 iconSize & iconOn & iconOff 属性
+- 🐞 更新组件：TabBar - 标签栏 新增 safeArea & safeAreaStyle 属性，修复 safearea 兼容新机
+
 ## v 3.10.1 (2023-07-13)
 
 - 🐞 更新组件：CascaderView - 级联选择视图 修复 json 引入错误的组件路径 [#418](https://github.com/wux-weapp/wux-weapp/pull/418)

@@ -1,6 +1,6 @@
 'use strict'
 
-const version = 'wuxui_3.10.1_20230713_force'
+const version = 'wuxui_3.11.0_20240318_force'
 const __DEVELOPMENT__ = false
 const __DEBUG__ = false
 const offlineResources = [

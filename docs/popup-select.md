@@ -265,6 +265,7 @@ Page({
 | visible             | `boolean`               | 用于手动控制组件显隐，当 `controlled` 为 `true` 时才生效       | false                                     |
 | controlled          | `boolean`               | 是否受控 [说明文档](controlled.md)                             | false                                     |
 | disabled            | `boolean`               | 是否禁用                                                       | false                                     |
+| virtualized            | `boolean`               | 是否虚拟列表                    | false                                     |
 | bind:change         | `function`              | 选择完成后的回调函数                                           | -                                         |
 | bind:confirm        | `function`              | 点击确定按钮时的回调函数                                       | -                                         |
 | bind:cancel         | `function`              | 点击取消按钮时的回调函数                                       | -                                         |

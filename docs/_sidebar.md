@@ -23,6 +23,7 @@
 
   - [Grid 宫格](grid.md)
   - [Layout 栅格布局](layout.md)
+  - [SafeArea 安全区](safe-area.md)
   - [WhiteSpace 上下留白](white-space.md)
   - [WingBlank 两翼留白](wing-blank.md)
 
@@ -56,6 +57,7 @@
   - [SearchBar 搜索栏](search-bar.md)
   - [Select 下拉框](select.md)
   - [Selectable 选框组](selectable.md)
+  - [SelectorGroup 选择组](selector-group.md)
   - [Slider 滑动选择器](slider.md)
   - [Switch 滑动开关](switch.md)
   - [Textarea 多行输入框](textarea.md)
@@ -72,6 +74,7 @@
   - [CountDown 倒计时](countdown.md)
   - [CountUp 计数器](countup.md)
   - [Divider 分割线](divider.md)
+  - [ESign 电子签名](e-sign.md)
   - [Ellipsis 文本省略](ellipsis.md)
   - [FabButton 浮动按钮](fab-button.md)
   - [FloatingPanel 浮动面板](floating-panel.md)

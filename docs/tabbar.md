@@ -145,7 +145,8 @@ Page({
 | theme           | `string`   | 主题色，可选值为 light、stable、positive、calm、assertive、balanced、energized、royal、dark | balanced   |
 | backgroundColor | `string`   | 背景色                                                                                      | #fff       |
 | position        | `string`   | 标签栏位置，可选值为 bottom、top                                                            | -          |
-| safeArea        | `boolean`  | 是否适配 iPhoneX，当 `position` 为 `bottom/top` 时才生效                                    | false      |
+| safeArea        | `boolean,string,object`  | 是否适配刘海屏，可选值为 top、bottom、{ top, bottom }，当 `position` 为 `bottom/top` 时才生效                                    | false      |
+| safeAreaStyle        | `string`  | 安全区的范围，可选值为 default、navBar、statusBar， 当其值为 default 或 navBar，顶部计算的安全区包含 StatusBar & NavBar | default      |
 | bind:change     | `function` | 切换面板的回调函数                                                                          | -          |
 
 ### TabBar externalClasses

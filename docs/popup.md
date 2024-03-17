@@ -125,6 +125,8 @@ Page({
 | zIndex             | `number`        | 设置蒙层的 z-index                                        | 1000        |
 | hasHeader          | `boolean`       | 是否显示头部内容                                          | true        |
 | hasFooter          | `boolean`       | 是否显示底部内容                                          | true        |
+| safeArea        | `boolean,string,object`  | 是否适配刘海屏，可选值为 top、bottom、{ top, bottom }，当 `position` 为 `bottom/top` 时才生效                                    | false      |
+| safeAreaStyle        | `string`  | 安全区的范围，可选值为 default、navBar、statusBar， 当其值为 default 或 navBar，顶部计算的安全区包含 StatusBar & NavBar | default      |
 | bind:close         | `function`      | 点击关闭按钮或蒙层的回调函数                              | -           |
 | bind:closed        | `function`      | 完全关闭后触发                                          | -           |
 | bind:showed        | `function`      | 完全展示后触发                                          | -           |

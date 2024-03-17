@@ -91,6 +91,10 @@
 | showZero      | `boolean` | 当数值为 0 时，是否展示 Badge                                              | false     |
 | status        | `string`  | 设置 Badge 为状态点，可选值为 success、processing、default、error、warning | -         |
 | text          | `string`  | 在设置了 status 的前提下有效，设置状态点的文本                             | -         |
+| position          | `string`  | 位置，可选值为 topRight、topLeft、bottomRight、bottomLeft | topRight         |
+| backgroundColor          | `string`  | 背景颜色 | #ed3f14         |
+| hideShadow          | `boolean`  | 是否隐藏阴影 | false         |
+| title          | `string`  | 徽章的内容，优先级高于 dot & count | -         |
 
 ### Badge slot
 

@@ -159,6 +159,12 @@ Page({
 | readOnly           | `boolean`       | 是否只读                                       | false           |
 | mode               | `string`        | 支持默认和卡片两种模式，可选值为 default、card | default         |
 | bodyStyle          | `string,object` | 自定义样式                                     | -               |
+| hasLine          | `boolean` | 是否有底部横线 | true               |
+| withListComponent          | `boolean` | 是否包裹 List 组件 | true               |
+| iconPosition          | `string` | 图标的位置，可选值 right、left | right               |
+| iconSize      | `string` | 图标大小 | -              |
+| iconOn      | `string` | 选中时的图标 | -              |
+| iconOff      | `string` | 未选中时的图标 | -              |
 | bind:change        | `function`      | change 事件触发的回调函数                      | -               |
 
 ### Radio props
@@ -176,4 +182,5 @@ Page({
 | disabled            | `boolean`  | 是否不可修改                                                                                | false          |
 | readOnly            | `boolean`  | 是否只读                                                                                    | false          |
 | color               | `string`   | 主题色，可选值为 light、stable、positive、calm、assertive、balanced、energized、royal、dark | balanced       |
+| hasLine          | `boolean` | 是否有底部横线 | true               |
 | bind:change         | `function` | change 事件触发的回调函数，优先级低于父级 change 事件                                       | -              |

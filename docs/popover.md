@@ -180,6 +180,9 @@ Page({
 | controlled     | `boolean`       | 是否受控 [说明文档](controlled.md)                                                                                                    | false               |
 | mask           | `boolean`       | 是否显示蒙层                                                                                                                          | false               |
 | maskClosable   | `boolean`       | 点击蒙层是否允许关闭                                                                                                                  | true                |
+| useSlot   | `boolean`       | 子元素是否使用插槽   | true                |
+| slotRect   | `boolean`       | 子元素的 rect 属性，当 `useSlot` 为 `true` 时，默认为组件内置 slot   | -                |
+| relativeRect   | `boolean`       | 相对定位元素的 rect 属性，当 `useSlot` 为 `true` 时，默认为当前窗口   | -                |
 | bind:change    | `function`      | 显示隐藏的回调函数                                                                                                                    | -                   |
 
 ### Popover slot

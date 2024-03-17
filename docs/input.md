@@ -214,6 +214,7 @@ Page({
 | onlyShowClearWhenFocus    | `boolean`       | 如果 true，那么只有输入框聚焦时才会显示清除按钮；如果为 false，那么输入框失去焦点后依旧会显示清除按钮 | true              |
 | min                       | `number`        | 最小值，仅在 type 为 number 或 digit 时生效                                                           | -                 |
 | max                       | `number`        | 最大值，仅在 type 为 number 或 digit 时生效                                                           | -                 |
+| visibilityToggle                       | `boolean`        | 密码可见，仅在 password 为 true 时生效 | -                 |
 | bind:change               | `function`      | 键盘输入时触发                                                                                        | -                 |
 | bind:focus                | `function`      | 输入框聚焦时触发                                                                                      | -                 |
 | bind:blur                 | `function`      | 输入框失去焦点时触发                                                                                  | -                 |
@@ -228,6 +229,7 @@ Page({
 | 名称 | 描述           |
 | ---- | -------------- |
 | -    | 自定义左侧内容 |
+| keyboard-accessory    | 设置工具栏视图 |
 
 ### Input externalClasses
 
