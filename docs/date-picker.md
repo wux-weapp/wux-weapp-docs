@@ -156,6 +156,23 @@
         <wux-cell title="Time" is-link extra="{{ displayValue9 }}"></wux-cell>
       </wux-date-picker>
     </wux-cell-group>
+    <wux-cell-group title="TillNow">
+      <wux-date-picker
+        tillNow
+        mode="datetime"
+        value="{{ value10 }}"
+        lang="{{ lang }}"
+        data-index="10"
+        data-mode="datetime"
+        bind:confirm="onConfirm"
+      >
+        <wux-cell
+          title="Datetime"
+          is-link
+          extra="{{ displayValue10 }}"
+        ></wux-cell>
+      </wux-date-picker>
+    </wux-cell-group>
     <view class="button-sp-area">
       <wux-button block type="light" bind:click="onClick"
         >Button click - {{ displayValue1 }}</wux-button
@@ -168,15 +185,16 @@
 ```js
 Page({
   data: {
-    value1: [],
-    value2: [],
-    value3: [],
-    value4: [],
-    value5: [],
-    value6: [],
-    value7: [],
-    value8: [],
-    value9: [],
+    value1: [year, month, day, hour, minute],
+    value2: [year, month, day],
+    value3: [year],
+    value4: [year, month],
+    value5: [hour, minute],
+    value6: [year, month, day, hour, minute, '1'],
+    value7: [hour, minute, '1'],
+    value8: '2020-02-02 02:02',
+    value9: '1580580120000',
+    value10: ['2029', '0', '1', '0', '0'],
     displayValue1: '请选择',
     displayValue2: '请选择',
     displayValue3: '请选择',
@@ -186,6 +204,7 @@ Page({
     displayValue7: '请选择',
     displayValue8: '请选择',
     displayValue9: '请选择',
+    displayValue10: '请选择',
     lang: 'zh_CN',
   },
   onChange(e) {
@@ -199,7 +218,7 @@ Page({
   },
   setValue(values, key, mode) {
     this.setData({
-      [`value${key}`]: values.value,
+      [`value${key}`]: !values.tillNow ? values.value : { tillNow: true },
       [`displayValue${key}`]: values.label,
       // [`displayValue${key}`]: values.displayValue.join(' '),
     })
@@ -224,6 +243,21 @@ Page({
 
 ## API
 
+```ts
+// ex. `yyyy-MM-dd hh:mm` | `yyyy-MM-dd` | `yyyy` | `yyyy-MM` | `hh:mm`
+type DateString = string
+
+// ex. `[year, monthIndex, date, hours, minutes, ampm]`
+type StringArray = string[]
+
+// ex. `new Date().getTime()`
+type Timestamp = number
+
+type PickerDate = DateString | StringArray | Timestamp | {
+  tillNow?: boolean
+}
+```
+
 ### DatePicker props
 
 | 参数                 | 类型            | 描述                                                                                                 | 默认值                |
@@ -231,7 +265,7 @@ Page({
 | prefixCls            | `string`        | 自定义类名前缀                                                                                       | wux-date-picker       |
 | multiPickerPrefixCls | `string`        | multPicker 自定义类名前缀                                                                            | wux-picker            |
 | pickerPrefixCls      | `string`        | picker 自定义类名前缀                                                                                | wux-picker-col        |
-| value                | `any`           | 当前选中时间，例如字符串 `2000-02-01 00:00:00` 或时间戳 `949334400000` 或者数组 `[2000, 1, 1, 0, 0]` | -                     |
+| value                | `PickerDate`           | 当前选中时间，例如字符串 `2000-02-01 00:00` 或时间戳 `949334400000` 或者数组 `['2000', '1', '1', '0', '0']` | -                     |
 | itemHeight           | `number`        | 每列子元素的高度                                                                                     | 34                    |
 | itemStyle            | `string,object` | 每列子元素的样式                                                                                     | -                     |
 | indicatorStyle       | `string,object` | 设置选择器中间选中框的样式                                                                           | -                     |
@@ -249,6 +283,7 @@ Page({
 | minMinute            | `number`        | 最小可选分钟                                                                                         | 0                     |
 | maxMinute            | `number`        | 最大可选分钟                                                                                         | 59                    |
 | lang                 | `string`        | 返回文本的语言，可选值为 en、zh_CN、zh_TW                                                            | zh_CN                 |
+| tillNow              | `boolean`       | 是否展示“至今”                                                                                       | false                 |
 | toolbar              | `object`        | 工具栏配置项                                                                                         | {}                    |
 | toolbar.title        | `string`        | 标题的文字                                                                                           | 请选择                |
 | toolbar.cancelText   | `string`        | 取消按钮的文字                                                                                       | 取消                  |

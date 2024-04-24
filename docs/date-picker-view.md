@@ -86,6 +86,14 @@
       data-index="7"
       bind:valueChange="onValueChange"
     />
+    <view class="sub-title">TillNow {{ displayValue8 }}</view>
+    <wux-date-picker-view
+      tillNow
+      lang="{{ lang }}"
+      value="{{ value8 }}"
+      data-index="8"
+      bind:valueChange="onValueChange"
+    />
   </view>
 </view>
 ```
@@ -107,11 +115,12 @@ Page({
   data: {
     value1: [year, month, day, hour, minute],
     value2: [year, month, day],
-    value3: [year, month],
-    value4: [year],
+    value3: [year],
+    value4: [year, month],
     value5: [hour, minute],
     value6: [year, month, day, hour, minute, '1'],
     value7: [hour, minute, '1'],
+    value8: ['2029', '0', '1', '0', '0'],
     lang: 'zh_CN',
   },
   onChange(e) {
@@ -125,7 +134,7 @@ Page({
   },
   setValue(values, key) {
     this.setData({
-      [`value${key}`]: values.value,
+      [`value${key}`]: !values.tillNow ? values.value : { tillNow: true },
       [`displayValue${key}`]: values.displayValue.join(' '),
     })
   },
@@ -143,13 +152,28 @@ Page({
 
 ## API
 
+```ts
+// ex. `yyyy-MM-dd hh:mm` | `yyyy-MM-dd` | `yyyy` | `yyyy-MM` | `hh:mm`
+type DateString = string
+
+// ex. `[year, monthIndex, date, hours, minutes, ampm]`
+type StringArray = string[]
+
+// ex. `new Date().getTime()`
+type Timestamp = number
+
+type PickerDate = DateString | StringArray | Timestamp | {
+  tillNow?: boolean
+}
+```
+
 ### DatePickerView props
 
 | 参数                 | 类型            | 描述                                                                                                 | 默认值                |
 | -------------------- | --------------- | ---------------------------------------------------------------------------------------------------- | --------------------- |
 | multiPickerPrefixCls | `string`        | multPicker 自定义类名前缀                                                                            | wux-picker            |
 | pickerPrefixCls      | `string`        | picker 自定义类名前缀                                                                                | wux-picker-col        |
-| value                | `any`           | 当前选中时间，例如字符串 `2000-02-01 00:00:00` 或时间戳 `949334400000` 或者数组 `[2000, 1, 1, 0, 0]` | -                     |
+| value                | `PickerDate`           | 当前选中时间，例如字符串 `2000-02-01 00:00` 或时间戳 `949334400000` 或者数组 `['2000', '1', '1', '0', '0']` | -                     |
 | itemHeight           | `number`        | 每列子元素的高度                                                                                     | 34                    |
 | itemStyle            | `string,object` | 每列子元素的样式                                                                                     | -                     |
 | indicatorStyle       | `string,object` | 设置选择器中间选中框的样式                                                                           | -                     |
@@ -167,4 +191,5 @@ Page({
 | minMinute            | `number`        | 最小可选分钟                                                                                         | 0                     |
 | maxMinute            | `number`        | 最大可选分钟                                                                                         | 59                    |
 | lang                 | `string`        | 返回文本的语言，可选值为 en、zh_CN、zh_TW                                                            | zh_CN                 |
+| tillNow              | `boolean`       | 是否展示“至今”                                                                                       | false                 |
 | bind:valueChange     | `function`      | 每列数据选择变化后的回调函数                                                                         | -                     |

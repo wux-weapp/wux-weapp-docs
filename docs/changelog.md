@@ -6,6 +6,21 @@
 - 次版本号（0.x.0）：含有新特性的向下兼容的版本。
 - 主版本号（x.0.0）：含有破坏性更新和新特性，不向下兼容的版本。
 
+## v 3.11.3 (2024-04-25)
+
+- 🐞 更新组件：DatePicker - 日期选择器 修复 value 输入错误
+- 🐞 更新组件：DatePickerView - 日期选择器 修复 value 输入错误
+
+## v 3.11.2 (2024-04-24)
+
+- 🔥 升级注意：适配 PC 小程序
+- 🐞 更新组件：DatePicker - 日期选择器 新增 tillNow 属性
+- 🐞 更新组件：DatePickerView - 日期选择器 新增 tillNow 属性
+- 🐞 更新组件：Dialog - 对话框 修复 prompt 模式下 input placeholder 文本对齐的问题
+- 🐞 更新组件：InputNumber - 数字输入框 修复 placeholder 文本对齐的问题
+- 🐞 更新组件：PickerView - 单列选择器 新增 labelImage 属性，支持自定义 label 显示图像
+- 🐞 更新组件：SearchBar - 搜索栏 修复 placeholder 文本对齐的问题
+
 ## v 3.11.1 (2024-03-21)
 
 - 🐞 更新组件：CascaderView - 级联选择视图 修复 npm 导入项目，[cascader-view 组件编译错误](https://github.com/wux-weapp/wux-weapp/issues/424)
